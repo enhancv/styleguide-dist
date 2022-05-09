@@ -1,4 +1,4 @@
-declare enum ColorType {
+export declare enum ColorType {
     Green = "green",
     Purple = "purple",
     Red = "red"
