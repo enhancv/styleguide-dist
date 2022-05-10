@@ -634,6 +634,11 @@
 
 @charset "UTF-8";
 
+@font-face {
+  font-family: enhancvstyleguide;
+  src: url(fonts/enhancvstyleguide.woff);
+}
+
 [data-icon]:before {
   font-family: "enhancvstyleguide" !important;
   content: attr(data-icon);
