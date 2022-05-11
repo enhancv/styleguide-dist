@@ -3,10 +3,15 @@ export declare enum ColorType {
     Purple = "purple",
     Red = "red"
 }
+declare enum SizeType {
+    Small = "small",
+    Medium = "medium",
+    Large = "large"
+}
 interface Props {
-    color?: ColorType;
+    color?: `${ColorType}`;
     primary?: boolean;
-    size?: string;
+    size?: `${SizeType}`;
     label: string;
     icon?: string;
     redirectUrl?: string;
