@@ -2,9 +2,14 @@
 
 @font-face {
   font-family: "resumeicons";
-  src: url(fonts/resumeicons.woff) format("woff");
+  src:url(fonts/resumeicons.eot);
+  src:url(fonts/resumeicons.eot?#iefix) format("embedded-opentype"),
+    url(fonts/resumeicons.woff) format("woff"),
+    url(fonts/resumeicons.ttf) format("truetype"),
+    url(fonts/resumeicons.svg#resumeicons) format("svg");
   font-weight: normal;
   font-style: normal;
+
 }
 
 [data-icon]:before {
@@ -63,10 +68,10 @@
 .resume-icon-08-email-envelope:before {
   content: "\6a";
 }
-.resume-icon-09-free-flashbolt:before {
+.resume-icon-09-free-flash:before {
   content: "\6b";
 }
-.resume-icon-10-infinity-1:before {
+.resume-icon-10-infinity:before {
   content: "\6c";
 }
 .resume-icon-12-paper-clip:before {
@@ -573,7 +578,7 @@
 .resume-icon-82-crown-01:before {
   content: "\2c";
 }
-.resume-icon-76-piano-01-2:before {
+.resume-icon-76-guitar-01:before {
   content: "\25";
 }
 .resume-icon-124-golf:before {
@@ -630,8 +635,11 @@
 .resume-icon-social-500px:before {
   content: "\e067";
 }
-.resume-icon-discord-logo:before {
+.resume-icon-discord:before {
   content: "\e068";
+}
+.resume-icon-email-01:before {
+  content: "\e069";
 }
 
 @charset "UTF-8";
