@@ -2,14 +2,9 @@
 
 @font-face {
   font-family: "resumeicons";
-  src:url(fonts/resumeicons.eot);
-  src:url(fonts/resumeicons.eot?#iefix) format("embedded-opentype"),
-    url(fonts/resumeicons.woff) format("woff"),
-    url(fonts/resumeicons.ttf) format("truetype"),
-    url(fonts/resumeicons.svg#resumeicons) format("svg");
+  src: url(fonts/resumeicons.woff) format("woff");
   font-weight: normal;
   font-style: normal;
-
 }
 
 [data-icon]:before {
