@@ -2,9 +2,10 @@
 
 @font-face {
   font-family: "resumeicons";
-  src: url(fonts/resumeicons.woff) format("woff");
+  src:url(fonts/resumeicons.woff) format("woff");
   font-weight: normal;
   font-style: normal;
+
 }
 
 [data-icon]:before {
@@ -635,6 +636,12 @@
 }
 .resume-icon-email-01:before {
   content: "\e069";
+}
+.resume-icon-dot-1:before {
+  content: "\e06a";
+}
+.resume-icon-rearrange-1:before {
+  content: "\e06b";
 }
 
 @charset "UTF-8";
