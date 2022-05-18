@@ -643,6 +643,15 @@
 .resume-icon-rearrange-1:before {
   content: "\e06b";
 }
+.resume-icon-enhancv-02:before {
+  content: "\e06c";
+}
+.resume-icon-enhancv-full-01:before {
+  content: "\e06d";
+}
+.resume-icon-enhancv-01:before {
+  content: "\e06e";
+}
 
 @charset "UTF-8";
 
