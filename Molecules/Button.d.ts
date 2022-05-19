@@ -1,3 +1,4 @@
+import { HTMLAttributes } from "react";
 export declare enum ColorType {
     Green = "green",
     Purple = "purple",
@@ -8,7 +9,8 @@ declare enum SizeType {
     Medium = "medium",
     Large = "large"
 }
-interface Props {
+declare type Props = {
+    className: string;
     color?: `${ColorType}`;
     primary?: boolean;
     size?: `${SizeType}`;
@@ -16,6 +18,6 @@ interface Props {
     icon?: string;
     redirectUrl?: string;
     onClick: () => void;
-}
-export declare const Button: ({ primary, size, label, color, onClick, }: Props) => JSX.Element;
+} & HTMLAttributes<HTMLButtonElement>;
+export declare const Button: ({ className, primary, size, label, color, onClick, ...props }: Props) => JSX.Element;
 export {};
