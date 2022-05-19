@@ -10,7 +10,7 @@ declare enum SizeType {
     Large = "large"
 }
 declare type Props = {
-    className: string;
+    className?: string;
     color?: `${ColorType}`;
     primary?: boolean;
     size?: `${SizeType}`;
