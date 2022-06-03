@@ -1,7 +1,12 @@
-import './shared/main.scss';
+import Icon from "./Atoms/Icon";
 import { Button } from "./Molecules/Button";
 import { Checkbox } from "./Molecules/Checkbox";
-import Input from "./Molecules/Input";
+import BaseInput from "./Molecules/Input/BaseInput";
+import Input from "./Molecules/Input/Input";
+import InputError from "./Molecules/Input/InputError";
+import InputGroup from "./Molecules/Input/InputGroup";
+import InputLabel from "./Molecules/Input/InputLabel";
 import RadioButton from "./Molecules/RadioButton";
 import { Textarea } from "./Molecules/Textarea";
-export { Button, Checkbox, Input, RadioButton, Textarea };
+import "./shared/main.scss";
+export { Button, Checkbox, Input, RadioButton, Textarea, Icon, InputGroup, BaseInput, InputLabel, InputError, };
