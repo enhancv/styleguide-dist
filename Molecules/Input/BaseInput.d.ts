@@ -7,8 +7,9 @@ declare type Props = {
     className?: string;
     fluid?: boolean;
     icon?: InputIcon;
+    color?: "red";
     size?: "medium" | "large";
     [index: string]: any;
 } & HTMLAttributes<HTMLInputElement>;
-export default function BaseInput({ className, fluid, size, icon, ...props }: Props): JSX.Element;
+export default function BaseInput({ className, fluid, size, color, icon, ...props }: Props): JSX.Element;
 export {};
