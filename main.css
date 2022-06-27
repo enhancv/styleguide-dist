@@ -219,7 +219,7 @@
 .resume-icon-83-free-prize-award:before {
   content: "\2a";
 }
-.resume-icon-flag-goal:before {
+.resume-icon-84-flag:before {
   content: "\2b";
 }
 .resume-icon-planet:before {
@@ -243,13 +243,13 @@
 .resume-icon-95-chart-bar:before {
   content: "\40";
 }
-.resume-icon-95-chart-pie:before {
+.resume-icon-96-chart-pie:before {
   content: "\5b";
 }
-.resume-icon-sort-alpha-asc-1-1:before {
+.resume-icon-sort-alpha-asc:before {
   content: "\5d";
 }
-.resume-icon-97-filmstrip-1:before {
+.resume-icon-97-filmstrip:before {
   content: "\5e";
 }
 .resume-icon-99-free-camera:before {
@@ -279,7 +279,7 @@
 .resume-icon-volleyball:before {
   content: "\e00b";
 }
-.resume-icon-snow:before {
+.resume-icon-127-winter-01:before {
   content: "\e00c";
 }
 .resume-icon-anchor-1:before {
@@ -636,7 +636,7 @@
 .resume-icon-social-500px:before {
   content: "\e067";
 }
-.resume-icon-discord:before {
+.resume-icon-discord-logo:before {
   content: "\e068";
 }
 .resume-icon-email-01:before {
