@@ -219,7 +219,7 @@
 .resume-icon-83-free-prize-award:before {
   content: "\2a";
 }
-.resume-icon-84-flag:before {
+.resume-icon-flag-goal:before {
   content: "\2b";
 }
 .resume-icon-planet:before {
@@ -384,7 +384,7 @@
 .resume-icon-flickr:before {
   content: "\e042";
 }
-.resume-icon-dribbble:before {
+.resume-icon-dribble:before {
   content: "\e043";
 }
 .resume-icon-pinterest-square:before {
@@ -656,6 +656,12 @@
 }
 .resume-icon-enhancv-01:before {
   content: "\e06e";
+}
+.resume-icon-84-flag:before {
+  content: "\e06f";
+}
+.resume-icon-snow:before {
+  content: "\e070";
 }
 
 @charset "UTF-8";
