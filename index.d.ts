@@ -8,5 +8,6 @@ import InputGroup from "./Molecules/Input/InputGroup";
 import InputLabel from "./Molecules/Input/InputLabel";
 import RadioButton from "./Molecules/RadioButton";
 import { Textarea } from "./Molecules/Textarea";
+import Breadcrumb from "./Organisms/Breadcrumb";
 import "./shared/main.scss";
-export { Button, Checkbox, Input, RadioButton, Textarea, Icon, InputGroup, BaseInput, InputLabel, InputError, };
+export { Button, Checkbox, Input, RadioButton, Textarea, Icon, InputGroup, BaseInput, InputLabel, InputError, Breadcrumb, };
