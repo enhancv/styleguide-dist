@@ -1,9 +1,11 @@
-import { HTMLAttributes } from "react";
-declare type Props = {
-    currentPage: string;
-    paths?: string[];
+interface Path {
+    name: string;
+    url: string;
+}
+interface Props {
+    paths: Path[];
     className?: string;
     eventParams?: {};
-} & HTMLAttributes<HTMLButtonElement>;
-declare const Breadcrumb: ({ currentPage, paths, className, eventParams, }: Props) => JSX.Element;
+}
+declare const Breadcrumb: ({ paths, className, eventParams }: Props) => JSX.Element;
 export default Breadcrumb;
