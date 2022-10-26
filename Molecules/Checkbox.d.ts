@@ -1,4 +1,4 @@
-interface Props {
+export interface Props {
     id: string;
     label?: string;
     name?: string;
@@ -7,4 +7,3 @@ interface Props {
     onClick?: () => void;
 }
 export declare const Checkbox: ({ label, onClick, name, id, defaultChecked, className, }: Props) => JSX.Element;
-export {};

@@ -2,10 +2,10 @@ interface Path {
     name: string;
     url: string;
 }
-interface Props {
+export interface BreadcrumbProps {
     paths: Path[];
     className?: string;
     eventParams?: {};
 }
-declare const Breadcrumb: ({ paths, className, eventParams }: Props) => JSX.Element;
+declare const Breadcrumb: ({ paths, className, eventParams, }: BreadcrumbProps) => JSX.Element;
 export default Breadcrumb;

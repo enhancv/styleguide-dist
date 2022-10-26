@@ -1,5 +1,6 @@
 import Icon from "./Atoms/Icon";
 import { Button } from "./Molecules/Button";
+import { IconButton } from "./Molecules/IconButton/IconButton";
 import { Checkbox } from "./Molecules/Checkbox";
 import BaseInput from "./Molecules/Input/BaseInput";
 import Input from "./Molecules/Input/Input";
@@ -9,5 +10,6 @@ import InputLabel from "./Molecules/Input/InputLabel";
 import RadioButton from "./Molecules/RadioButton";
 import { Textarea } from "./Molecules/Textarea";
 import Breadcrumb from "./Organisms/Breadcrumb";
+import Modal from "./Organisms/Modal/Modal";
 import "./shared/main.scss";
-export { Button, Checkbox, Input, RadioButton, Textarea, Icon, InputGroup, BaseInput, InputLabel, InputError, Breadcrumb, };
+export { Button, IconButton, Checkbox, Input, RadioButton, Textarea, Icon, InputGroup, BaseInput, InputLabel, InputError, Breadcrumb, Modal, };

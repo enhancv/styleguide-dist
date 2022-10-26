@@ -1,4 +1,4 @@
-interface Props {
+export interface Props {
     required: boolean;
     label?: string;
     labelFor?: string;
@@ -14,4 +14,3 @@ interface Props {
     onBlur?: () => void;
 }
 export declare const Textarea: ({ required, label, labelFor, labelClassName, name, className, placeholder, resize, value, onChange, rows, maxLength, onBlur, }: Props) => JSX.Element;
-export {};

@@ -1,5 +1,5 @@
 /// <reference types="react" />
-interface Props {
+export interface Props {
     onClick?: () => void;
     label?: string;
     labelClassName?: string;
@@ -7,4 +7,3 @@ interface Props {
     labelFor?: string;
 }
 export default function RadioButton({ onClick, checked, label, labelClassName, labelFor, }: Props): JSX.Element;
-export {};
