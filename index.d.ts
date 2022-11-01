@@ -11,5 +11,7 @@ import RadioButton from "./Molecules/RadioButton";
 import { Textarea } from "./Molecules/Textarea";
 import Breadcrumb from "./Organisms/Breadcrumb";
 import Modal from "./Organisms/Modal/Modal";
+import ModalHeader from "./Organisms/Modal/ModalHeader/ModalHeader";
+import ModalBody from "./Organisms/Modal/ModalBody/ModalBody";
 import "./shared/main.scss";
-export { Button, IconButton, Checkbox, Input, RadioButton, Textarea, Icon, InputGroup, BaseInput, InputLabel, InputError, Breadcrumb, Modal, };
+export { Button, IconButton, Checkbox, Input, RadioButton, Textarea, Icon, InputGroup, BaseInput, InputLabel, InputError, Breadcrumb, Modal, ModalHeader, ModalBody, };
