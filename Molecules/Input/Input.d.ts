@@ -1,7 +1,7 @@
 import { Props as IconProps } from "../../Atoms/Icon";
 import { HTMLAttributes } from "react";
 declare type InputIcon = {
-    position: "left" | "right";
+    position?: "left" | "right";
 } & IconProps;
 declare type Props = {
     name?: string;
