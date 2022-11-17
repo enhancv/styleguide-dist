@@ -10,7 +10,7 @@ declare enum SizeType {
     Medium = "medium",
     Large = "large"
 }
-export declare type ButtonProps = {
+export type ButtonProps = {
     className?: string;
     color?: `${ColorType}`;
     primary?: boolean;

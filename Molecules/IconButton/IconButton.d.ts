@@ -3,7 +3,7 @@ declare enum SizeType {
     sm = "sm",
     md = "md"
 }
-export declare type Props = {
+export type Props = {
     className?: string;
     primary?: boolean;
     children?: ReactNode;

@@ -1,9 +1,9 @@
 import { Props as IconProps } from "../../Atoms/Icon";
 import { HTMLAttributes } from "react";
-declare type InputIcon = {
+type InputIcon = {
     position?: "left" | "right";
 } & IconProps;
-declare type Props = {
+type Props = {
     className?: string;
     fluid?: boolean;
     icon?: InputIcon;
