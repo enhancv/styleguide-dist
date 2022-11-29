@@ -1,7 +1,7 @@
-/// <reference types="react" />
+import React from "react";
 interface Props {
     options: number;
-    setOptionLocal: (index: number) => void;
+    onClickIcon: (index: number, event: React.MouseEvent) => void;
 }
-declare function Bars({ options, setOptionLocal }: Props): JSX.Element;
+declare function Bars({ options, onClickIcon }: Props): JSX.Element;
 export default Bars;
