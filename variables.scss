@@ -24,7 +24,7 @@ $white: #ffffff;
 // // Hover elements
 $primary-hover: #57cda4;
 $secondary-hover: #a396e2;
-$danger-hover: #ff576f;
+$danger-hover: #ff687d;
 
 // // Active elements
 $primary-active: #249a71;
@@ -48,6 +48,13 @@ $accent-20: rgba($accent, 0.2);
 $info-20: rgba($info, 0.2);
 $warning-20: rgba($warning, 0.2);
 $danger-20: rgba($danger, 0.2);
+// // // opacity 30%
+$primary-30: rgba($primary, 0.3);
+$secondary-30: rgba($secondary, 0.3);
+$accent-30: rgba($accent, 0.3);
+$info-30: rgba($info, 0.3);
+$warning-30: rgba($warning, 0.3);
+$danger-30: rgba($danger, 0.3);
 
 // // Backgrounds
 $surface: $white;

@@ -12,6 +12,8 @@ declare enum SizeType {
 }
 export type ButtonProps = {
     className?: string;
+    leftIcon?: string;
+    rightIcon?: string;
     color?: `${ColorType}`;
     primary?: boolean;
     fluid?: boolean;
@@ -19,5 +21,5 @@ export type ButtonProps = {
     children?: ReactNode;
     [index: string]: any;
 } & HTMLAttributes<HTMLButtonElement>;
-export declare const Button: ({ className, primary, fluid, size, children, color, ...props }: ButtonProps) => JSX.Element;
+export declare const Button: ({ className, primary, fluid, size, children, color, leftIcon, rightIcon, ...props }: ButtonProps) => JSX.Element;
 export {};
