@@ -15,5 +15,6 @@ import CustomScrollbar from "./Organisms/CustomScrollbar";
 import Modal from "./Organisms/Modal/Modal";
 import ModalHeader from "./Organisms/Modal/ModalHeader/ModalHeader";
 import ModalBody from "./Organisms/Modal/ModalBody/ModalBody";
+import OnScrollAnimationWrapper from "./Animations/OnScrollAnimationWrapper";
 import "./shared/main.scss";
-export { Button, IconButton, Checkbox, Input, RadioButton, Textarea, Icon, InputGroup, BaseInput, InputLabel, InputError, MultiSlider, Breadcrumb, Modal, ModalHeader, ModalBody, CustomScrollbar, };
+export { Button, IconButton, Checkbox, Input, RadioButton, Textarea, Icon, InputGroup, BaseInput, InputLabel, InputError, MultiSlider, Breadcrumb, Modal, ModalHeader, ModalBody, CustomScrollbar, OnScrollAnimationWrapper };
