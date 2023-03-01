@@ -1,4 +1,5 @@
 export interface Props {
+    checked: boolean;
     id?: string;
     label?: string;
     name?: string;
@@ -6,4 +7,4 @@ export interface Props {
     defaultChecked?: boolean;
     onClick?: () => void;
 }
-export declare const Checkbox: ({ label, onClick, name, id, defaultChecked, className, }: Props) => JSX.Element;
+export declare const Checkbox: ({ checked, label, onClick, name, id, defaultChecked, className, }: Props) => JSX.Element;
