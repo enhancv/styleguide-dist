@@ -2,7 +2,7 @@ import React from "react";
 export interface MultiSliderProps {
     options: number;
     option: number;
-    onChange: (option: number, event: React.MouseEvent) => void;
+    onChange: (option: number, event: React.MouseEvent | React.TouchEvent) => void;
     title?: string;
     labelLeft?: string;
     labelRight?: string;
