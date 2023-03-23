@@ -1,4 +1,5 @@
-export interface Props {
+import { HTMLAttributes } from "react";
+type Props = {
     required: boolean;
     label?: string;
     labelFor?: string;
@@ -10,7 +11,6 @@ export interface Props {
     value?: string;
     rows?: number;
     maxLength?: number;
-    onChange?: () => void;
-    onBlur?: () => void;
-}
-export declare const Textarea: ({ required, label, labelFor, labelClassName, name, className, placeholder, resize, value, onChange, rows, maxLength, onBlur, }: Props) => JSX.Element;
+} & HTMLAttributes<HTMLTextAreaElement>;
+export declare const Textarea: ({ required, label, labelFor, labelClassName, name, className, placeholder, resize, value, rows, maxLength, ...props }: Props) => JSX.Element;
+export {};

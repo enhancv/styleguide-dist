@@ -12,6 +12,7 @@ type Props = {
     icon?: InputIcon;
     size?: "medium" | "large" | "fluid";
     [index: string]: any;
+    onChange?: () => void;
 } & HTMLAttributes<HTMLInputElement>;
 export default function Input({ name, label, className, fluid, error, size, icon, ...props }: Props): JSX.Element;
 export {};
