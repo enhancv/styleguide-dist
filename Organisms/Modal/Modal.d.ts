@@ -1,26 +1,19 @@
-import React, { ReactNode } from "react";
-declare enum SizeType {
-    xs = "xs",
-    sm = "sm",
-    md = "md",
-    lg = "lg",
-    xl = "xl"
+import { ReactNode } from "react";
+export declare enum SizeType {
+    XS = "xs",
+    SM = "sm",
+    MD = "md",
+    LG = "lg",
+    XL = "xl"
 }
 export interface ModalProps {
-    id?: string;
-    children: ReactNode;
-    open: boolean;
+    size?: `${SizeType}`;
     className?: string;
-    onBackdropClick?: () => void;
-    onClose?: () => void;
-    maxWidth?: `${SizeType}`;
-    additionalText?: string;
-    showMobileVersion?: boolean;
-    mobileTitle?: string;
-    onClickBack?: () => void;
-    header?: React.ReactNode;
-    modern?: boolean;
-    innerClose?: boolean;
+    animationOpening?: string;
+    animationClosing?: string;
+    isCloseButtonHidden?: boolean;
+    onClose: () => void;
+    children?: ReactNode;
 }
-declare const Modal: ({ id, children, open, className, onBackdropClick, onClose, maxWidth, additionalText, }: ModalProps) => JSX.Element | null;
+declare const Modal: ({ size, className, animationOpening, animationClosing, onClose, isCloseButtonHidden, children, }: ModalProps) => JSX.Element;
 export default Modal;
