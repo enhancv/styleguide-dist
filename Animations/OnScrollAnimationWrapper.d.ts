@@ -3,6 +3,7 @@ export interface Props {
     children: React.ReactNode;
     animation: string;
     classNameWrapper?: string;
+    classNameInitialState?: string;
     threshold?: number;
     triggerOnce?: boolean;
     delay?: number;
@@ -12,4 +13,4 @@ export interface Props {
     skip?: boolean;
     rootMargin?: string;
 }
-export default function OnScrollAnimationWrapper({ children, animation, classNameWrapper, threshold, ...props }: Props): JSX.Element;
+export default function OnScrollAnimationWrapper({ children, animation, classNameWrapper, classNameInitialState, threshold, ...props }: Props): JSX.Element;
