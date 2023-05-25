@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 export interface Props {
-    buttons: ReactElement;
+    children: ReactElement;
 }
-declare const DialogModalButtons: ({ buttons, }: Props) => JSX.Element;
+declare const DialogModalButtons: ({ children, }: Props) => JSX.Element;
 export default DialogModalButtons;
