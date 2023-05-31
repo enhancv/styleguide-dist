@@ -14,5 +14,5 @@ type Props = {
     [index: string]: any;
     onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 } & HTMLAttributes<HTMLInputElement>;
-export default function Input({ name, label, className, fluid, error, size, icon, ...props }: Props): JSX.Element;
+export default function Input({ name, label, className, fluid, error, size, icon, color, ...props }: Props): JSX.Element;
 export {};
