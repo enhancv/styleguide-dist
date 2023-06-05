@@ -20,4 +20,4 @@ import PopupModalButtons from "./Organisms/Modal/PopupModal/components/PopupModa
 import ModalCloseButton from "./Organisms/Modal/components/ModalCloseButton";
 import OnScrollAnimationWrapper from "./Animations/OnScrollAnimationWrapper";
 import "./shared/main.scss";
-export { Button, IconButton, Checkbox, Input, RadioButton, Textarea, Icon, InputGroup, BaseInput, InputLabel, InputError, MultiSlider, Breadcrumb, Modal, DialogModal, DialogModalButtons, PopupModal, PopupModalButtons, ModalCloseButton, CustomScrollbar, OnScrollAnimationWrapper };
+export { Button, IconButton, Checkbox, Input, RadioButton, Textarea, Icon, InputGroup, BaseInput, InputLabel, InputError, MultiSlider, Breadcrumb, Modal, DialogModal, DialogModalButtons, PopupModal, PopupModalButtons, ModalCloseButton, CustomScrollbar, OnScrollAnimationWrapper, };
