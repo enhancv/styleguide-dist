@@ -19,7 +19,8 @@ export type ButtonProps = {
     fluid?: boolean;
     size?: `${SizeType}`;
     children?: ReactNode;
+    preserveCasing?: boolean;
     [index: string]: any;
 } & HTMLAttributes<HTMLButtonElement>;
-export declare const Button: ({ className, primary, fluid, size, children, color, leftIcon, rightIcon, ...props }: ButtonProps) => JSX.Element;
+export declare const Button: ({ className, primary, fluid, size, children, color, leftIcon, rightIcon, preserveCasing, ...props }: ButtonProps) => JSX.Element;
 export {};
