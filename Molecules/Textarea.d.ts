@@ -1,4 +1,4 @@
-import { HTMLAttributes } from "react";
+import React, { HTMLAttributes } from "react";
 type Props = {
     required: boolean;
     label?: string;
@@ -12,5 +12,5 @@ type Props = {
     rows?: number;
     maxLength?: number;
 } & HTMLAttributes<HTMLTextAreaElement>;
-export declare const Textarea: ({ required, label, labelFor, labelClassName, name, className, placeholder, resize, value, rows, maxLength, ...props }: Props) => JSX.Element;
+export declare const Textarea: ({ required, label, labelFor, labelClassName, name, className, placeholder, resize, value, rows, maxLength, ...props }: Props) => React.JSX.Element;
 export {};

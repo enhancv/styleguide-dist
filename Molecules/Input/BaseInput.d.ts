@@ -1,5 +1,5 @@
 import { Props as IconProps } from "../../Atoms/Icon";
-import { HTMLAttributes } from "react";
+import React, { HTMLAttributes } from "react";
 type InputIcon = {
     position?: "left" | "right";
 } & IconProps;
@@ -11,5 +11,5 @@ type Props = {
     size?: "medium" | "large";
     [index: string]: any;
 } & HTMLAttributes<HTMLInputElement>;
-export default function BaseInput({ className, fluid, size, color, icon, ...props }: Props): JSX.Element;
+export default function BaseInput({ className, fluid, size, color, icon, ...props }: Props): React.JSX.Element;
 export {};

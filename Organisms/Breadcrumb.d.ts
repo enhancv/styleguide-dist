@@ -1,3 +1,4 @@
+import React from "react";
 interface Path {
     name: string;
     url: string;
@@ -7,5 +8,5 @@ export interface BreadcrumbProps {
     className?: string;
     eventParams?: {};
 }
-declare const Breadcrumb: ({ paths, className, eventParams, }: BreadcrumbProps) => JSX.Element;
+declare const Breadcrumb: ({ paths, className, eventParams, }: BreadcrumbProps) => React.JSX.Element;
 export default Breadcrumb;

@@ -1,4 +1,4 @@
-import { ReactElement, ReactNode } from "react";
+import React, { ReactElement, ReactNode } from "react";
 import { SizeType } from "../Modal";
 export interface PopupProps {
     title?: string;
@@ -12,5 +12,5 @@ export interface PopupProps {
     onClose: () => void;
     children?: ReactNode;
 }
-declare const PopupModal: ({ title, description, image, buttons, size, className, animationOpening, animationClosing, onClose, children, }: PopupProps) => JSX.Element;
+declare const PopupModal: ({ title, description, image, buttons, size, className, animationOpening, animationClosing, onClose, children, }: PopupProps) => React.JSX.Element;
 export default PopupModal;

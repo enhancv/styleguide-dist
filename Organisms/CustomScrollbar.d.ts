@@ -6,5 +6,5 @@ interface Props {
     children: React.ReactNode;
     height?: string;
 }
-export default function CustomScrollbar({ className, children, style, height, }: Props): JSX.Element;
+export default function CustomScrollbar({ className, children, style, height, }: Props): React.JSX.Element;
 export {};

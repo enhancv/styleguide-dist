@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 export declare enum SizeType {
     XS = "xs",
     SM = "sm",
@@ -15,5 +15,5 @@ export interface ModalProps {
     onClose: () => void;
     children?: ReactNode;
 }
-declare const Modal: ({ size, className, animationOpening, animationClosing, onClose, isCloseButtonHidden, children, }: ModalProps) => JSX.Element;
+declare const Modal: ({ size, className, animationOpening, animationClosing, onClose, isCloseButtonHidden, children, }: ModalProps) => React.JSX.Element;
 export default Modal;

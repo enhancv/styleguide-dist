@@ -1,4 +1,4 @@
-import { ReactElement, ReactNode } from "react";
+import React, { ReactElement, ReactNode } from "react";
 import { SizeType } from "../Modal";
 export interface DialogProps {
     title?: string;
@@ -12,5 +12,5 @@ export interface DialogProps {
     onClose: () => void;
     children?: ReactNode;
 }
-declare const DialogModal: ({ title, description, buttons, size, className, animationOpening, animationClosing, onClose, children, }: DialogProps) => JSX.Element;
+declare const DialogModal: ({ title, description, buttons, size, className, animationOpening, animationClosing, onClose, children, }: DialogProps) => React.JSX.Element;
 export default DialogModal;

@@ -1,4 +1,4 @@
-import { HTMLAttributes, ReactNode } from "react";
+import React, { HTMLAttributes, ReactNode } from "react";
 export declare enum ColorType {
     Green = "green",
     Purple = "purple",
@@ -22,5 +22,5 @@ export type ButtonProps = {
     preserveCasing?: boolean;
     [index: string]: any;
 } & HTMLAttributes<HTMLButtonElement>;
-export declare const Button: ({ className, primary, fluid, size, children, color, leftIcon, rightIcon, preserveCasing, ...props }: ButtonProps) => JSX.Element;
+export declare const Button: ({ className, primary, fluid, size, children, color, leftIcon, rightIcon, preserveCasing, ...props }: ButtonProps) => React.JSX.Element;
 export {};

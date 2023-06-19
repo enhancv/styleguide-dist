@@ -13,4 +13,4 @@ export interface Props {
     skip?: boolean;
     rootMargin?: string;
 }
-export default function OnScrollAnimationWrapper({ children, animation, classNameWrapper, classNameInitialState, threshold, ...props }: Props): JSX.Element;
+export default function OnScrollAnimationWrapper({ children, animation, classNameWrapper, classNameInitialState, threshold, ...props }: Props): React.JSX.Element;

@@ -1,4 +1,4 @@
-import { HTMLAttributes, ReactNode } from "react";
+import React, { HTMLAttributes, ReactNode } from "react";
 declare enum SizeType {
     sm = "sm",
     md = "md"
@@ -18,5 +18,5 @@ export type Props = {
     size?: `${SizeType}`;
     titlePosition?: `${TitlePositionType}`;
 } & HTMLAttributes<HTMLButtonElement>;
-export declare const IconButton: ({ className, primary, children, disabled, title, titlePosition, size, ...props }: Props) => JSX.Element;
+export declare const IconButton: ({ className, primary, children, disabled, title, titlePosition, size, ...props }: Props) => React.JSX.Element;
 export {};
