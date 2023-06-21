@@ -2,6 +2,7 @@ import Icon from "./Atoms/Icon";
 import { Loader } from "./Atoms/Loader";
 import { Button } from "./Molecules/Button";
 import { IconButton } from "./Molecules/IconButton/IconButton";
+import { CopyButton } from "./Molecules/CopyButton/CopyButton";
 import { Checkbox } from "./Molecules/Checkbox";
 import BaseInput from "./Molecules/Input/BaseInput";
 import Input from "./Molecules/Input/Input";
@@ -21,4 +22,4 @@ import PopupModalButtons from "./Organisms/Modal/PopupModal/components/PopupModa
 import ModalCloseButton from "./Organisms/Modal/components/ModalCloseButton";
 import OnScrollAnimationWrapper from "./Animations/OnScrollAnimationWrapper";
 import "./shared/main.scss";
-export { Loader, Button, IconButton, Checkbox, Input, RadioButton, Textarea, Icon, InputGroup, BaseInput, InputLabel, InputError, MultiSlider, Breadcrumb, Modal, DialogModal, DialogModalButtons, PopupModal, PopupModalButtons, ModalCloseButton, CustomScrollbar, OnScrollAnimationWrapper, };
+export { Loader, Button, IconButton, CopyButton, Checkbox, Input, RadioButton, Textarea, Icon, InputGroup, BaseInput, InputLabel, InputError, MultiSlider, Breadcrumb, Modal, DialogModal, DialogModalButtons, PopupModal, PopupModalButtons, ModalCloseButton, CustomScrollbar, OnScrollAnimationWrapper, };
