@@ -14,7 +14,6 @@ $resolutions: "xs", "xsm", "sm", "md", "lg", "xl";
 // // Default Colors Palette
 $primary: #2dc08d;
 $secondary: #8c7cdb;
-$text: #384347;
 $accent: #e3e9f5;
 $info: #3f9cdc;
 $warning: #feb251;
@@ -25,6 +24,8 @@ $white: #ffffff;
 $primary-hover: #57cda4;
 $secondary-hover: #a396e2;
 $danger-hover: #ff687d;
+$info-hover: #52a6df;
+$warning-hover: #feba62;
 
 // // Active elements
 $primary-active: #249a71;
@@ -59,8 +60,8 @@ $danger-30: rgba($danger, 0.3);
 // // Backgrounds
 $surface: $white;
 $surface-accent: #9cb2dc;
-$bg-page: #f5f7fc;
-$bg-page-alt: #fafbfd;
+$page: #f5f7fc;
+$page-alt: #fafbfd;
 
 // // Typography Colors
 $headings: #2d3639;

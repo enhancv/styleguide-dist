@@ -22,4 +22,6 @@ import PopupModalButtons from "./Organisms/Modal/PopupModal/components/PopupModa
 import ModalCloseButton from "./Organisms/Modal/components/ModalCloseButton";
 import OnScrollAnimationWrapper from "./Animations/OnScrollAnimationWrapper";
 import "./shared/main.scss";
-export { Loader, Button, IconButton, CopyButton, Checkbox, Input, RadioButton, Textarea, Icon, InputGroup, BaseInput, InputLabel, InputError, MultiSlider, Breadcrumb, Modal, DialogModal, DialogModalButtons, PopupModal, PopupModalButtons, ModalCloseButton, CustomScrollbar, OnScrollAnimationWrapper, };
+import useIsInBreakpoint from "./utils/isInBreakpoint/useIsInBreakpoint";
+import isInBreakpoint from "./utils/isInBreakpoint/isInBreakpoint";
+export { Loader, Button, IconButton, CopyButton, Checkbox, Input, RadioButton, Textarea, Icon, InputGroup, BaseInput, InputLabel, InputError, MultiSlider, Breadcrumb, Modal, DialogModal, DialogModalButtons, PopupModal, PopupModalButtons, ModalCloseButton, CustomScrollbar, OnScrollAnimationWrapper, useIsInBreakpoint, isInBreakpoint, };
