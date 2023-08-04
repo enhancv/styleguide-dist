@@ -107,6 +107,10 @@ $font-size-xs: 12px;
 $font-size-xs-min: 10px;
 
 // Container
-$container-sm: calc($screen-sm - $base-offset * 4);
-$container-md: calc($screen-md - $base-offset * 4);
-$container-lg: calc($screen-lg - $base-offset * 4);
+$container-sm: $screen-sm - $base-offset * 4;
+$container-md: $screen-md - $base-offset * 4;
+$container-lg: $screen-lg - $base-offset * 4;
+
+// Z-index modal
+$zindex-modal-background: 1002;
+$zindex-modal-content: 1003;
