@@ -776,14 +776,10 @@
 
 @font-face {
   font-family: "enhancvstyleguide";
-  src:url(fonts/enhancvstyleguide.eot);
-  src:url(fonts/enhancvstyleguide.eot?#iefix) format("embedded-opentype"),
-    url(fonts/enhancvstyleguide.woff) format("woff"),
-    url(fonts/enhancvstyleguide.ttf) format("truetype"),
-    url(fonts/enhancvstyleguide.svg#enhancvstyleguide) format("svg");
+  src: url(fonts/enhancvstyleguide.woff) format("woff");
   font-weight: normal;
   font-style: normal;
-
+  font-display: swap;
 }
 
 [data-icon]:before {
