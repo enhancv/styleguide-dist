@@ -1,17 +1,16 @@
 import React, { ReactNode } from "react";
-export interface Props {
-    defaultValue?: Options;
+export interface Props<T = string | number> {
+    value?: T;
     label?: string | JSX.Element;
-    onChange: (value: Options) => void;
+    onChange: (value: T) => void;
     className?: string;
-    options: Options[];
+    options: {
+        value: T;
+        text: string;
+    }[];
     fullWidth?: boolean;
     small?: boolean;
     children?: ReactNode;
 }
-export interface Options {
-    value: string | number;
-    text: string | number;
-}
-declare const SelectDropdown: ({ defaultValue, onChange, className, options, fullWidth, label, children, }: Props) => React.JSX.Element;
+declare function SelectDropdown<T>({ value, onChange, className, options, fullWidth, label, children, }: Props<T>): React.JSX.Element;
 export default SelectDropdown;
