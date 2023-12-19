@@ -1,4 +1,4 @@
-import { Props as IconProps } from "../../Atoms/Icon";
+import { Props as IconProps } from "../../Atoms/Icons/Icon";
 import React, { HTMLAttributes } from "react";
 type InputIcon = {
     position?: "left" | "right";

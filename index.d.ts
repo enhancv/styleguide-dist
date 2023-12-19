@@ -1,4 +1,4 @@
-import Icon from "./Atoms/Icon";
+import Icon from "./Atoms/Icons/Icon";
 import { Loader } from "./Atoms/Loader";
 import { Button } from "./Molecules/Button";
 import { IconButton } from "./Molecules/IconButton/IconButton";

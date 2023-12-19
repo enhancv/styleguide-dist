@@ -9,5 +9,5 @@ export interface MultiSliderProps {
     isForFontSize?: boolean;
     fontSizeNames?: string[];
 }
-declare const MultiSlider: ({ options, option, onChange, title, labelLeft, labelRight, isForFontSize, fontSizeNames }: MultiSliderProps) => React.JSX.Element;
+declare const MultiSlider: ({ options, option, onChange, title, labelLeft, labelRight, isForFontSize, fontSizeNames, }: MultiSliderProps) => React.JSX.Element;
 export default MultiSlider;
