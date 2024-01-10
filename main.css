@@ -776,11 +776,8 @@
 .resume-icon-rocket:before {
   content: "\32";
 }
-.resume-icon-fa-calendar-alt:before {
-  content: "\e091";
-}
-.resume-icon-fa-map-marker-alt:before {
-  content: "\e092";
+.resume-icon-location:before {
+  content: "\e090";
 }
 
 @charset "UTF-8";
