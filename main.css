@@ -23,7 +23,11 @@
 
 @font-face {
   font-family: "resumeicons";
-  src: url(fonts/resumeicons.woff) format("woff");
+  src:url(fonts/resumeicons.eot);
+  src:url(fonts/resumeicons.eot?#iefix) format("embedded-opentype"),
+    url(fonts/resumeicons.woff) format("woff"),
+    url(fonts/resumeicons.ttf) format("truetype"),
+    url(fonts/resumeicons.svg#resumeicons) format("svg");
   font-weight: normal;
   font-style: normal;
 
@@ -112,9 +116,6 @@
 .resume-icon-21-free-star:before {
   content: "\73";
 }
-.resume-icon-23-free-star-two:before {
-  content: "\74";
-}
 .resume-icon-22-free-star-half:before {
   content: "\75";
 }
@@ -198,9 +199,6 @@
 }
 .resume-icon-58-free-share:before {
   content: "\57";
-}
-.resume-icon-64-rocket:before {
-  content: "\32";
 }
 .resume-icon-65-legal:before {
   content: "\33";
@@ -771,6 +769,15 @@
 }
 .resume-icon-bookmarks:before {
   content: "\e08f";
+}
+.resume-icon-star:before {
+  content: "\74";
+}
+.resume-icon-rocket:before {
+  content: "\32";
+}
+.resume-icon-location:before {
+  content: "\e090";
 }
 
 @charset "UTF-8";
