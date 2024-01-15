@@ -22,5 +22,5 @@ export type ButtonProps = {
     preserveCasing?: boolean;
     [index: string]: any;
 } & HTMLAttributes<HTMLButtonElement | HTMLAnchorElement>;
-export declare const Button: ({ className, primary, fluid, size, children, color, leftIcon, rightIcon, preserveCasing, href, ...props }: ButtonProps) => React.JSX.Element;
+export declare const Button: ({ className, primary, fluid, size, children, color, leftIcon, rightIcon, preserveCasing, href, linkBtn, ...props }: ButtonProps) => React.JSX.Element;
 export {};
