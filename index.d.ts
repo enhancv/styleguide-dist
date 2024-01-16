@@ -1,6 +1,7 @@
 import Icon from "./Atoms/Icons/Icon";
 import { Loader } from "./Atoms/Loader";
 import { Button } from "./Molecules/Button";
+import { LinkButton } from "./Molecules/LinkButton/LinkButton";
 import { IconButton } from "./Molecules/IconButton/IconButton";
 import { CopyButton } from "./Molecules/CopyButton/CopyButton";
 import { Checkbox } from "./Molecules/Checkbox";
@@ -26,4 +27,4 @@ import OnScrollAnimationWrapper from "./Animations/OnScrollAnimationWrapper";
 import "./shared/main.scss";
 import useIsInBreakpoint from "./utils/isInBreakpoint/useIsInBreakpoint";
 import isInBreakpoint from "./utils/isInBreakpoint/isInBreakpoint";
-export { Loader, Button, IconButton, CopyButton, Checkbox, Input, RadioButton, Textarea, Icon, InputGroup, BaseInput, InputLabel, InputError, MultiSlider, Breadcrumb, Modal, DialogModal, DialogModalButtons, PopupModal, PopupModalButtons, ModalBackdrop, ModalCloseButton, CustomScrollbar, OnScrollAnimationWrapper, useIsInBreakpoint, isInBreakpoint, SelectDropdown, };
+export { Loader, Button, IconButton, CopyButton, Checkbox, Input, RadioButton, Textarea, LinkButton, Icon, InputGroup, BaseInput, InputLabel, InputError, MultiSlider, Breadcrumb, Modal, DialogModal, DialogModalButtons, PopupModal, PopupModalButtons, ModalBackdrop, ModalCloseButton, CustomScrollbar, OnScrollAnimationWrapper, useIsInBreakpoint, isInBreakpoint, SelectDropdown, };
