@@ -780,6 +780,9 @@
 .resume-icon-location:before {
   content: "\e090";
 }
+.resume-icon-23-free-star-two:before {
+  content: "\e091";
+}
 
 @charset "UTF-8";
 
