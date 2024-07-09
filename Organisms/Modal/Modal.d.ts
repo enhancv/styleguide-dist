@@ -4,7 +4,8 @@ export declare enum SizeType {
     SM = "sm",
     MD = "md",
     LG = "lg",
-    XL = "xl"
+    XL = "xl",
+    FULL = "full"
 }
 export interface ModalProps {
     size?: `${SizeType}`;
