@@ -1,12 +1,25 @@
 // Base Offset
 $base-offset: 8px;
 
-// Brakepoints:
-$screen-xs: 480px; // Extra small screen / phone
-$screen-sm: 768px; // Small screen / tablet
-$screen-md: 992px; // Medium screen / desktop
-$screen-lg: 1200px; // Large screen / wide desktop
-$screen-xl: 1400px; // Large screen / wide desktop
+// Breakpoints
+
+// Phones
+$screen-xs-max: 480px;
+// Big Phones, Small Tablets
+$screen-sm-min: 481px;
+$screen-sm-max: 768px;
+// Tablets
+$screen-md-min: 769px;
+$screen-md-max: 992px;
+// Big Tablets, Small Laptops
+$screen-lg-min: 993px;
+$screen-lg-max: 1200px;
+// Big Laptops, Desktops
+$screen-xl-min: 1201px;
+
+// Custom breakpoints
+$screen-tablet-max: 1280px;
+$screen-xxl-min: 1401px;
 
 $resolutions: "xs", "xsm", "sm", "md", "lg", "xl", "mxl";
 
@@ -109,10 +122,10 @@ $font-size-xs-min: 10px;
 
 // Container - (with padding-inline:16px included)
 $container-xs: 100%;
-$container-sm: 736px; // 12columns x 64px
-$container-md: 956px; // 12columns x 84px
-$container-lg: 1184px; // 12columns x 96px
-$container-xl: 1328px; // 12columns x 108px
+$container-md: 736px; // 12columns x 64px
+$container-lg: 956px; // 12columns x 84px
+$container-xl: 1184px; // 12columns x 96px
+$container-xxl: 1328px; // 12columns x 108px
 
 // Z-index modal
 $zindex-modal-background: 1002;
