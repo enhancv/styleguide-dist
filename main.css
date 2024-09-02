@@ -777,11 +777,14 @@
 .resume-icon-64-rocket:before {
   content: "\32";
 }
-.resume-icon-location:before {
-  content: "\e090";
-}
 .resume-icon-23-free-star-two:before {
   content: "\e091";
+}
+.resume-icon-figma:before {
+  content: "\e090";
+}
+.resume-icon-location:before {
+  content: "\e092";
 }
 
 @charset "UTF-8";
