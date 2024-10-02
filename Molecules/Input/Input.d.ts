@@ -10,9 +10,10 @@ type Props = {
     fluid?: boolean;
     error?: string;
     icon?: InputIcon;
-    size?: "medium" | "large" | "fluid";
+    size?: "medium" | "large" | "small";
+    disabled?: boolean;
     [index: string]: any;
     onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 } & HTMLAttributes<HTMLInputElement>;
-export default function Input({ name, label, className, fluid, error, size, icon, color, ...props }: Props): React.JSX.Element;
+export default function Input({ name, label, className, fluid, error, size, icon, color, disabled, ...props }: Props): React.JSX.Element;
 export {};
