@@ -858,6 +858,9 @@
 .resume-icon-fa-map-marker-alt:before {
   content: "\e0aa";
 }
+.resume-icon-fa-user:before {
+  content: "\e0ab";
+}
 
 @charset "UTF-8";
 
