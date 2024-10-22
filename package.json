@@ -1,6 +1,6 @@
 {
     "name": "enhancv-styleguide",
-    "version": "0.1.394",
+    "version": "0.1.395",
     "private": true,
     "main": "index.js",
     "types": "index.d.ts",

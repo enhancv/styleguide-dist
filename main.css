@@ -786,6 +786,78 @@
 .resume-icon-location:before {
   content: "\e092";
 }
+.resume-icon-fa-envelope:before {
+  content: "\e093";
+}
+.resume-icon-fa-flag:before {
+  content: "\e094";
+}
+.resume-icon-fa-file-alt:before {
+  content: "\e095";
+}
+.resume-icon-fa-user-tie:before {
+  content: "\e096";
+}
+.resume-icon-fa-atlas:before {
+  content: "\e097";
+}
+.resume-icon-fa-rocket:before {
+  content: "\e098";
+}
+.resume-icon-fa-trophy:before {
+  content: "\e099";
+}
+.resume-icon-fa-book:before {
+  content: "\e09a";
+}
+.resume-icon-fa-award:before {
+  content: "\e09b";
+}
+.resume-icon-fa-star:before {
+  content: "\e09c";
+}
+.resume-icon-fa-chart-pie:before {
+  content: "\e09d";
+}
+.resume-icon-fa-graduation-cap:before {
+  content: "\e09e";
+}
+.resume-icon-fa-fa-language:before {
+  content: "\e09f";
+}
+.resume-icon-fa-heart:before {
+  content: "\e0a0";
+}
+.resume-icon-fa-quote-left-solid:before {
+  content: "\e0a1";
+}
+.resume-icon-fa-envelope-open-text:before {
+  content: "\e0a2";
+}
+.resume-icon-fa-dice-d6:before {
+  content: "\e0a3";
+}
+.resume-icon-fa-portrait:before {
+  content: "\e0a4";
+}
+.resume-icon-fa-hands-helping:before {
+  content: "\e0a5";
+}
+.resume-icon-fa-hand-holding-heart:before {
+  content: "\e0a6";
+}
+.resume-icon-fa-phone-alt:before {
+  content: "\e0a7";
+}
+.resume-icon-enhancv-email:before {
+  content: "\e0a8";
+}
+.resume-icon-fa-link:before {
+  content: "\e0a9";
+}
+.resume-icon-fa-map-marker-alt:before {
+  content: "\e0aa";
+}
 
 @charset "UTF-8";
 
