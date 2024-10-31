@@ -9,7 +9,8 @@ export type ButtonProps = {
     size?: `${SizeType}`;
     children?: ReactNode;
     preserveCasing?: boolean;
+    showIconTargetBlank?: boolean;
     [index: string]: any;
 } & HTMLAttributes<HTMLButtonElement | HTMLAnchorElement>;
-export declare const LinkButton: ({ className, size, children, preserveCasing, href, ...props }: ButtonProps) => React.JSX.Element;
+export declare const LinkButton: ({ className, size, children, preserveCasing, showIconTargetBlank, href, ...props }: ButtonProps) => React.JSX.Element;
 export {};
