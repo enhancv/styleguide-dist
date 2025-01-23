@@ -372,9 +372,6 @@
 .resume-icon-28-instagram:before {
   content: "\e039";
 }
-.resume-icon-29-twitter:before {
-  content: "\e03a";
-}
 .resume-icon-27-pinterest-1:before {
   content: "\e03b";
 }
@@ -860,6 +857,9 @@
 }
 .resume-icon-fa-user:before {
   content: "\e0ab";
+}
+.resume-icon-29-twitter:before {
+  content: "\e0ac";
 }
 
 @charset "UTF-8";
