@@ -1,7 +1,8 @@
 import React, { HTMLAttributes, ReactNode } from "react";
 declare enum SizeType {
     sm = "sm",
-    md = "md"
+    md = "md",
+    lg = "lg"
 }
 declare enum TitlePositionType {
     top = "top",
