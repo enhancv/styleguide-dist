@@ -1,16 +1,14 @@
-import React, { HTMLAttributes } from "react";
-type Props = {
+import React from "react";
+export declare const Textarea: React.ForwardRefExoticComponent<{
     required: boolean;
-    label?: string;
-    labelFor?: string;
-    labelClassName?: string;
-    name?: string;
-    className?: string;
-    placeholder?: string;
-    resize?: boolean;
-    value?: string;
-    rows?: number;
-    maxLength?: number;
-} & HTMLAttributes<HTMLTextAreaElement>;
-export declare const Textarea: ({ required, label, labelFor, labelClassName, name, className, placeholder, resize, value, rows, maxLength, ...props }: Props) => React.JSX.Element;
-export {};
+    label?: string | undefined;
+    labelFor?: string | undefined;
+    labelClassName?: string | undefined;
+    name?: string | undefined;
+    className?: string | undefined;
+    placeholder?: string | undefined;
+    resize?: boolean | undefined;
+    value?: string | undefined;
+    rows?: number | undefined;
+    maxLength?: number | undefined;
+} & React.HTMLAttributes<HTMLTextAreaElement> & React.RefAttributes<HTMLTextAreaElement>>;
