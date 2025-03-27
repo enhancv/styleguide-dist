@@ -861,6 +861,9 @@
 .resume-icon-29-twitter:before {
   content: "\e0ac";
 }
+.resume-icon-fa-flag-fill:before {
+  content: "\e03a";
+}
 
 @charset "UTF-8";
 
