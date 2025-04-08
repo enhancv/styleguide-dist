@@ -4,6 +4,7 @@ export interface Props<T = string | number> {
     label?: string | JSX.Element;
     onChange: (value: T) => void;
     className?: string;
+    openClassName?: string;
     options: {
         value: T;
         text: string;
@@ -12,5 +13,5 @@ export interface Props<T = string | number> {
     small?: boolean;
     children?: ReactNode;
 }
-declare function SelectDropdown<T>({ value, onChange, className, options, fullWidth, label, children, }: Props<T>): React.JSX.Element;
+declare function SelectDropdown<T>({ value, onChange, className, openClassName, options, fullWidth, label, children, }: Props<T>): React.JSX.Element;
 export default SelectDropdown;
