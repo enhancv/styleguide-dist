@@ -6,6 +6,7 @@ export interface SliderProps {
     value?: number;
     title?: string;
     onChange?: (value: number) => void;
+    className?: string;
 }
 declare const Slider: React.FC<SliderProps>;
 export default Slider;
