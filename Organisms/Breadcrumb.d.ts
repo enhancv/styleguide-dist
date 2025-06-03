@@ -2,6 +2,7 @@ import React from "react";
 interface Path {
     name: string;
     url: string;
+    isHome?: boolean;
 }
 export interface BreadcrumbProps {
     paths: Path[];
