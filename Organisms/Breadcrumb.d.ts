@@ -11,8 +11,9 @@ export interface BreadcrumbProps {
 }
 /**
  * Renders a responsive breadcrumb navigation component
- * On mobile (xs breakpoint) with more than 2 items, shows only the second-to-last item with a back chevron
- * Otherwise shows the full breadcrumb path
+ * Uses CSS classes for responsive behavior instead of isInBreakpoint because it's causing errors in the website/app build:
+ * - Full view is shown on larger screens (hidden-xs)
+ * - Compact view is shown on mobile (hidden-sm hidden-mxl) only when items > 2
  */
 declare const Breadcrumb: ({ paths, className, eventParams, }: BreadcrumbProps) => React.JSX.Element | null;
 export default Breadcrumb;
