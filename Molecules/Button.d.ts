@@ -3,7 +3,8 @@ export declare enum ColorType {
     Green = "green",
     Purple = "purple",
     Red = "red",
-    Grey = "grey"
+    Grey = "grey",
+    White = "white"
 }
 declare enum SizeType {
     Small = "small",
