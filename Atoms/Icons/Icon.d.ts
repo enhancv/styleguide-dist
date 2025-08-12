@@ -3,6 +3,7 @@ export interface Props {
     icon: string;
     className?: string;
     style?: object;
+    onClick?: () => void;
 }
-declare const Icon: ({ icon, className, style }: Props) => React.JSX.Element;
+declare const Icon: ({ icon, className, style, onClick }: Props) => React.JSX.Element;
 export default Icon;
