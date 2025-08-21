@@ -1,5 +1,6 @@
 import React, { HTMLAttributes, ReactNode } from "react";
 declare enum SizeType {
+    XSmall = "xsmall",
     Small = "small",
     Medium = "medium",
     Large = "large"
