@@ -29,4 +29,5 @@ import "./shared/main.scss";
 import useIsInBreakpoint from "./utils/isInBreakpoint/useIsInBreakpoint";
 import isInBreakpoint from "./utils/isInBreakpoint/isInBreakpoint";
 import ButtonConfigContext from "./Molecules/ButtonConfigContext";
-export { Loader, Button, IconButton, CopyButton, Checkbox, Input, RadioButton, Textarea, LinkButton, Icon, InputGroup, BaseInput, InputLabel, InputError, MultiSlider, Breadcrumb, Modal, DialogModal, DialogModalButtons, PopupModal, PopupModalButtons, ModalBackdrop, ModalCloseButton, CustomScrollbar, OnScrollAnimationWrapper, useIsInBreakpoint, isInBreakpoint, SelectDropdown, ButtonConfigContext, Slider, };
+import ToggleButton from "./Molecules/ToggleButton";
+export { Loader, Button, IconButton, CopyButton, Checkbox, Input, RadioButton, Textarea, LinkButton, Icon, InputGroup, BaseInput, InputLabel, InputError, MultiSlider, Breadcrumb, Modal, DialogModal, DialogModalButtons, PopupModal, PopupModalButtons, ModalBackdrop, ModalCloseButton, CustomScrollbar, OnScrollAnimationWrapper, useIsInBreakpoint, isInBreakpoint, SelectDropdown, ButtonConfigContext, Slider, ToggleButton, };
