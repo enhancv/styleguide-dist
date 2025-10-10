@@ -7,6 +7,7 @@ export interface Props {
     flipped?: boolean;
     fullWidth?: boolean;
     small?: boolean;
+    disabled?: boolean;
 }
-declare const ToggleButton: ({ value, label, onChange, className, flipped, fullWidth, small, }: Props) => React.JSX.Element;
+declare const ToggleButton: ({ value, label, onChange, className, flipped, fullWidth, small, disabled, }: Props) => React.JSX.Element;
 export default ToggleButton;
