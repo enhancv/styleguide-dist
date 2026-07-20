@@ -18,6 +18,10 @@ export type Props = {
     title?: string;
     size?: `${SizeType}`;
     titlePosition?: `${TitlePositionType}`;
-} & HTMLAttributes<HTMLButtonElement>;
-export declare const IconButton: ({ className, primary, children, disabled, title, titlePosition, size, ...props }: Props) => React.JSX.Element;
+    href?: string;
+    /** Not a prop — use `href`; internal paths render the injected router Link automatically. */
+    to?: never;
+    [index: string]: any;
+} & HTMLAttributes<HTMLButtonElement | HTMLAnchorElement>;
+export declare const IconButton: ({ className, primary, children, disabled, title, titlePosition, size, href, to, ...props }: Props) => React.JSX.Element;
 export {};

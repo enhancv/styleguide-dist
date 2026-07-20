@@ -12,7 +12,10 @@ export type ButtonProps = {
     preserveCasing?: boolean;
     showArrowIcon?: boolean;
     showIconTargetBlank?: boolean;
+    href?: string;
+    /** Not a prop — use `href`; internal paths render the injected router Link automatically. */
+    to?: never;
     [index: string]: any;
 } & HTMLAttributes<HTMLButtonElement | HTMLAnchorElement>;
-export declare const LinkButton: ({ className, size, children, preserveCasing, showArrowIcon, showIconTargetBlank, href, ...props }: ButtonProps) => React.JSX.Element;
+export declare const LinkButton: ({ className, size, children, preserveCasing, showArrowIcon, showIconTargetBlank, href, to, ...props }: ButtonProps) => React.JSX.Element;
 export {};
