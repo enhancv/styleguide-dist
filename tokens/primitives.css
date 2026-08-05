@@ -1,0 +1,10 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ * by tokens/build.mjs from tokens/input/ (level: primitives).
+ */
+
+@import "./primitives/color.css";
+@import "./primitives/layout.css";
+@import "./primitives/shape.css";
+@import "./primitives/spacing.css";
+@import "./primitives/type.css";

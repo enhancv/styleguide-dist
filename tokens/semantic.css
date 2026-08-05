@@ -1,0 +1,121 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ * by tokens/build.mjs from tokens/input/ (level: semantic; modes: mobile → tablet → desktop).
+ */
+
+:root {
+  --display-xl-font: var(--primitives-font-family-rubik);
+  --display-xl-weight: var(--primitives-font-weight-medium);
+  --display-xl-size: var(--primitives-font-size-38);
+  --display-xl-line-height: var(--primitives-line-height-48);
+  --display-xl-tracking: var(--primitives-tracking-normal);
+  --display-l-font: var(--primitives-font-family-rubik);
+  --display-l-weight: var(--primitives-font-weight-medium);
+  --display-l-size: var(--primitives-font-size-28);
+  --display-l-line-height: var(--primitives-line-height-36);
+  --display-l-tracking: var(--primitives-tracking-normal);
+  --heading-xl-font: var(--primitives-font-family-rubik);
+  --heading-xl-weight: var(--primitives-font-weight-medium);
+  --heading-xl-size: var(--primitives-font-size-24);
+  --heading-xl-line-height: var(--primitives-line-height-32);
+  --heading-xl-tracking: var(--primitives-tracking-normal);
+  --heading-l-font: var(--primitives-font-family-rubik);
+  --heading-l-weight: var(--primitives-font-weight-regular);
+  --heading-l-size: var(--primitives-font-size-22);
+  --heading-l-line-height: var(--primitives-line-height-24);
+  --heading-l-tracking: var(--primitives-tracking-normal);
+  --heading-m-font: var(--primitives-font-family-rubik);
+  --heading-m-weight: var(--primitives-font-weight-regular);
+  --heading-m-size: var(--primitives-font-size-20);
+  --heading-m-line-height: var(--primitives-line-height-24);
+  --heading-m-tracking: var(--primitives-tracking-normal);
+  --heading-s-font: var(--primitives-font-family-rubik);
+  --heading-s-weight: var(--primitives-font-weight-regular);
+  --heading-s-size: var(--primitives-font-size-18);
+  --heading-s-line-height: var(--primitives-line-height-24);
+  --heading-s-tracking: var(--primitives-tracking-normal);
+  --heading-xs-font: var(--primitives-font-family-rubik);
+  --heading-xs-weight: var(--primitives-font-weight-regular);
+  --heading-xs-size: var(--primitives-font-size-14);
+  --heading-xs-line-height: var(--primitives-line-height-20);
+  --heading-xs-tracking: var(--primitives-tracking-normal);
+  --body-xl-font: var(--primitives-font-family-inter);
+  --body-xl-weight: var(--primitives-font-weight-regular);
+  --body-xl-size: var(--primitives-font-size-20);
+  --body-xl-line-height: var(--primitives-line-height-36);
+  --body-xl-tracking: var(--primitives-tracking-normal);
+  --body-l-font: var(--primitives-font-family-inter);
+  --body-l-weight: var(--primitives-font-weight-regular);
+  --body-l-size: var(--primitives-font-size-18);
+  --body-l-line-height: var(--primitives-line-height-28);
+  --body-l-tracking: var(--primitives-tracking-normal);
+  --body-m-font: var(--primitives-font-family-inter);
+  --body-m-weight: var(--primitives-font-weight-regular);
+  --body-m-size: var(--primitives-font-size-16);
+  --body-m-line-height: var(--primitives-line-height-24);
+  --body-m-tracking: var(--primitives-tracking-normal);
+  --body-s-font: var(--primitives-font-family-inter);
+  --body-s-weight: var(--primitives-font-weight-regular);
+  --body-s-size: var(--primitives-font-size-14);
+  --body-s-line-height: var(--primitives-line-height-20);
+  --body-s-tracking: var(--primitives-tracking-normal);
+  --body-xs-font: var(--primitives-font-family-inter);
+  --body-xs-weight: var(--primitives-font-weight-regular);
+  --body-xs-size: var(--primitives-font-size-12);
+  --body-xs-line-height: var(--primitives-line-height-18);
+  --body-xs-tracking: var(--primitives-tracking-normal);
+  --layout-container: 390px;
+  --radius-control: var(--primitives-radius-8);
+  --radius-card: var(--primitives-radius-12);
+  --radius-overlay: var(--primitives-radius-24);
+  --radius-pill: var(--primitives-radius-full);
+  --stroke-none: var(--primitives-border-0);
+  --stroke-default: var(--primitives-border-1);
+  --stroke-strong: var(--primitives-border-2);
+  --stroke-heavy: var(--primitives-border-4);
+  --spacing-0: var(--primitives-spacing-0);
+  --spacing-4: var(--primitives-spacing-4);
+  --spacing-8: var(--primitives-spacing-8);
+  --spacing-12: var(--primitives-spacing-12);
+  --spacing-16: var(--primitives-spacing-16);
+  --spacing-20: var(--primitives-spacing-20);
+  --spacing-24: var(--primitives-spacing-24);
+  --spacing-28: var(--primitives-spacing-28);
+  --spacing-32: var(--primitives-spacing-32);
+  --spacing-36: var(--primitives-spacing-36);
+  --spacing-40: var(--primitives-spacing-40);
+  --spacing-48: var(--primitives-spacing-48);
+  --spacing-56: var(--primitives-spacing-56);
+  --spacing-64: var(--primitives-spacing-64);
+  --spacing-72: var(--primitives-spacing-72);
+  --spacing-80: var(--primitives-spacing-80);
+  --spacing-96: var(--primitives-spacing-96);
+  --spacing-112: var(--primitives-spacing-112);
+  --spacing-128: var(--primitives-spacing-128);
+}
+
+/* tablet — min-width from primitives/breakpoint/md */
+@media (min-width: 769px) {
+  :root {
+    --display-xl-size: var(--primitives-font-size-58);
+    --display-xl-line-height: var(--primitives-line-height-76);
+    --display-l-size: var(--primitives-font-size-48);
+    --display-l-line-height: var(--primitives-line-height-56);
+    --heading-xl-size: var(--primitives-font-size-38);
+    --heading-xl-line-height: var(--primitives-line-height-48);
+    --heading-l-size: var(--primitives-font-size-32);
+    --heading-l-line-height: var(--primitives-line-height-40);
+    --heading-m-size: var(--primitives-font-size-26);
+    --heading-m-line-height: var(--primitives-line-height-32);
+    --heading-s-size: var(--primitives-font-size-22);
+    --heading-s-line-height: var(--primitives-line-height-28);
+    --layout-container: var(--primitives-container-md);
+  }
+}
+
+/* desktop — min-width from primitives/breakpoint/lg */
+@media (min-width: 993px) {
+  :root {
+    --layout-container: var(--primitives-container-xxl);
+  }
+}

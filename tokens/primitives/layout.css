@@ -1,0 +1,20 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --primitives-breakpoint-xs: 0px;
+  --primitives-breakpoint-sm: 481px;
+  --primitives-breakpoint-md: 769px;
+  --primitives-breakpoint-lg: 993px;
+  --primitives-breakpoint-xl: 1201px;
+  --primitives-breakpoint-xxl: 1401px;
+  --primitives-breakpoint-tablet-max: 1280px;
+  --primitives-container-md: 736px;
+  --primitives-container-lg: 956px;
+  --primitives-container-xl: 1184px;
+  --primitives-container-xxl: 1328px;
+  --primitives-grid-columns: 12;
+  --primitives-grid-gutter: 24px;
+  --primitives-grid-margin: 24px;
+}

@@ -1,0 +1,101 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --primitives-brand-50: #ecfdf5; /** Hex #ECFDF5 */
+  --primitives-brand-100: #d2f9e6; /** Hex #D2F9E6 */
+  --primitives-brand-200: #a8f2d1; /** Hex #A8F2D1 */
+  --primitives-brand-300: #70e5b9; /** Hex #70E5B9 */
+  --primitives-brand-400: #2dc08d; /** Hex #2DC08D */
+  --primitives-brand-500: #13b683; /** Hex #13B683 */
+  --primitives-brand-600: #08936a; /** Hex #08936A */
+  --primitives-brand-700: #067658; /** Hex #067658 */
+  --primitives-brand-800: #085d47; /** Hex #085D47 */
+  --primitives-brand-900: #074d3c; /** Hex #074D3C */
+  --primitives-brand-950: #032b22; /** Hex #032B22 */
+  --primitives-purple-50: #f5f5fd;
+  --primitives-purple-100: #edecfb;
+  --primitives-purple-200: #dddcf8;
+  --primitives-purple-300: #c2bff3;
+  --primitives-purple-400: #a39aeb;
+  --primitives-purple-500: #8271e3;
+  --primitives-purple-600: #7053d4;
+  --primitives-purple-700: #6141c0;
+  --primitives-purple-800: #5136a1;
+  --primitives-purple-900: #442e84;
+  --primitives-purple-950: #291c59;
+  --primitives-slate-50: #fafafa;
+  --primitives-slate-100: #f3f5f6;
+  --primitives-slate-200: #e2e7e9;
+  --primitives-slate-300: #d2d8da;
+  --primitives-slate-400: #9baab0;
+  --primitives-slate-500: #6b7a80;
+  --primitives-slate-600: #4c5b61;
+  --primitives-slate-700: #384347;
+  --primitives-slate-800: #252a2c;
+  --primitives-slate-900: #161b1d;
+  --primitives-slate-950: #080b0c;
+  --primitives-sky-50: #f2f7fd;
+  --primitives-sky-100: #e4effa;
+  --primitives-sky-200: #c3def4;
+  --primitives-sky-300: #8dc4ec;
+  --primitives-sky-400: #3f9cdc;
+  --primitives-sky-500: #2a8acd;
+  --primitives-sky-600: #1b6dae;
+  --primitives-sky-700: #17578d;
+  --primitives-sky-800: #174b75;
+  --primitives-sky-900: #193f61;
+  --primitives-sky-950: #102841;
+  --primitives-blue-50: #eff6ff;
+  --primitives-blue-100: #daebff;
+  --primitives-blue-200: #bedcff;
+  --primitives-blue-300: #91c7ff;
+  --primitives-blue-400: #5da8fd;
+  --primitives-blue-500: #2d7ff9;
+  --primitives-blue-600: #2266ee;
+  --primitives-blue-700: #1a51db;
+  --primitives-blue-800: #1b42b2;
+  --primitives-blue-900: #1c3c8c;
+  --primitives-blue-950: #162655;
+  --primitives-red-50: #fff1f2;
+  --primitives-red-100: #ffe3e5;
+  --primitives-red-200: #ffccd2;
+  --primitives-red-300: #ffa1ac;
+  --primitives-red-400: #ff576f;
+  --primitives-red-500: #f93a5a;
+  --primitives-red-600: #e71744;
+  --primitives-red-700: #c30d39;
+  --primitives-red-800: #a30e37;
+  --primitives-red-900: #8b1036;
+  --primitives-red-950: #4e0318;
+  --primitives-amber-50: #fff9ed;
+  --primitives-amber-100: #fff1d4;
+  --primitives-amber-200: #ffe1a9;
+  --primitives-amber-300: #ffca72;
+  --primitives-amber-400: #feb251;
+  --primitives-amber-500: #fc8c13;
+  --primitives-amber-600: #ed7009;
+  --primitives-amber-700: #c55509;
+  --primitives-amber-800: #9c4210;
+  --primitives-amber-900: #7e3810;
+  --primitives-amber-950: #441a06;
+  --primitives-neutral-white: #ffffff;
+  --primitives-neutral-black: #000000;
+  --primitives-overlay-black-8: rgba(0, 0, 0, 0.08);
+  --primitives-overlay-black-16: rgba(0, 0, 0, 0.16);
+  --primitives-overlay-black-40: rgba(0, 0, 0, 0.4);
+  --primitives-overlay-black-60: rgba(0, 0, 0, 0.6);
+  --primitives-overlay-white-16: rgba(255, 255, 255, 0.16);
+  --primitives-green-50: #eefff3;
+  --primitives-green-100: #d7ffe5;
+  --primitives-green-200: #b2ffcd;
+  --primitives-green-300: #76ffa7;
+  --primitives-green-400: #33f579;
+  --primitives-green-500: #09de56;
+  --primitives-green-600: #00b341;
+  --primitives-green-700: #049138;
+  --primitives-green-800: #0a7131;
+  --primitives-green-900: #0a5d2a;
+  --primitives-green-950: #003415;
+}
