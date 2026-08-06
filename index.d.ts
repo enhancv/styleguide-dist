@@ -26,6 +26,7 @@ import ModalBackdrop from "./Organisms/Modal/components/ModalBackdrop";
 import ModalCloseButton from "./Organisms/Modal/components/ModalCloseButton";
 import OnScrollAnimationWrapper from "./Animations/OnScrollAnimationWrapper";
 import "./shared/main.scss";
+import "./tokens/utilities.css";
 import useIsInBreakpoint from "./utils/isInBreakpoint/useIsInBreakpoint";
 import isInBreakpoint from "./utils/isInBreakpoint/isInBreakpoint";
 import ButtonConfigContext from "./Molecules/ButtonConfigContext";
