@@ -6,6 +6,7 @@
  * import "./utilities.css" separately where they are wanted.
  */
 
+@import "./layers.css";
 @import "./primitives.css";
 @import "./semantic.css";
 @import "./theme.css";

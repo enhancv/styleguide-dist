@@ -3,6 +3,7 @@
  * by tokens/build.mjs from the spacing scale.
  */
 
+@layer utilities {
 .m-0 { margin: var(--spacing-0); }
 .m-4 { margin: var(--spacing-4); }
 .m-8 { margin: var(--spacing-8); }
@@ -2663,4 +2664,5 @@
   .gap-column-96-mxl { column-gap: var(--spacing-96); }
   .gap-column-112-mxl { column-gap: var(--spacing-112); }
   .gap-column-128-mxl { column-gap: var(--spacing-128); }
+}
 }
