@@ -3,8 +3,10 @@
  * by tokens/build.mjs.
  *
  * The styleguide's cascade, declared: legacy globals lose to the
- * components' CSS, which loses to the spacing utilities. Later
- * layers win regardless of import order and selector specificity.
+ * consumers' element resets (wrap them in @layer reset), which
+ * lose to the components' CSS, which loses to the spacing
+ * utilities. Later layers win regardless of import order and
+ * selector specificity.
  */
 
-@layer legacy, components, utilities;
+@layer legacy, reset, components, utilities;

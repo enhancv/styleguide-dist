@@ -3,11 +3,13 @@
  * by tokens/build.mjs.
  *
  * The styleguide's cascade, declared: legacy globals lose to the
- * components' CSS, which loses to the spacing utilities. Later
- * layers win regardless of import order and selector specificity.
+ * consumers' element resets (wrap them in @layer reset), which
+ * lose to the components' CSS, which loses to the spacing
+ * utilities. Later layers win regardless of import order and
+ * selector specificity.
  */
 
-@layer legacy, components, utilities;
+@layer legacy, reset, components, utilities;
 
 @layer components{.ugyeXRyVp1Kg8kYay3xMiA\=\={display:block !important;line-height:1;vertical-align:middle}.ugyeXRyVp1Kg8kYay3xMiA\=\=::before{display:block !important;vertical-align:middle}}
 @layer components{.jWadHYMZjCbWIMbY-Q\+RYg\=\=::before{display:block;vertical-align:top;animation:VTXFgPB-BKZy8mdDA9TLbg\=\= 2s infinite linear}@keyframes VTXFgPB-BKZy8mdDA9TLbg\=\={0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}.a9xwSKgd-0iRYpTyrlQvKw\=\={font-size:14px;height:14px}._0tiIyZswdxuajNN\+5rHf5w\=\={font-size:16px;height:16px}.ixKzouvkv6Tj5CqGVgIz8w\=\={font-size:18px;height:18px}}
@@ -36,11 +38,13 @@
  * by tokens/build.mjs.
  *
  * The styleguide's cascade, declared: legacy globals lose to the
- * components' CSS, which loses to the spacing utilities. Later
- * layers win regardless of import order and selector specificity.
+ * consumers' element resets (wrap them in @layer reset), which
+ * lose to the components' CSS, which loses to the spacing
+ * utilities. Later layers win regardless of import order and
+ * selector specificity.
  */
 
-@layer legacy, components, utilities;
+@layer legacy, reset, components, utilities;
 
 /**
  * Do not edit directly, this file was auto-generated.
@@ -3322,9 +3326,8 @@
   color: inherit;
 }
 
-.Text-module__text--BrHx7[data-color="primary"] {
-  color: var(--text-primary);
-}
+/* No primary rule: it is the base .text color and the component omits the
+   attribute at the default. */
 
 .Text-module__text--BrHx7[data-color="secondary"] {
   color: var(--text-secondary);
