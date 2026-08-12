@@ -3,4 +3,4 @@
  * by tokens/build.mjs.
  */
 
-@layer legacy, reset, components, utilities;
+@layer reset, legacy, components, utilities;
