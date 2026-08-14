@@ -11,7 +11,8 @@ export type HeadingProps = PolymorphicProps<HeadingElement, HeadingOwnProps>;
 /**
  * A heading, styled by rank. `level` sets the style and the tag together; `as`
  * overrides the tag only, for when the outline needs a different rank than the
- * design. For heading-sized text that is not a heading, use `Text`.
+ * design. The display and heading ramps render only through this component —
+ * `Text` carries the body ramp.
  */
 declare const Heading: React.ForwardRefExoticComponent<HeadingOwnProps & {
     as?: HeadingElement | undefined;
