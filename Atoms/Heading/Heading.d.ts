@@ -1,5 +1,5 @@
-import React from "react";
-import type { PolymorphicProps } from "../../types/polymorphic";
+import type { TextElement } from "../Text/TextPrimitive";
+import type { PolymorphicComponent, PolymorphicProps } from "../../types/polymorphic";
 import type { TextStyleProps } from "../../types/text";
 export type HeadingElement = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 export type HeadingLevel = 1 | 2 | 3 | 4 | 5 | 6 | 7;
@@ -7,14 +7,13 @@ interface HeadingOwnProps extends TextStyleProps {
     /** Sets both the style and the tag. */
     level: HeadingLevel;
 }
-export type HeadingProps = PolymorphicProps<HeadingElement, HeadingOwnProps>;
+export type HeadingProps<E extends TextElement = HeadingElement> = PolymorphicProps<E, HeadingOwnProps>;
 /**
  * A heading, styled by rank. `level` sets the style and the tag together; `as`
- * overrides the tag only, for when the outline needs a different rank than the
- * design. The display and heading ramps render only through this component —
- * `Text` carries the body ramp.
+ * overrides the tag only — a different heading tag when the outline needs
+ * another rank, or a non-heading tag for heading-styled text that must stay
+ * out of the outline. The display and heading ramps render only through this
+ * component — `Text` carries the body ramp.
  */
-declare const Heading: React.ForwardRefExoticComponent<HeadingOwnProps & {
-    as?: HeadingElement | undefined;
-} & Omit<Omit<React.DetailedHTMLProps<React.HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>, "ref">, "as" | keyof HeadingOwnProps> & React.RefAttributes<HTMLHeadingElement>>;
-export { Heading };
+export declare const Heading: PolymorphicComponent<TextElement, HeadingElement, HeadingOwnProps>;
+export {};
