@@ -50,6 +50,17 @@
   --primitives-brand-800: #085d47; /** Hex #085D47 */
   --primitives-brand-900: #074d3c; /** Hex #074D3C */
   --primitives-brand-950: #032b22; /** Hex #032B22 */
+  --primitives-blue-50: #eff6ff;
+  --primitives-blue-100: #daebff;
+  --primitives-blue-200: #bedcff;
+  --primitives-blue-300: #91c7ff;
+  --primitives-blue-400: #5da8fd;
+  --primitives-blue-500: #2d7ff9;
+  --primitives-blue-600: #2266ee;
+  --primitives-blue-700: #1a51db;
+  --primitives-blue-800: #1b42b2;
+  --primitives-blue-900: #1c3c8c;
+  --primitives-blue-950: #162655;
   --primitives-purple-50: #f5f5fd;
   --primitives-purple-100: #edecfb;
   --primitives-purple-200: #dddcf8;
@@ -61,6 +72,28 @@
   --primitives-purple-800: #5136a1;
   --primitives-purple-900: #442e84;
   --primitives-purple-950: #291c59;
+  --primitives-grey-50: #f9fafb;
+  --primitives-grey-100: #f3f4f6;
+  --primitives-grey-200: #e5e7eb;
+  --primitives-grey-300: #d1d5dc;
+  --primitives-grey-400: #9ba2b0;
+  --primitives-grey-500: #6a7181;
+  --primitives-grey-600: #4a5464;
+  --primitives-grey-700: #364052;
+  --primitives-grey-800: #1e2838;
+  --primitives-grey-900: #101728;
+  --primitives-grey-950: #020613;
+  --primitives-amber-50: #fff9ed;
+  --primitives-amber-100: #fff1d4;
+  --primitives-amber-200: #ffe1a9;
+  --primitives-amber-300: #ffca72;
+  --primitives-amber-400: #feb251;
+  --primitives-amber-500: #fc8c13;
+  --primitives-amber-600: #ed7009;
+  --primitives-amber-700: #c55509;
+  --primitives-amber-800: #9c4210;
+  --primitives-amber-900: #7e3810;
+  --primitives-amber-950: #441a06;
   --primitives-slate-50: #fafafa;
   --primitives-slate-100: #f3f5f6;
   --primitives-slate-200: #e2e7e9;
@@ -83,17 +116,6 @@
   --primitives-sky-800: #174b75;
   --primitives-sky-900: #193f61;
   --primitives-sky-950: #102841;
-  --primitives-blue-50: #eff6ff;
-  --primitives-blue-100: #daebff;
-  --primitives-blue-200: #bedcff;
-  --primitives-blue-300: #91c7ff;
-  --primitives-blue-400: #5da8fd;
-  --primitives-blue-500: #2d7ff9;
-  --primitives-blue-600: #2266ee;
-  --primitives-blue-700: #1a51db;
-  --primitives-blue-800: #1b42b2;
-  --primitives-blue-900: #1c3c8c;
-  --primitives-blue-950: #162655;
   --primitives-red-50: #fff1f2;
   --primitives-red-100: #ffe3e5;
   --primitives-red-200: #ffccd2;
@@ -105,17 +127,6 @@
   --primitives-red-800: #a30e37;
   --primitives-red-900: #8b1036;
   --primitives-red-950: #4e0318;
-  --primitives-amber-50: #fff9ed;
-  --primitives-amber-100: #fff1d4;
-  --primitives-amber-200: #ffe1a9;
-  --primitives-amber-300: #ffca72;
-  --primitives-amber-400: #feb251;
-  --primitives-amber-500: #fc8c13;
-  --primitives-amber-600: #ed7009;
-  --primitives-amber-700: #c55509;
-  --primitives-amber-800: #9c4210;
-  --primitives-amber-900: #7e3810;
-  --primitives-amber-950: #441a06;
   --primitives-neutral-white: #ffffff;
   --primitives-neutral-black: #000000;
   --primitives-overlay-black-8: rgba(0, 0, 0, 0.08);
@@ -168,7 +179,7 @@
   --primitives-radius-12: 12px;
   --primitives-radius-24: 24px;
   --primitives-radius-32: 32px;
-  --primitives-radius-49: 49px;
+  --primitives-radius-48: 48px;
   --primitives-radius-full: 999px;
   --primitives-border-0: 0px;
   --primitives-border-1: 1px;
@@ -388,24 +399,94 @@
   --background-brand-alpha-10: color-mix(in srgb, var(--primitives-brand-400) 10%, transparent);
   --background-brand-alpha-20: color-mix(in srgb, var(--primitives-brand-400) 20%, transparent);
   --background-brand-alpha-30: color-mix(in srgb, var(--primitives-brand-400) 30%, transparent);
+  --background-brand-alpha-40: color-mix(in srgb, var(--primitives-brand-400) 40%, transparent);
+  --background-brand-alpha-50: color-mix(in srgb, var(--primitives-brand-400) 50%, transparent);
+  --background-brand-alpha-60: color-mix(in srgb, var(--primitives-brand-400) 60%, transparent);
+  --background-brand-alpha-70: color-mix(in srgb, var(--primitives-brand-400) 70%, transparent);
+  --background-brand-alpha-80: color-mix(in srgb, var(--primitives-brand-400) 80%, transparent);
+  --background-brand-alpha-90: color-mix(in srgb, var(--primitives-brand-400) 90%, transparent);
   --background-success-alpha-10: color-mix(in srgb, var(--primitives-green-700) 10%, transparent);
   --background-success-alpha-20: color-mix(in srgb, var(--primitives-green-700) 20%, transparent);
   --background-success-alpha-30: color-mix(in srgb, var(--primitives-green-700) 30%, transparent);
+  --background-success-alpha-40: color-mix(in srgb, var(--primitives-green-700) 40%, transparent);
+  --background-success-alpha-50: color-mix(in srgb, var(--primitives-green-700) 50%, transparent);
+  --background-success-alpha-60: color-mix(in srgb, var(--primitives-green-700) 60%, transparent);
+  --background-success-alpha-70: color-mix(in srgb, var(--primitives-green-700) 70%, transparent);
+  --background-success-alpha-80: color-mix(in srgb, var(--primitives-green-700) 80%, transparent);
+  --background-success-alpha-90: color-mix(in srgb, var(--primitives-green-700) 90%, transparent);
   --background-warning-alpha-10: color-mix(in srgb, var(--primitives-amber-500) 10%, transparent);
   --background-warning-alpha-20: color-mix(in srgb, var(--primitives-amber-500) 20%, transparent);
   --background-warning-alpha-30: color-mix(in srgb, var(--primitives-amber-500) 30%, transparent);
+  --background-warning-alpha-40: color-mix(in srgb, var(--primitives-amber-500) 40%, transparent);
+  --background-warning-alpha-50: color-mix(in srgb, var(--primitives-amber-500) 50%, transparent);
+  --background-warning-alpha-60: color-mix(in srgb, var(--primitives-amber-500) 60%, transparent);
+  --background-warning-alpha-70: color-mix(in srgb, var(--primitives-amber-500) 70%, transparent);
+  --background-warning-alpha-80: color-mix(in srgb, var(--primitives-amber-500) 80%, transparent);
+  --background-warning-alpha-90: color-mix(in srgb, var(--primitives-amber-500) 90%, transparent);
   --background-danger-alpha-10: color-mix(in srgb, var(--primitives-red-600) 10%, transparent);
   --background-danger-alpha-20: color-mix(in srgb, var(--primitives-red-600) 20%, transparent);
   --background-danger-alpha-30: color-mix(in srgb, var(--primitives-red-600) 30%, transparent);
+  --background-danger-alpha-40: color-mix(in srgb, var(--primitives-red-600) 40%, transparent);
+  --background-danger-alpha-50: color-mix(in srgb, var(--primitives-red-600) 50%, transparent);
+  --background-danger-alpha-60: color-mix(in srgb, var(--primitives-red-600) 60%, transparent);
+  --background-danger-alpha-70: color-mix(in srgb, var(--primitives-red-600) 70%, transparent);
+  --background-danger-alpha-80: color-mix(in srgb, var(--primitives-red-600) 80%, transparent);
+  --background-danger-alpha-90: color-mix(in srgb, var(--primitives-red-600) 90%, transparent);
   --background-accent-alpha-10: color-mix(in srgb, var(--primitives-purple-500) 10%, transparent);
   --background-accent-alpha-20: color-mix(in srgb, var(--primitives-purple-500) 20%, transparent);
   --background-accent-alpha-30: color-mix(in srgb, var(--primitives-purple-500) 30%, transparent);
+  --background-accent-alpha-40: color-mix(in srgb, var(--primitives-purple-500) 40%, transparent);
+  --background-accent-alpha-50: color-mix(in srgb, var(--primitives-purple-500) 50%, transparent);
+  --background-accent-alpha-60: color-mix(in srgb, var(--primitives-purple-500) 60%, transparent);
+  --background-accent-alpha-70: color-mix(in srgb, var(--primitives-purple-500) 70%, transparent);
+  --background-accent-alpha-80: color-mix(in srgb, var(--primitives-purple-500) 80%, transparent);
+  --background-accent-alpha-90: color-mix(in srgb, var(--primitives-purple-500) 90%, transparent);
+  --background-neutral-alpha-10: color-mix(in srgb, var(--primitives-slate-950) 10%, transparent);
+  --background-neutral-alpha-20: color-mix(in srgb, var(--primitives-slate-950) 20%, transparent);
   --background-neutral-alpha-30: color-mix(in srgb, var(--primitives-slate-950) 30%, transparent);
-  --background-page: var(--primitives-neutral-white);
-  --background-default: var(--primitives-neutral-white);
-  --background-subtle: var(--primitives-slate-50);
-  --background-inverse: var(--primitives-slate-900);
-  --background-overlay: var(--primitives-overlay-black-60);
+  --background-neutral-alpha-40: color-mix(in srgb, var(--primitives-slate-950) 40%, transparent);
+  --background-neutral-alpha-50: color-mix(in srgb, var(--primitives-slate-950) 50%, transparent);
+  --background-neutral-alpha-60: color-mix(in srgb, var(--primitives-slate-950) 60%, transparent);
+  --background-neutral-alpha-70: color-mix(in srgb, var(--primitives-slate-950) 70%, transparent);
+  --background-neutral-alpha-80: color-mix(in srgb, var(--primitives-slate-950) 80%, transparent);
+  --background-neutral-alpha-90: color-mix(in srgb, var(--primitives-slate-950) 90%, transparent);
+  --background-info-alpha-10: color-mix(in srgb, var(--primitives-sky-500) 10%, transparent);
+  --background-info-alpha-20: color-mix(in srgb, var(--primitives-sky-500) 20%, transparent);
+  --background-info-alpha-30: color-mix(in srgb, var(--primitives-sky-500) 30%, transparent);
+  --background-info-alpha-40: color-mix(in srgb, var(--primitives-sky-500) 40%, transparent);
+  --background-info-alpha-50: color-mix(in srgb, var(--primitives-sky-500) 50%, transparent);
+  --background-info-alpha-60: color-mix(in srgb, var(--primitives-sky-500) 60%, transparent);
+  --background-info-alpha-70: color-mix(in srgb, var(--primitives-sky-500) 70%, transparent);
+  --background-info-alpha-80: color-mix(in srgb, var(--primitives-sky-500) 80%, transparent);
+  --background-info-alpha-90: color-mix(in srgb, var(--primitives-sky-500) 90%, transparent);
+  --text-primary: var(--primitives-slate-900);
+  --text-secondary: var(--primitives-slate-700);
+  --text-tertiary: var(--primitives-grey-500);
+  --text-quaternary: var(--primitives-grey-400);
+  --text-inverse: var(--primitives-neutral-white);
+  --text-link: var(--primitives-purple-600);
+  --text-brand: var(--primitives-brand-700);
+  --text-accent: var(--primitives-purple-700);
+  --text-success: var(--primitives-green-700);
+  --text-warning: var(--primitives-amber-700);
+  --text-danger: var(--primitives-red-700);
+  --text-info: var(--primitives-sky-500);
+  --text-muted: var(--primitives-grey-500);
+  --text-disabled: var(--primitives-grey-400);
+  --border-subtle: var(--primitives-grey-100);
+  --border-default: var(--primitives-grey-200);
+  --border-strong: var(--primitives-grey-300);
+  --border-brand-subtle: var(--primitives-brand-200);
+  --border-success-subtle: var(--primitives-green-200);
+  --border-warning-subtle: var(--primitives-amber-200);
+  --border-danger-subtle: var(--primitives-red-200);
+  --border-accent-subtle: var(--primitives-purple-200);
+  --border-brand: var(--primitives-brand-500);
+  --border-accent: var(--primitives-purple-700);
+  --border-success: var(--primitives-green-500);
+  --border-warning: var(--primitives-amber-500);
+  --border-danger: var(--primitives-red-500);
+  --border-neutral: var(--primitives-slate-950);
   --background-brand-subtle: var(--primitives-brand-50);
   --background-brand-solid: var(--primitives-brand-400);
   --background-brand-solid-hover: var(--primitives-brand-500);
@@ -426,70 +507,40 @@
   --background-accent-solid: var(--primitives-purple-500);
   --background-accent-solid-hover: var(--primitives-purple-600);
   --background-accent-solid-active: var(--primitives-purple-700);
+  --background-neutral-subtle: var(--primitives-slate-50);
   --background-neutral-solid: var(--primitives-slate-950);
   --background-neutral-solid-hover: var(--primitives-slate-700);
   --background-neutral-solid-active: var(--primitives-slate-600);
-  --text-primary: var(--primitives-slate-900);
-  --text-secondary: var(--primitives-slate-600);
-  --text-muted: var(--primitives-slate-500);
-  --text-disabled: var(--primitives-slate-400);
-  --text-inverse: var(--primitives-neutral-white);
-  --text-link: var(--primitives-purple-600);
-  --text-on-brand: var(--primitives-neutral-white);
-  --text-on-accent: var(--primitives-neutral-white);
-  --text-on-success: var(--primitives-neutral-white);
-  --text-on-warning: var(--primitives-slate-900);
-  --text-on-danger: var(--primitives-neutral-white);
-  --text-brand: var(--primitives-brand-700);
-  --text-accent: var(--primitives-purple-700);
-  --text-success: var(--primitives-green-700);
-  --text-warning: var(--primitives-amber-700);
-  --text-danger: var(--primitives-red-700);
-  --text-on-neutral: var(--primitives-neutral-white);
-  --icon-brand: var(--primitives-brand-400);
-  --icon-accent: var(--primitives-purple-700);
-  --icon-danger: var(--primitives-red-700);
-  --icon-disabled: var(--primitives-slate-400);
-  --icon-inverse: var(--primitives-neutral-white);
-  --icon-muted: var(--primitives-slate-500);
-  --icon-neutral: var(--primitives-slate-900);
-  --icon-success: var(--primitives-green-700);
-  --icon-warning: var(--primitives-amber-700);
-  --border-subtle: var(--primitives-slate-100);
-  --border-default: var(--primitives-slate-200);
-  --border-strong: var(--primitives-slate-300);
-  --border-brand-subtle: var(--primitives-brand-200);
-  --border-success-subtle: var(--primitives-green-200);
-  --border-warning-subtle: var(--primitives-amber-200);
-  --border-danger-subtle: var(--primitives-red-200);
-  --border-accent-subtle: var(--primitives-purple-200);
-  --border-brand: var(--primitives-brand-500);
-  --border-accent: var(--primitives-purple-700);
-  --border-success: var(--primitives-green-500);
-  --border-warning: var(--primitives-amber-500);
-  --border-danger: var(--primitives-red-500);
-  --border-neutral: var(--primitives-slate-950);
+  --background-info-subtle: var(--primitives-sky-50);
+  --background-info-solid: var(--primitives-sky-500);
+  --background-info-solid-hover: var(--primitives-sky-700);
+  --background-info-solid-active: var(--primitives-sky-800);
   --button-primary: var(--primitives-brand-400);
   --button-primary-hover: var(--primitives-brand-300);
   --button-primary-active: var(--primitives-brand-600);
   --button-secondary: var(--primitives-purple-700);
   --button-secondary-hover: var(--primitives-purple-400);
   --button-secondary-active: var(--primitives-purple-800);
-  --button-tertiary: var(--primitives-neutral-white);
-  --button-tertiary-hover: var(--primitives-slate-50);
-  --button-tertiary-active: var(--primitives-slate-50);
   --button-danger: var(--primitives-red-600);
   --button-danger-hover: var(--primitives-red-700);
   --button-danger-active: var(--primitives-red-800);
-  --button-warning: var(--primitives-amber-500);
-  --button-warning-hover: var(--primitives-amber-600);
-  --button-warning-active: var(--primitives-amber-700);
-  --button-success: var(--primitives-green-700);
-  --button-success-hover: var(--primitives-green-800);
-  --button-success-active: var(--primitives-green-900);
   --button-neutral: var(--primitives-slate-950);
   --button-neutral-hover: var(--primitives-slate-700);
   --button-neutral-active: var(--primitives-slate-600);
+  --icon-primary: var(--primitives-slate-900);
+  --icon-secondary: var(--primitives-slate-700);
+  --icon-tertiary: var(--primitives-grey-500);
+  --icon-quaternary: var(--primitives-grey-400);
+  --icon-inverse: var(--primitives-neutral-white);
+  --icon-link: var(--primitives-purple-600);
+  --icon-brand: var(--primitives-brand-700);
+  --icon-accent: var(--primitives-purple-700);
+  --icon-success: var(--primitives-green-700);
+  --icon-warning: var(--primitives-amber-700);
+  --icon-danger: var(--primitives-red-700);
+  --icon-info: var(--primitives-sky-500);
+  --icon-muted: var(--primitives-grey-500);
+  --icon-disabled: var(--primitives-grey-400);
 }
 
 /**
@@ -5898,6 +5949,14 @@
     color: var(--text-secondary);
   }
 
+  .Text-module__text--BrHx7[data-color="tertiary"] {
+    color: var(--text-tertiary);
+  }
+
+  .Text-module__text--BrHx7[data-color="quaternary"] {
+    color: var(--text-quaternary);
+  }
+
   .Text-module__text--BrHx7[data-color="muted"] {
     color: var(--text-muted);
   }
@@ -5934,28 +5993,8 @@
     color: var(--text-danger);
   }
 
-  .Text-module__text--BrHx7[data-color="onBrand"] {
-    color: var(--text-on-brand);
-  }
-
-  .Text-module__text--BrHx7[data-color="onAccent"] {
-    color: var(--text-on-accent);
-  }
-
-  .Text-module__text--BrHx7[data-color="onSuccess"] {
-    color: var(--text-on-success);
-  }
-
-  .Text-module__text--BrHx7[data-color="onWarning"] {
-    color: var(--text-on-warning);
-  }
-
-  .Text-module__text--BrHx7[data-color="onDanger"] {
-    color: var(--text-on-danger);
-  }
-
-  .Text-module__text--BrHx7[data-color="onNeutral"] {
-    color: var(--text-on-neutral);
+  .Text-module__text--BrHx7[data-color="info"] {
+    color: var(--text-info);
   }
 
   .Text-module__text--BrHx7[data-align="start"] {

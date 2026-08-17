@@ -3,11 +3,6 @@
  * by tokens/build.mjs from tokens/input/ (level: theme).
  */
 export declare const background: {
-    readonly page: "var(--background-page)";
-    readonly default: "var(--background-default)";
-    readonly subtle: "var(--background-subtle)";
-    readonly inverse: "var(--background-inverse)";
-    readonly overlay: "var(--background-overlay)";
     readonly brand: {
         readonly subtle: "var(--background-brand-subtle)";
         readonly solid: "var(--background-brand-solid)";
@@ -16,6 +11,12 @@ export declare const background: {
         readonly alpha10: "var(--background-brand-alpha-10)";
         readonly alpha20: "var(--background-brand-alpha-20)";
         readonly alpha30: "var(--background-brand-alpha-30)";
+        readonly alpha40: "var(--background-brand-alpha-40)";
+        readonly alpha50: "var(--background-brand-alpha-50)";
+        readonly alpha60: "var(--background-brand-alpha-60)";
+        readonly alpha70: "var(--background-brand-alpha-70)";
+        readonly alpha80: "var(--background-brand-alpha-80)";
+        readonly alpha90: "var(--background-brand-alpha-90)";
     };
     readonly success: {
         readonly subtle: "var(--background-success-subtle)";
@@ -25,6 +26,12 @@ export declare const background: {
         readonly alpha10: "var(--background-success-alpha-10)";
         readonly alpha20: "var(--background-success-alpha-20)";
         readonly alpha30: "var(--background-success-alpha-30)";
+        readonly alpha40: "var(--background-success-alpha-40)";
+        readonly alpha50: "var(--background-success-alpha-50)";
+        readonly alpha60: "var(--background-success-alpha-60)";
+        readonly alpha70: "var(--background-success-alpha-70)";
+        readonly alpha80: "var(--background-success-alpha-80)";
+        readonly alpha90: "var(--background-success-alpha-90)";
     };
     readonly warning: {
         readonly subtle: "var(--background-warning-subtle)";
@@ -34,6 +41,12 @@ export declare const background: {
         readonly alpha10: "var(--background-warning-alpha-10)";
         readonly alpha20: "var(--background-warning-alpha-20)";
         readonly alpha30: "var(--background-warning-alpha-30)";
+        readonly alpha40: "var(--background-warning-alpha-40)";
+        readonly alpha50: "var(--background-warning-alpha-50)";
+        readonly alpha60: "var(--background-warning-alpha-60)";
+        readonly alpha70: "var(--background-warning-alpha-70)";
+        readonly alpha80: "var(--background-warning-alpha-80)";
+        readonly alpha90: "var(--background-warning-alpha-90)";
     };
     readonly danger: {
         readonly subtle: "var(--background-danger-subtle)";
@@ -43,6 +56,12 @@ export declare const background: {
         readonly alpha10: "var(--background-danger-alpha-10)";
         readonly alpha20: "var(--background-danger-alpha-20)";
         readonly alpha30: "var(--background-danger-alpha-30)";
+        readonly alpha40: "var(--background-danger-alpha-40)";
+        readonly alpha50: "var(--background-danger-alpha-50)";
+        readonly alpha60: "var(--background-danger-alpha-60)";
+        readonly alpha70: "var(--background-danger-alpha-70)";
+        readonly alpha80: "var(--background-danger-alpha-80)";
+        readonly alpha90: "var(--background-danger-alpha-90)";
     };
     readonly accent: {
         readonly subtle: "var(--background-accent-subtle)";
@@ -52,12 +71,42 @@ export declare const background: {
         readonly alpha10: "var(--background-accent-alpha-10)";
         readonly alpha20: "var(--background-accent-alpha-20)";
         readonly alpha30: "var(--background-accent-alpha-30)";
+        readonly alpha40: "var(--background-accent-alpha-40)";
+        readonly alpha50: "var(--background-accent-alpha-50)";
+        readonly alpha60: "var(--background-accent-alpha-60)";
+        readonly alpha70: "var(--background-accent-alpha-70)";
+        readonly alpha80: "var(--background-accent-alpha-80)";
+        readonly alpha90: "var(--background-accent-alpha-90)";
     };
     readonly neutral: {
+        readonly subtle: "var(--background-neutral-subtle)";
         readonly solid: "var(--background-neutral-solid)";
         readonly solidHover: "var(--background-neutral-solid-hover)";
         readonly solidActive: "var(--background-neutral-solid-active)";
+        readonly alpha10: "var(--background-neutral-alpha-10)";
+        readonly alpha20: "var(--background-neutral-alpha-20)";
         readonly alpha30: "var(--background-neutral-alpha-30)";
+        readonly alpha40: "var(--background-neutral-alpha-40)";
+        readonly alpha50: "var(--background-neutral-alpha-50)";
+        readonly alpha60: "var(--background-neutral-alpha-60)";
+        readonly alpha70: "var(--background-neutral-alpha-70)";
+        readonly alpha80: "var(--background-neutral-alpha-80)";
+        readonly alpha90: "var(--background-neutral-alpha-90)";
+    };
+    readonly info: {
+        readonly subtle: "var(--background-info-subtle)";
+        readonly solid: "var(--background-info-solid)";
+        readonly solidHover: "var(--background-info-solid-hover)";
+        readonly solidActive: "var(--background-info-solid-active)";
+        readonly alpha10: "var(--background-info-alpha-10)";
+        readonly alpha20: "var(--background-info-alpha-20)";
+        readonly alpha30: "var(--background-info-alpha-30)";
+        readonly alpha40: "var(--background-info-alpha-40)";
+        readonly alpha50: "var(--background-info-alpha-50)";
+        readonly alpha60: "var(--background-info-alpha-60)";
+        readonly alpha70: "var(--background-info-alpha-70)";
+        readonly alpha80: "var(--background-info-alpha-80)";
+        readonly alpha90: "var(--background-info-alpha-90)";
     };
 };
 export declare const border: {
@@ -83,51 +132,44 @@ export declare const button: {
     readonly secondary: "var(--button-secondary)";
     readonly secondaryHover: "var(--button-secondary-hover)";
     readonly secondaryActive: "var(--button-secondary-active)";
-    readonly tertiary: "var(--button-tertiary)";
-    readonly tertiaryHover: "var(--button-tertiary-hover)";
-    readonly tertiaryActive: "var(--button-tertiary-active)";
     readonly danger: "var(--button-danger)";
     readonly dangerHover: "var(--button-danger-hover)";
     readonly dangerActive: "var(--button-danger-active)";
-    readonly warning: "var(--button-warning)";
-    readonly warningHover: "var(--button-warning-hover)";
-    readonly warningActive: "var(--button-warning-active)";
-    readonly success: "var(--button-success)";
-    readonly successHover: "var(--button-success-hover)";
-    readonly successActive: "var(--button-success-active)";
     readonly neutral: "var(--button-neutral)";
     readonly neutralHover: "var(--button-neutral-hover)";
     readonly neutralActive: "var(--button-neutral-active)";
 };
 export declare const icon: {
+    readonly primary: "var(--icon-primary)";
+    readonly secondary: "var(--icon-secondary)";
+    readonly tertiary: "var(--icon-tertiary)";
+    readonly quaternary: "var(--icon-quaternary)";
+    readonly inverse: "var(--icon-inverse)";
+    readonly link: "var(--icon-link)";
     readonly brand: "var(--icon-brand)";
     readonly accent: "var(--icon-accent)";
-    readonly danger: "var(--icon-danger)";
-    readonly disabled: "var(--icon-disabled)";
-    readonly inverse: "var(--icon-inverse)";
-    readonly muted: "var(--icon-muted)";
-    readonly neutral: "var(--icon-neutral)";
     readonly success: "var(--icon-success)";
     readonly warning: "var(--icon-warning)";
+    readonly danger: "var(--icon-danger)";
+    readonly info: "var(--icon-info)";
+    readonly muted: "var(--icon-muted)";
+    readonly disabled: "var(--icon-disabled)";
 };
 export declare const text: {
     readonly primary: "var(--text-primary)";
     readonly secondary: "var(--text-secondary)";
-    readonly muted: "var(--text-muted)";
-    readonly disabled: "var(--text-disabled)";
+    readonly tertiary: "var(--text-tertiary)";
+    readonly quaternary: "var(--text-quaternary)";
     readonly inverse: "var(--text-inverse)";
     readonly link: "var(--text-link)";
-    readonly onBrand: "var(--text-on-brand)";
-    readonly onAccent: "var(--text-on-accent)";
-    readonly onSuccess: "var(--text-on-success)";
-    readonly onWarning: "var(--text-on-warning)";
-    readonly onDanger: "var(--text-on-danger)";
     readonly brand: "var(--text-brand)";
     readonly accent: "var(--text-accent)";
     readonly success: "var(--text-success)";
     readonly warning: "var(--text-warning)";
     readonly danger: "var(--text-danger)";
-    readonly onNeutral: "var(--text-on-neutral)";
+    readonly info: "var(--text-info)";
+    readonly muted: "var(--text-muted)";
+    readonly disabled: "var(--text-disabled)";
 };
 type Leaves<T> = T extends string ? T : {
     [K in keyof T]: Leaves<T[K]>;

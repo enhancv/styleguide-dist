@@ -16,6 +16,19 @@ export declare const color: {
         readonly 900: "var(--primitives-brand-900)";
         readonly 950: "var(--primitives-brand-950)";
     };
+    readonly blue: {
+        readonly 50: "var(--primitives-blue-50)";
+        readonly 100: "var(--primitives-blue-100)";
+        readonly 200: "var(--primitives-blue-200)";
+        readonly 300: "var(--primitives-blue-300)";
+        readonly 400: "var(--primitives-blue-400)";
+        readonly 500: "var(--primitives-blue-500)";
+        readonly 600: "var(--primitives-blue-600)";
+        readonly 700: "var(--primitives-blue-700)";
+        readonly 800: "var(--primitives-blue-800)";
+        readonly 900: "var(--primitives-blue-900)";
+        readonly 950: "var(--primitives-blue-950)";
+    };
     readonly purple: {
         readonly 50: "var(--primitives-purple-50)";
         readonly 100: "var(--primitives-purple-100)";
@@ -28,6 +41,32 @@ export declare const color: {
         readonly 800: "var(--primitives-purple-800)";
         readonly 900: "var(--primitives-purple-900)";
         readonly 950: "var(--primitives-purple-950)";
+    };
+    readonly grey: {
+        readonly 50: "var(--primitives-grey-50)";
+        readonly 100: "var(--primitives-grey-100)";
+        readonly 200: "var(--primitives-grey-200)";
+        readonly 300: "var(--primitives-grey-300)";
+        readonly 400: "var(--primitives-grey-400)";
+        readonly 500: "var(--primitives-grey-500)";
+        readonly 600: "var(--primitives-grey-600)";
+        readonly 700: "var(--primitives-grey-700)";
+        readonly 800: "var(--primitives-grey-800)";
+        readonly 900: "var(--primitives-grey-900)";
+        readonly 950: "var(--primitives-grey-950)";
+    };
+    readonly amber: {
+        readonly 50: "var(--primitives-amber-50)";
+        readonly 100: "var(--primitives-amber-100)";
+        readonly 200: "var(--primitives-amber-200)";
+        readonly 300: "var(--primitives-amber-300)";
+        readonly 400: "var(--primitives-amber-400)";
+        readonly 500: "var(--primitives-amber-500)";
+        readonly 600: "var(--primitives-amber-600)";
+        readonly 700: "var(--primitives-amber-700)";
+        readonly 800: "var(--primitives-amber-800)";
+        readonly 900: "var(--primitives-amber-900)";
+        readonly 950: "var(--primitives-amber-950)";
     };
     readonly slate: {
         readonly 50: "var(--primitives-slate-50)";
@@ -55,19 +94,6 @@ export declare const color: {
         readonly 900: "var(--primitives-sky-900)";
         readonly 950: "var(--primitives-sky-950)";
     };
-    readonly blue: {
-        readonly 50: "var(--primitives-blue-50)";
-        readonly 100: "var(--primitives-blue-100)";
-        readonly 200: "var(--primitives-blue-200)";
-        readonly 300: "var(--primitives-blue-300)";
-        readonly 400: "var(--primitives-blue-400)";
-        readonly 500: "var(--primitives-blue-500)";
-        readonly 600: "var(--primitives-blue-600)";
-        readonly 700: "var(--primitives-blue-700)";
-        readonly 800: "var(--primitives-blue-800)";
-        readonly 900: "var(--primitives-blue-900)";
-        readonly 950: "var(--primitives-blue-950)";
-    };
     readonly red: {
         readonly 50: "var(--primitives-red-50)";
         readonly 100: "var(--primitives-red-100)";
@@ -80,19 +106,6 @@ export declare const color: {
         readonly 800: "var(--primitives-red-800)";
         readonly 900: "var(--primitives-red-900)";
         readonly 950: "var(--primitives-red-950)";
-    };
-    readonly amber: {
-        readonly 50: "var(--primitives-amber-50)";
-        readonly 100: "var(--primitives-amber-100)";
-        readonly 200: "var(--primitives-amber-200)";
-        readonly 300: "var(--primitives-amber-300)";
-        readonly 400: "var(--primitives-amber-400)";
-        readonly 500: "var(--primitives-amber-500)";
-        readonly 600: "var(--primitives-amber-600)";
-        readonly 700: "var(--primitives-amber-700)";
-        readonly 800: "var(--primitives-amber-800)";
-        readonly 900: "var(--primitives-amber-900)";
-        readonly 950: "var(--primitives-amber-950)";
     };
     readonly neutral: {
         readonly white: "var(--primitives-neutral-white)";
@@ -149,7 +162,7 @@ export declare const shape: {
         readonly 12: "var(--primitives-radius-12)";
         readonly 24: "var(--primitives-radius-24)";
         readonly 32: "var(--primitives-radius-32)";
-        readonly 49: "var(--primitives-radius-49)";
+        readonly 48: "var(--primitives-radius-48)";
         readonly full: "var(--primitives-radius-full)";
     };
     readonly border: {
