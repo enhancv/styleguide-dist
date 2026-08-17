@@ -1,0 +1,137 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ * by tokens/build.mjs from the theme text tokens and font-weight primitives.
+ */
+
+@layer utilities {
+.text-color-primary { color: var(--text-primary); }
+.text-color-secondary { color: var(--text-secondary); }
+.text-color-tertiary { color: var(--text-tertiary); }
+.text-color-quaternary { color: var(--text-quaternary); }
+.text-color-inverse { color: var(--text-inverse); }
+.text-color-link { color: var(--text-link); }
+.text-color-brand { color: var(--text-brand); }
+.text-color-accent { color: var(--text-accent); }
+.text-color-success { color: var(--text-success); }
+.text-color-warning { color: var(--text-warning); }
+.text-color-danger { color: var(--text-danger); }
+.text-color-info { color: var(--text-info); }
+.text-color-muted { color: var(--text-muted); }
+.text-color-disabled { color: var(--text-disabled); }
+.hover\:text-color-primary:hover { color: var(--text-primary); }
+.hover\:text-color-secondary:hover { color: var(--text-secondary); }
+.hover\:text-color-tertiary:hover { color: var(--text-tertiary); }
+.hover\:text-color-quaternary:hover { color: var(--text-quaternary); }
+.hover\:text-color-inverse:hover { color: var(--text-inverse); }
+.hover\:text-color-link:hover { color: var(--text-link); }
+.hover\:text-color-brand:hover { color: var(--text-brand); }
+.hover\:text-color-accent:hover { color: var(--text-accent); }
+.hover\:text-color-success:hover { color: var(--text-success); }
+.hover\:text-color-warning:hover { color: var(--text-warning); }
+.hover\:text-color-danger:hover { color: var(--text-danger); }
+.hover\:text-color-info:hover { color: var(--text-info); }
+.hover\:text-color-muted:hover { color: var(--text-muted); }
+.hover\:text-color-disabled:hover { color: var(--text-disabled); }
+.font-weight-regular { font-weight: var(--primitives-font-weight-regular); }
+.font-weight-medium { font-weight: var(--primitives-font-weight-medium); }
+.font-weight-semibold { font-weight: var(--primitives-font-weight-semibold); }
+.font-weight-bold { font-weight: var(--primitives-font-weight-bold); }
+.font-weight-light { font-weight: var(--primitives-font-weight-light); }
+.text-align-start { text-align: start; }
+.text-align-center { text-align: center; }
+.text-align-end { text-align: end; }
+.text-italic { font-style: italic; }
+.text-decoration-underline { text-decoration: underline; }
+.text-decoration-overline { text-decoration: overline; }
+.text-decoration-line-through { text-decoration: line-through; }
+.text-decoration-none { text-decoration: none; }
+.text-transform-uppercase { text-transform: uppercase; }
+.text-transform-lowercase { text-transform: lowercase; }
+.text-transform-capitalize { text-transform: capitalize; }
+.line-height-normal { line-height: normal; }
+.line-height-inherit { line-height: inherit; }
+
+@media (max-width: 480px) {
+  .font-weight-regular-xs { font-weight: var(--primitives-font-weight-regular); }
+  .font-weight-medium-xs { font-weight: var(--primitives-font-weight-medium); }
+  .font-weight-semibold-xs { font-weight: var(--primitives-font-weight-semibold); }
+  .font-weight-bold-xs { font-weight: var(--primitives-font-weight-bold); }
+  .font-weight-light-xs { font-weight: var(--primitives-font-weight-light); }
+  .text-align-start-xs { text-align: start; }
+  .text-align-center-xs { text-align: center; }
+  .text-align-end-xs { text-align: end; }
+  .text-italic-xs { font-style: italic; }
+}
+
+@media (max-width: 768px) {
+  .font-weight-regular-xsm { font-weight: var(--primitives-font-weight-regular); }
+  .font-weight-medium-xsm { font-weight: var(--primitives-font-weight-medium); }
+  .font-weight-semibold-xsm { font-weight: var(--primitives-font-weight-semibold); }
+  .font-weight-bold-xsm { font-weight: var(--primitives-font-weight-bold); }
+  .font-weight-light-xsm { font-weight: var(--primitives-font-weight-light); }
+  .text-align-start-xsm { text-align: start; }
+  .text-align-center-xsm { text-align: center; }
+  .text-align-end-xsm { text-align: end; }
+  .text-italic-xsm { font-style: italic; }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .font-weight-regular-sm { font-weight: var(--primitives-font-weight-regular); }
+  .font-weight-medium-sm { font-weight: var(--primitives-font-weight-medium); }
+  .font-weight-semibold-sm { font-weight: var(--primitives-font-weight-semibold); }
+  .font-weight-bold-sm { font-weight: var(--primitives-font-weight-bold); }
+  .font-weight-light-sm { font-weight: var(--primitives-font-weight-light); }
+  .text-align-start-sm { text-align: start; }
+  .text-align-center-sm { text-align: center; }
+  .text-align-end-sm { text-align: end; }
+  .text-italic-sm { font-style: italic; }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .font-weight-regular-md { font-weight: var(--primitives-font-weight-regular); }
+  .font-weight-medium-md { font-weight: var(--primitives-font-weight-medium); }
+  .font-weight-semibold-md { font-weight: var(--primitives-font-weight-semibold); }
+  .font-weight-bold-md { font-weight: var(--primitives-font-weight-bold); }
+  .font-weight-light-md { font-weight: var(--primitives-font-weight-light); }
+  .text-align-start-md { text-align: start; }
+  .text-align-center-md { text-align: center; }
+  .text-align-end-md { text-align: end; }
+  .text-italic-md { font-style: italic; }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .font-weight-regular-lg { font-weight: var(--primitives-font-weight-regular); }
+  .font-weight-medium-lg { font-weight: var(--primitives-font-weight-medium); }
+  .font-weight-semibold-lg { font-weight: var(--primitives-font-weight-semibold); }
+  .font-weight-bold-lg { font-weight: var(--primitives-font-weight-bold); }
+  .font-weight-light-lg { font-weight: var(--primitives-font-weight-light); }
+  .text-align-start-lg { text-align: start; }
+  .text-align-center-lg { text-align: center; }
+  .text-align-end-lg { text-align: end; }
+  .text-italic-lg { font-style: italic; }
+}
+
+@media (min-width: 1201px) {
+  .font-weight-regular-xl { font-weight: var(--primitives-font-weight-regular); }
+  .font-weight-medium-xl { font-weight: var(--primitives-font-weight-medium); }
+  .font-weight-semibold-xl { font-weight: var(--primitives-font-weight-semibold); }
+  .font-weight-bold-xl { font-weight: var(--primitives-font-weight-bold); }
+  .font-weight-light-xl { font-weight: var(--primitives-font-weight-light); }
+  .text-align-start-xl { text-align: start; }
+  .text-align-center-xl { text-align: center; }
+  .text-align-end-xl { text-align: end; }
+  .text-italic-xl { font-style: italic; }
+}
+
+@media (min-width: 769px) {
+  .font-weight-regular-mxl { font-weight: var(--primitives-font-weight-regular); }
+  .font-weight-medium-mxl { font-weight: var(--primitives-font-weight-medium); }
+  .font-weight-semibold-mxl { font-weight: var(--primitives-font-weight-semibold); }
+  .font-weight-bold-mxl { font-weight: var(--primitives-font-weight-bold); }
+  .font-weight-light-mxl { font-weight: var(--primitives-font-weight-light); }
+  .text-align-start-mxl { text-align: start; }
+  .text-align-center-mxl { text-align: center; }
+  .text-align-end-mxl { text-align: end; }
+  .text-italic-mxl { font-style: italic; }
+}
+}
