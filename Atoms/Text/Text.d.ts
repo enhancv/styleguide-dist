@@ -8,5 +8,5 @@ interface TextOwnProps extends TextStyleProps {
     variant?: TypeScaleVariantOf<"body">;
 }
 export type TextProps<E extends TextElement = typeof DEFAULT_ELEMENT> = PolymorphicProps<E, TextOwnProps>;
-export declare const Text: PolymorphicComponent<TextElement, "p", TextOwnProps>;
+export declare const Text: PolymorphicComponent<TextElement, typeof DEFAULT_ELEMENT, TextOwnProps>;
 export type { TextElement } from "./TextPrimitive";

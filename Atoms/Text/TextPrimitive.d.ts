@@ -12,5 +12,5 @@ export type TextPrimitiveProps<E extends TextElement = typeof DEFAULT_ELEMENT> =
  * package: consumers pick the ramp through `Text` (body) or `Heading`
  * (display/heading), which mirror the Figma components one to one.
  */
-export declare const TextPrimitive: PolymorphicComponent<TextElement, "p", TextPrimitiveOwnProps>;
+export declare const TextPrimitive: PolymorphicComponent<TextElement, typeof DEFAULT_ELEMENT, TextPrimitiveOwnProps>;
 export {};
