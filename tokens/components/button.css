@@ -1,0 +1,48 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ * by tokens/build.mjs from tokens/input/components/button/.
+ *
+ * Imported by the button component — not part of index.css.
+ */
+
+@layer components {
+[data-button-color="awake"] {
+  --button-default: var(--button-awake);
+  --button-focus: var(--button-awake-focus);
+  --button-focus-ring: var(--button-awake-focus-ring);
+  --button-disabled: var(--button-awake-disabled);
+  --button-hover: var(--button-awake-hover);
+  --button-active: var(--button-awake-active);
+  --button-pressed: var(--button-awake-pressed);
+}
+
+[data-button-color="brand"] {
+  --button-default: var(--button-brand);
+  --button-focus: var(--button-brand-focus);
+  --button-focus-ring: var(--button-brand-focus-ring);
+  --button-disabled: var(--button-brand-disabled);
+  --button-hover: var(--button-brand-hover);
+  --button-active: var(--button-brand-active);
+  --button-pressed: var(--button-brand-pressed);
+}
+
+[data-button-color="danger"] {
+  --button-default: var(--button-danger);
+  --button-focus: var(--button-danger-focus);
+  --button-focus-ring: var(--button-danger-focus-ring);
+  --button-disabled: var(--button-danger-disabled);
+  --button-hover: var(--button-danger-hover);
+  --button-active: var(--button-danger-active);
+  --button-pressed: var(--button-danger-pressed);
+}
+
+[data-button-color="neutral"] {
+  --button-default: var(--button-neutral);
+  --button-focus: var(--button-neutral-focus);
+  --button-focus-ring: var(--button-neutral-focus-ring);
+  --button-disabled: var(--button-neutral-disabled);
+  --button-hover: var(--button-neutral-hover);
+  --button-active: var(--button-neutral-active);
+  --button-pressed: var(--button-neutral-pressed);
+}
+}
