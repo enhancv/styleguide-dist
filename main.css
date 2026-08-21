@@ -6271,7 +6271,7 @@
   }
   .Button-module__button--bJF6M[data-size="sm"] {
     --_icon-size: 20px;
-    padding: var(--spacing-8) var(--spacing-12);
+    padding: var(--spacing-6) var(--spacing-12);
     gap: var(--spacing-4);
     font-size: var(--body-s-size);
     line-height: var(--body-s-line-height);
@@ -6280,9 +6280,11 @@
   .Button-module__button--bJF6M[data-icon-only][data-size="lg"] {
     padding: var(--spacing-12);
   }
-  .Button-module__button--bJF6M[data-icon-only][data-size="md"],
-  .Button-module__button--bJF6M[data-icon-only][data-size="sm"] {
+  .Button-module__button--bJF6M[data-icon-only][data-size="md"] {
     padding: var(--spacing-8);
+  }
+  .Button-module__button--bJF6M[data-icon-only][data-size="sm"] {
+    padding: var(--spacing-6);
   }
   /* Icon-only MD squares carry the LG icon (40 = 8 + 24 + 8 in Figma). */
   .Button-module__button--bJF6M[data-icon-only][data-size="md"] {
