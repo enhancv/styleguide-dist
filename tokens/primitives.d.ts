@@ -160,6 +160,7 @@ export declare const shape: {
         readonly 4: "var(--primitives-radius-4)";
         readonly 8: "var(--primitives-radius-8)";
         readonly 12: "var(--primitives-radius-12)";
+        readonly 16: "var(--primitives-radius-16)";
         readonly 24: "var(--primitives-radius-24)";
         readonly 32: "var(--primitives-radius-32)";
         readonly 48: "var(--primitives-radius-48)";
@@ -174,7 +175,9 @@ export declare const shape: {
 };
 export declare const spacing: {
     readonly 0: "var(--primitives-spacing-0)";
+    readonly 2: "var(--primitives-spacing-2)";
     readonly 4: "var(--primitives-spacing-4)";
+    readonly 6: "var(--primitives-spacing-6)";
     readonly 8: "var(--primitives-spacing-8)";
     readonly 12: "var(--primitives-spacing-12)";
     readonly 16: "var(--primitives-spacing-16)";

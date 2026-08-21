@@ -4,7 +4,9 @@
 
 :root {
   --primitives-spacing-0: 0px;
+  --primitives-spacing-2: 2px;
   --primitives-spacing-4: 4px;
+  --primitives-spacing-6: 6px;
   --primitives-spacing-8: 8px;
   --primitives-spacing-12: 12px;
   --primitives-spacing-16: 16px;

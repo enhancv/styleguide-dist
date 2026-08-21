@@ -96,14 +96,19 @@ export declare const layout: {
     readonly container: "var(--layout-container)";
 };
 export declare const radius: {
-    readonly control: "var(--radius-control)";
-    readonly card: "var(--radius-card)";
-    readonly overlay: "var(--radius-overlay)";
-    readonly pill: "var(--radius-pill)";
+    readonly 0: "var(--radius-0)";
+    readonly 4: "var(--radius-4)";
+    readonly 8: "var(--radius-8)";
+    readonly 16: "var(--radius-16)";
+    readonly 24: "var(--radius-24)";
+    readonly 32: "var(--radius-32)";
+    readonly full: "var(--radius-full)";
 };
 export declare const spacing: {
     readonly 0: "var(--spacing-0)";
+    readonly 2: "var(--spacing-2)";
     readonly 4: "var(--spacing-4)";
+    readonly 6: "var(--spacing-6)";
     readonly 8: "var(--spacing-8)";
     readonly 12: "var(--spacing-12)";
     readonly 16: "var(--spacing-16)";

@@ -12,7 +12,6 @@
   --button-focus-ring: var(--button-awake-focus-ring);
   --button-disabled: var(--button-awake-disabled);
   --button-hover: var(--button-awake-hover);
-  --button-active: var(--button-awake-active);
   --button-pressed: var(--button-awake-pressed);
 }
 
@@ -22,7 +21,6 @@
   --button-focus-ring: var(--button-brand-focus-ring);
   --button-disabled: var(--button-brand-disabled);
   --button-hover: var(--button-brand-hover);
-  --button-active: var(--button-brand-active);
   --button-pressed: var(--button-brand-pressed);
 }
 
@@ -32,7 +30,6 @@
   --button-focus-ring: var(--button-danger-focus-ring);
   --button-disabled: var(--button-danger-disabled);
   --button-hover: var(--button-danger-hover);
-  --button-active: var(--button-danger-active);
   --button-pressed: var(--button-danger-pressed);
 }
 
@@ -42,7 +39,6 @@
   --button-focus-ring: var(--button-neutral-focus-ring);
   --button-disabled: var(--button-neutral-disabled);
   --button-hover: var(--button-neutral-hover);
-  --button-active: var(--button-neutral-active);
   --button-pressed: var(--button-neutral-pressed);
 }
 }
