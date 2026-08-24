@@ -20,6 +20,10 @@ export interface ButtonPrimitiveOwnProps {
      *  for casing that must survive verbatim. The app can opt out globally via
      *  ButtonConfigContext's defaultPreserveCasing (set for de/fr locales). */
     preserveCasing?: boolean;
+    /** Replaces the content with a centered Loader while keeping the box —
+     *  the label stays laid out, only invisible, so the button never resizes.
+     *  Visual only (plus aria-busy): pair with `disabled` to block clicks. */
+    loading?: boolean;
 }
 export type ButtonPrimitiveProps<E extends ButtonElement = typeof DEFAULT_ELEMENT> = PolymorphicProps<E, ButtonPrimitiveOwnProps>;
 /**

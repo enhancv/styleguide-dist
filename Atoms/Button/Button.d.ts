@@ -14,6 +14,9 @@ interface ButtonOwnProps {
     fullWidth?: boolean;
     /** String labels render title-cased; opt out for verbatim casing. */
     preserveCasing?: boolean;
+    /** Centered Loader over an invisible label — the box never resizes.
+     *  Visual only (plus aria-busy): pair with `disabled` to block clicks. */
+    loading?: boolean;
 }
 export type ButtonProps<E extends ButtonElement = typeof DEFAULT_ELEMENT> = PolymorphicProps<E, ButtonOwnProps>;
 export declare const Button: PolymorphicComponent<ButtonElement, typeof DEFAULT_ELEMENT, ButtonOwnProps>;
