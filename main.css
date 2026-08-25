@@ -6347,6 +6347,7 @@
   .Button-module__button--bJF6M[data-type="link"] {
     padding: 0;
     color: var(--button-default);
+    text-decoration: underline;
   }
   .Button-module__button--bJF6M[data-type="link"]:hover {
     color: var(--button-hover);
