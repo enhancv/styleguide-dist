@@ -6455,6 +6455,164 @@
 }
 }
 
+/* The Figma set names its variants after where the *arrow* sits; this file is
+   named after where the *bubble* sits, the popper convention every consumer
+   expects. So Figma "Bottom center" is placement="top", and Figma "Left" —
+   arrow on the bubble's left edge — is placement="right".
+
+   The arrow is 16x6. The vector in the file currently renders 12px across at
+   the join, because it is a 12px square rotated 45 degrees rather than a
+   triangle drawn to its 16x6 box — the box is the spec, so that is what this
+   builds. A clip-path draws it directly, with no rotation to unwind. */
+
+@layer components {
+  .Tooltip-module__root--AlbEo {
+    position: relative;
+    display: inline-flex;
+  }
+
+  .Tooltip-module__bubble--CAs-U {
+    /* Figma binds only the three shadow colours, and to a Light/Dark
+       collection the token build cannot emit yet; the geometry is raw there
+       too. Both live here once until that import lands. */
+    --_tooltip-shadow:
+      0 2px 2px -1px rgb(10 13 18 / 4%), 0 4px 6px -2px rgb(10 13 18 / 3%),
+      0 12px 16px -4px rgb(10 13 18 / 8%);
+
+    --_arrow-base: 16px;
+    --_arrow-height: 6px;
+    /* The whole triangle sits outside the bubble, flush to its edge. */
+    --_arrow-out: var(--_arrow-height);
+    /* Arrow centre to the bubble's edge on the -start / -end placements. */
+    --_arrow-inset: 20px;
+    /* Gap between the arrow's tip and the trigger. Figma draws no trigger,
+       so this is ours: the arrow's height plus a little air. */
+    --_tooltip-gap: calc(var(--_arrow-height) + 2px);
+
+    --text-font-fallback: -apple-system, BlinkMacSystemFont, Inter, "Segoe UI",
+      Roboto, Helvetica, Arial, sans-serif;
+
+    position: absolute;
+    z-index: 1;
+    inline-size: max-content;
+    max-inline-size: var(--tooltip-max-width, 320px);
+    padding: var(--spacing-12);
+    border-radius: var(--radius-8);
+    background: var(--background-neutral-solid);
+    box-shadow: var(--_tooltip-shadow);
+    color: var(--text-inverse);
+    font-family: var(--body-s-font), var(--text-font-fallback);
+    font-size: var(--body-s-size);
+    font-weight: var(--body-s-weight);
+    line-height: var(--body-s-line-height);
+    letter-spacing: var(--body-s-tracking);
+    text-align: start;
+
+    /* Hidden without leaving the layout: visibility keeps it out of the a11y
+       tree and off the pointer, opacity gives it the fade. */
+    visibility: hidden;
+    opacity: 0;
+    transition:
+      opacity 120ms ease,
+      visibility 0s linear 120ms;
+  }
+
+  /* Absolutely positioned, so the arrow never contributes to the bubble's
+     size — only to where it points. */
+  .Tooltip-module__arrow--ffONi {
+    position: absolute;
+    background: var(--background-neutral-solid);
+  }
+
+  /* ── bubble above the trigger, arrow on its underside ── */
+  .Tooltip-module__bubble--CAs-U[data-placement^="top"] {
+    inset-block-end: calc(100% + var(--_tooltip-gap));
+  }
+  .Tooltip-module__bubble--CAs-U[data-placement^="top"] .Tooltip-module__arrow--ffONi {
+    inline-size: var(--_arrow-base);
+    block-size: var(--_arrow-height);
+    inset-block-end: calc(-1 * var(--_arrow-out));
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+  }
+
+  /* ── bubble below the trigger, arrow on its top edge ── */
+  .Tooltip-module__bubble--CAs-U[data-placement^="bottom"] {
+    inset-block-start: calc(100% + var(--_tooltip-gap));
+  }
+  .Tooltip-module__bubble--CAs-U[data-placement^="bottom"] .Tooltip-module__arrow--ffONi {
+    inline-size: var(--_arrow-base);
+    block-size: var(--_arrow-height);
+    inset-block-start: calc(-1 * var(--_arrow-out));
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+  }
+
+  /* Horizontal alignment, shared by top and bottom. */
+  .Tooltip-module__bubble--CAs-U[data-placement="top"],
+  .Tooltip-module__bubble--CAs-U[data-placement="bottom"] {
+    inset-inline-start: 50%;
+    translate: -50% 0;
+  }
+  .Tooltip-module__bubble--CAs-U[data-placement="top"] .Tooltip-module__arrow--ffONi,
+  .Tooltip-module__bubble--CAs-U[data-placement="bottom"] .Tooltip-module__arrow--ffONi {
+    inset-inline-start: calc(50% - var(--_arrow-base) / 2);
+  }
+  .Tooltip-module__bubble--CAs-U[data-placement$="-start"] {
+    inset-inline-start: 0;
+  }
+  .Tooltip-module__bubble--CAs-U[data-placement$="-start"] .Tooltip-module__arrow--ffONi {
+    inset-inline-start: calc(var(--_arrow-inset) - var(--_arrow-base) / 2);
+  }
+  .Tooltip-module__bubble--CAs-U[data-placement$="-end"] {
+    inset-inline-end: 0;
+  }
+  .Tooltip-module__bubble--CAs-U[data-placement$="-end"] .Tooltip-module__arrow--ffONi {
+    inset-inline-end: calc(var(--_arrow-inset) - var(--_arrow-base) / 2);
+  }
+
+  /* ── bubble beside the trigger, arrow on the facing edge ── */
+  .Tooltip-module__bubble--CAs-U[data-placement="left"],
+  .Tooltip-module__bubble--CAs-U[data-placement="right"] {
+    inset-block-start: 50%;
+    translate: 0 -50%;
+  }
+  .Tooltip-module__bubble--CAs-U[data-placement="left"] .Tooltip-module__arrow--ffONi,
+  .Tooltip-module__bubble--CAs-U[data-placement="right"] .Tooltip-module__arrow--ffONi {
+    /* Turned on its side: the base runs vertically. */
+    inline-size: var(--_arrow-height);
+    block-size: var(--_arrow-base);
+    inset-block-start: calc(50% - var(--_arrow-base) / 2);
+  }
+  .Tooltip-module__bubble--CAs-U[data-placement="left"] {
+    inset-inline-end: calc(100% + var(--_tooltip-gap));
+  }
+  .Tooltip-module__bubble--CAs-U[data-placement="left"] .Tooltip-module__arrow--ffONi {
+    inset-inline-end: calc(-1 * var(--_arrow-out));
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+  }
+  .Tooltip-module__bubble--CAs-U[data-placement="right"] {
+    inset-inline-start: calc(100% + var(--_tooltip-gap));
+  }
+  .Tooltip-module__bubble--CAs-U[data-placement="right"] .Tooltip-module__arrow--ffONi {
+    inset-inline-start: calc(-1 * var(--_arrow-out));
+    clip-path: polygon(0 50%, 100% 0, 100% 100%);
+  }
+
+  /* Shown on hover of the wrapper and on keyboard focus anywhere inside it,
+     so the trigger need not be a button — but it must be focusable. */
+  .Tooltip-module__root--AlbEo:hover .Tooltip-module__bubble--CAs-U,
+  .Tooltip-module__root--AlbEo:focus-within .Tooltip-module__bubble--CAs-U {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .Tooltip-module__bubble--CAs-U {
+      transition-duration: 0s;
+    }
+  }
+}
+
 /* One rule per style in the type scale — add a rule when a style is added in
    Figma, since TypeScaleVariant is derived from the tokens and will accept the
    new name before this file knows it. The tokens carry their own breakpoints,

@@ -38,6 +38,8 @@ export { Link } from "./Atoms/Button/Link";
 export type { LinkProps } from "./Atoms/Button/Link";
 export { buttonColors } from "./tokens/components/button";
 export type { ButtonColorToken } from "./tokens/components/button";
+export { Tooltip } from "./Atoms/Tooltip/Tooltip";
+export type { TooltipProps, TooltipPlacement } from "./Atoms/Tooltip/Tooltip";
 export { Text } from "./Atoms/Text/Text";
 export type { TextProps, TextElement } from "./Atoms/Text/Text";
 export { Heading } from "./Atoms/Heading/Heading";
