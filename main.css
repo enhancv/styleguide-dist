@@ -6457,7 +6457,6 @@
 
 @layer components {
   .Tooltip-module__root--AlbEo {
-    position: relative;
     display: inline-flex;
   }
 
@@ -6467,17 +6466,15 @@
 
     --_arrow-base: 16px;
     --_arrow-height: 6px;
-    --_arrow-out: var(--_arrow-height);
     --_arrow-inset: 20px;
-    --_tooltip-gap: calc(var(--_arrow-height) + 2px);
 
     --text-font-fallback: -apple-system, BlinkMacSystemFont, Inter, "Segoe UI",
       Roboto, Helvetica, Arial, sans-serif;
 
-    position: absolute;
-    z-index: 1;
+    position: fixed;
+    z-index: 9999;
     inline-size: max-content;
-    max-inline-size: var(--tooltip-max-width, 320px);
+    max-inline-size: 320px;
     padding: var(--spacing-12);
     border-radius: var(--radius-8);
     background: var(--background-neutral-solid);
@@ -6489,10 +6486,24 @@
     line-height: var(--body-s-line-height);
     letter-spacing: var(--body-s-tracking);
     text-align: start;
+    pointer-events: none;
+    animation: Tooltip-module__tooltip-in--g\+Kiw 120ms ease both;
+  }
 
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 120ms ease, visibility 0s linear 120ms;
+  @keyframes Tooltip-module__tooltip-in--g\+Kiw {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .Tooltip-module__bubble--CAs-U {
+      animation-duration: 0s;
+    }
   }
 
   .Tooltip-module__arrow--ffONi {
@@ -6500,85 +6511,48 @@
     background: var(--background-neutral-solid);
   }
 
-  .Tooltip-module__bubble--CAs-U[data-placement^="top"] {
-    inset-block-end: calc(100% + var(--_tooltip-gap));
-  }
   .Tooltip-module__bubble--CAs-U[data-placement^="top"] .Tooltip-module__arrow--ffONi {
     inline-size: var(--_arrow-base);
     block-size: var(--_arrow-height);
-    inset-block-end: calc(-1 * var(--_arrow-out));
+    inset-block-end: calc(-1 * var(--_arrow-height));
     clip-path: polygon(50% 100%, 0 0, 100% 0);
   }
 
-  .Tooltip-module__bubble--CAs-U[data-placement^="bottom"] {
-    inset-block-start: calc(100% + var(--_tooltip-gap));
-  }
   .Tooltip-module__bubble--CAs-U[data-placement^="bottom"] .Tooltip-module__arrow--ffONi {
     inline-size: var(--_arrow-base);
     block-size: var(--_arrow-height);
-    inset-block-start: calc(-1 * var(--_arrow-out));
+    inset-block-start: calc(-1 * var(--_arrow-height));
     clip-path: polygon(50% 0, 0 100%, 100% 100%);
   }
 
-  .Tooltip-module__bubble--CAs-U[data-placement="top"],
-  .Tooltip-module__bubble--CAs-U[data-placement="bottom"] {
-    inset-inline-start: 50%;
-    translate: -50% 0;
-  }
   .Tooltip-module__bubble--CAs-U[data-placement="top"] .Tooltip-module__arrow--ffONi,
   .Tooltip-module__bubble--CAs-U[data-placement="bottom"] .Tooltip-module__arrow--ffONi {
     inset-inline-start: calc(50% - var(--_arrow-base) / 2);
   }
-  .Tooltip-module__bubble--CAs-U[data-placement$="-start"] {
-    inset-inline-start: 0;
-  }
+
   .Tooltip-module__bubble--CAs-U[data-placement$="-start"] .Tooltip-module__arrow--ffONi {
     inset-inline-start: calc(var(--_arrow-inset) - var(--_arrow-base) / 2);
   }
-  .Tooltip-module__bubble--CAs-U[data-placement$="-end"] {
-    inset-inline-end: 0;
-  }
+
   .Tooltip-module__bubble--CAs-U[data-placement$="-end"] .Tooltip-module__arrow--ffONi {
     inset-inline-end: calc(var(--_arrow-inset) - var(--_arrow-base) / 2);
   }
 
-  .Tooltip-module__bubble--CAs-U[data-placement="left"],
-  .Tooltip-module__bubble--CAs-U[data-placement="right"] {
-    inset-block-start: 50%;
-    translate: 0 -50%;
-  }
   .Tooltip-module__bubble--CAs-U[data-placement="left"] .Tooltip-module__arrow--ffONi,
   .Tooltip-module__bubble--CAs-U[data-placement="right"] .Tooltip-module__arrow--ffONi {
     inline-size: var(--_arrow-height);
     block-size: var(--_arrow-base);
     inset-block-start: calc(50% - var(--_arrow-base) / 2);
   }
-  .Tooltip-module__bubble--CAs-U[data-placement="left"] {
-    inset-inline-end: calc(100% + var(--_tooltip-gap));
-  }
+
   .Tooltip-module__bubble--CAs-U[data-placement="left"] .Tooltip-module__arrow--ffONi {
-    inset-inline-end: calc(-1 * var(--_arrow-out));
+    inset-inline-end: calc(-1 * var(--_arrow-height));
     clip-path: polygon(100% 50%, 0 0, 0 100%);
   }
-  .Tooltip-module__bubble--CAs-U[data-placement="right"] {
-    inset-inline-start: calc(100% + var(--_tooltip-gap));
-  }
+
   .Tooltip-module__bubble--CAs-U[data-placement="right"] .Tooltip-module__arrow--ffONi {
-    inset-inline-start: calc(-1 * var(--_arrow-out));
+    inset-inline-start: calc(-1 * var(--_arrow-height));
     clip-path: polygon(0 50%, 100% 0, 100% 100%);
-  }
-
-  .Tooltip-module__root--AlbEo:hover .Tooltip-module__bubble--CAs-U,
-  .Tooltip-module__root--AlbEo:focus-within .Tooltip-module__bubble--CAs-U {
-    visibility: visible;
-    opacity: 1;
-    transition-delay: 0s;
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .Tooltip-module__bubble--CAs-U {
-      transition-duration: 0s;
-    }
   }
 }
 

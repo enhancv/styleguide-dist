@@ -5,9 +5,12 @@ export interface TooltipProps extends Omit<React.ComponentPropsWithoutRef<"span"
     placement?: TooltipPlacement;
     arrow?: boolean;
     labelsTrigger?: boolean;
+    delay?: number;
+    maxWidth?: number;
+    openOnTapWhenCoarse?: boolean;
     children: React.ReactNode;
 }
 export declare const Tooltip: {
-    ({ content, placement, arrow, labelsTrigger, children, className, ...rest }: TooltipProps): React.JSX.Element;
+    ({ content, placement, arrow, labelsTrigger, delay, maxWidth, openOnTapWhenCoarse, children, className, ...rest }: TooltipProps): React.JSX.Element;
     displayName: string;
 };
