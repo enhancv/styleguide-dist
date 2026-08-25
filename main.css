@@ -6455,16 +6455,6 @@
 }
 }
 
-/* The Figma set names its variants after where the *arrow* sits; this file is
-   named after where the *bubble* sits, the popper convention every consumer
-   expects. So Figma "Bottom center" is placement="top", and Figma "Left" —
-   arrow on the bubble's left edge — is placement="right".
-
-   The arrow is 16x6. The vector in the file currently renders 12px across at
-   the join, because it is a 12px square rotated 45 degrees rather than a
-   triangle drawn to its 16x6 box — the box is the spec, so that is what this
-   builds. A clip-path draws it directly, with no rotation to unwind. */
-
 @layer components {
   .Tooltip-module__root--AlbEo {
     position: relative;
@@ -6472,21 +6462,13 @@
   }
 
   .Tooltip-module__bubble--CAs-U {
-    /* Figma binds only the three shadow colours, and to a Light/Dark
-       collection the token build cannot emit yet; the geometry is raw there
-       too. Both live here once until that import lands. */
-    --_tooltip-shadow:
-      0 2px 2px -1px rgb(10 13 18 / 4%), 0 4px 6px -2px rgb(10 13 18 / 3%),
-      0 12px 16px -4px rgb(10 13 18 / 8%);
+    --_tooltip-shadow: 0 2px 2px -1px rgb(10 13 18 / 4%),
+      0 4px 6px -2px rgb(10 13 18 / 3%), 0 12px 16px -4px rgb(10 13 18 / 8%);
 
     --_arrow-base: 16px;
     --_arrow-height: 6px;
-    /* The whole triangle sits outside the bubble, flush to its edge. */
     --_arrow-out: var(--_arrow-height);
-    /* Arrow centre to the bubble's edge on the -start / -end placements. */
     --_arrow-inset: 20px;
-    /* Gap between the arrow's tip and the trigger. Figma draws no trigger,
-       so this is ours: the arrow's height plus a little air. */
     --_tooltip-gap: calc(var(--_arrow-height) + 2px);
 
     --text-font-fallback: -apple-system, BlinkMacSystemFont, Inter, "Segoe UI",
@@ -6508,23 +6490,16 @@
     letter-spacing: var(--body-s-tracking);
     text-align: start;
 
-    /* Hidden without leaving the layout: visibility keeps it out of the a11y
-       tree and off the pointer, opacity gives it the fade. */
     visibility: hidden;
     opacity: 0;
-    transition:
-      opacity 120ms ease,
-      visibility 0s linear 120ms;
+    transition: opacity 120ms ease, visibility 0s linear 120ms;
   }
 
-  /* Absolutely positioned, so the arrow never contributes to the bubble's
-     size — only to where it points. */
   .Tooltip-module__arrow--ffONi {
     position: absolute;
     background: var(--background-neutral-solid);
   }
 
-  /* ── bubble above the trigger, arrow on its underside ── */
   .Tooltip-module__bubble--CAs-U[data-placement^="top"] {
     inset-block-end: calc(100% + var(--_tooltip-gap));
   }
@@ -6535,7 +6510,6 @@
     clip-path: polygon(50% 100%, 0 0, 100% 0);
   }
 
-  /* ── bubble below the trigger, arrow on its top edge ── */
   .Tooltip-module__bubble--CAs-U[data-placement^="bottom"] {
     inset-block-start: calc(100% + var(--_tooltip-gap));
   }
@@ -6546,7 +6520,6 @@
     clip-path: polygon(50% 0, 0 100%, 100% 100%);
   }
 
-  /* Horizontal alignment, shared by top and bottom. */
   .Tooltip-module__bubble--CAs-U[data-placement="top"],
   .Tooltip-module__bubble--CAs-U[data-placement="bottom"] {
     inset-inline-start: 50%;
@@ -6569,7 +6542,6 @@
     inset-inline-end: calc(var(--_arrow-inset) - var(--_arrow-base) / 2);
   }
 
-  /* ── bubble beside the trigger, arrow on the facing edge ── */
   .Tooltip-module__bubble--CAs-U[data-placement="left"],
   .Tooltip-module__bubble--CAs-U[data-placement="right"] {
     inset-block-start: 50%;
@@ -6577,7 +6549,6 @@
   }
   .Tooltip-module__bubble--CAs-U[data-placement="left"] .Tooltip-module__arrow--ffONi,
   .Tooltip-module__bubble--CAs-U[data-placement="right"] .Tooltip-module__arrow--ffONi {
-    /* Turned on its side: the base runs vertically. */
     inline-size: var(--_arrow-height);
     block-size: var(--_arrow-base);
     inset-block-start: calc(50% - var(--_arrow-base) / 2);
@@ -6597,8 +6568,6 @@
     clip-path: polygon(0 50%, 100% 0, 100% 100%);
   }
 
-  /* Shown on hover of the wrapper and on keyboard focus anywhere inside it,
-     so the trigger need not be a button — but it must be focusable. */
   .Tooltip-module__root--AlbEo:hover .Tooltip-module__bubble--CAs-U,
   .Tooltip-module__root--AlbEo:focus-within .Tooltip-module__bubble--CAs-U {
     visibility: visible;
