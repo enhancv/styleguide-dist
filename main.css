@@ -6240,6 +6240,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    width: fit-content;
+    height: fit-content;
     margin: 0;
     border: none;
     border-radius: var(--radius-8);
@@ -6247,6 +6249,7 @@
     font-family: var(--body-m-font);
     font-weight: var(--primitives-font-weight-medium);
     text-decoration: none;
+    white-space: nowrap;
     cursor: pointer;
   }
 
