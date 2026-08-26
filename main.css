@@ -6240,14 +6240,12 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: fit-content;
     height: fit-content;
     margin: 0;
     border: none;
     border-radius: var(--radius-8);
     background: none;
     font-family: var(--body-m-font);
-    font-weight: var(--primitives-font-weight-medium);
     text-decoration: none;
     white-space: nowrap;
     cursor: pointer;
@@ -6262,6 +6260,7 @@
     --_icon-size: 24px;
     padding: var(--spacing-12) var(--spacing-24);
     gap: var(--spacing-8);
+    font-weight: var(--primitives-font-weight-semibold);
     font-size: var(--body-m-size);
     line-height: var(--body-m-line-height);
   }
@@ -6269,6 +6268,7 @@
     --_icon-size: 20px;
     padding: var(--spacing-8) var(--spacing-16);
     gap: var(--spacing-8);
+    font-weight: var(--primitives-font-weight-semibold);
     font-size: var(--body-m-size);
     line-height: var(--body-m-line-height);
   }
@@ -6276,6 +6276,7 @@
     --_icon-size: 20px;
     padding: var(--spacing-6) var(--spacing-12);
     gap: var(--spacing-4);
+    font-weight: var(--primitives-font-weight-medium);
     font-size: var(--body-s-size);
     line-height: var(--body-s-line-height);
   }
