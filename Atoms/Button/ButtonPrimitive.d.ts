@@ -16,7 +16,7 @@ export interface ButtonPrimitiveOwnProps {
     iconStart?: React.ReactNode;
     iconEnd?: React.ReactNode;
     fullWidth?: boolean;
-    /** String labels render title-cased, matching the legacy Button; opt out
+    /** String labels render title-cased — never for the link variant; opt out
      *  for casing that must survive verbatim. The app can opt out globally via
      *  ButtonConfigContext's defaultPreserveCasing (set for de/fr locales). */
     preserveCasing?: boolean;

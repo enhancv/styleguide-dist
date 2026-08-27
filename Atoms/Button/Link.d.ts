@@ -9,8 +9,6 @@ interface LinkOwnProps {
     iconStart?: React.ReactNode;
     iconEnd?: React.ReactNode;
     fullWidth?: boolean;
-    /** String labels render title-cased; opt out for verbatim casing. */
-    preserveCasing?: boolean;
 }
 export type LinkProps<E extends ButtonElement = typeof DEFAULT_ELEMENT> = PolymorphicProps<E, LinkOwnProps>;
 /**
