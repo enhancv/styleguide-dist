@@ -1,5 +1,5 @@
 import "./tokens/layers.css";
-import Icon from "./Atoms/Icons/Icon";
+import { Icon } from "./Atoms/Icon/Icon";
 import { Loader } from "./Atoms/Loader";
 import { CopyButton } from "./Molecules/CopyButton/CopyButton";
 import { Checkbox } from "./Molecules/Checkbox";
@@ -32,6 +32,7 @@ import ToggleButton from "./Molecules/ToggleButton";
 export { Loader, CopyButton, Checkbox, Input, RadioButton, Textarea, Icon, InputGroup, BaseInput, InputLabel, InputError, MultiSlider, Breadcrumb, Modal, DialogModal, DialogModalButtons, PopupModal, PopupModalButtons, ModalBackdrop, ModalCloseButton, CustomScrollbar, OnScrollAnimationWrapper, useIsInBreakpoint, isInBreakpoint, SelectDropdown, ButtonConfigContext, Slider, ToggleButton, };
 export { Button } from "./Atoms/Button/Button";
 export type { ButtonProps, ButtonElement, ButtonSize } from "./Atoms/Button/Button";
+export type { IconProps, IconSet, UiIconName } from "./Atoms/Icon/Icon";
 export { IconButton } from "./Atoms/Button/IconButton";
 export type { IconButtonProps } from "./Atoms/Button/IconButton";
 export { Link } from "./Atoms/Button/Link";

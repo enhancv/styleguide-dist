@@ -9,3 +9,5 @@ export { Button, ColorType } from "./Molecules/Button";
 export type { ButtonProps } from "./Molecules/Button";
 export { IconButton } from "./Molecules/IconButton/IconButton";
 export { LinkButton } from "./Molecules/LinkButton/LinkButton";
+export { default as Icon } from "./Atoms/Icons/Icon";
+export type { Props as IconProps } from "./Atoms/Icons/Icon";
