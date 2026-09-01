@@ -12,6 +12,12 @@
     vertical-align: middle;
   }
 
+  /* A block glyph box sizes the element to the glyph itself — an inline
+     ::before would let any inherited line-height add height around it. */
+  .Icon-module__icon--5oSUz::before {
+    display: block;
+  }
+
   /* One rule per theme text colour, mirroring Text — no data-color means the
      glyph inherits the surrounding colour (currentColor). */
 
