@@ -1,6 +1,6 @@
-import React from "react";
 import type { ButtonElement, ButtonSize } from "./ButtonPrimitive";
 import type { ButtonColorToken } from "../../tokens/components/button";
+import type { UiIconName } from "../Icon/Icon";
 import type { PolymorphicComponent, PolymorphicProps } from "../../types/polymorphic";
 declare const DEFAULT_ELEMENT = "button";
 interface ButtonOwnProps {
@@ -9,8 +9,8 @@ interface ButtonOwnProps {
     /** Solid fill, outline, or chromeless-in-the-box — bare text renders
      *  through `Link`. */
     variant?: "primary" | "secondary" | "ghost";
-    iconStart?: React.ReactNode;
-    iconEnd?: React.ReactNode;
+    iconStart?: UiIconName;
+    iconEnd?: UiIconName;
     fullWidth?: boolean;
     /** String labels render title-cased; opt out for verbatim casing. */
     preserveCasing?: boolean;

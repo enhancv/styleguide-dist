@@ -1,4 +1,5 @@
 import React, { HTMLAttributes, ReactNode } from "react";
+import type { UiIconName } from "../Atoms/Icon/Icon";
 export declare enum ColorType {
     Green = "green",
     Purple = "purple",
@@ -13,8 +14,8 @@ declare enum SizeType {
 }
 export type ButtonProps = {
     className?: string;
-    leftIcon?: string;
-    rightIcon?: string;
+    leftIcon?: UiIconName;
+    rightIcon?: UiIconName;
     color?: `${ColorType}`;
     primary?: boolean;
     fluid?: boolean;

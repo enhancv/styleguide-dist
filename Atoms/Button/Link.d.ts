@@ -1,13 +1,13 @@
-import React from "react";
 import type { ButtonElement, ButtonSize } from "./ButtonPrimitive";
 import type { ButtonColorToken } from "../../tokens/components/button";
+import type { UiIconName } from "../Icon/Icon";
 import type { PolymorphicComponent, PolymorphicProps } from "../../types/polymorphic";
 declare const DEFAULT_ELEMENT = "a";
 interface LinkOwnProps {
     color?: ButtonColorToken;
     size?: ButtonSize;
-    iconStart?: React.ReactNode;
-    iconEnd?: React.ReactNode;
+    iconStart?: UiIconName;
+    iconEnd?: UiIconName;
     fullWidth?: boolean;
 }
 export type LinkProps<E extends ButtonElement = typeof DEFAULT_ELEMENT> = PolymorphicProps<E, LinkOwnProps>;

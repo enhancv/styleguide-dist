@@ -1,7 +1,7 @@
-import React from "react";
 import "../../tokens/components/button.css";
 import type { PolymorphicComponent, PolymorphicProps } from "../../types/polymorphic";
 import type { ButtonColorToken } from "../../tokens/components/button";
+import type { UiIconName } from "../Icon/Icon";
 export type ButtonElement = "button" | "a";
 export type ButtonSize = "lg" | "md" | "sm";
 declare const DEFAULT_ELEMENT = "button";
@@ -11,10 +11,11 @@ export interface ButtonPrimitiveOwnProps {
     /** The Figma Type axis: chrome (primary/secondary), chromeless in the
      *  button's box (ghost) or bare text (link). */
     variant?: "primary" | "secondary" | "ghost" | "link";
-    /** Square icon slot instead of a label — the icon renders from `children`. */
+    /** Square icon slot instead of a label — the glyph is `icon`. */
     iconOnly?: boolean;
-    iconStart?: React.ReactNode;
-    iconEnd?: React.ReactNode;
+    icon?: UiIconName;
+    iconStart?: UiIconName;
+    iconEnd?: UiIconName;
     fullWidth?: boolean;
     /** String labels render title-cased — never for the link variant; opt out
      *  for casing that must survive verbatim. The app can opt out globally via

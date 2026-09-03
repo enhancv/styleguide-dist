@@ -34,6 +34,7 @@ export { Loader, CopyButton, Checkbox, Input, RadioButton, Textarea, Icon, Logo,
 export { Button } from "./Atoms/Button/Button";
 export type { ButtonProps, ButtonElement, ButtonSize } from "./Atoms/Button/Button";
 export type { IconProps, IconSet, UiIconName } from "./Atoms/Icon/Icon";
+export type { InputIcon } from "./Molecules/Input/InputIcon";
 export type { LogoProps, LogoVariant, LogoColor } from "./Atoms/Logo/Logo";
 export { IconButton } from "./Atoms/Button/IconButton";
 export type { IconButtonProps } from "./Atoms/Button/IconButton";
