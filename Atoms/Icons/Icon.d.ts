@@ -1,3 +1,4 @@
+import "../../shared/legacy-icons.scss";
 import React from "react";
 export interface Props {
     icon: string;
