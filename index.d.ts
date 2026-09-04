@@ -33,7 +33,7 @@ import ToggleButton from "./Molecules/ToggleButton";
 export { Loader, CopyButton, Checkbox, Input, RadioButton, Textarea, Icon, Logo, InputGroup, BaseInput, InputLabel, InputError, MultiSlider, Breadcrumb, Modal, DialogModal, DialogModalButtons, PopupModal, PopupModalButtons, ModalBackdrop, ModalCloseButton, CustomScrollbar, OnScrollAnimationWrapper, useIsInBreakpoint, isInBreakpoint, SelectDropdown, ButtonConfigContext, Slider, ToggleButton, };
 export { Button } from "./Atoms/Button/Button";
 export type { ButtonProps, ButtonElement, ButtonSize } from "./Atoms/Button/Button";
-export type { IconProps, IconSet, UiIconName } from "./Atoms/Icon/Icon";
+export type { IconProps, UiIconName } from "./Atoms/Icon/Icon";
 export type { InputIcon } from "./Molecules/Input/InputIcon";
 export type { LogoProps, LogoVariant, LogoColor } from "./Atoms/Logo/Logo";
 export { IconButton } from "./Atoms/Button/IconButton";
