@@ -5,6 +5,10 @@ declare const SETS: {
     readonly "enhancv-outline": import("./types").ResumeIconSetData;
 };
 export type ResumeIconSet = keyof typeof SETS;
+export declare const RESUME_ICON_SETS: ResumeIconSet[];
+export declare const isResumeIconSet: (set: string) => set is ResumeIconSet;
+/** Whether the set has its own drawing for the name (otherwise ResumeIcon renders the set's default glyph). */
+export declare const hasResumeIcon: (set: ResumeIconSet, name: string) => boolean;
 export type ResumeIconProps = {
     /** Glyph key as stored in resume data. Unknown keys fall back to the set's default glyph. */
     name: ResumeIconName;
