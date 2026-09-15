@@ -1,0 +1,38 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ * by tokens/build.mjs from tokens/input/components/badge/.
+ *
+ * Imported by the badge component — not part of index.css.
+ */
+
+@layer components {
+[data-badge-color="danger"] {
+  --badge-surface: var(--badge-danger);
+  --badge-text: var(--badge-danger-text);
+  --badge-outline: var(--badge-ring);
+}
+
+[data-badge-color="info"] {
+  --badge-surface: var(--badge-info);
+  --badge-text: var(--badge-info-text);
+  --badge-outline: var(--badge-ring);
+}
+
+[data-badge-color="neutral"] {
+  --badge-surface: var(--badge-neutral);
+  --badge-text: var(--badge-neutral-text);
+  --badge-outline: var(--badge-ring);
+}
+
+[data-badge-color="success"] {
+  --badge-surface: var(--badge-success);
+  --badge-text: var(--badge-success-text);
+  --badge-outline: var(--badge-ring);
+}
+
+[data-badge-color="warning"] {
+  --badge-surface: var(--badge-warning);
+  --badge-text: var(--badge-warning-text);
+  --badge-outline: var(--badge-ring);
+}
+}

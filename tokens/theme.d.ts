@@ -108,6 +108,34 @@ export declare const background: {
         readonly alpha80: "var(--background-info-alpha-80)";
         readonly alpha90: "var(--background-info-alpha-90)";
     };
+    readonly surface: {
+        readonly subtle: "var(--background-surface-subtle)";
+        readonly solid: "var(--background-surface-solid)";
+        readonly solidHover: "var(--background-surface-solid-hover)";
+        readonly solidActive: "var(--background-surface-solid-active)";
+        readonly alpha10: "var(--background-surface-alpha-10)";
+        readonly alpha20: "var(--background-surface-alpha-20)";
+        readonly alpha30: "var(--background-surface-alpha-30)";
+        readonly alpha40: "var(--background-surface-alpha-40)";
+        readonly alpha50: "var(--background-surface-alpha-50)";
+        readonly alpha60: "var(--background-surface-alpha-60)";
+        readonly alpha70: "var(--background-surface-alpha-70)";
+        readonly alpha80: "var(--background-surface-alpha-80)";
+        readonly alpha90: "var(--background-surface-alpha-90)";
+    };
+};
+export declare const badge: {
+    readonly danger: "var(--badge-danger)";
+    readonly dangerText: "var(--badge-danger-text)";
+    readonly warning: "var(--badge-warning)";
+    readonly warningText: "var(--badge-warning-text)";
+    readonly success: "var(--badge-success)";
+    readonly successText: "var(--badge-success-text)";
+    readonly info: "var(--badge-info)";
+    readonly infoText: "var(--badge-info-text)";
+    readonly neutral: "var(--badge-neutral)";
+    readonly neutralText: "var(--badge-neutral-text)";
+    readonly ring: "var(--badge-ring)";
 };
 export declare const border: {
     readonly subtle: "var(--border-subtle)";
@@ -186,5 +214,5 @@ export declare const text: {
 type Leaves<T> = T extends string ? T : {
     [K in keyof T]: Leaves<T[K]>;
 }[keyof T];
-export type ThemeToken = Leaves<typeof background | typeof border | typeof button | typeof icon | typeof text>;
+export type ThemeToken = Leaves<typeof background | typeof badge | typeof border | typeof button | typeof icon | typeof text>;
 export {};
