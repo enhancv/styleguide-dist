@@ -5162,6 +5162,11 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
   .Button-module__button--bJF6M[data-type="link"] {
     padding: 0;
     color: var(--button-default);
+  }
+  /* Underline the label only: a decoration on the button box would be painted
+     straight across the icon slots, which `text-decoration: none` on the icon
+     cannot cancel. */
+  .Button-module__button--bJF6M[data-type="link"] .Button-module__label--V1tZC {
     text-decoration: underline;
   }
   .Button-module__button--bJF6M[data-type="link"]:hover {
