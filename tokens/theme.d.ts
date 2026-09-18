@@ -178,6 +178,12 @@ export declare const button: {
     readonly neutralFocus: "var(--button-neutral-focus)";
     readonly neutralFocusRing: "var(--button-neutral-focus-ring)";
     readonly neutralDisabled: "var(--button-neutral-disabled)";
+    readonly subtle: "var(--button-subtle)";
+    readonly subtleHover: "var(--button-subtle-hover)";
+    readonly subtlePressed: "var(--button-subtle-pressed)";
+    readonly subtleFocus: "var(--button-subtle-focus)";
+    readonly subtleFocusRing: "var(--button-subtle-focus-ring)";
+    readonly subtleDisabled: "var(--button-subtle-disabled)";
 };
 export declare const icon: {
     readonly primary: "var(--icon-primary)";

@@ -8,6 +8,7 @@
 @layer components {
 [data-button-color="awake"] {
   --button-default: var(--button-awake);
+  --button-text: var(--text-inverse);
   --button-focus: var(--button-awake-focus);
   --button-focus-ring: var(--button-awake-focus-ring);
   --button-disabled: var(--button-awake-disabled);
@@ -17,6 +18,7 @@
 
 [data-button-color="brand"] {
   --button-default: var(--button-brand);
+  --button-text: var(--text-inverse);
   --button-focus: var(--button-brand-focus);
   --button-focus-ring: var(--button-brand-focus-ring);
   --button-disabled: var(--button-brand-disabled);
@@ -26,6 +28,7 @@
 
 [data-button-color="danger"] {
   --button-default: var(--button-danger);
+  --button-text: var(--text-inverse);
   --button-focus: var(--button-danger-focus);
   --button-focus-ring: var(--button-danger-focus-ring);
   --button-disabled: var(--button-danger-disabled);
@@ -35,10 +38,21 @@
 
 [data-button-color="neutral"] {
   --button-default: var(--button-neutral);
+  --button-text: var(--text-inverse);
   --button-focus: var(--button-neutral-focus);
   --button-focus-ring: var(--button-neutral-focus-ring);
   --button-disabled: var(--button-neutral-disabled);
   --button-hover: var(--button-neutral-hover);
   --button-pressed: var(--button-neutral-pressed);
+}
+
+[data-button-color="subtle"] {
+  --button-default: var(--button-subtle);
+  --button-text: var(--text-primary);
+  --button-focus: var(--button-subtle-focus);
+  --button-focus-ring: var(--button-subtle-focus-ring);
+  --button-disabled: var(--button-subtle-disabled);
+  --button-hover: var(--button-subtle-hover);
+  --button-pressed: var(--button-subtle-pressed);
 }
 }
