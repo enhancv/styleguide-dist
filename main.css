@@ -5101,16 +5101,15 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
   .Button-module__button--bJF6M[data-icon-only][data-size="lg"] {
     padding: var(--spacing-12);
   }
+  /* Icon-only MD squares stay 40px like the MD button (10 + 20 + 10 in Figma);
+     there is no spacing/10 token, so the padding is a raw value like the icon
+     sizes above. */
   .Button-module__button--bJF6M[data-icon-only][data-size="md"] {
-    padding: var(--spacing-8);
+    padding: 10px;
   }
   /* Icon-only SM squares pad 8 around the 16px icon (32 = 8 + 16 + 8 in Figma). */
   .Button-module__button--bJF6M[data-icon-only][data-size="sm"] {
     padding: var(--spacing-8);
-  }
-  /* Icon-only MD squares carry the LG icon (40 = 8 + 24 + 8 in Figma). */
-  .Button-module__button--bJF6M[data-icon-only][data-size="md"] {
-    --_icon-size: 24px;
   }
 
   .Button-module__icon---bzmi {
