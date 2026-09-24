@@ -1,0 +1,37 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ * by tokens/build.mjs from the theme border tokens.
+ */
+
+@layer utilities {
+.border-color-subtle { border-color: var(--border-subtle); }
+.border-color-default { border-color: var(--border-default); }
+.border-color-strong { border-color: var(--border-strong); }
+.border-color-brand-subtle { border-color: var(--border-brand-subtle); }
+.border-color-success-subtle { border-color: var(--border-success-subtle); }
+.border-color-warning-subtle { border-color: var(--border-warning-subtle); }
+.border-color-danger-subtle { border-color: var(--border-danger-subtle); }
+.border-color-accent-subtle { border-color: var(--border-accent-subtle); }
+.border-color-brand { border-color: var(--border-brand); }
+.border-color-accent { border-color: var(--border-accent); }
+.border-color-success { border-color: var(--border-success); }
+.border-color-warning { border-color: var(--border-warning); }
+.border-color-danger { border-color: var(--border-danger); }
+.border-color-neutral { border-color: var(--border-neutral); }
+.border-color-inverse { border-color: var(--border-inverse); }
+.hover\:border-color-subtle:hover { border-color: var(--border-subtle); }
+.hover\:border-color-default:hover { border-color: var(--border-default); }
+.hover\:border-color-strong:hover { border-color: var(--border-strong); }
+.hover\:border-color-brand-subtle:hover { border-color: var(--border-brand-subtle); }
+.hover\:border-color-success-subtle:hover { border-color: var(--border-success-subtle); }
+.hover\:border-color-warning-subtle:hover { border-color: var(--border-warning-subtle); }
+.hover\:border-color-danger-subtle:hover { border-color: var(--border-danger-subtle); }
+.hover\:border-color-accent-subtle:hover { border-color: var(--border-accent-subtle); }
+.hover\:border-color-brand:hover { border-color: var(--border-brand); }
+.hover\:border-color-accent:hover { border-color: var(--border-accent); }
+.hover\:border-color-success:hover { border-color: var(--border-success); }
+.hover\:border-color-warning:hover { border-color: var(--border-warning); }
+.hover\:border-color-danger:hover { border-color: var(--border-danger); }
+.hover\:border-color-neutral:hover { border-color: var(--border-neutral); }
+.hover\:border-color-inverse:hover { border-color: var(--border-inverse); }
+}

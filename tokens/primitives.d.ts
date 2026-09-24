@@ -131,6 +131,84 @@ export declare const color: {
         readonly 900: "var(--primitives-green-900)";
         readonly 950: "var(--primitives-green-950)";
     };
+    readonly indigo: {
+        readonly 50: "var(--primitives-indigo-50)";
+        readonly 100: "var(--primitives-indigo-100)";
+        readonly 200: "var(--primitives-indigo-200)";
+        readonly 300: "var(--primitives-indigo-300)";
+        readonly 400: "var(--primitives-indigo-400)";
+        readonly 500: "var(--primitives-indigo-500)";
+        readonly 600: "var(--primitives-indigo-600)";
+        readonly 700: "var(--primitives-indigo-700)";
+        readonly 800: "var(--primitives-indigo-800)";
+        readonly 900: "var(--primitives-indigo-900)";
+        readonly 950: "var(--primitives-indigo-950)";
+    };
+    readonly lime: {
+        readonly 50: "var(--primitives-lime-50)";
+        readonly 100: "var(--primitives-lime-100)";
+        readonly 200: "var(--primitives-lime-200)";
+        readonly 300: "var(--primitives-lime-300)";
+        readonly 400: "var(--primitives-lime-400)";
+        readonly 500: "var(--primitives-lime-500)";
+        readonly 600: "var(--primitives-lime-600)";
+        readonly 700: "var(--primitives-lime-700)";
+        readonly 800: "var(--primitives-lime-800)";
+        readonly 900: "var(--primitives-lime-900)";
+        readonly 950: "var(--primitives-lime-950)";
+    };
+    readonly yellow: {
+        readonly 50: "var(--primitives-yellow-50)";
+        readonly 100: "var(--primitives-yellow-100)";
+        readonly 200: "var(--primitives-yellow-200)";
+        readonly 300: "var(--primitives-yellow-300)";
+        readonly 400: "var(--primitives-yellow-400)";
+        readonly 500: "var(--primitives-yellow-500)";
+        readonly 600: "var(--primitives-yellow-600)";
+        readonly 700: "var(--primitives-yellow-700)";
+        readonly 800: "var(--primitives-yellow-800)";
+        readonly 900: "var(--primitives-yellow-900)";
+        readonly 950: "var(--primitives-yellow-950)";
+    };
+    readonly magenta: {
+        readonly 50: "var(--primitives-magenta-50)";
+        readonly 100: "var(--primitives-magenta-100)";
+        readonly 200: "var(--primitives-magenta-200)";
+        readonly 300: "var(--primitives-magenta-300)";
+        readonly 400: "var(--primitives-magenta-400)";
+        readonly 500: "var(--primitives-magenta-500)";
+        readonly 600: "var(--primitives-magenta-600)";
+        readonly 700: "var(--primitives-magenta-700)";
+        readonly 800: "var(--primitives-magenta-800)";
+        readonly 900: "var(--primitives-magenta-900)";
+        readonly 950: "var(--primitives-magenta-950)";
+    };
+    readonly pink: {
+        readonly 50: "var(--primitives-pink-50)";
+        readonly 100: "var(--primitives-pink-100)";
+        readonly 200: "var(--primitives-pink-200)";
+        readonly 300: "var(--primitives-pink-300)";
+        readonly 400: "var(--primitives-pink-400)";
+        readonly 500: "var(--primitives-pink-500)";
+        readonly 600: "var(--primitives-pink-600)";
+        readonly 700: "var(--primitives-pink-700)";
+        readonly 800: "var(--primitives-pink-800)";
+        readonly 900: "var(--primitives-pink-900)";
+        readonly 950: "var(--primitives-pink-950)";
+    };
+    readonly cyan: {
+        readonly 50: "var(--primitives-cyan-50)";
+        readonly 100: "var(--primitives-cyan-100)";
+        readonly 200: "var(--primitives-cyan-200)";
+        readonly 300: "var(--primitives-cyan-300)";
+        readonly 400: "var(--primitives-cyan-400)";
+        readonly 500: "var(--primitives-cyan-500)";
+        readonly 600: "var(--primitives-cyan-600)";
+        readonly 700: "var(--primitives-cyan-700)";
+        readonly 800: "var(--primitives-cyan-800)";
+        readonly 900: "var(--primitives-cyan-900)";
+        readonly 950: "var(--primitives-cyan-950)";
+    };
 };
 export declare const layout: {
     readonly breakpoint: {
