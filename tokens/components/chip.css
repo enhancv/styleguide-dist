@@ -1,0 +1,204 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ * by tokens/build.mjs from tokens/input/components/chip/.
+ *
+ * Imported by the chip component — not part of index.css.
+ */
+
+@layer components {
+[data-chip-color="amber"] {
+  --chip-default: var(--chip-amber-solid-surface);
+  --chip-text: var(--chip-amber-solid-text);
+  --chip-hover: var(--chip-amber-solid-hover);
+  --chip-focus-ring: var(--chip-amber-subtle-focus-ring);
+  --chip-disabled: var(--chip-amber-solid-disabled);
+  --chip-surface-hover: var(--chip-amber-subtle-hover);
+  --chip-surface: var(--chip-amber-subtle-surface);
+  --chip-surface-text: var(--chip-amber-subtle-text);
+  --chip-border: var(--chip-amber-subtle-border);
+  --chip-surface-pressed: var(--chip-amber-subtle-pressed);
+  --chip-pressed: var(--chip-amber-solid-pressed);
+}
+
+[data-chip-color="blue"] {
+  --chip-default: var(--chip-blue-solid-surface);
+  --chip-text: var(--chip-blue-solid-text);
+  --chip-hover: var(--chip-blue-solid-hover);
+  --chip-focus-ring: var(--chip-blue-subtle-focus-ring);
+  --chip-disabled: var(--chip-blue-solid-disabled);
+  --chip-surface-hover: var(--chip-blue-subtle-hover);
+  --chip-surface: var(--chip-blue-subtle-surface);
+  --chip-surface-text: var(--chip-blue-subtle-text);
+  --chip-border: var(--chip-blue-subtle-border);
+  --chip-surface-pressed: var(--chip-blue-subtle-pressed);
+  --chip-pressed: var(--chip-blue-solid-pressed);
+}
+
+[data-chip-color="brand"] {
+  --chip-default: var(--chip-brand-solid-surface);
+  --chip-text: var(--chip-brand-solid-text);
+  --chip-hover: var(--chip-brand-solid-hover);
+  --chip-focus-ring: var(--chip-brand-subtle-focus-ring);
+  --chip-disabled: var(--chip-brand-solid-disabled);
+  --chip-surface-hover: var(--chip-brand-subtle-hover);
+  --chip-surface: var(--chip-brand-subtle-surface);
+  --chip-surface-text: var(--chip-brand-subtle-text);
+  --chip-border: var(--chip-brand-subtle-border);
+  --chip-surface-pressed: var(--chip-brand-subtle-pressed);
+  --chip-pressed: var(--chip-brand-solid-pressed);
+}
+
+[data-chip-color="cyan"] {
+  --chip-default: var(--chip-cyan-solid-surface);
+  --chip-text: var(--chip-cyan-solid-text);
+  --chip-hover: var(--chip-cyan-solid-hover);
+  --chip-focus-ring: var(--chip-cyan-subtle-focus-ring);
+  --chip-disabled: var(--chip-cyan-solid-disabled);
+  --chip-surface-hover: var(--chip-cyan-subtle-hover);
+  --chip-surface: var(--chip-cyan-subtle-surface);
+  --chip-surface-text: var(--chip-cyan-subtle-text);
+  --chip-border: var(--chip-cyan-subtle-border);
+  --chip-surface-pressed: var(--chip-cyan-subtle-pressed);
+  --chip-pressed: var(--chip-cyan-solid-pressed);
+}
+
+[data-chip-color="green"] {
+  --chip-default: var(--chip-green-solid-surface);
+  --chip-text: var(--chip-green-solid-text);
+  --chip-hover: var(--chip-green-solid-hover);
+  --chip-focus-ring: var(--chip-green-subtle-focus-ring);
+  --chip-disabled: var(--chip-green-solid-disabled);
+  --chip-surface-hover: var(--chip-green-subtle-hover);
+  --chip-surface: var(--chip-green-subtle-surface);
+  --chip-surface-text: var(--chip-green-subtle-text);
+  --chip-border: var(--chip-green-subtle-border);
+  --chip-surface-pressed: var(--chip-green-subtle-pressed);
+  --chip-pressed: var(--chip-green-solid-pressed);
+}
+
+[data-chip-color="indigo"] {
+  --chip-default: var(--chip-indigo-solid-surface);
+  --chip-text: var(--chip-indigo-solid-text);
+  --chip-hover: var(--chip-indigo-solid-hover);
+  --chip-focus-ring: var(--chip-indigo-subtle-focus-ring);
+  --chip-disabled: var(--chip-indigo-solid-disabled);
+  --chip-surface-hover: var(--chip-indigo-subtle-hover);
+  --chip-surface: var(--chip-indigo-subtle-surface);
+  --chip-surface-text: var(--chip-indigo-subtle-text);
+  --chip-border: var(--chip-indigo-subtle-border);
+  --chip-surface-pressed: var(--chip-indigo-subtle-pressed);
+  --chip-pressed: var(--chip-indigo-solid-pressed);
+}
+
+[data-chip-color="lime"] {
+  --chip-default: var(--chip-lime-solid-surface);
+  --chip-text: var(--chip-lime-solid-text);
+  --chip-hover: var(--chip-lime-solid-hover);
+  --chip-focus-ring: var(--chip-lime-subtle-focus-ring);
+  --chip-disabled: var(--chip-lime-solid-disabled);
+  --chip-surface-hover: var(--chip-lime-subtle-hover);
+  --chip-surface: var(--chip-lime-subtle-surface);
+  --chip-surface-text: var(--chip-lime-subtle-text);
+  --chip-border: var(--chip-lime-subtle-border);
+  --chip-surface-pressed: var(--chip-lime-subtle-pressed);
+  --chip-pressed: var(--chip-lime-solid-pressed);
+}
+
+[data-chip-color="magenta"] {
+  --chip-default: var(--chip-magenta-solid-surface);
+  --chip-text: var(--chip-magenta-solid-text);
+  --chip-hover: var(--chip-magenta-solid-hover);
+  --chip-focus-ring: var(--chip-magenta-subtle-focus-ring);
+  --chip-disabled: var(--chip-magenta-solid-disabled);
+  --chip-surface-hover: var(--chip-magenta-subtle-hover);
+  --chip-surface: var(--chip-magenta-subtle-surface);
+  --chip-surface-text: var(--chip-magenta-subtle-text);
+  --chip-border: var(--chip-magenta-subtle-border);
+  --chip-surface-pressed: var(--chip-magenta-subtle-pressed);
+  --chip-pressed: var(--chip-magenta-solid-pressed);
+}
+
+[data-chip-color="neutral"] {
+  --chip-default: var(--chip-grey-solid-surface);
+  --chip-text: var(--chip-grey-solid-text);
+  --chip-hover: var(--chip-grey-solid-hover);
+  --chip-focus-ring: var(--chip-grey-subtle-focus-ring);
+  --chip-disabled: var(--chip-grey-solid-disabled);
+  --chip-surface-hover: var(--chip-grey-subtle-hover);
+  --chip-surface: var(--chip-grey-subtle-surface);
+  --chip-surface-text: var(--chip-grey-subtle-text);
+  --chip-border: var(--chip-grey-subtle-border);
+  --chip-surface-pressed: var(--chip-grey-subtle-pressed);
+  --chip-pressed: var(--chip-grey-solid-pressed);
+}
+
+[data-chip-color="pink"] {
+  --chip-default: var(--chip-pink-solid-surface);
+  --chip-text: var(--chip-pink-solid-text);
+  --chip-hover: var(--chip-pink-solid-hover);
+  --chip-focus-ring: var(--chip-pink-subtle-focus-ring);
+  --chip-disabled: var(--chip-pink-solid-disabled);
+  --chip-surface-hover: var(--chip-pink-subtle-hover);
+  --chip-surface: var(--chip-pink-subtle-surface);
+  --chip-surface-text: var(--chip-pink-subtle-text);
+  --chip-border: var(--chip-pink-subtle-border);
+  --chip-surface-pressed: var(--chip-pink-subtle-pressed);
+  --chip-pressed: var(--chip-pink-solid-pressed);
+}
+
+[data-chip-color="purple"] {
+  --chip-default: var(--chip-purple-solid-surface);
+  --chip-text: var(--chip-purple-solid-text);
+  --chip-hover: var(--chip-purple-solid-hover);
+  --chip-focus-ring: var(--chip-purple-subtle-focus-ring);
+  --chip-disabled: var(--chip-purple-solid-disabled);
+  --chip-surface-hover: var(--chip-purple-subtle-hover);
+  --chip-surface: var(--chip-purple-subtle-surface);
+  --chip-surface-text: var(--chip-purple-subtle-text);
+  --chip-border: var(--chip-purple-subtle-border);
+  --chip-surface-pressed: var(--chip-purple-subtle-pressed);
+  --chip-pressed: var(--chip-purple-solid-pressed);
+}
+
+[data-chip-color="red"] {
+  --chip-default: var(--chip-red-solid-surface);
+  --chip-text: var(--chip-red-solid-text);
+  --chip-hover: var(--chip-red-solid-hover);
+  --chip-focus-ring: var(--chip-red-subtle-focus-ring);
+  --chip-disabled: var(--chip-red-solid-disabled);
+  --chip-surface-hover: var(--chip-red-subtle-hover);
+  --chip-surface: var(--chip-red-subtle-surface);
+  --chip-surface-text: var(--chip-red-subtle-text);
+  --chip-border: var(--chip-red-subtle-border);
+  --chip-surface-pressed: var(--chip-red-subtle-pressed);
+  --chip-pressed: var(--chip-red-solid-pressed);
+}
+
+[data-chip-color="sky"] {
+  --chip-default: var(--chip-sky-solid-surface);
+  --chip-text: var(--chip-sky-solid-text);
+  --chip-hover: var(--chip-sky-solid-hover);
+  --chip-focus-ring: var(--chip-sky-subtle-focus-ring);
+  --chip-disabled: var(--chip-sky-solid-disabled);
+  --chip-surface-hover: var(--chip-sky-subtle-hover);
+  --chip-surface: var(--chip-sky-subtle-surface);
+  --chip-surface-text: var(--chip-sky-subtle-text);
+  --chip-border: var(--chip-sky-subtle-border);
+  --chip-surface-pressed: var(--chip-sky-subtle-pressed);
+  --chip-pressed: var(--chip-sky-solid-pressed);
+}
+
+[data-chip-color="yellow"] {
+  --chip-default: var(--chip-yellow-solid-surface);
+  --chip-text: var(--chip-yellow-solid-text);
+  --chip-hover: var(--chip-yellow-solid-hover);
+  --chip-focus-ring: var(--chip-yellow-subtle-focus-ring);
+  --chip-disabled: var(--chip-yellow-solid-disabled);
+  --chip-surface-hover: var(--chip-yellow-subtle-hover);
+  --chip-surface: var(--chip-yellow-subtle-surface);
+  --chip-surface-text: var(--chip-yellow-subtle-text);
+  --chip-border: var(--chip-yellow-subtle-border);
+  --chip-surface-pressed: var(--chip-yellow-subtle-pressed);
+  --chip-pressed: var(--chip-yellow-solid-pressed);
+}
+}

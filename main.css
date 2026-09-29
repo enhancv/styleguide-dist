@@ -830,186 +830,246 @@
   --icon-info: var(--primitives-sky-500);
   --icon-muted: var(--primitives-grey-500);
   --icon-disabled: var(--primitives-grey-400);
-  --chip-brand-solid-surface: var(--primitives-brand-500);
-  --chip-brand-solid-text: var(--primitives-slate-900);
+  --chip-brand-solid-surface: var(--primitives-brand-300);
+  --chip-brand-solid-text: var(--primitives-slate-950);
   --chip-brand-subtle-surface: var(--primitives-brand-100);
-  --chip-brand-subtle-text: var(--primitives-brand-700);
-  --chip-purple-solid-surface: var(--primitives-purple-700);
-  --chip-purple-solid-text: var(--primitives-slate-50);
+  --chip-brand-subtle-text: var(--primitives-brand-900);
+  --chip-purple-solid-surface: var(--primitives-purple-300);
+  --chip-purple-solid-text: var(--primitives-slate-950);
   --chip-purple-subtle-surface: var(--primitives-purple-100);
-  --chip-purple-subtle-text: var(--primitives-purple-700);
-  --chip-indigo-solid-surface: var(--primitives-indigo-600);
-  --chip-indigo-solid-text: var(--primitives-neutral-white);
+  --chip-purple-subtle-text: var(--primitives-purple-900);
+  --chip-indigo-solid-surface: var(--primitives-indigo-200);
+  --chip-indigo-solid-text: var(--primitives-indigo-950);
   --chip-indigo-subtle-surface: var(--primitives-indigo-100);
-  --chip-indigo-subtle-text: var(--primitives-indigo-700);
-  --chip-blue-solid-surface: var(--primitives-blue-400);
-  --chip-blue-solid-text: var(--primitives-slate-900);
+  --chip-indigo-subtle-text: var(--primitives-indigo-900);
+  --chip-blue-solid-surface: var(--primitives-blue-300);
+  --chip-blue-solid-text: var(--primitives-slate-950);
   --chip-blue-subtle-surface: var(--primitives-blue-100);
-  --chip-blue-subtle-text: var(--primitives-blue-700);
-  --chip-sky-solid-surface: var(--primitives-sky-400);
-  --chip-sky-solid-text: var(--primitives-slate-900);
+  --chip-blue-subtle-text: var(--primitives-blue-800);
+  --chip-sky-solid-surface: var(--primitives-sky-300);
+  --chip-sky-solid-text: var(--primitives-slate-950);
   --chip-sky-subtle-surface: var(--primitives-sky-100);
-  --chip-sky-subtle-text: var(--primitives-sky-700);
-  --chip-cyan-solid-surface: var(--primitives-cyan-500);
+  --chip-sky-subtle-text: var(--primitives-sky-800);
+  --chip-cyan-solid-surface: var(--primitives-cyan-300);
   --chip-cyan-solid-text: var(--primitives-slate-900);
   --chip-cyan-subtle-surface: var(--primitives-cyan-100);
-  --chip-cyan-subtle-text: var(--primitives-cyan-700);
-  --chip-green-solid-surface: var(--primitives-green-600);
+  --chip-cyan-subtle-text: var(--primitives-cyan-900);
+  --chip-green-solid-surface: var(--primitives-green-300);
   --chip-green-solid-text: var(--primitives-slate-900);
   --chip-green-subtle-surface: var(--primitives-green-100);
-  --chip-green-subtle-text: var(--primitives-green-700);
-  --chip-lime-solid-surface: var(--primitives-lime-400);
+  --chip-green-subtle-text: var(--primitives-green-900);
+  --chip-lime-solid-surface: var(--primitives-lime-300);
   --chip-lime-solid-text: var(--primitives-slate-900);
   --chip-lime-subtle-surface: var(--primitives-lime-100);
-  --chip-lime-subtle-text: var(--primitives-lime-700);
-  --chip-yellow-solid-surface: var(--primitives-yellow-500);
+  --chip-lime-subtle-text: var(--primitives-lime-900);
+  --chip-yellow-solid-surface: var(--primitives-yellow-300);
   --chip-yellow-solid-text: var(--primitives-slate-900);
   --chip-yellow-subtle-surface: var(--primitives-yellow-100);
-  --chip-yellow-subtle-text: var(--primitives-yellow-700);
-  --chip-amber-solid-surface: var(--primitives-amber-600);
+  --chip-yellow-subtle-text: var(--primitives-yellow-900);
+  --chip-amber-solid-surface: var(--primitives-amber-300);
   --chip-amber-solid-text: var(--primitives-slate-900);
   --chip-amber-subtle-surface: var(--primitives-amber-100);
-  --chip-amber-subtle-text: var(--primitives-amber-700);
-  --chip-red-solid-surface: var(--primitives-red-600);
-  --chip-red-solid-text: var(--primitives-slate-50);
+  --chip-amber-subtle-text: var(--primitives-amber-900);
+  --chip-red-solid-surface: var(--primitives-red-300);
+  --chip-red-solid-text: var(--primitives-slate-950);
   --chip-red-subtle-surface: var(--primitives-red-100);
-  --chip-red-subtle-text: var(--primitives-red-700);
-  --chip-pink-solid-surface: var(--primitives-pink-400);
+  --chip-red-subtle-text: var(--primitives-red-950);
+  --chip-pink-solid-surface: var(--primitives-pink-300);
   --chip-pink-solid-text: var(--primitives-slate-900);
   --chip-pink-subtle-surface: var(--primitives-pink-100);
-  --chip-pink-subtle-text: var(--primitives-pink-700);
-  --chip-magenta-solid-surface: var(--primitives-magenta-400);
+  --chip-pink-subtle-text: var(--primitives-pink-900);
+  --chip-magenta-solid-surface: var(--primitives-magenta-300);
   --chip-magenta-solid-text: var(--primitives-slate-900);
   --chip-magenta-subtle-surface: var(--primitives-magenta-100);
-  --chip-magenta-subtle-text: var(--primitives-magenta-700);
-  --chip-slate-solid-surface: var(--primitives-slate-600);
-  --chip-slate-solid-text: var(--primitives-neutral-white);
+  --chip-magenta-subtle-text: var(--primitives-magenta-900);
+  --chip-slate-solid-surface: var(--primitives-slate-200);
+  --chip-slate-solid-text: var(--primitives-slate-900);
   --chip-slate-subtle-surface: var(--primitives-slate-100);
-  --chip-slate-subtle-text: var(--primitives-slate-700);
-  --chip-grey-solid-surface: var(--primitives-grey-600);
-  --chip-grey-solid-text: var(--primitives-neutral-white);
+  --chip-slate-subtle-text: var(--primitives-slate-900);
+  --chip-grey-solid-surface: var(--primitives-grey-200);
+  --chip-grey-solid-text: var(--primitives-grey-950);
   --chip-grey-subtle-surface: var(--primitives-grey-100);
   --chip-grey-subtle-text: var(--primitives-grey-700);
-  --chip-brand-solid-border: var(--primitives-brand-600);
+  --chip-brand-solid-border: var(--primitives-brand-400);
   --chip-brand-solid-icon: var(--primitives-slate-900);
-  --chip-brand-solid-focus-ring: var(--primitives-brand-500);
+  --chip-brand-solid-focus-ring: var(--primitives-brand-600);
   --chip-brand-solid-disabled: var(--primitives-grey-300);
   --chip-brand-subtle-border: var(--primitives-brand-200);
   --chip-brand-subtle-icon: var(--primitives-brand-700);
-  --chip-brand-subtle-focus-ring: var(--primitives-brand-500);
+  --chip-brand-subtle-focus-ring: var(--primitives-brand-700);
   --chip-brand-subtle-disabled: var(--primitives-grey-100);
-  --chip-purple-solid-border: var(--primitives-purple-500);
+  --chip-purple-solid-border: var(--primitives-purple-400);
   --chip-purple-solid-icon: var(--primitives-slate-900);
-  --chip-purple-solid-focus-ring: var(--primitives-purple-500);
+  --chip-purple-solid-focus-ring: var(--primitives-purple-600);
   --chip-purple-solid-disabled: var(--primitives-grey-300);
   --chip-purple-subtle-border: var(--primitives-purple-200);
   --chip-purple-subtle-icon: var(--primitives-purple-700);
   --chip-purple-subtle-focus-ring: var(--primitives-purple-500);
   --chip-purple-subtle-disabled: var(--primitives-grey-100);
-  --chip-indigo-solid-border: var(--primitives-indigo-700);
-  --chip-indigo-solid-icon: var(--primitives-neutral-white);
-  --chip-indigo-solid-focus-ring: var(--primitives-indigo-500);
+  --chip-indigo-solid-border: var(--primitives-indigo-400);
+  --chip-indigo-solid-icon: var(--primitives-indigo-900);
+  --chip-indigo-solid-focus-ring: var(--primitives-indigo-600);
   --chip-indigo-solid-disabled: var(--primitives-grey-300);
   --chip-indigo-subtle-border: var(--primitives-indigo-200);
   --chip-indigo-subtle-icon: var(--primitives-indigo-700);
   --chip-indigo-subtle-focus-ring: var(--primitives-indigo-500);
   --chip-indigo-subtle-disabled: var(--primitives-grey-100);
-  --chip-blue-solid-border: var(--primitives-blue-500);
+  --chip-blue-solid-border: var(--primitives-blue-400);
   --chip-blue-solid-icon: var(--primitives-slate-900);
-  --chip-blue-solid-focus-ring: var(--primitives-blue-500);
+  --chip-blue-solid-focus-ring: var(--primitives-blue-600);
   --chip-blue-solid-disabled: var(--primitives-grey-300);
   --chip-blue-subtle-border: var(--primitives-blue-200);
   --chip-blue-subtle-icon: var(--primitives-blue-700);
   --chip-blue-subtle-focus-ring: var(--primitives-blue-500);
   --chip-blue-subtle-disabled: var(--primitives-grey-100);
-  --chip-sky-solid-border: var(--primitives-sky-500);
+  --chip-sky-solid-border: var(--primitives-sky-400);
   --chip-sky-solid-icon: var(--primitives-slate-900);
-  --chip-sky-solid-focus-ring: var(--primitives-sky-500);
+  --chip-sky-solid-focus-ring: var(--primitives-sky-600);
   --chip-sky-solid-disabled: var(--primitives-grey-300);
   --chip-sky-subtle-border: var(--primitives-sky-200);
   --chip-sky-subtle-icon: var(--primitives-sky-700);
   --chip-sky-subtle-focus-ring: var(--primitives-sky-500);
   --chip-sky-subtle-disabled: var(--primitives-grey-100);
-  --chip-cyan-solid-border: var(--primitives-cyan-600);
+  --chip-cyan-solid-border: var(--primitives-cyan-400);
   --chip-cyan-solid-icon: var(--primitives-slate-900);
-  --chip-cyan-solid-focus-ring: var(--primitives-cyan-500);
+  --chip-cyan-solid-focus-ring: var(--primitives-cyan-600);
   --chip-cyan-solid-disabled: var(--primitives-grey-300);
   --chip-cyan-subtle-border: var(--primitives-cyan-200);
   --chip-cyan-subtle-icon: var(--primitives-cyan-700);
-  --chip-cyan-subtle-focus-ring: var(--primitives-cyan-500);
+  --chip-cyan-subtle-focus-ring: var(--primitives-cyan-700);
   --chip-cyan-subtle-disabled: var(--primitives-grey-100);
-  --chip-green-solid-border: var(--primitives-green-700);
+  --chip-green-solid-border: var(--primitives-green-400);
   --chip-green-solid-icon: var(--primitives-slate-900);
-  --chip-green-solid-focus-ring: var(--primitives-green-500);
+  --chip-green-solid-focus-ring: var(--primitives-green-600);
   --chip-green-solid-disabled: var(--primitives-grey-300);
   --chip-green-subtle-border: var(--primitives-green-200);
   --chip-green-subtle-icon: var(--primitives-green-700);
-  --chip-green-subtle-focus-ring: var(--primitives-green-500);
+  --chip-green-subtle-focus-ring: var(--primitives-green-700);
   --chip-green-subtle-disabled: var(--primitives-grey-100);
-  --chip-lime-solid-border: var(--primitives-lime-700);
+  --chip-lime-solid-border: var(--primitives-lime-400);
   --chip-lime-solid-icon: var(--primitives-slate-900);
-  --chip-lime-solid-focus-ring: var(--primitives-lime-500);
+  --chip-lime-solid-focus-ring: var(--primitives-lime-600);
   --chip-lime-solid-disabled: var(--primitives-grey-300);
   --chip-lime-subtle-border: var(--primitives-lime-200);
   --chip-lime-subtle-icon: var(--primitives-lime-700);
-  --chip-lime-subtle-focus-ring: var(--primitives-lime-500);
+  --chip-lime-subtle-focus-ring: var(--primitives-lime-700);
   --chip-lime-subtle-disabled: var(--primitives-grey-100);
-  --chip-yellow-solid-border: var(--primitives-yellow-700);
+  --chip-yellow-solid-border: var(--primitives-yellow-400);
   --chip-yellow-solid-icon: var(--primitives-slate-900);
-  --chip-yellow-solid-focus-ring: var(--primitives-yellow-500);
+  --chip-yellow-solid-focus-ring: var(--primitives-yellow-600);
   --chip-yellow-solid-disabled: var(--primitives-grey-300);
   --chip-yellow-subtle-border: var(--primitives-yellow-200);
   --chip-yellow-subtle-icon: var(--primitives-yellow-700);
-  --chip-yellow-subtle-focus-ring: var(--primitives-yellow-500);
+  --chip-yellow-subtle-focus-ring: var(--primitives-yellow-700);
   --chip-yellow-subtle-disabled: var(--primitives-grey-100);
-  --chip-amber-solid-border: var(--primitives-amber-700);
+  --chip-amber-solid-border: var(--primitives-amber-400);
   --chip-amber-solid-icon: var(--primitives-slate-900);
-  --chip-amber-solid-focus-ring: var(--primitives-amber-500);
+  --chip-amber-solid-focus-ring: var(--primitives-amber-600);
   --chip-amber-solid-disabled: var(--primitives-grey-300);
   --chip-amber-subtle-border: var(--primitives-amber-200);
   --chip-amber-subtle-icon: var(--primitives-amber-700);
-  --chip-amber-subtle-focus-ring: var(--primitives-amber-500);
+  --chip-amber-subtle-focus-ring: var(--primitives-amber-700);
   --chip-amber-subtle-disabled: var(--primitives-grey-100);
-  --chip-red-solid-border: var(--primitives-red-500);
+  --chip-red-solid-border: var(--primitives-red-400);
   --chip-red-solid-icon: var(--primitives-slate-900);
-  --chip-red-solid-focus-ring: var(--primitives-red-500);
+  --chip-red-solid-focus-ring: var(--primitives-red-600);
   --chip-red-solid-disabled: var(--primitives-grey-300);
   --chip-red-subtle-border: var(--primitives-red-200);
   --chip-red-subtle-icon: var(--primitives-red-700);
   --chip-red-subtle-focus-ring: var(--primitives-red-500);
   --chip-red-subtle-disabled: var(--primitives-grey-100);
-  --chip-pink-solid-border: var(--primitives-pink-500);
+  --chip-pink-solid-border: var(--primitives-pink-400);
   --chip-pink-solid-icon: var(--primitives-slate-900);
-  --chip-pink-solid-focus-ring: var(--primitives-pink-500);
+  --chip-pink-solid-focus-ring: var(--primitives-pink-600);
   --chip-pink-solid-disabled: var(--primitives-grey-300);
   --chip-pink-subtle-border: var(--primitives-pink-200);
   --chip-pink-subtle-icon: var(--primitives-pink-700);
   --chip-pink-subtle-focus-ring: var(--primitives-pink-500);
   --chip-pink-subtle-disabled: var(--primitives-grey-100);
-  --chip-magenta-solid-border: var(--primitives-magenta-500);
+  --chip-magenta-solid-border: var(--primitives-magenta-400);
   --chip-magenta-solid-icon: var(--primitives-slate-900);
-  --chip-magenta-solid-focus-ring: var(--primitives-magenta-500);
+  --chip-magenta-solid-focus-ring: var(--primitives-magenta-600);
   --chip-magenta-solid-disabled: var(--primitives-grey-300);
   --chip-magenta-subtle-border: var(--primitives-magenta-200);
   --chip-magenta-subtle-icon: var(--primitives-magenta-700);
   --chip-magenta-subtle-focus-ring: var(--primitives-magenta-500);
   --chip-magenta-subtle-disabled: var(--primitives-grey-100);
-  --chip-slate-solid-border: var(--primitives-slate-700);
-  --chip-slate-solid-icon: var(--primitives-neutral-white);
-  --chip-slate-solid-focus-ring: var(--primitives-slate-500);
+  --chip-slate-solid-border: var(--primitives-slate-400);
+  --chip-slate-solid-icon: var(--primitives-slate-900);
+  --chip-slate-solid-focus-ring: var(--primitives-slate-600);
   --chip-slate-solid-disabled: var(--primitives-grey-300);
   --chip-slate-subtle-border: var(--primitives-slate-200);
   --chip-slate-subtle-icon: var(--primitives-slate-700);
   --chip-slate-subtle-focus-ring: var(--primitives-slate-500);
   --chip-slate-subtle-disabled: var(--primitives-grey-100);
-  --chip-grey-solid-border: var(--primitives-grey-700);
-  --chip-grey-solid-icon: var(--primitives-neutral-white);
-  --chip-grey-solid-focus-ring: var(--primitives-grey-500);
+  --chip-grey-solid-border: var(--primitives-grey-400);
+  --chip-grey-solid-icon: var(--primitives-grey-900);
+  --chip-grey-solid-focus-ring: var(--primitives-grey-600);
   --chip-grey-solid-disabled: var(--primitives-grey-300);
   --chip-grey-subtle-border: var(--primitives-grey-200);
   --chip-grey-subtle-icon: var(--primitives-grey-700);
   --chip-grey-subtle-focus-ring: var(--primitives-grey-500);
   --chip-grey-subtle-disabled: var(--primitives-grey-100);
+  --chip-brand-solid-hover: var(--primitives-brand-400);
+  --chip-brand-solid-pressed: var(--primitives-brand-500);
+  --chip-brand-subtle-hover: var(--primitives-brand-200);
+  --chip-brand-subtle-pressed: var(--primitives-brand-300);
+  --chip-purple-solid-hover: var(--primitives-purple-400);
+  --chip-purple-solid-pressed: var(--primitives-purple-500);
+  --chip-purple-subtle-hover: var(--primitives-purple-200);
+  --chip-purple-subtle-pressed: var(--primitives-purple-300);
+  --chip-indigo-solid-hover: var(--primitives-indigo-300);
+  --chip-indigo-solid-pressed: var(--primitives-indigo-400);
+  --chip-indigo-subtle-hover: var(--primitives-indigo-200);
+  --chip-indigo-subtle-pressed: var(--primitives-indigo-300);
+  --chip-blue-solid-hover: var(--primitives-blue-400);
+  --chip-blue-solid-pressed: var(--primitives-blue-500);
+  --chip-blue-subtle-hover: var(--primitives-blue-200);
+  --chip-blue-subtle-pressed: var(--primitives-blue-300);
+  --chip-sky-solid-hover: var(--primitives-sky-400);
+  --chip-sky-solid-pressed: var(--primitives-sky-500);
+  --chip-sky-subtle-hover: var(--primitives-sky-200);
+  --chip-sky-subtle-pressed: var(--primitives-sky-300);
+  --chip-cyan-solid-hover: var(--primitives-cyan-400);
+  --chip-cyan-solid-pressed: var(--primitives-cyan-500);
+  --chip-cyan-subtle-hover: var(--primitives-cyan-200);
+  --chip-cyan-subtle-pressed: var(--primitives-cyan-300);
+  --chip-green-solid-hover: var(--primitives-green-400);
+  --chip-green-solid-pressed: var(--primitives-green-500);
+  --chip-green-subtle-hover: var(--primitives-green-200);
+  --chip-green-subtle-pressed: var(--primitives-green-400);
+  --chip-lime-solid-hover: var(--primitives-lime-400);
+  --chip-lime-solid-pressed: var(--primitives-lime-500);
+  --chip-lime-subtle-hover: var(--primitives-lime-200);
+  --chip-lime-subtle-pressed: var(--primitives-lime-300);
+  --chip-yellow-solid-hover: var(--primitives-yellow-400);
+  --chip-yellow-solid-pressed: var(--primitives-yellow-500);
+  --chip-yellow-subtle-hover: var(--primitives-yellow-200);
+  --chip-yellow-subtle-pressed: var(--primitives-yellow-300);
+  --chip-amber-solid-hover: var(--primitives-amber-400);
+  --chip-amber-solid-pressed: var(--primitives-amber-500);
+  --chip-amber-subtle-hover: var(--primitives-amber-200);
+  --chip-amber-subtle-pressed: var(--primitives-amber-300);
+  --chip-red-solid-hover: var(--primitives-red-400);
+  --chip-red-solid-pressed: var(--primitives-red-500);
+  --chip-red-subtle-hover: var(--primitives-red-200);
+  --chip-red-subtle-pressed: var(--primitives-red-300);
+  --chip-pink-solid-hover: var(--primitives-pink-400);
+  --chip-pink-solid-pressed: var(--primitives-pink-500);
+  --chip-pink-subtle-hover: var(--primitives-pink-200);
+  --chip-pink-subtle-pressed: var(--primitives-pink-300);
+  --chip-magenta-solid-hover: var(--primitives-magenta-400);
+  --chip-magenta-solid-pressed: var(--primitives-magenta-500);
+  --chip-magenta-subtle-hover: var(--primitives-magenta-200);
+  --chip-magenta-subtle-pressed: var(--primitives-magenta-300);
+  --chip-slate-solid-hover: var(--primitives-slate-300);
+  --chip-slate-solid-pressed: var(--primitives-slate-400);
+  --chip-slate-subtle-hover: var(--primitives-slate-200);
+  --chip-slate-subtle-pressed: var(--primitives-slate-300);
+  --chip-grey-solid-hover: var(--primitives-grey-300);
+  --chip-grey-solid-pressed: var(--primitives-grey-400);
+  --chip-grey-subtle-hover: var(--primitives-grey-200);
+  --chip-grey-subtle-pressed: var(--primitives-grey-300);
 }
 
 /**
@@ -5959,6 +6019,656 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
 }
 
 @layer components {
+  /* ── Palette ──────────────────────────────────────────────────────────────
+     Colour lives only in the 11 generated --chip-* roles, re-pointed per mode
+     by [data-chip-color] (src/tokens/components/chip.css). Each Style copies
+     its Figma state table into private vars here; the state rules further
+     down are Style-agnostic. The vars sit on the outermost element — the pill
+     itself, or InputChip's .root — so InputChip's action button (a sibling of
+     the body, never a descendant) inherits them too. */
+  :is(.Chip-module__chip--e7F1K, .Chip-module__root--oHndA)[data-type="subtle"] {
+    --_fill: var(--chip-surface);
+    --_fill-hover: var(--chip-surface-hover);
+    --_fill-pressed: var(--chip-surface-pressed);
+    --_fill-focus: var(--chip-surface);
+    --_fill-disabled: transparent;
+    --_stroke: var(--chip-border);
+    --_stroke-hover: var(--chip-border);
+    --_stroke-pressed: var(--chip-border);
+    --_stroke-disabled: var(--chip-disabled);
+    --_label: var(--chip-surface-text);
+    --_label-hover: var(--chip-surface-text);
+    --_label-pressed: var(--chip-surface-text);
+    --_label-focus: var(--chip-surface-text);
+  }
+  :is(.Chip-module__chip--e7F1K, .Chip-module__root--oHndA)[data-type="solid"] {
+    --_fill: var(--chip-default);
+    --_fill-hover: var(--chip-hover);
+    --_fill-pressed: var(--chip-pressed);
+    --_fill-focus: var(--chip-default);
+    --_fill-disabled: var(--chip-disabled);
+    --_stroke: transparent;
+    --_stroke-hover: transparent;
+    --_stroke-pressed: transparent;
+    --_stroke-disabled: transparent;
+    --_label: var(--chip-text);
+    --_label-hover: var(--chip-text);
+    --_label-pressed: var(--chip-text);
+    --_label-focus: var(--chip-text);
+  }
+  /* Ghost is never filled, Focus excepted. Its Pressed label is the one
+     binding outside the Chip collection: text/tertiary, the same grey in
+     every mode (the only step that stays >= 4.5:1 and differs from rest and
+     hover). */
+  :is(.Chip-module__chip--e7F1K, .Chip-module__root--oHndA)[data-type="ghost"] {
+    --_fill: transparent;
+    --_fill-hover: transparent;
+    --_fill-pressed: transparent;
+    --_fill-focus: var(--background-neutral-subtle);
+    --_fill-disabled: transparent;
+    --_stroke: transparent;
+    --_stroke-hover: transparent;
+    --_stroke-pressed: transparent;
+    --_stroke-disabled: transparent;
+    --_label: var(--chip-surface-text);
+    --_label-hover: var(--chip-text);
+    --_label-pressed: var(--text-tertiary);
+    --_label-focus: var(--chip-surface-text);
+  }
+
+  /* FilterChip Selected (the 2026-09 contrast fix in Figma): label and check
+     take the strong text role and Subtle gains a dark outline. Solid only gains the
+     check, which the tsx draws. Disabled keeps the unselected values, so a
+     selected disabled chip differs only by its check. */
+  .Chip-module__chip--e7F1K[data-type="subtle"][data-selected] {
+    --_stroke: var(--chip-surface-text);
+    --_stroke-hover: var(--chip-surface-text);
+    --_stroke-pressed: var(--chip-surface-text);
+    --_label: var(--chip-text);
+    --_label-hover: var(--chip-text);
+    --_label-pressed: var(--chip-text);
+    --_label-focus: var(--chip-text);
+  }
+  /* Ghost hover previews the toggle: unselected darkens to the selected
+     label, selected lightens to the unselected one. */
+  .Chip-module__chip--e7F1K[data-type="ghost"][data-selected] {
+    --_label: var(--chip-text);
+    --_label-hover: var(--chip-surface-text);
+    --_label-focus: var(--chip-text);
+  }
+
+  /* ── Size ─────────────────────────────────────────────────────────────────
+     Hug height = padding + the label line box: 3+18+3 / 6+20+6 / 8+24+8.
+     The raw Figma values with no token — SM's 3px, the icon boxes, the label
+     caps — live here once. */
+  :is(.Chip-module__chip--e7F1K, .Chip-module__root--oHndA)[data-size="sm"] {
+    --_pad-block: 3px;
+    --_pad-inline: var(--spacing-8);
+    --_slot-pad: 0px;
+    --_icon-size: 16px;
+    --_label-max: 200px;
+    --_font: var(--body-xs-font);
+    --_font-size: var(--body-xs-size);
+    --_line-height: var(--body-xs-line-height);
+    --_tracking: var(--body-xs-tracking);
+  }
+  :is(.Chip-module__chip--e7F1K, .Chip-module__root--oHndA)[data-size="md"] {
+    --_pad-block: var(--spacing-6);
+    --_pad-inline: var(--spacing-12);
+    --_slot-pad: var(--spacing-4);
+    --_icon-size: 16px;
+    --_label-max: 224px;
+    --_font: var(--body-s-font);
+    --_font-size: var(--body-s-size);
+    --_line-height: var(--body-s-line-height);
+    --_tracking: var(--body-s-tracking);
+  }
+  :is(.Chip-module__chip--e7F1K, .Chip-module__root--oHndA)[data-size="lg"] {
+    --_pad-block: var(--spacing-8);
+    --_pad-inline: var(--spacing-16);
+    --_slot-pad: var(--spacing-4);
+    --_icon-size: 20px;
+    --_label-max: 256px;
+    --_font: var(--body-m-font);
+    --_font-size: var(--body-m-size);
+    --_line-height: var(--body-m-line-height);
+    --_tracking: var(--body-m-tracking);
+  }
+  /* fullLabel: sentence-length labels lose the cap and truncate only at the
+     container's width (the pill's max-inline-size: 100%). */
+  :is(.Chip-module__chip--e7F1K, .Chip-module__root--oHndA)[data-full-label] {
+    --_label-max: none;
+  }
+
+  /* No motion tokens exist: 160ms is the Dropdown's --_motion, so the panel
+     and the chevron finish together. The ring is ButtonPrimitive's: a 2px gap
+     in the page colour, then 2px of focus ring. */
+  :is(.Chip-module__chip--e7F1K, .Chip-module__root--oHndA) {
+    --_chevron-motion: 160ms ease;
+    --_ring-gap: 2px;
+    --_ring-width: 2px;
+    --_ring:
+      0 0 0 var(--_ring-gap) var(--background-neutral-subtle),
+      0 0 0 calc(var(--_ring-gap) + var(--_ring-width)) var(--chip-focus-ring);
+  }
+
+  /* ── The pill ─────────────────────────────────────────────────────────────
+     No overflow: hidden here — it would clip the ring and the 24px action
+     target. Only the label truncates. */
+  .Chip-module__chip--e7F1K {
+    box-sizing: border-box;
+    /* The containing block of .srOnly: without it the absolutely positioned
+       hidden text escapes any scrolling ancestor (a compact chip row, a docs
+       table) and widens the page. */
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-4);
+    /* Figma's HUG: a grid cell or a flex column never stretches the pill. */
+    inline-size: fit-content;
+    max-inline-size: 100%;
+    margin: 0;
+    padding: var(--_pad-block) var(--_pad-inline);
+    border: none;
+    border-radius: var(--radius-full);
+    background-color: var(--_fill);
+    /* Figma's 1px INSIDE stroke: an inset shadow, never a border, so the
+       paddings stay the design's spacing tokens. Transparent on Solid/Ghost. */
+    box-shadow: inset 0 0 0 var(--stroke-default) var(--_stroke);
+    color: var(--_label);
+    /* Figma variables hold a single family name: Text's fallback stack. */
+    font-family: var(--_font), -apple-system, BlinkMacSystemFont, Inter, "Segoe UI",
+      Roboto, Helvetica, Arial, sans-serif;
+    font-size: var(--_font-size);
+    /* body/* weights are Regular; Medium is the one accepted primitive
+       (ButtonPrimitive SM does the same). */
+    font-weight: var(--primitives-font-weight-medium);
+    line-height: var(--_line-height);
+    letter-spacing: var(--_tracking);
+    text-align: start;
+    text-decoration: none;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: default;
+  }
+  /* Only real buttons are controls. A static chip (Clickable=False) and the
+     editing body are spans: they never hover, press or ring. :where() keeps
+     the element test at zero specificity, so the disabled rules still win. */
+  .Chip-module__chip--e7F1K:where(button) {
+    cursor: pointer;
+  }
+
+  /* Fixed glyph boxes the Icon fills; glyphs are currentColor, so they follow
+     the label in every state (Figma: "icons follow the label"). */
+  .Chip-module__icon--bIgVy {
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    inline-size: var(--_icon-size);
+    block-size: var(--_icon-size);
+    font-size: var(--_icon-size);
+  }
+
+  /* One line, ellipsis at Figma's maxWidth. The label-slot padding (0/4/4) is
+     a margin, so the cap is the text's own width whatever box-sizing says. */
+  .Chip-module__label--yZzMN {
+    min-inline-size: 0;
+    max-inline-size: var(--_label-max);
+    margin-inline: var(--_slot-pad);
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  /* The truncation Tooltip wraps only the label; its root must shrink too. */
+  .Chip-module__labelTip--4811H {
+    min-inline-size: 0;
+  }
+
+  /* "selected" for static and dropdown FilterChips (no aria-pressed there). */
+  .Chip-module__srOnly--6hnLT {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+  }
+
+  /* FilterChip's chevron follows the aria-expanded the Dropdown injects — no
+     prop. Always chevron-down, rotated; the surface never changes on open. */
+  .Chip-module__chevron--NQe4A {
+    transition: transform var(--_chevron-motion);
+  }
+  .Chip-module__chip--e7F1K[aria-expanded="true"] .Chip-module__chevron--NQe4A {
+    transform: rotate(180deg);
+  }
+
+  /* ── InputChip ────────────────────────────────────────────────────────────
+     .root = body (the pill: button, static span, or editing span) + the
+     action button laid over the body's reserved trailing box (an empty
+     .icon), so the body keeps Figma's width and the action never fires the
+     chip. Logical insets, no transforms: RTL just works. */
+  .Chip-module__root--oHndA {
+    position: relative;
+    display: inline-flex;
+    /* HUG, as on the pill: the action is placed from the root's end edge, so
+       a stretched root (grid cell, flex column) would carry it off the body. */
+    inline-size: fit-content;
+    max-inline-size: 100%;
+    vertical-align: middle;
+  }
+  .Chip-module__root--oHndA > .Chip-module__chip--e7F1K {
+    min-inline-size: 0;
+  }
+  .Chip-module__action--M52Rx {
+    /* Figma's action-target: the WCAG 2.5.8 minimum, raw like the icon boxes. */
+    --_target: 24px;
+
+    position: absolute;
+    inset-block-start: calc(50% - var(--_target) / 2);
+    inset-inline-end: calc(var(--_pad-inline) + var(--_icon-size) / 2 - var(--_target) / 2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    inline-size: var(--_target);
+    block-size: var(--_target);
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: var(--radius-full);
+    background: none;
+    color: var(--_label);
+    font-size: var(--_icon-size);
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  /* Edit mode: the body becomes a span holding an input. Auto-size without
+     field-sizing (Safari): a hidden copy of the value sizes the grid cell the
+     input fills; past --_label-max the input scrolls. */
+  .Chip-module__chip--e7F1K[data-editing] {
+    cursor: text;
+  }
+  /* The 1px end padding holds the caret after the last glyph, so entering
+     edit mode doesn't move the action. content-box: the cap is the text's
+     width, as on .label, whatever the page's global box-sizing says. */
+  .Chip-module__editField--eVEfu {
+    box-sizing: content-box;
+    display: inline-grid;
+    min-inline-size: 1ch;
+    max-inline-size: var(--_label-max);
+    margin-inline: var(--_slot-pad) calc(var(--_slot-pad) - 1px);
+    padding-inline-end: 1px;
+  }
+  .Chip-module__editField--eVEfu::after {
+    content: attr(data-value);
+    grid-area: 1 / 1;
+    overflow: hidden;
+    visibility: hidden;
+    white-space: pre;
+  }
+  /* inline-size 0 + min 100%: the input adds nothing to the track (its
+     size=20 intrinsic width would), then fills the cell the copy sized. */
+  .Chip-module__editInput--zZmRX {
+    grid-area: 1 / 1;
+    inline-size: 0;
+    min-inline-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    color: inherit;
+    font: inherit;
+    letter-spacing: inherit;
+    caret-color: currentColor;
+  }
+
+  /* ── States: base → hover → focus-visible → active → disabled ─────────────
+     Equal specificity, later wins. The `+ .action` twins keep InputChip's
+     action glyph on the label colour, since it is a sibling (no :has()).
+     InputChip hovers as one component (Figma's Hover variant): the pointer
+     on its × still hovers the pill. :where() keeps those twins below the
+     focus, pressed and disabled rules. Hover only where a pointer can hover:
+     touch browsers keep :hover on the last tapped element, which would leave
+     a tapped chip stuck in its hover fill. */
+  @media (hover: hover) {
+    .Chip-module__chip--e7F1K:where(button):hover,
+    :where(.Chip-module__root--oHndA:hover) > .Chip-module__chip--e7F1K:where(button) {
+      background-color: var(--_fill-hover);
+      box-shadow: inset 0 0 0 var(--stroke-default) var(--_stroke-hover);
+      color: var(--_label-hover);
+    }
+    .Chip-module__chip--e7F1K:where(button):hover + .Chip-module__action--M52Rx,
+    :where(.Chip-module__root--oHndA:hover) > .Chip-module__chip--e7F1K:where(button) + .Chip-module__action--M52Rx {
+      color: var(--_label-hover);
+    }
+  }
+
+  /* Shadow lists don't merge: the inset stroke is restated with the ring.
+     Editing shows the Focus visuals (Figma has no editing variant) through
+     :focus-within — the sibling action's focus never reaches it. */
+  .Chip-module__chip--e7F1K:where(button):focus-visible,
+  .Chip-module__chip--e7F1K[data-editing]:focus-within {
+    /* Transparent, not none: forced-colors mode drops box-shadows but paints
+       this outline, so the focus stays visible there. */
+    outline: var(--_ring-width) solid transparent;
+    background-color: var(--_fill-focus);
+    box-shadow:
+      inset 0 0 0 var(--stroke-default) var(--_stroke),
+      var(--_ring);
+    color: var(--_label-focus);
+  }
+  .Chip-module__chip--e7F1K:where(button):focus-visible + .Chip-module__action--M52Rx,
+  .Chip-module__chip--e7F1K[data-editing]:focus-within + .Chip-module__action--M52Rx {
+    color: var(--_label-focus);
+  }
+
+  /* Figma's Pressed. */
+  .Chip-module__chip--e7F1K:where(button):active {
+    background-color: var(--_fill-pressed);
+    box-shadow: inset 0 0 0 var(--stroke-default) var(--_stroke-pressed);
+    color: var(--_label-pressed);
+  }
+  /* A keyboard press (Space) keeps the ring. */
+  .Chip-module__chip--e7F1K:where(button):active:focus-visible {
+    box-shadow:
+      inset 0 0 0 var(--stroke-default) var(--_stroke-pressed),
+      var(--_ring);
+  }
+  .Chip-module__chip--e7F1K:where(button):active + .Chip-module__action--M52Rx {
+    color: var(--_label-pressed);
+  }
+
+  /* The action's own ring: the same page-colour gap + 2px ring, drawn inside
+     its round 24px target so it never covers the label or leaves the pill
+     (an outer ring reached 8px past the target, over the label's end). The
+     gap sits inside the ring, so the ring keeps a >= 3:1 edge on Solid fills
+     too. Figma draws no action hover or press, so there is none. */
+  .Chip-module__action--M52Rx:focus-visible {
+    outline: var(--_ring-width) solid transparent;
+    box-shadow:
+      inset 0 0 0 var(--_ring-width) var(--chip-focus-ring),
+      inset 0 0 0 calc(var(--_ring-width) + var(--_ring-gap)) var(--background-neutral-subtle);
+  }
+
+  /* ── Add slot (ChipAddSlot, internal) ─────────────────────────────────────
+     InputChipField's inline add control: a neutral Ghost chip with a dashed
+     1px inside outline (an outline, not a border, so it keeps 24 / 32 / 40).
+     No Figma component yet. It binds border/strong (dashes), border/default
+     (disabled dashes) and text/tertiary (limit label, placeholder) outside
+     the Chip collection. The focus rule above outranks it (0,2,0), so on
+     focus the dashes give way to the ring; forced colours still paint both.
+     Safari before 16.4 draws outlines square, so the dashes lose the pill's
+     rounding there (cosmetic). */
+  .Chip-module__addSlot--i\+bR\+ {
+    outline: var(--stroke-default) dashed var(--border-strong);
+    outline-offset: calc(-1 * var(--stroke-default));
+  }
+  .Chip-module__addSlot--i\+bR\+:disabled {
+    outline-color: var(--border-default);
+  }
+  /* At the owner's limit: still focusable (focus stays put after the add
+     that filled the list), but inert and quiet. After hover and press, so
+     it wins on colour; before Disabled, so Disabled still wins. */
+  .Chip-module__addSlot--i\+bR\+[aria-disabled="true"] {
+    color: var(--text-tertiary);
+    cursor: default;
+  }
+  /* The typing chip's edit cell is as wide as the longer of the placeholder
+     and the typed text: opening keeps the button's width. */
+  .Chip-module__addSizer--WXnHx {
+    grid-area: 1 / 1;
+    overflow: hidden;
+    visibility: hidden;
+    white-space: pre;
+  }
+  .Chip-module__addInput--sKGQC::placeholder {
+    color: var(--text-tertiary);
+    opacity: 1;
+  }
+  /* iOS Safari zooms on focusing text under 16px (InputChipField's draft
+     does the same); the typing chip grows a little there. */
+  @supports (-webkit-touch-callout: none) {
+    .Chip-module__addTyping--gS5EK {
+      font-size: max(var(--_font-size), var(--body-m-size));
+    }
+  }
+
+  /* Disabled, last so it wins. A static chip takes data-disabled — visual
+     only, the parent carries aria-disabled (Figma) — and keeps its default
+     cursor. */
+  .Chip-module__chip--e7F1K:is(:disabled, [data-disabled]) {
+    background-color: var(--_fill-disabled);
+    box-shadow: inset 0 0 0 var(--stroke-default) var(--_stroke-disabled);
+    color: var(--text-disabled);
+  }
+  .Chip-module__chip--e7F1K:disabled,
+  .Chip-module__action--M52Rx:disabled {
+    cursor: not-allowed;
+  }
+  .Chip-module__chip--e7F1K:is(:disabled, [data-disabled]) + .Chip-module__action--M52Rx,
+  .Chip-module__action--M52Rx:disabled {
+    color: var(--text-disabled);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .Chip-module__chevron--NQe4A {
+      transition-duration: 0s;
+    }
+  }
+}
+
+/**
+ * Do not edit directly, this file was auto-generated
+ * by tokens/build.mjs from tokens/input/components/chip/.
+ *
+ * Imported by the chip component — not part of index.css.
+ */
+
+@layer components {
+[data-chip-color="amber"] {
+  --chip-default: var(--chip-amber-solid-surface);
+  --chip-text: var(--chip-amber-solid-text);
+  --chip-hover: var(--chip-amber-solid-hover);
+  --chip-focus-ring: var(--chip-amber-subtle-focus-ring);
+  --chip-disabled: var(--chip-amber-solid-disabled);
+  --chip-surface-hover: var(--chip-amber-subtle-hover);
+  --chip-surface: var(--chip-amber-subtle-surface);
+  --chip-surface-text: var(--chip-amber-subtle-text);
+  --chip-border: var(--chip-amber-subtle-border);
+  --chip-surface-pressed: var(--chip-amber-subtle-pressed);
+  --chip-pressed: var(--chip-amber-solid-pressed);
+}
+
+[data-chip-color="blue"] {
+  --chip-default: var(--chip-blue-solid-surface);
+  --chip-text: var(--chip-blue-solid-text);
+  --chip-hover: var(--chip-blue-solid-hover);
+  --chip-focus-ring: var(--chip-blue-subtle-focus-ring);
+  --chip-disabled: var(--chip-blue-solid-disabled);
+  --chip-surface-hover: var(--chip-blue-subtle-hover);
+  --chip-surface: var(--chip-blue-subtle-surface);
+  --chip-surface-text: var(--chip-blue-subtle-text);
+  --chip-border: var(--chip-blue-subtle-border);
+  --chip-surface-pressed: var(--chip-blue-subtle-pressed);
+  --chip-pressed: var(--chip-blue-solid-pressed);
+}
+
+[data-chip-color="brand"] {
+  --chip-default: var(--chip-brand-solid-surface);
+  --chip-text: var(--chip-brand-solid-text);
+  --chip-hover: var(--chip-brand-solid-hover);
+  --chip-focus-ring: var(--chip-brand-subtle-focus-ring);
+  --chip-disabled: var(--chip-brand-solid-disabled);
+  --chip-surface-hover: var(--chip-brand-subtle-hover);
+  --chip-surface: var(--chip-brand-subtle-surface);
+  --chip-surface-text: var(--chip-brand-subtle-text);
+  --chip-border: var(--chip-brand-subtle-border);
+  --chip-surface-pressed: var(--chip-brand-subtle-pressed);
+  --chip-pressed: var(--chip-brand-solid-pressed);
+}
+
+[data-chip-color="cyan"] {
+  --chip-default: var(--chip-cyan-solid-surface);
+  --chip-text: var(--chip-cyan-solid-text);
+  --chip-hover: var(--chip-cyan-solid-hover);
+  --chip-focus-ring: var(--chip-cyan-subtle-focus-ring);
+  --chip-disabled: var(--chip-cyan-solid-disabled);
+  --chip-surface-hover: var(--chip-cyan-subtle-hover);
+  --chip-surface: var(--chip-cyan-subtle-surface);
+  --chip-surface-text: var(--chip-cyan-subtle-text);
+  --chip-border: var(--chip-cyan-subtle-border);
+  --chip-surface-pressed: var(--chip-cyan-subtle-pressed);
+  --chip-pressed: var(--chip-cyan-solid-pressed);
+}
+
+[data-chip-color="green"] {
+  --chip-default: var(--chip-green-solid-surface);
+  --chip-text: var(--chip-green-solid-text);
+  --chip-hover: var(--chip-green-solid-hover);
+  --chip-focus-ring: var(--chip-green-subtle-focus-ring);
+  --chip-disabled: var(--chip-green-solid-disabled);
+  --chip-surface-hover: var(--chip-green-subtle-hover);
+  --chip-surface: var(--chip-green-subtle-surface);
+  --chip-surface-text: var(--chip-green-subtle-text);
+  --chip-border: var(--chip-green-subtle-border);
+  --chip-surface-pressed: var(--chip-green-subtle-pressed);
+  --chip-pressed: var(--chip-green-solid-pressed);
+}
+
+[data-chip-color="indigo"] {
+  --chip-default: var(--chip-indigo-solid-surface);
+  --chip-text: var(--chip-indigo-solid-text);
+  --chip-hover: var(--chip-indigo-solid-hover);
+  --chip-focus-ring: var(--chip-indigo-subtle-focus-ring);
+  --chip-disabled: var(--chip-indigo-solid-disabled);
+  --chip-surface-hover: var(--chip-indigo-subtle-hover);
+  --chip-surface: var(--chip-indigo-subtle-surface);
+  --chip-surface-text: var(--chip-indigo-subtle-text);
+  --chip-border: var(--chip-indigo-subtle-border);
+  --chip-surface-pressed: var(--chip-indigo-subtle-pressed);
+  --chip-pressed: var(--chip-indigo-solid-pressed);
+}
+
+[data-chip-color="lime"] {
+  --chip-default: var(--chip-lime-solid-surface);
+  --chip-text: var(--chip-lime-solid-text);
+  --chip-hover: var(--chip-lime-solid-hover);
+  --chip-focus-ring: var(--chip-lime-subtle-focus-ring);
+  --chip-disabled: var(--chip-lime-solid-disabled);
+  --chip-surface-hover: var(--chip-lime-subtle-hover);
+  --chip-surface: var(--chip-lime-subtle-surface);
+  --chip-surface-text: var(--chip-lime-subtle-text);
+  --chip-border: var(--chip-lime-subtle-border);
+  --chip-surface-pressed: var(--chip-lime-subtle-pressed);
+  --chip-pressed: var(--chip-lime-solid-pressed);
+}
+
+[data-chip-color="magenta"] {
+  --chip-default: var(--chip-magenta-solid-surface);
+  --chip-text: var(--chip-magenta-solid-text);
+  --chip-hover: var(--chip-magenta-solid-hover);
+  --chip-focus-ring: var(--chip-magenta-subtle-focus-ring);
+  --chip-disabled: var(--chip-magenta-solid-disabled);
+  --chip-surface-hover: var(--chip-magenta-subtle-hover);
+  --chip-surface: var(--chip-magenta-subtle-surface);
+  --chip-surface-text: var(--chip-magenta-subtle-text);
+  --chip-border: var(--chip-magenta-subtle-border);
+  --chip-surface-pressed: var(--chip-magenta-subtle-pressed);
+  --chip-pressed: var(--chip-magenta-solid-pressed);
+}
+
+[data-chip-color="neutral"] {
+  --chip-default: var(--chip-grey-solid-surface);
+  --chip-text: var(--chip-grey-solid-text);
+  --chip-hover: var(--chip-grey-solid-hover);
+  --chip-focus-ring: var(--chip-grey-subtle-focus-ring);
+  --chip-disabled: var(--chip-grey-solid-disabled);
+  --chip-surface-hover: var(--chip-grey-subtle-hover);
+  --chip-surface: var(--chip-grey-subtle-surface);
+  --chip-surface-text: var(--chip-grey-subtle-text);
+  --chip-border: var(--chip-grey-subtle-border);
+  --chip-surface-pressed: var(--chip-grey-subtle-pressed);
+  --chip-pressed: var(--chip-grey-solid-pressed);
+}
+
+[data-chip-color="pink"] {
+  --chip-default: var(--chip-pink-solid-surface);
+  --chip-text: var(--chip-pink-solid-text);
+  --chip-hover: var(--chip-pink-solid-hover);
+  --chip-focus-ring: var(--chip-pink-subtle-focus-ring);
+  --chip-disabled: var(--chip-pink-solid-disabled);
+  --chip-surface-hover: var(--chip-pink-subtle-hover);
+  --chip-surface: var(--chip-pink-subtle-surface);
+  --chip-surface-text: var(--chip-pink-subtle-text);
+  --chip-border: var(--chip-pink-subtle-border);
+  --chip-surface-pressed: var(--chip-pink-subtle-pressed);
+  --chip-pressed: var(--chip-pink-solid-pressed);
+}
+
+[data-chip-color="purple"] {
+  --chip-default: var(--chip-purple-solid-surface);
+  --chip-text: var(--chip-purple-solid-text);
+  --chip-hover: var(--chip-purple-solid-hover);
+  --chip-focus-ring: var(--chip-purple-subtle-focus-ring);
+  --chip-disabled: var(--chip-purple-solid-disabled);
+  --chip-surface-hover: var(--chip-purple-subtle-hover);
+  --chip-surface: var(--chip-purple-subtle-surface);
+  --chip-surface-text: var(--chip-purple-subtle-text);
+  --chip-border: var(--chip-purple-subtle-border);
+  --chip-surface-pressed: var(--chip-purple-subtle-pressed);
+  --chip-pressed: var(--chip-purple-solid-pressed);
+}
+
+[data-chip-color="red"] {
+  --chip-default: var(--chip-red-solid-surface);
+  --chip-text: var(--chip-red-solid-text);
+  --chip-hover: var(--chip-red-solid-hover);
+  --chip-focus-ring: var(--chip-red-subtle-focus-ring);
+  --chip-disabled: var(--chip-red-solid-disabled);
+  --chip-surface-hover: var(--chip-red-subtle-hover);
+  --chip-surface: var(--chip-red-subtle-surface);
+  --chip-surface-text: var(--chip-red-subtle-text);
+  --chip-border: var(--chip-red-subtle-border);
+  --chip-surface-pressed: var(--chip-red-subtle-pressed);
+  --chip-pressed: var(--chip-red-solid-pressed);
+}
+
+[data-chip-color="sky"] {
+  --chip-default: var(--chip-sky-solid-surface);
+  --chip-text: var(--chip-sky-solid-text);
+  --chip-hover: var(--chip-sky-solid-hover);
+  --chip-focus-ring: var(--chip-sky-subtle-focus-ring);
+  --chip-disabled: var(--chip-sky-solid-disabled);
+  --chip-surface-hover: var(--chip-sky-subtle-hover);
+  --chip-surface: var(--chip-sky-subtle-surface);
+  --chip-surface-text: var(--chip-sky-subtle-text);
+  --chip-border: var(--chip-sky-subtle-border);
+  --chip-surface-pressed: var(--chip-sky-subtle-pressed);
+  --chip-pressed: var(--chip-sky-solid-pressed);
+}
+
+[data-chip-color="yellow"] {
+  --chip-default: var(--chip-yellow-solid-surface);
+  --chip-text: var(--chip-yellow-solid-text);
+  --chip-hover: var(--chip-yellow-solid-hover);
+  --chip-focus-ring: var(--chip-yellow-subtle-focus-ring);
+  --chip-disabled: var(--chip-yellow-solid-disabled);
+  --chip-surface-hover: var(--chip-yellow-subtle-hover);
+  --chip-surface: var(--chip-yellow-subtle-surface);
+  --chip-surface-text: var(--chip-yellow-subtle-text);
+  --chip-border: var(--chip-yellow-subtle-border);
+  --chip-surface-pressed: var(--chip-yellow-subtle-pressed);
+  --chip-pressed: var(--chip-yellow-solid-pressed);
+}
+}
+
+@layer components {
   .Tooltip-module__root--AlbEo {
     display: inline-flex;
   }
@@ -6294,6 +7004,328 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
     border: 0;
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
+  }
+}
+
+@layer components {
+  /* Layout and field chrome only, for both forms. The chips (and the inline
+     add chip, ChipAddSlot) style themselves; this file must not read --chip-*
+     roles (the module guard only polices Chip.module.css). */
+
+  /* Draft row = the chip's hug height, so the input lines up with the chips:
+     SM 3+18+3 · MD 6+20+6 · LG 8+24+8. 3px has no spacing token (the same
+     raw value lives once in Chip.module.css). */
+  .InputChipField-module__root--hBz-E[data-size="sm"] {
+    --_pad-block: 3px;
+    --_font: var(--body-xs-font);
+    --_font-size: var(--body-xs-size);
+    --_weight: var(--body-xs-weight);
+    --_line-height: var(--body-xs-line-height);
+    --_tracking: var(--body-xs-tracking);
+  }
+  .InputChipField-module__root--hBz-E[data-size="md"] {
+    --_pad-block: var(--spacing-6);
+    --_font: var(--body-s-font);
+    --_font-size: var(--body-s-size);
+    --_weight: var(--body-s-weight);
+    --_line-height: var(--body-s-line-height);
+    --_tracking: var(--body-s-tracking);
+  }
+  .InputChipField-module__root--hBz-E[data-size="lg"] {
+    --_pad-block: var(--spacing-8);
+    --_font: var(--body-m-font);
+    --_font-size: var(--body-m-size);
+    --_weight: var(--body-m-weight);
+    --_line-height: var(--body-m-line-height);
+    --_tracking: var(--body-m-tracking);
+  }
+
+  .InputChipField-module__root--hBz-E {
+    /* Narrowest draft before it wraps to its own row. Not a design value —
+       fits "Add skill…" at every size. */
+    --_draft-min: 10ch;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+    min-inline-size: 0;
+  }
+
+  .InputChipField-module__label--EDeU0 {
+    margin: 0;
+  }
+
+  /* Figma 3190:3418: #fff, 1px #e5e8eb, radius 8, pad 8, gap 8 (raw in the
+     file; mapped to the matching tokens). Figma includes the stroke in the
+     frame's layout (chips at x/y 9, height 50 with MD chips), so this is a
+     real border rather than the chips' inset-shadow stroke. */
+  .InputChipField-module__field--u3wOi {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--spacing-8);
+    padding: var(--spacing-8);
+    border: var(--stroke-default) solid var(--border-default);
+    border-radius: var(--radius-8);
+    background-color: var(--background-neutral-solid);
+    cursor: text;
+  }
+  /* No Figma state — the legacy Input's focus colour, so forms match. */
+  .InputChipField-module__field--u3wOi:focus-within {
+    border-color: var(--border-brand);
+  }
+
+  .InputChipField-module__draft--Svxqf {
+    box-sizing: border-box;
+    flex: 1 1 var(--_draft-min);
+    min-inline-size: var(--_draft-min);
+    max-inline-size: 100%;
+    block-size: calc(var(--_line-height) + 2 * var(--_pad-block));
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    color: var(--text-primary);
+    /* Figma variables hold a single family name: Text's fallback stack. */
+    font-family: var(--_font), -apple-system, BlinkMacSystemFont, Inter, "Segoe UI",
+      Roboto, Helvetica, Arial, sans-serif;
+    font-size: var(--_font-size);
+    /* Figma binds the placeholder to Body/Regular; never the page's input weight. */
+    font-weight: var(--_weight);
+    line-height: var(--_line-height);
+    letter-spacing: var(--_tracking);
+  }
+  .InputChipField-module__draft--Svxqf::placeholder {
+    color: var(--text-tertiary);
+    opacity: 1;
+  }
+  .InputChipField-module__draft--Svxqf:read-only {
+    cursor: default;
+  }
+
+  /* iOS Safari zooms the page on focusing text under 16px when the viewport
+     allows scaling (the editor page sets maximum-scale=3). */
+  @supports (-webkit-touch-callout: none) {
+    .InputChipField-module__draft--Svxqf {
+      font-size: max(var(--_font-size), var(--body-m-size));
+    }
+  }
+
+  /* Disabled: the legacy Input's disabled field. The chips dim themselves. */
+  .InputChipField-module__root--hBz-E[data-disabled] .InputChipField-module__field--u3wOi {
+    background-color: var(--background-subtle-subtle);
+    cursor: not-allowed;
+  }
+  .InputChipField-module__draft--Svxqf:disabled,
+  .InputChipField-module__draft--Svxqf:disabled::placeholder {
+    color: var(--text-disabled);
+    cursor: not-allowed;
+  }
+
+  /* appearance="inline": the chips and the add chip as content — no chrome,
+     no pointer handling, the ChipGroup gap. */
+  .InputChipField-module__row--xXmHM {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--spacing-8);
+    min-inline-size: 0;
+  }
+
+  /* readOnly: a static summary row (ChipGroup "Static groups"), no chrome. */
+  .InputChipField-module__list--f0add {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--spacing-8);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .InputChipField-module__item--1nOq5 {
+    display: flex;
+    max-inline-size: 100%;
+  }
+}
+
+@layer components {
+  /* Shared by the two portal siblings — custom properties never cross siblings. */
+  .Dropdown-module__panel--3ouib,
+  .Dropdown-module__backdrop--G8WyI {
+    /* The app's menu layer: above Modal ($zindex-modal-content 1003), below
+       Tooltip (9999). No z-index or motion tokens exist yet. */
+    --_z-index: 1061;
+    --_motion: 160ms ease;
+  }
+
+  .Dropdown-module__panel--3ouib {
+    /* Shadow/Default/LG — the same layers as Tooltip; the app used
+       0 0 18px -9px rgb(0 0 0 / 45%). */
+    --_shadow: 0 2px 2px -1px rgb(10 13 18 / 4%), 0 4px 6px -2px rgb(10 13 18 / 3%),
+      0 12px 16px -4px rgb(10 13 18 / 8%);
+    --_min-inline-size: 200px; /* the app's DEFAULT_WIDTH — width="auto" only */
+    --_slide: calc(-1 * var(--spacing-4));
+    /* White panel via the theme role (neutral/solid = neutral/white since the
+       #146 background restructure). */
+    --_surface: var(--background-neutral-solid);
+
+    position: fixed;
+    z-index: var(--_z-index);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    inline-size: max-content;
+    max-inline-size: calc(100vw - 2 * var(--spacing-16));
+    /* The positioning hook sets --_max-block-size to the room on the chosen side. */
+    max-block-size: min(var(--_max-block-size, 70vh), 70vh);
+    margin: 0;
+    padding: var(--spacing-8) 0; /* app: 16 0 (StatusCell) / 8 0 (TableMenuBar) */
+    border-radius: var(--radius-8); /* app: 5 / 8 / 12 */
+    background: var(--_surface);
+    box-shadow: var(--_shadow);
+    color: var(--text-primary);
+    font-family: var(--body-s-font);
+    font-size: var(--body-s-size);
+    font-weight: var(--body-s-weight);
+    line-height: var(--body-s-line-height);
+    letter-spacing: var(--body-s-tracking);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    outline: none;
+    animation: Dropdown-module__dropdown-in--blGci var(--_motion) both;
+  }
+  .Dropdown-module__panel--3ouib[data-placement^="top"] {
+    --_slide: var(--spacing-4);
+  }
+  /* A number or "trigger" sets inline-size exactly — the app's min-width
+     override silently defeating `width` is the defect being fixed. */
+  .Dropdown-module__panel--3ouib[data-width="auto"] {
+    min-inline-size: var(--_min-inline-size);
+  }
+
+  @keyframes Dropdown-module__dropdown-in--blGci {
+    from {
+      opacity: 0;
+      translate: 0 var(--_slide);
+    }
+    to {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+
+  .Dropdown-module__item--mqgEp {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+    inline-size: 100%;
+    margin: 0;
+    padding: var(--spacing-8) var(--spacing-24); /* app p-block-8 p-inline-24 */
+    border: none;
+    background: none;
+    color: inherit;
+    font: inherit;
+    letter-spacing: inherit;
+    text-align: start;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color var(--_motion);
+  }
+  .Dropdown-module__item--mqgEp:hover,
+  .Dropdown-module__item--mqgEp:focus-visible {
+    background-color: var(--background-accent-alpha-10); /* app rgba(#8c7cdb, .1) */
+  }
+  .Dropdown-module__item--mqgEp:focus-visible {
+    outline: var(--stroke-strong) solid var(--text-accent);
+    outline-offset: calc(-1 * var(--stroke-strong));
+  }
+  .Dropdown-module__item--mqgEp[aria-checked="true"] {
+    color: var(--text-accent);
+  }
+  .Dropdown-module__item--mqgEp:disabled {
+    background: none;
+    color: var(--text-disabled);
+    cursor: not-allowed;
+  }
+
+  /* The check is always in the row (opacity 0 when unchecked), so labels never
+     shift when the choice changes — the job tracker's trick. 16px like the app;
+     no icon-size tokens exist. */
+  .Dropdown-module__check--b3EaH,
+  .Dropdown-module__icon--tQ9QS {
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    inline-size: 16px;
+    block-size: 16px;
+    font-size: 16px;
+  }
+  .Dropdown-module__check--b3EaH {
+    color: var(--text-accent);
+    opacity: 0;
+    transition: opacity var(--_motion);
+  }
+  .Dropdown-module__item--mqgEp[aria-checked="true"] .Dropdown-module__check--b3EaH {
+    opacity: 1;
+  }
+  .Dropdown-module__label--ivTU1 {
+    flex: 1;
+    min-inline-size: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .Dropdown-module__separator--tpVbn {
+    margin: var(--spacing-4) var(--spacing-16);
+    border-block-start: var(--stroke-default) solid var(--border-default);
+  }
+
+  /* Mobile sheet (≤768px): the app's centred menu over a dark backdrop — the
+     same inverse alpha role as the styleguide Modal
+     (src/Organisms/Modal/components/ModalBackdrop.module.scss). */
+  .Dropdown-module__backdrop--G8WyI {
+    position: fixed;
+    inset: 0;
+    z-index: calc(var(--_z-index) - 1);
+    background: var(--background-inverse-alpha-60);
+    animation: Dropdown-module__backdrop-in--v-tA- var(--_motion) both;
+  }
+  .Dropdown-module__panel--3ouib[data-sheet] {
+    inset: 50% auto auto 50%;
+    inline-size: min(calc(100vw - 2 * var(--spacing-16)), 400px);
+    max-block-size: 70vh;
+    translate: -50% -50%;
+    animation-name: Dropdown-module__sheet-in--KaTlS;
+  }
+
+  @keyframes Dropdown-module__backdrop-in--v-tA- {
+    from {
+      opacity: 0;
+    }
+  }
+  @keyframes Dropdown-module__sheet-in--KaTlS {
+    from {
+      opacity: 0;
+      translate: -50% calc(-50% + var(--spacing-8));
+    }
+    to {
+      opacity: 1;
+      translate: -50% -50%;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .Dropdown-module__panel--3ouib,
+    .Dropdown-module__backdrop--G8WyI {
+      animation-duration: 0s;
+    }
+    .Dropdown-module__item--mqgEp,
+    .Dropdown-module__check--b3EaH {
+      transition-duration: 0s;
+    }
   }
 }
 

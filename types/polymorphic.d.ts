@@ -11,3 +11,9 @@ export type PolymorphicRef<Element extends React.ElementType> = React.ComponentP
 export type PolymorphicComponent<Allowed extends React.ElementType, Default extends Allowed, OwnProps> = <Element extends Allowed = Default>(props: PolymorphicProps<Element, OwnProps> & {
     ref?: PolymorphicRef<Element>;
 }) => React.ReactElement | null;
+/**
+ * `Omit` for union props (Badge, the chips): applied per branch, so the
+ * result can still be spread back onto the component. Plain `Omit` flattens
+ * the union and loses the discriminant.
+ */
+export type DistributiveOmit<T, K extends PropertyKey> = T extends unknown ? Omit<T, K> : never;
