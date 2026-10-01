@@ -70,6 +70,12 @@
   .Icon-module__icon--5oSUz[data-color="info"] {
     color: var(--text-info);
   }
+
+  /* The one colour where the icon token differs from the text token: gold
+     glyphs, darker gold text. */
+  .Icon-module__icon--5oSUz[data-color="reward"] {
+    color: var(--icon-reward);
+  }
 }
 
 @layer components{.CM7jA82BxRrZ6TTzX42eWw\=\={border:none;background-color:rgba(0,0,0,0);border-radius:50%;cursor:pointer;transition:all ease-in-out .3s;display:flex;justify-content:center;align-items:center;position:relative;text-decoration:none !important}.CM7jA82BxRrZ6TTzX42eWw\=\=:active{background-color:var(--background-subtle-solid)}.CM7jA82BxRrZ6TTzX42eWw\=\=:disabled{color:#d8d9db;cursor:default}@media(min-width: 481px){.CM7jA82BxRrZ6TTzX42eWw\=\=:disabled:hover{color:#d8d9db;cursor:default}}.CM7jA82BxRrZ6TTzX42eWw\=\=:disabled:active{color:#d8d9db;cursor:default}@media(min-width: 481px){.CM7jA82BxRrZ6TTzX42eWw\=\=:hover{background-color:var(--background-subtle-subtle)}.CM7jA82BxRrZ6TTzX42eWw\=\=:hover .oSTE-70LPu0JjdAGYEYC7Q\=\={opacity:1}}.pdsgKCU9-MV06FZt9qVgag\=\={color:#384347}.DHUpEK0NvEJ7xfWJHH3Mjg\=\={color:#2dc08d}.DHUpEK0NvEJ7xfWJHH3Mjg\=\=:hover{color:#57cda4}.DHUpEK0NvEJ7xfWJHH3Mjg\=\=:active{color:#249a71}.IHMHINS8KCcPWj2F9rn2XA\=\={width:48px;height:48px;padding:7px}@media(min-width: 769px){.IHMHINS8KCcPWj2F9rn2XA\=\={width:36px;height:36px}}.IHMHINS8KCcPWj2F9rn2XA\=\=>i{font-size:22px;height:22px}.jjhsRO4h6o\+yCfszka0rig\=\={width:26px;height:26px;padding:5px}.jjhsRO4h6o\+yCfszka0rig\=\=>i{font-size:14px;height:14px}.jjhsRO4h6o\+yCfszka0rig\=\= .oSTE-70LPu0JjdAGYEYC7Q\=\={font-size:12px;line-height:12px;font-weight:400}.ZV7AWY-BuU3g4r91D066wg\=\={width:48px;height:48px;padding:12px}.ZV7AWY-BuU3g4r91D066wg\=\=>i{font-size:24px;height:24px}.oSTE-70LPu0JjdAGYEYC7Q\=\={font-family:"Inter",sans-serif !important;color:#fff;position:absolute;background-color:var(--background-inverse-subtle);padding:4px 8px;border-radius:8px;font-weight:600;font-size:14px;line-height:20px;opacity:0;pointer-events:none;transition:all ease-in-out .3s;width:max-content}.oSTE-70LPu0JjdAGYEYC7Q\=\=.pUD\+DKQZI31o2up8UaN2Cw\=\={top:100%}.oSTE-70LPu0JjdAGYEYC7Q\=\=.Jxph9v9MaUPD5DVjOmLZJg\=\={bottom:100%;transform:translate(0, 30%)}.oSTE-70LPu0JjdAGYEYC7Q\=\=.sT2sArq5Lbq7viWOGAu6Xw\=\={right:100%;transform:translate(0, -50%);top:50%}.oSTE-70LPu0JjdAGYEYC7Q\=\=.aTRtgtfC23DO\+NgYbg4BNA\=\={left:100%;transform:translate(0, -50%);top:50%}}

@@ -68,7 +68,7 @@ export type { TextProps, TextElement } from "./Atoms/Text/Text";
 export { Heading } from "./Atoms/Heading/Heading";
 export type { HeadingProps, HeadingLevel, HeadingElement, } from "./Atoms/Heading/Heading";
 export type { TypeScaleCategory, TypeScaleSize, TypeScaleVariant, TypeScaleVariantOf, TextColorToken, FontWeightToken, } from "./types/tokens";
-export type { TextAlign, TextStyleProps } from "./types/text";
+export type { TextAlign, TextDecoration, TextStyleProps, TextTransform } from "./types/text";
 export type { PolymorphicProps, PolymorphicRef, PolymorphicComponent, DistributiveOmit, } from "./types/polymorphic";
 export * as primitives from "./tokens/primitives";
 export type { PrimitiveToken } from "./tokens/primitives";

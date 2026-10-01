@@ -123,6 +123,9 @@
 .bg-subtle-alpha-70 { background-color: var(--background-subtle-alpha-70); }
 .bg-subtle-alpha-80 { background-color: var(--background-subtle-alpha-80); }
 .bg-subtle-alpha-90 { background-color: var(--background-subtle-alpha-90); }
+.bg-reward-subtle { background-color: var(--background-reward-subtle); }
+.bg-reward-solid { background-color: var(--background-reward-solid); }
+.bg-reward-inverse { background-color: var(--background-reward-inverse); }
 .hover\:bg-brand-subtle:hover { background-color: var(--background-brand-subtle); }
 .hover\:bg-brand-solid:hover { background-color: var(--background-brand-solid); }
 .hover\:bg-brand-inverse:hover { background-color: var(--background-brand-inverse); }
@@ -242,4 +245,7 @@
 .hover\:bg-subtle-alpha-70:hover { background-color: var(--background-subtle-alpha-70); }
 .hover\:bg-subtle-alpha-80:hover { background-color: var(--background-subtle-alpha-80); }
 .hover\:bg-subtle-alpha-90:hover { background-color: var(--background-subtle-alpha-90); }
+.hover\:bg-reward-subtle:hover { background-color: var(--background-reward-subtle); }
+.hover\:bg-reward-solid:hover { background-color: var(--background-reward-solid); }
+.hover\:bg-reward-inverse:hover { background-color: var(--background-reward-inverse); }
 }

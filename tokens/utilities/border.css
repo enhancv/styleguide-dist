@@ -4,6 +4,7 @@
  */
 
 @layer utilities {
+.border { border: var(--stroke-default) solid var(--border-default); }
 .border-color-subtle { border-color: var(--border-subtle); }
 .border-color-default { border-color: var(--border-default); }
 .border-color-strong { border-color: var(--border-strong); }
@@ -19,6 +20,8 @@
 .border-color-danger { border-color: var(--border-danger); }
 .border-color-neutral { border-color: var(--border-neutral); }
 .border-color-inverse { border-color: var(--border-inverse); }
+.border-color-reward { border-color: var(--border-reward); }
+.border-color-reward-subtle { border-color: var(--border-reward-subtle); }
 .hover\:border-color-subtle:hover { border-color: var(--border-subtle); }
 .hover\:border-color-default:hover { border-color: var(--border-default); }
 .hover\:border-color-strong:hover { border-color: var(--border-strong); }
@@ -34,4 +37,6 @@
 .hover\:border-color-danger:hover { border-color: var(--border-danger); }
 .hover\:border-color-neutral:hover { border-color: var(--border-neutral); }
 .hover\:border-color-inverse:hover { border-color: var(--border-inverse); }
+.hover\:border-color-reward:hover { border-color: var(--border-reward); }
+.hover\:border-color-reward-subtle:hover { border-color: var(--border-reward-subtle); }
 }

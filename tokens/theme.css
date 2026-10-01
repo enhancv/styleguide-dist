@@ -105,6 +105,7 @@
   --text-info: var(--primitives-sky-500);
   --text-muted: var(--primitives-grey-500);
   --text-disabled: var(--primitives-grey-400);
+  --text-reward: var(--primitives-yellow-700); /** Reward text (premium, Pro, 100%, achievements). AA on white and on background/reward/subtle. Never on background/reward/solid — use dark content there. */
   --border-subtle: var(--primitives-grey-100);
   --border-default: var(--primitives-grey-200);
   --border-strong: var(--primitives-grey-300);
@@ -120,6 +121,8 @@
   --border-danger: var(--primitives-red-500);
   --border-neutral: var(--primitives-slate-950);
   --border-inverse: var(--primitives-neutral-white);
+  --border-reward: var(--primitives-yellow-400); /** Decorative gold ring. A border that marks state (selected) needs 3:1 — use yellow/700. */
+  --border-reward-subtle: var(--primitives-yellow-200); /** Hairline around reward subtle surfaces. */
   --background-brand-subtle: var(--primitives-brand-50);
   --background-brand-solid: var(--primitives-brand-400);
   --background-brand-inverse: var(--primitives-brand-900);
@@ -151,6 +154,9 @@
   --background-subtle-subtle: var(--primitives-slate-100);
   --background-subtle-solid: var(--primitives-slate-300);
   --background-subtle-inverse: var(--primitives-slate-400);
+  --background-reward-subtle: var(--primitives-yellow-50); /** Tinted reward panel, e.g. Pro offers. */
+  --background-reward-solid: var(--primitives-yellow-400); /** Gold fill for Pro badges, 100% chips and lone reward icons. Content on it is yellow/950 (bronze), never white. */
+  --background-reward-inverse: var(--primitives-yellow-900); /** Dark reward surface; white text on it. */
   --button-brand: var(--primitives-brand-400);
   --button-brand-hover: var(--primitives-brand-600);
   --button-brand-pressed: var(--primitives-brand-800);
@@ -206,6 +212,7 @@
   --icon-info: var(--primitives-sky-500);
   --icon-muted: var(--primitives-grey-500);
   --icon-disabled: var(--primitives-grey-400);
+  --icon-reward: var(--primitives-yellow-500); /** Gold reward icon (crown, star, award). Below 3:1 on white by design: use it only next to a label that carries the meaning. A lone icon goes inside background/reward/solid with a dark glyph. */
   --chip-brand-solid-surface: var(--primitives-brand-300);
   --chip-brand-solid-text: var(--primitives-slate-950);
   --chip-brand-subtle-surface: var(--primitives-brand-100);

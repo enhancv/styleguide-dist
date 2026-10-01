@@ -18,6 +18,7 @@
 .text-color-info { color: var(--text-info); }
 .text-color-muted { color: var(--text-muted); }
 .text-color-disabled { color: var(--text-disabled); }
+.text-color-reward { color: var(--text-reward); }
 .hover\:text-color-primary:hover { color: var(--text-primary); }
 .hover\:text-color-secondary:hover { color: var(--text-secondary); }
 .hover\:text-color-tertiary:hover { color: var(--text-tertiary); }
@@ -32,6 +33,7 @@
 .hover\:text-color-info:hover { color: var(--text-info); }
 .hover\:text-color-muted:hover { color: var(--text-muted); }
 .hover\:text-color-disabled:hover { color: var(--text-disabled); }
+.hover\:text-color-reward:hover { color: var(--text-reward); }
 .font-weight-regular { font-weight: var(--primitives-font-weight-regular); }
 .font-weight-medium { font-weight: var(--primitives-font-weight-medium); }
 .font-weight-semibold { font-weight: var(--primitives-font-weight-semibold); }

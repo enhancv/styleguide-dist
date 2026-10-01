@@ -142,6 +142,11 @@ export declare const background: {
         readonly alpha80: "var(--background-subtle-alpha-80)";
         readonly alpha90: "var(--background-subtle-alpha-90)";
     };
+    readonly reward: {
+        readonly subtle: "var(--background-reward-subtle)";
+        readonly solid: "var(--background-reward-solid)";
+        readonly inverse: "var(--background-reward-inverse)";
+    };
 };
 export declare const badge: {
     readonly danger: "var(--badge-danger)";
@@ -172,6 +177,8 @@ export declare const border: {
     readonly danger: "var(--border-danger)";
     readonly neutral: "var(--border-neutral)";
     readonly inverse: "var(--border-inverse)";
+    readonly reward: "var(--border-reward)";
+    readonly rewardSubtle: "var(--border-reward-subtle)";
 };
 export declare const button: {
     readonly brand: "var(--button-brand)";
@@ -462,6 +469,7 @@ export declare const icon: {
     readonly info: "var(--icon-info)";
     readonly muted: "var(--icon-muted)";
     readonly disabled: "var(--icon-disabled)";
+    readonly reward: "var(--icon-reward)";
 };
 export declare const text: {
     readonly primary: "var(--text-primary)";
@@ -478,6 +486,7 @@ export declare const text: {
     readonly info: "var(--text-info)";
     readonly muted: "var(--text-muted)";
     readonly disabled: "var(--text-disabled)";
+    readonly reward: "var(--text-reward)";
 };
 type Leaves<T> = T extends string ? T : {
     [K in keyof T]: Leaves<T[K]>;
