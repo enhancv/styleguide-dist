@@ -19,7 +19,7 @@ declare const SIZES: {
     };
 };
 export type LogoVariant = keyof typeof SIZES;
-export type LogoColor = "default" | "black" | "white";
+export type LogoColor = "default" | "black" | "white" | "muted";
 export type LogoProps = ({
     /** The full-colour app mark only exists in the default colour. */
     variant?: "favicon";

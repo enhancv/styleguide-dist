@@ -9,6 +9,8 @@ interface LinkOwnProps {
     iconStart?: UiIconName;
     iconEnd?: UiIconName;
     fullWidth?: boolean;
+    /** The box may shrink below its label, which then ends in an ellipsis. */
+    truncate?: boolean;
 }
 export type LinkProps<E extends ButtonElement = typeof DEFAULT_ELEMENT> = PolymorphicProps<E, LinkOwnProps>;
 /**

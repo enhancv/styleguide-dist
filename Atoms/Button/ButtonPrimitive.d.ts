@@ -17,6 +17,8 @@ export interface ButtonPrimitiveOwnProps {
     iconStart?: UiIconName;
     iconEnd?: UiIconName;
     fullWidth?: boolean;
+    /** The box may shrink below its label, which then ends in an ellipsis. */
+    truncate?: boolean;
     /** String labels render title-cased — never for the link variant; opt out
      *  for casing that must survive verbatim. The app can opt out globally via
      *  ButtonConfigContext's defaultPreserveCasing (set for de/fr locales). */

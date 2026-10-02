@@ -102,6 +102,11 @@
   .Logo-module__logo--RZW8S[data-color="white"] {
     color: #fff;
   }
+
+  /* A UI state rather than a colourway, so it follows the theme. */
+  .Logo-module__logo--RZW8S[data-color="muted"] {
+    color: var(--text-tertiary);
+  }
 }
 
 @layer components {
@@ -5705,6 +5710,18 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
 
   .Button-module__button--bJF6M[data-full-width] {
     inline-size: 100%;
+  }
+
+  .Button-module__button--bJF6M[data-truncate] {
+    min-inline-size: 0;
+    max-inline-size: 100%;
+  }
+  .Button-module__button--bJF6M[data-truncate] .Button-module__label--V1tZC {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .Button-module__button--bJF6M[data-truncate] .Button-module__icon---bzmi {
+    flex-shrink: 0;
   }
 
   /* No icon-size tokens exist yet — the raw Figma values (24 / 20 / 16) live here once. */
