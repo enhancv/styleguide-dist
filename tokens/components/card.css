@@ -1,0 +1,15 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ * by tokens/build.mjs from tokens/input/components/card/.
+ *
+ * Imported by the card component — not part of index.css.
+ */
+
+@layer components {
+[data-card-color="default"] {
+  --card-border-selected: var(--button-brand-hover);
+  --card-focus-ring: var(--icon-tertiary);
+  --card-surface: var(--background-neutral-solid);
+  --card-border: var(--border-default);
+}
+}

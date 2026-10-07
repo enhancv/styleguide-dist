@@ -6062,6 +6062,155 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
 }
 
 @layer components {
+  /* ── The card ─────────────────────────────────────────────────────────────
+     Structure only: colours are the generated --card-* roles
+     (src/tokens/components/card.css). Figma's Content slot is a vertical
+     auto-layout whose children fill the width and stack 16 apart: a flex
+     column. The card has no intrinsic width — Figma's 320 is the canvas
+     default, and in a layout the card fills its container (Fill container). */
+  .Card-module__card--vPign {
+    /* No shadow tokens exist: Foundation publishes only Shadow/Default/LG, and
+       Figma's Shadow/Default/SM (Elevated at rest) and Shadow/Hover (the
+       clickable lift) are local styles on shadow-lg_01, #0A0D12 at 8%. The raw
+       layers live here once. */
+    --_shadow-color: rgb(10 13 18 / 8%);
+    --_shadow-rest: 0 1px 2px 0 var(--_shadow-color),
+      0 2px 6px -1px var(--_shadow-color);
+    --_shadow-hover: var(--_shadow-rest), 0 2px 20px 0 var(--_shadow-color);
+    /* ButtonPrimitive's ring: a 2px gap in the page colour, then 2px of ring. */
+    --_ring-gap: 2px;
+    --_ring-width: 2px;
+    --_border-width: var(--stroke-default);
+    /* box-shadow is three layers, so the states combine instead of replacing
+       each other: the inside outline (edge), the focus ring and the elevation
+       (lift). Each rests as an invisible shadow so the list stays valid. */
+    --_edge: inset 0 0 transparent;
+    --_ring: 0 0 transparent;
+    --_lift: 0 0 transparent;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16);
+    margin: 0;
+    border: none;
+    border-radius: var(--radius-8);
+    background-color: var(--card-surface);
+    /* Figma's INSIDE strokes as an inset shadow, never a border, so the
+       padding stays the design's spacing token. The ring sits above the
+       elevation. */
+    box-shadow: var(--_edge), var(--_ring), var(--_lift);
+    /* The card owns no type or text colour (its content does), so a button or
+       anchor card drops the UA's. */
+    color: inherit;
+    font: inherit;
+    letter-spacing: inherit;
+    text-align: start;
+    text-decoration: none;
+    /* Figma clips the slot to the radius (media corners). clip, not hidden: no
+       scroll container, so sticky content keeps working. */
+    overflow: clip;
+  }
+
+  /* A <button> sizes to fit-content even as a flex container; the other
+     elements already fill their container. */
+  .Card-module__card--vPign:where(button) {
+    inline-size: 100%;
+  }
+
+  /* ── Padding ──────────────────────────────────────────────────────────────
+     Figma binds Card Breakpoint variables that alias Semantic spacing per
+     mode. Only Comfortable differs: 16 on Mobile, 24 from the tablet tier up
+     (min-width from primitives/breakpoint/md, the Semantic cascade's
+     threshold — media queries can't read custom properties). */
+  .Card-module__card--vPign[data-padding="tight"] {
+    padding: var(--spacing-4);
+  }
+  .Card-module__card--vPign[data-padding="compact"] {
+    padding: var(--spacing-8);
+  }
+  .Card-module__card--vPign[data-padding="default"] {
+    padding: var(--spacing-16);
+  }
+  .Card-module__card--vPign[data-padding="comfortable"] {
+    padding: var(--spacing-16);
+  }
+  @media (min-width: 769px) {
+    .Card-module__card--vPign[data-padding="comfortable"] {
+      padding: var(--spacing-24);
+    }
+  }
+
+  .Card-module__card--vPign[data-border-width="strong"] {
+    --_border-width: var(--stroke-strong);
+  }
+
+  /* ── Style ────────────────────────────────────────────────────────────────
+     Outlined: border/default at the Border width. Elevated: Shadow/Default/SM.
+     Ghost: neither — only the states show its edge. */
+  .Card-module__card--vPign[data-type="outlined"] {
+    --_edge: inset 0 0 0 var(--_border-width) var(--card-border);
+  }
+  .Card-module__card--vPign[data-type="elevated"] {
+    --_lift: var(--_shadow-rest);
+  }
+
+  /* ── States: Clickable only (a static card never reacts) ──────────────────
+     Selected → hover → focus. Each writes one layer, so Selected + Hover +
+     Focus all show at once. */
+  .Card-module__card--vPign[data-clickable] {
+    cursor: pointer;
+  }
+
+  /* Selected: the brand outline at the Border width, on every style. A label
+     card follows its own checked radio / checkbox. */
+  .Card-module__card--vPign[data-selected],
+  .Card-module__card--vPign[data-clickable]:where(label):has(input:checked) {
+    --_edge: inset 0 0 0 var(--_border-width) var(--card-border-selected);
+  }
+
+  /* Shadow/Hover replaces the resting elevation. Pointer-only: touch browsers
+     keep :hover on the last tapped element. Figma has no Disabled state; a
+     disabled button card just stops inviting the click. */
+  @media (hover: hover) {
+    .Card-module__card--vPign[data-clickable]:hover:not(:disabled, [aria-disabled="true"]) {
+      --_lift: var(--_shadow-hover);
+    }
+  }
+
+  /* The ring follows keyboard focus on the card itself, or on the radio /
+     checkbox a label card wraps. Transparent, not none: forced-colors mode
+     drops box-shadows but paints this outline, so the focus stays visible. */
+  .Card-module__card--vPign[data-clickable]:focus-visible,
+  .Card-module__card--vPign[data-clickable]:where(label):has(input:focus-visible) {
+    --_ring: 0 0 0 var(--_ring-gap) var(--background-neutral-subtle),
+      0 0 0 calc(var(--_ring-gap) + var(--_ring-width)) var(--card-focus-ring);
+    outline: var(--_ring-width) solid transparent;
+    outline-offset: var(--_ring-gap);
+  }
+
+  .Card-module__card--vPign[data-clickable]:is(:disabled, [aria-disabled="true"]) {
+    cursor: not-allowed;
+  }
+}
+
+/**
+ * Do not edit directly, this file was auto-generated
+ * by tokens/build.mjs from tokens/input/components/card/.
+ *
+ * Imported by the card component — not part of index.css.
+ */
+
+@layer components {
+[data-card-color="default"] {
+  --card-border-selected: var(--button-brand-hover);
+  --card-focus-ring: var(--icon-tertiary);
+  --card-surface: var(--background-neutral-solid);
+  --card-border: var(--border-default);
+}
+}
+
+@layer components {
   /* ── Palette ──────────────────────────────────────────────────────────────
      Colour lives only in the 11 generated --chip-* roles, re-pointed per mode
      by [data-chip-color] (src/tokens/components/chip.css). Each Style copies
