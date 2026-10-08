@@ -1,0 +1,56 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ * by tokens/build.mjs from tokens/input/components/toast/.
+ *
+ * Imported by the toast component — not part of index.css.
+ */
+
+@layer components {
+[data-toast-color="brand"] {
+  --toast-tint: var(--background-brand-subtle);
+  --toast-icon: var(--icon-brand);
+  --toast-progress: var(--icon-brand);
+  --toast-surface: var(--background-neutral-solid);
+  --toast-border: var(--border-subtle);
+}
+
+[data-toast-color="danger"] {
+  --toast-tint: var(--background-danger-alpha-10);
+  --toast-icon: var(--icon-danger);
+  --toast-progress: var(--background-danger-solid);
+  --toast-surface: var(--background-danger-subtle);
+  --toast-border: var(--border-danger-subtle);
+}
+
+[data-toast-color="info"] {
+  --toast-tint: var(--background-info-subtle);
+  --toast-icon: var(--icon-info);
+  --toast-progress: var(--background-info-solid);
+  --toast-surface: var(--background-neutral-solid);
+  --toast-border: var(--border-subtle);
+}
+
+[data-toast-color="neutral"] {
+  --toast-tint: var(--background-neutral-subtle);
+  --toast-icon: var(--icon-secondary);
+  --toast-progress: var(--background-inverse-subtle);
+  --toast-surface: var(--background-neutral-solid);
+  --toast-border: var(--border-subtle);
+}
+
+[data-toast-color="success"] {
+  --toast-tint: var(--background-success-subtle);
+  --toast-icon: var(--icon-success);
+  --toast-progress: var(--background-success-solid);
+  --toast-surface: var(--background-neutral-solid);
+  --toast-border: var(--border-subtle);
+}
+
+[data-toast-color="warning"] {
+  --toast-tint: var(--background-warning-alpha-10);
+  --toast-icon: var(--icon-warning);
+  --toast-progress: var(--background-warning-solid);
+  --toast-surface: var(--background-warning-subtle);
+  --toast-border: var(--border-warning-subtle);
+}
+}

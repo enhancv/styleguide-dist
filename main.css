@@ -6211,6 +6211,432 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
 }
 
 @layer components {
+  /* What the styleguide classes can't say. Layout, spacing and the fixed
+     colours are utility classes in Toast.tsx (flex, gap-*, p-*, bg-*,
+     text-color-*). Utilities sit in a later layer and win over this file, so
+     nothing here repeats a property a class on the same element sets, and a
+     value that changes per Type is switched by class in the TSX, never
+     overridden here. Tone colours are the generated --toast-* roles
+     (src/tokens/components/toast.css). Figma builds each Type on a static
+     Outlined Card with its own padding, outline and elevation; the toast
+     draws that surface itself so none of it fights Card's own rules. */
+  .Toast-module__toast--4xN3L {
+    /* Figma's 400 desktop width. Narrower containers (mobile: the viewport
+       minus 16 each side) shrink it. No width token exists. */
+    --_width: 400px;
+    /* Shadow/Default/XL. Foundation's shadow tokens (Theme shadow/*) aren't
+       imported yet, so the raw layers live here once: the shared edge, then
+       the XL steps, all #0A0D12. */
+    --_shadow-xl: 0 0 1px 0 rgb(10 13 18 / 20%), 0 3px 3px -1.5px rgb(10 13 18 / 4%),
+      0 8px 8px -4px rgb(10 13 18 / 3%), 0 20px 24px -4px rgb(10 13 18 / 8%);
+
+    box-sizing: border-box;
+    max-inline-size: var(--_width);
+    border-radius: var(--radius-8);
+    background-color: var(--toast-surface);
+    /* Figma's INSIDE stroke as an inset shadow, never a border, so the
+       padding stays the design's spacing tokens. */
+    box-shadow: inset 0 0 0 var(--stroke-default) var(--toast-border), var(--_shadow-xl);
+    text-align: start;
+  }
+
+  /* ── Status badge: a 32px circle in the tone's tint with a 20px glyph ────
+     Both sizes are raw Figma values until icon-size tokens exist. */
+  .Toast-module__status--rQIbo {
+    --_status-size: 32px;
+    --_glyph-size: 20px;
+
+    flex: none;
+    inline-size: var(--_status-size);
+    block-size: var(--_status-size);
+    border-radius: var(--radius-full);
+    background-color: var(--toast-tint);
+    color: var(--toast-icon);
+  }
+
+  /* An Icon, or Loader's 1em ring (size="inherit"). line-height 1 keeps the
+     Loader host one glyph tall, so the ring centres in the badge like the
+     icons do (Icon already sets it). */
+  .Toast-module__glyph--PAxRT {
+    font-size: var(--_glyph-size);
+    line-height: 1;
+  }
+
+  /* The copy column fills the row and may shrink below its longest word.
+     Its 6 above and below centre the 20px first line on the 32px badge and
+     close button, so all three stay top-aligned as the copy wraps. */
+  .Toast-module__content--93hAZ {
+    min-inline-size: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .Toast-module__track--kH0N4 {
+    --_track-height: 4px;
+
+    block-size: var(--_track-height);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+  }
+
+  .Toast-module__value--fF4FF {
+    block-size: 100%;
+    border-radius: var(--radius-full);
+    background-color: var(--toast-progress);
+  }
+
+  /* The shortcut chip: Body XS (no type-size class exists) with a 1px
+     inside stroke. */
+  .Toast-module__shortcut--6PczW {
+    border-radius: var(--radius-4);
+    box-shadow: inset 0 0 0 var(--stroke-default) var(--border-default);
+    /* Figma variables hold a single family name: Text's fallback stack. */
+    font-family: var(--body-xs-font), -apple-system, BlinkMacSystemFont, Inter,
+      "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: var(--body-xs-size);
+    line-height: var(--body-xs-line-height);
+    letter-spacing: var(--body-xs-tracking);
+    white-space: nowrap;
+  }
+
+  .Toast-module__close--ENykV {
+    flex: none;
+  }
+
+  /* Figma overrides the resting glyph to icon/tertiary (4.89:1 on the
+     surface); hover, focus and pressed keep the Ghost Neutral roles, so the
+     button still darkens under the pointer. A reach-in until Button has a
+     muted colour family (rest icon/tertiary) — then this becomes a `color`
+     prop. .toast lifts it over the button's own [data-type] rule; the :not()
+     list mirrors Button's states. */
+  .Toast-module__toast--4xN3L .Toast-module__close--ENykV:not(:hover, :focus-visible, :active, :disabled, [aria-disabled="true"]) {
+    color: var(--icon-tertiary);
+  }
+}
+
+/**
+ * Do not edit directly, this file was auto-generated
+ * by tokens/build.mjs from tokens/input/components/toast/.
+ *
+ * Imported by the toast component — not part of index.css.
+ */
+
+@layer components {
+[data-toast-color="brand"] {
+  --toast-tint: var(--background-brand-subtle);
+  --toast-icon: var(--icon-brand);
+  --toast-progress: var(--icon-brand);
+  --toast-surface: var(--background-neutral-solid);
+  --toast-border: var(--border-subtle);
+}
+
+[data-toast-color="danger"] {
+  --toast-tint: var(--background-danger-alpha-10);
+  --toast-icon: var(--icon-danger);
+  --toast-progress: var(--background-danger-solid);
+  --toast-surface: var(--background-danger-subtle);
+  --toast-border: var(--border-danger-subtle);
+}
+
+[data-toast-color="info"] {
+  --toast-tint: var(--background-info-subtle);
+  --toast-icon: var(--icon-info);
+  --toast-progress: var(--background-info-solid);
+  --toast-surface: var(--background-neutral-solid);
+  --toast-border: var(--border-subtle);
+}
+
+[data-toast-color="neutral"] {
+  --toast-tint: var(--background-neutral-subtle);
+  --toast-icon: var(--icon-secondary);
+  --toast-progress: var(--background-inverse-subtle);
+  --toast-surface: var(--background-neutral-solid);
+  --toast-border: var(--border-subtle);
+}
+
+[data-toast-color="success"] {
+  --toast-tint: var(--background-success-subtle);
+  --toast-icon: var(--icon-success);
+  --toast-progress: var(--background-success-solid);
+  --toast-surface: var(--background-neutral-solid);
+  --toast-border: var(--border-subtle);
+}
+
+[data-toast-color="warning"] {
+  --toast-tint: var(--background-warning-alpha-10);
+  --toast-icon: var(--icon-warning);
+  --toast-progress: var(--background-warning-solid);
+  --toast-surface: var(--background-warning-subtle);
+  --toast-border: var(--border-warning-subtle);
+}
+}
+
+/* One rule per style in the type scale — add a rule when a style is added in
+   Figma, since TypeScaleVariant is derived from the tokens and will accept the
+   new name before this file knows it. The tokens carry their own breakpoints,
+   so no media queries belong here. */
+
+@layer components {
+  .Text-module__text--BrHx7 {
+    /* Figma variables hold a single family name. */
+    --text-font-fallback: -apple-system, BlinkMacSystemFont, Inter, "Segoe UI",
+      Roboto, Helvetica, Arial, sans-serif;
+
+    margin: 0;
+    color: var(--text-primary);
+  }
+
+  .Text-module__text--BrHx7[data-variant="display-xl"] {
+    font-family: var(--display-xl-font), var(--text-font-fallback);
+    font-weight: var(--display-xl-weight);
+    font-size: var(--display-xl-size);
+    line-height: var(--display-xl-line-height);
+    letter-spacing: var(--display-xl-tracking);
+  }
+
+  .Text-module__text--BrHx7[data-variant="display-l"] {
+    font-family: var(--display-l-font), var(--text-font-fallback);
+    font-weight: var(--display-l-weight);
+    font-size: var(--display-l-size);
+    line-height: var(--display-l-line-height);
+    letter-spacing: var(--display-l-tracking);
+  }
+
+  .Text-module__text--BrHx7[data-variant="heading-xl"] {
+    font-family: var(--heading-xl-font), var(--text-font-fallback);
+    font-weight: var(--heading-xl-weight);
+    font-size: var(--heading-xl-size);
+    line-height: var(--heading-xl-line-height);
+    letter-spacing: var(--heading-xl-tracking);
+  }
+
+  .Text-module__text--BrHx7[data-variant="heading-l"] {
+    font-family: var(--heading-l-font), var(--text-font-fallback);
+    font-weight: var(--heading-l-weight);
+    font-size: var(--heading-l-size);
+    line-height: var(--heading-l-line-height);
+    letter-spacing: var(--heading-l-tracking);
+  }
+
+  .Text-module__text--BrHx7[data-variant="heading-m"] {
+    font-family: var(--heading-m-font), var(--text-font-fallback);
+    font-weight: var(--heading-m-weight);
+    font-size: var(--heading-m-size);
+    line-height: var(--heading-m-line-height);
+    letter-spacing: var(--heading-m-tracking);
+  }
+
+  .Text-module__text--BrHx7[data-variant="heading-s"] {
+    font-family: var(--heading-s-font), var(--text-font-fallback);
+    font-weight: var(--heading-s-weight);
+    font-size: var(--heading-s-size);
+    line-height: var(--heading-s-line-height);
+    letter-spacing: var(--heading-s-tracking);
+  }
+
+  .Text-module__text--BrHx7[data-variant="heading-xs"] {
+    font-family: var(--heading-xs-font), var(--text-font-fallback);
+    font-weight: var(--heading-xs-weight);
+    font-size: var(--heading-xs-size);
+    line-height: var(--heading-xs-line-height);
+    letter-spacing: var(--heading-xs-tracking);
+  }
+
+  .Text-module__text--BrHx7[data-variant="body-xl"] {
+    font-family: var(--body-xl-font), var(--text-font-fallback);
+    font-weight: var(--body-xl-weight);
+    font-size: var(--body-xl-size);
+    line-height: var(--body-xl-line-height);
+    letter-spacing: var(--body-xl-tracking);
+  }
+
+  .Text-module__text--BrHx7[data-variant="body-l"] {
+    font-family: var(--body-l-font), var(--text-font-fallback);
+    font-weight: var(--body-l-weight);
+    font-size: var(--body-l-size);
+    line-height: var(--body-l-line-height);
+    letter-spacing: var(--body-l-tracking);
+  }
+
+  .Text-module__text--BrHx7[data-variant="body-m"] {
+    font-family: var(--body-m-font), var(--text-font-fallback);
+    font-weight: var(--body-m-weight);
+    font-size: var(--body-m-size);
+    line-height: var(--body-m-line-height);
+    letter-spacing: var(--body-m-tracking);
+  }
+
+  .Text-module__text--BrHx7[data-variant="body-s"] {
+    font-family: var(--body-s-font), var(--text-font-fallback);
+    font-weight: var(--body-s-weight);
+    font-size: var(--body-s-size);
+    line-height: var(--body-s-line-height);
+    letter-spacing: var(--body-s-tracking);
+  }
+
+  .Text-module__text--BrHx7[data-variant="body-xs"] {
+    font-family: var(--body-xs-font), var(--text-font-fallback);
+    font-weight: var(--body-xs-weight);
+    font-size: var(--body-xs-size);
+    line-height: var(--body-xs-line-height);
+    letter-spacing: var(--body-xs-tracking);
+  }
+
+  /* Must follow the type scale to override the weight a variant brings. The only
+     primitive-level references here: the semantic layer has no weight tokens. */
+
+  .Text-module__text--BrHx7[data-weight="light"] {
+    font-weight: var(--primitives-font-weight-light);
+  }
+
+  .Text-module__text--BrHx7[data-weight="regular"] {
+    font-weight: var(--primitives-font-weight-regular);
+  }
+
+  .Text-module__text--BrHx7[data-weight="medium"] {
+    font-weight: var(--primitives-font-weight-medium);
+  }
+
+  .Text-module__text--BrHx7[data-weight="semibold"] {
+    font-weight: var(--primitives-font-weight-semibold);
+  }
+
+  .Text-module__text--BrHx7[data-weight="bold"] {
+    font-weight: var(--primitives-font-weight-bold);
+  }
+
+  .Text-module__text--BrHx7[data-color="inherit"] {
+    color: inherit;
+  }
+
+  .Text-module__text--BrHx7[data-color="secondary"] {
+    color: var(--text-secondary);
+  }
+
+  .Text-module__text--BrHx7[data-color="tertiary"] {
+    color: var(--text-tertiary);
+  }
+
+  .Text-module__text--BrHx7[data-color="quaternary"] {
+    color: var(--text-quaternary);
+  }
+
+  .Text-module__text--BrHx7[data-color="muted"] {
+    color: var(--text-muted);
+  }
+
+  .Text-module__text--BrHx7[data-color="disabled"] {
+    color: var(--text-disabled);
+  }
+
+  .Text-module__text--BrHx7[data-color="inverse"] {
+    color: var(--text-inverse);
+  }
+
+  .Text-module__text--BrHx7[data-color="link"] {
+    color: var(--text-link);
+  }
+
+  .Text-module__text--BrHx7[data-color="brand"] {
+    color: var(--text-brand);
+  }
+
+  .Text-module__text--BrHx7[data-color="accent"] {
+    color: var(--text-accent);
+  }
+
+  .Text-module__text--BrHx7[data-color="success"] {
+    color: var(--text-success);
+  }
+
+  .Text-module__text--BrHx7[data-color="warning"] {
+    color: var(--text-warning);
+  }
+
+  .Text-module__text--BrHx7[data-color="danger"] {
+    color: var(--text-danger);
+  }
+
+  .Text-module__text--BrHx7[data-color="info"] {
+    color: var(--text-info);
+  }
+
+  .Text-module__text--BrHx7[data-color="reward"] {
+    color: var(--text-reward);
+  }
+
+  .Text-module__text--BrHx7[data-align="start"] {
+    text-align: start;
+  }
+
+  .Text-module__text--BrHx7[data-align="center"] {
+    text-align: center;
+  }
+
+  .Text-module__text--BrHx7[data-align="end"] {
+    text-align: end;
+  }
+
+  .Text-module__text--BrHx7[data-align="justify"] {
+    text-align: justify;
+  }
+
+  .Text-module__text--BrHx7[data-transform="uppercase"] {
+    text-transform: uppercase;
+  }
+
+  .Text-module__text--BrHx7[data-transform="lowercase"] {
+    text-transform: lowercase;
+  }
+
+  .Text-module__text--BrHx7[data-transform="capitalize"] {
+    text-transform: capitalize;
+  }
+
+  .Text-module__text--BrHx7[data-decoration="underline"] {
+    text-decoration: underline;
+  }
+
+  .Text-module__text--BrHx7[data-decoration="line-through"] {
+    text-decoration: line-through;
+  }
+
+  .Text-module__text--BrHx7[data-italic] {
+    font-style: italic;
+  }
+
+  .Text-module__text--BrHx7[data-truncate] {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  /* After truncate, so lineClamp wins when both are set. */
+  .Text-module__text--BrHx7[data-line-clamp] {
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal;
+    -webkit-line-clamp: var(--text-line-clamp);
+    line-clamp: var(--text-line-clamp);
+    -webkit-box-orient: vertical;
+  }
+
+  /* Last, so hiding wins over everything above. */
+
+  .Text-module__text--BrHx7[data-visually-hidden] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+  }
+}
+
+@layer components {
   /* ── Palette ──────────────────────────────────────────────────────────────
      Colour lives only in the 11 generated --chip-* roles, re-pointed per mode
      by [data-chip-color] (src/tokens/components/chip.css). Each Style copies
@@ -6958,272 +7384,6 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
   .Tooltip-module__bubble--CAs-U[data-placement="right"] .Tooltip-module__arrow--ffONi {
     inset-inline-start: calc(-1 * var(--_arrow-height));
     clip-path: polygon(0 50%, 100% 0, 100% 100%);
-  }
-}
-
-/* One rule per style in the type scale — add a rule when a style is added in
-   Figma, since TypeScaleVariant is derived from the tokens and will accept the
-   new name before this file knows it. The tokens carry their own breakpoints,
-   so no media queries belong here. */
-
-@layer components {
-  .Text-module__text--BrHx7 {
-    /* Figma variables hold a single family name. */
-    --text-font-fallback: -apple-system, BlinkMacSystemFont, Inter, "Segoe UI",
-      Roboto, Helvetica, Arial, sans-serif;
-
-    margin: 0;
-    color: var(--text-primary);
-  }
-
-  .Text-module__text--BrHx7[data-variant="display-xl"] {
-    font-family: var(--display-xl-font), var(--text-font-fallback);
-    font-weight: var(--display-xl-weight);
-    font-size: var(--display-xl-size);
-    line-height: var(--display-xl-line-height);
-    letter-spacing: var(--display-xl-tracking);
-  }
-
-  .Text-module__text--BrHx7[data-variant="display-l"] {
-    font-family: var(--display-l-font), var(--text-font-fallback);
-    font-weight: var(--display-l-weight);
-    font-size: var(--display-l-size);
-    line-height: var(--display-l-line-height);
-    letter-spacing: var(--display-l-tracking);
-  }
-
-  .Text-module__text--BrHx7[data-variant="heading-xl"] {
-    font-family: var(--heading-xl-font), var(--text-font-fallback);
-    font-weight: var(--heading-xl-weight);
-    font-size: var(--heading-xl-size);
-    line-height: var(--heading-xl-line-height);
-    letter-spacing: var(--heading-xl-tracking);
-  }
-
-  .Text-module__text--BrHx7[data-variant="heading-l"] {
-    font-family: var(--heading-l-font), var(--text-font-fallback);
-    font-weight: var(--heading-l-weight);
-    font-size: var(--heading-l-size);
-    line-height: var(--heading-l-line-height);
-    letter-spacing: var(--heading-l-tracking);
-  }
-
-  .Text-module__text--BrHx7[data-variant="heading-m"] {
-    font-family: var(--heading-m-font), var(--text-font-fallback);
-    font-weight: var(--heading-m-weight);
-    font-size: var(--heading-m-size);
-    line-height: var(--heading-m-line-height);
-    letter-spacing: var(--heading-m-tracking);
-  }
-
-  .Text-module__text--BrHx7[data-variant="heading-s"] {
-    font-family: var(--heading-s-font), var(--text-font-fallback);
-    font-weight: var(--heading-s-weight);
-    font-size: var(--heading-s-size);
-    line-height: var(--heading-s-line-height);
-    letter-spacing: var(--heading-s-tracking);
-  }
-
-  .Text-module__text--BrHx7[data-variant="heading-xs"] {
-    font-family: var(--heading-xs-font), var(--text-font-fallback);
-    font-weight: var(--heading-xs-weight);
-    font-size: var(--heading-xs-size);
-    line-height: var(--heading-xs-line-height);
-    letter-spacing: var(--heading-xs-tracking);
-  }
-
-  .Text-module__text--BrHx7[data-variant="body-xl"] {
-    font-family: var(--body-xl-font), var(--text-font-fallback);
-    font-weight: var(--body-xl-weight);
-    font-size: var(--body-xl-size);
-    line-height: var(--body-xl-line-height);
-    letter-spacing: var(--body-xl-tracking);
-  }
-
-  .Text-module__text--BrHx7[data-variant="body-l"] {
-    font-family: var(--body-l-font), var(--text-font-fallback);
-    font-weight: var(--body-l-weight);
-    font-size: var(--body-l-size);
-    line-height: var(--body-l-line-height);
-    letter-spacing: var(--body-l-tracking);
-  }
-
-  .Text-module__text--BrHx7[data-variant="body-m"] {
-    font-family: var(--body-m-font), var(--text-font-fallback);
-    font-weight: var(--body-m-weight);
-    font-size: var(--body-m-size);
-    line-height: var(--body-m-line-height);
-    letter-spacing: var(--body-m-tracking);
-  }
-
-  .Text-module__text--BrHx7[data-variant="body-s"] {
-    font-family: var(--body-s-font), var(--text-font-fallback);
-    font-weight: var(--body-s-weight);
-    font-size: var(--body-s-size);
-    line-height: var(--body-s-line-height);
-    letter-spacing: var(--body-s-tracking);
-  }
-
-  .Text-module__text--BrHx7[data-variant="body-xs"] {
-    font-family: var(--body-xs-font), var(--text-font-fallback);
-    font-weight: var(--body-xs-weight);
-    font-size: var(--body-xs-size);
-    line-height: var(--body-xs-line-height);
-    letter-spacing: var(--body-xs-tracking);
-  }
-
-  /* Must follow the type scale to override the weight a variant brings. The only
-     primitive-level references here: the semantic layer has no weight tokens. */
-
-  .Text-module__text--BrHx7[data-weight="light"] {
-    font-weight: var(--primitives-font-weight-light);
-  }
-
-  .Text-module__text--BrHx7[data-weight="regular"] {
-    font-weight: var(--primitives-font-weight-regular);
-  }
-
-  .Text-module__text--BrHx7[data-weight="medium"] {
-    font-weight: var(--primitives-font-weight-medium);
-  }
-
-  .Text-module__text--BrHx7[data-weight="semibold"] {
-    font-weight: var(--primitives-font-weight-semibold);
-  }
-
-  .Text-module__text--BrHx7[data-weight="bold"] {
-    font-weight: var(--primitives-font-weight-bold);
-  }
-
-  .Text-module__text--BrHx7[data-color="inherit"] {
-    color: inherit;
-  }
-
-  .Text-module__text--BrHx7[data-color="secondary"] {
-    color: var(--text-secondary);
-  }
-
-  .Text-module__text--BrHx7[data-color="tertiary"] {
-    color: var(--text-tertiary);
-  }
-
-  .Text-module__text--BrHx7[data-color="quaternary"] {
-    color: var(--text-quaternary);
-  }
-
-  .Text-module__text--BrHx7[data-color="muted"] {
-    color: var(--text-muted);
-  }
-
-  .Text-module__text--BrHx7[data-color="disabled"] {
-    color: var(--text-disabled);
-  }
-
-  .Text-module__text--BrHx7[data-color="inverse"] {
-    color: var(--text-inverse);
-  }
-
-  .Text-module__text--BrHx7[data-color="link"] {
-    color: var(--text-link);
-  }
-
-  .Text-module__text--BrHx7[data-color="brand"] {
-    color: var(--text-brand);
-  }
-
-  .Text-module__text--BrHx7[data-color="accent"] {
-    color: var(--text-accent);
-  }
-
-  .Text-module__text--BrHx7[data-color="success"] {
-    color: var(--text-success);
-  }
-
-  .Text-module__text--BrHx7[data-color="warning"] {
-    color: var(--text-warning);
-  }
-
-  .Text-module__text--BrHx7[data-color="danger"] {
-    color: var(--text-danger);
-  }
-
-  .Text-module__text--BrHx7[data-color="info"] {
-    color: var(--text-info);
-  }
-
-  .Text-module__text--BrHx7[data-color="reward"] {
-    color: var(--text-reward);
-  }
-
-  .Text-module__text--BrHx7[data-align="start"] {
-    text-align: start;
-  }
-
-  .Text-module__text--BrHx7[data-align="center"] {
-    text-align: center;
-  }
-
-  .Text-module__text--BrHx7[data-align="end"] {
-    text-align: end;
-  }
-
-  .Text-module__text--BrHx7[data-align="justify"] {
-    text-align: justify;
-  }
-
-  .Text-module__text--BrHx7[data-transform="uppercase"] {
-    text-transform: uppercase;
-  }
-
-  .Text-module__text--BrHx7[data-transform="lowercase"] {
-    text-transform: lowercase;
-  }
-
-  .Text-module__text--BrHx7[data-transform="capitalize"] {
-    text-transform: capitalize;
-  }
-
-  .Text-module__text--BrHx7[data-decoration="underline"] {
-    text-decoration: underline;
-  }
-
-  .Text-module__text--BrHx7[data-decoration="line-through"] {
-    text-decoration: line-through;
-  }
-
-  .Text-module__text--BrHx7[data-italic] {
-    font-style: italic;
-  }
-
-  .Text-module__text--BrHx7[data-truncate] {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-
-  /* After truncate, so lineClamp wins when both are set. */
-  .Text-module__text--BrHx7[data-line-clamp] {
-    display: -webkit-box;
-    overflow: hidden;
-    white-space: normal;
-    -webkit-line-clamp: var(--text-line-clamp);
-    line-clamp: var(--text-line-clamp);
-    -webkit-box-orient: vertical;
-  }
-
-  /* Last, so hiding wins over everything above. */
-
-  .Text-module__text--BrHx7[data-visually-hidden] {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    border: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
   }
 }
 

@@ -1,7 +1,8 @@
 import React from "react";
-export type LoaderSize = "small" | "medium" | "large";
+/** A preset ring (14 / 16 / 18px), or `inherit`: a 1em ring that follows the font-size. */
+export type LoaderSize = "small" | "medium" | "large" | "inherit";
 export type LoaderProps = {
-    /** 14 / 16 / 18px. Omit and set a font-size to size it freely. */
+    /** 14 / 16 / 18px, or `"inherit"` for a 1em ring sized by the font-size. Default `"medium"`. */
     size?: LoaderSize;
 } & Omit<React.HTMLAttributes<HTMLSpanElement>, "children">;
 /**
