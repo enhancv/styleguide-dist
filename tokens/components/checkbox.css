@@ -1,0 +1,18 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ * by tokens/build.mjs from tokens/input/components/checkbox/.
+ *
+ * Imported by the checkbox component — not part of index.css.
+ */
+
+@layer components {
+[data-checkbox-color="default"] {
+  --checkbox-checked: var(--button-brand);
+  --checkbox-border: var(--icon-tertiary);
+  --checkbox-disabled: var(--button-neutral-disabled);
+  --checkbox-surface: var(--background-neutral-solid);
+  --checkbox-focus-ring: var(--icon-tertiary);
+  --checkbox-invalid: var(--border-danger);
+  --checkbox-checked-border: var(--border-brand);
+}
+}

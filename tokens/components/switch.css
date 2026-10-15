@@ -1,0 +1,14 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ * by tokens/build.mjs from tokens/input/components/switch/.
+ *
+ * Imported by the switch component — not part of index.css.
+ */
+
+@layer components {
+[data-switch-color="default"] {
+  --switch-on: var(--button-brand);
+  --switch-off: var(--icon-tertiary);
+  --switch-disabled: var(--button-neutral-disabled);
+}
+}

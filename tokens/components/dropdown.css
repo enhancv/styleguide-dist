@@ -1,0 +1,18 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ * by tokens/build.mjs from tokens/input/components/dropdown/.
+ *
+ * Imported by the dropdown component — not part of index.css.
+ */
+
+@layer components {
+[data-dropdown-color="default"] {
+  --dropdown-surface: var(--background-neutral-solid);
+  --dropdown-item-hover: var(--background-subtle-subtle);
+  --dropdown-separator: var(--border-default);
+  --dropdown-check: var(--icon-brand);
+  --dropdown-focus-ring: var(--icon-tertiary);
+  --dropdown-min-width: 200px;
+  --dropdown-max-width: 360px;
+}
+}

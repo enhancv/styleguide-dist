@@ -1,0 +1,38 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ * by tokens/build.mjs from tokens/input/components/dropdown-density/.
+ *
+ * Imported by the dropdown component — not part of index.css.
+ */
+
+@layer components {
+[data-dropdown-density="compact"] {
+  --dropdown-item-padding-x: var(--spacing-6);
+  --dropdown-item-padding-y: var(--spacing-4);
+  --dropdown-panel-padding-y: var(--spacing-4);
+  --dropdown-max-height: 273px;
+  --dropdown-item-margin-x: var(--spacing-6);
+  --dropdown-label-padding-x: var(--spacing-12);
+  --dropdown-label-padding-top: var(--spacing-6);
+}
+
+[data-dropdown-density="default"] {
+  --dropdown-item-padding-x: var(--spacing-8);
+  --dropdown-item-padding-y: var(--spacing-6);
+  --dropdown-panel-padding-y: var(--spacing-6);
+  --dropdown-max-height: 309px;
+  --dropdown-item-margin-x: var(--spacing-8);
+  --dropdown-label-padding-x: var(--spacing-16);
+  --dropdown-label-padding-top: var(--spacing-8);
+}
+
+[data-dropdown-density="touch"] {
+  --dropdown-item-padding-x: var(--spacing-8);
+  --dropdown-item-padding-y: var(--spacing-12);
+  --dropdown-panel-padding-y: var(--spacing-6);
+  --dropdown-max-height: 405px;
+  --dropdown-item-margin-x: var(--spacing-8);
+  --dropdown-label-padding-x: var(--spacing-16);
+  --dropdown-label-padding-top: var(--spacing-12);
+}
+}
