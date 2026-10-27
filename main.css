@@ -7722,6 +7722,20 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
   --chip-pressed: var(--chip-sky-solid-pressed);
 }
 
+[data-chip-color="white"] {
+  --chip-default: var(--background-neutral-solid);
+  --chip-text: var(--chip-grey-solid-text);
+  --chip-hover: var(--chip-grey-subtle-surface);
+  --chip-focus-ring: var(--chip-grey-subtle-focus-ring);
+  --chip-disabled: var(--chip-grey-solid-disabled);
+  --chip-surface-hover: var(--chip-grey-subtle-surface);
+  --chip-surface: var(--background-neutral-solid);
+  --chip-surface-text: var(--chip-grey-subtle-text);
+  --chip-border: var(--chip-grey-subtle-border);
+  --chip-surface-pressed: var(--chip-grey-subtle-hover);
+  --chip-pressed: var(--chip-grey-subtle-hover);
+}
+
 [data-chip-color="yellow"] {
   --chip-default: var(--chip-yellow-solid-surface);
   --chip-text: var(--chip-yellow-solid-text);
