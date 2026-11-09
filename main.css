@@ -7051,16 +7051,19 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
   }
 
   /* ── InputAction: Clear and the password toggle ──────────────────────────
-     The box is the icon's size, so it lines up with the field's padding; a
-     4px padding cancelled by a −4px margin makes the target 4px larger on
-     every side (24 · 28 · 32, WCAG 2.5.8). */
+     The target is 4px larger than the icon on every side (24 · 28 · 32,
+     WCAG 2.5.8), and a −4px margin gives that back, so in the layout the
+     button is the icon's size and lines up with the field's padding. Sized
+     as border-box: an app's unlayered `* { box-sizing: border-box }` beats
+     anything in this layer, so a content-box size would lose the padding
+     and push the icon 4px down. */
   .Input-module__action--x34aw {
     --_reach: 4px;
 
     flex: none;
-    box-sizing: content-box;
-    inline-size: var(--_icon);
-    block-size: var(--_icon);
+    box-sizing: border-box;
+    inline-size: calc(var(--_icon) + 2 * var(--_reach));
+    block-size: calc(var(--_icon) + 2 * var(--_reach));
     margin: calc(var(--_reach) * -1);
     padding: var(--_reach);
     border: 0;
