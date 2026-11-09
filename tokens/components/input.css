@@ -1,0 +1,18 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ * by tokens/build.mjs from tokens/input/components/input/.
+ *
+ * Imported by the input component — not part of index.css.
+ */
+
+@layer components {
+[data-input-color="default"] {
+  --input-surface: var(--background-neutral-solid);
+  --input-border: var(--border-strong);
+  --input-border-hover: var(--icon-tertiary);
+  --input-border-focus: var(--button-brand-hover);
+  --input-border-invalid: var(--border-danger);
+  --input-disabled: var(--background-subtle-subtle);
+  --input-focus-ring: var(--icon-tertiary);
+}
+}
