@@ -5770,7 +5770,9 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
     font-size: var(--_icon-size);
   }
 
-  /* Loading keeps the box: the content stays laid out, only invisible. */
+  /* Loading keeps the box: the content stays laid out, only invisible.
+     Opacity, not visibility, so the label stays in the accessibility tree
+     and the button keeps its name. */
   .Button-module__button--bJF6M[data-loading] {
     position: relative;
   }
@@ -5778,7 +5780,7 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
     display: inline-flex;
     align-items: center;
     gap: inherit;
-    visibility: hidden;
+    opacity: 0;
   }
   .Button-module__loader--aVcZn {
     position: absolute;
@@ -7006,6 +7008,22 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
   .Radio-module__input--KTtu5:focus-visible + .Radio-module__circle--u-SSV {
     outline: var(--_ring-width) solid var(--radio-focus-ring);
     outline-offset: var(--_ring-gap);
+  }
+
+  /* Inside a clickable label Card the card is the control people see: it
+     draws the focus ring (around its own edge) and the hover lift, so the
+     circle draws neither. The input stays, so keyboard and forms work. */
+  label[data-card-color][data-clickable] .Radio-module__input--KTtu5:focus-visible + .Radio-module__circle--u-SSV {
+    outline: none;
+  }
+  @media (hover: hover) {
+    label[data-card-color][data-clickable]
+      .Radio-module__primitive--NObdn:hover
+      > .Radio-module__input--KTtu5:enabled
+      + .Radio-module__circle--u-SSV,
+    label[data-card-color][data-clickable]:hover .Radio-module__input--KTtu5:enabled + .Radio-module__circle--u-SSV {
+      --_lift: 0 0 transparent;
+    }
   }
 
   /* Last, so it wins: the outline (unselected) or the fill (selected) turns
