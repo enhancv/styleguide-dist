@@ -6888,6 +6888,230 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
 }
 
 @layer components {
+  /* What the styleguide classes can't say. Layout, gaps, paddings and margin
+     resets are utility classes in the TSX (flex, gap-*, p-*, m-0); utilities
+     sit in a later layer and win over this file, so nothing here repeats a
+     property a class on the same element sets. Colours are the generated
+     --radio-* roles (src/tokens/components/radio.css), plus the Theme role
+     Figma binds directly: icon/inverse on the dot. RadioGroup's legend and
+     message are Field's (Field.module.css). */
+
+  /* ── RadioPrimitive: the circle ──────────────────────────────────────────
+     A native radio, invisible, laid over the circle it styles: the circle's
+     states come from the input's own :checked / :disabled / :focus-visible,
+     so controlled and uncontrolled use look the same. */
+  .Radio-module__primitive--NObdn {
+    /* No icon-size tokens exist: the raw Figma circle and dot sizes (16 / 20
+       / 24, CheckboxPrimitive's, and 6 / 8 / 10) live here once. */
+    --_circle: 16px;
+    --_dot: 6px;
+    /* WCAG 2.5.8 target size: the input reaches 24 × 24 around a smaller
+       circle without taking layout space. */
+    --_target: 24px;
+    /* Figma's Focus: a 2px gap, then 2px of ring. An outline, not Figma's
+       two shadows, so the gap shows the surface under the circle, as on
+       Checkbox, and forced-colors mode keeps it. */
+    --_ring-gap: 2px;
+    --_ring-width: 2px;
+    /* No motion tokens: Figma's 150 ms ease-out. */
+    --_motion: 150ms ease-out;
+
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+  }
+  .Radio-module__primitive--NObdn[data-size="md"] {
+    --_circle: 20px;
+    --_dot: 8px;
+  }
+  .Radio-module__primitive--NObdn[data-size="lg"] {
+    --_circle: 24px;
+    --_dot: 10px;
+  }
+
+  .Radio-module__input--KTtu5 {
+    position: absolute;
+    z-index: 1;
+    /* Centred on the circle, never smaller than the target. */
+    inset: calc((var(--_circle) - max(var(--_circle), var(--_target))) / 2);
+    opacity: 0;
+    cursor: pointer;
+  }
+  .Radio-module__input--KTtu5:disabled {
+    cursor: not-allowed;
+  }
+
+  /* Figma's INSIDE stroke as an inset shadow, never a border, so the circle
+     stays its literal size. Two layers, so hover adds its lift instead of
+     replacing the outline. A checked circle keeps an outline, a step darker
+     than its fill; only a disabled checked circle drops it. Classes in the
+     TSX centre the dot. */
+  .Radio-module__circle--u-SSV {
+    --_fill: var(--radio-surface);
+    --_stroke: var(--radio-border);
+    --_lift: 0 0 transparent;
+
+    box-sizing: border-box;
+    inline-size: var(--_circle);
+    block-size: var(--_circle);
+    border-radius: var(--radius-full);
+    background-color: var(--_fill);
+    box-shadow: inset 0 0 0 var(--stroke-default) var(--_stroke), var(--_lift);
+    transition: background-color var(--_motion), box-shadow var(--_motion);
+  }
+  .Radio-module__dot--1VMlQ {
+    inline-size: var(--_dot);
+    block-size: var(--_dot);
+    border-radius: var(--radius-full);
+    background-color: var(--icon-inverse);
+    opacity: 0;
+    transition: opacity var(--_motion);
+  }
+
+  /* ── States ───────────────────────────────────────────────────────────────
+     Each rule has an interactive half (the input's pseudo-classes) and a
+     decorative half (data attributes from props, for a circle drawn without
+     an input). Order matters at equal specificity: invalid → checked →
+     disabled, so a selected circle keeps the selected look when its group
+     turns Invalid (Figma's Checked + Invalid variant) and Disabled wins. */
+  .Radio-module__input--KTtu5[aria-invalid="true"] + .Radio-module__circle--u-SSV,
+  .Radio-module__circle--u-SSV[data-invalid] {
+    --_stroke: var(--radio-invalid);
+  }
+
+  .Radio-module__input--KTtu5:checked + .Radio-module__circle--u-SSV,
+  .Radio-module__circle--u-SSV[data-checked] {
+    --_fill: var(--radio-checked);
+    --_stroke: var(--radio-checked-border);
+  }
+  .Radio-module__input--KTtu5:checked + .Radio-module__circle--u-SSV .Radio-module__dot--1VMlQ,
+  .Radio-module__circle--u-SSV[data-checked] .Radio-module__dot--1VMlQ {
+    opacity: 1;
+  }
+
+  /* Hover keeps the colours and lifts the circle, over the circle itself or
+     anywhere on its Radio row (the whole label selects it). Pointer-only:
+     touch browsers keep :hover on the last tapped element. A decorative
+     circle has no input, so the row or Card that owns it owns the hover. */
+  @media (hover: hover) {
+    .Radio-module__primitive--NObdn:hover > .Radio-module__input--KTtu5:enabled + .Radio-module__circle--u-SSV,
+    .Radio-module__radio--HyX7w:hover .Radio-module__input--KTtu5:enabled + .Radio-module__circle--u-SSV {
+      /* Shadow/Hover, Card's clickable lift: no shadow tokens exist yet, so
+         the raw layers (#0A0D12 at 8%, as in Card.module.css) live here once. */
+      --_lift: 0 1px 2px 0 rgb(10 13 18 / 8%), 0 2px 6px -1px rgb(10 13 18 / 8%),
+        0 2px 20px 0 rgb(10 13 18 / 8%);
+    }
+  }
+
+  .Radio-module__input--KTtu5:focus-visible + .Radio-module__circle--u-SSV {
+    outline: var(--_ring-width) solid var(--radio-focus-ring);
+    outline-offset: var(--_ring-gap);
+  }
+
+  /* Last, so it wins: the outline (unselected) or the fill (selected) turns
+     radio/disabled. A disabled input never takes focus. */
+  .Radio-module__input--KTtu5:disabled + .Radio-module__circle--u-SSV,
+  .Radio-module__circle--u-SSV[data-disabled] {
+    --_stroke: var(--radio-disabled);
+  }
+  .Radio-module__input--KTtu5:disabled:checked + .Radio-module__circle--u-SSV,
+  .Radio-module__circle--u-SSV[data-disabled][data-checked] {
+    --_fill: var(--radio-disabled);
+    --_stroke: transparent;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .Radio-module__primitive--NObdn {
+      --_motion: 0s;
+    }
+  }
+
+  /* Windows High Contrast drops box-shadows and author colours, which would
+     leave an unselected circle invisible: draw it with system colours
+     instead (a real border, Highlight when selected, GrayText when
+     disabled). The fixed size and border-box keep the layout unchanged. */
+  @media (forced-colors: active) {
+    .Radio-module__circle--u-SSV {
+      forced-color-adjust: none;
+      border: var(--stroke-default) solid CanvasText;
+      background-color: Canvas;
+      box-shadow: none;
+    }
+    .Radio-module__dot--1VMlQ {
+      background-color: HighlightText;
+    }
+    .Radio-module__input--KTtu5:checked + .Radio-module__circle--u-SSV,
+    .Radio-module__circle--u-SSV[data-checked] {
+      border-color: Highlight;
+      background-color: Highlight;
+    }
+    .Radio-module__input--KTtu5:focus-visible + .Radio-module__circle--u-SSV {
+      outline-color: CanvasText;
+    }
+    .Radio-module__input--KTtu5:disabled + .Radio-module__circle--u-SSV,
+    .Radio-module__circle--u-SSV[data-disabled] {
+      border-color: GrayText;
+    }
+    .Radio-module__input--KTtu5:disabled:checked + .Radio-module__circle--u-SSV,
+    .Radio-module__circle--u-SSV[data-disabled][data-checked] {
+      background-color: GrayText;
+    }
+    .Radio-module__input--KTtu5:disabled:checked + .Radio-module__circle--u-SSV .Radio-module__dot--1VMlQ,
+    .Radio-module__circle--u-SSV[data-disabled][data-checked] .Radio-module__dot--1VMlQ {
+      background-color: Canvas;
+    }
+  }
+
+  /* ── Radio: the circle and its label ─────────────────────────────────────
+     A <label> row, so the whole row is the click target. fullWidth=False
+     hugs the label like Button; True fills the container. Both wrap a long
+     label under itself: the circle stays on the first line. */
+  .Radio-module__radio--HyX7w {
+    display: inline-flex;
+    max-inline-size: 100%;
+    vertical-align: top;
+    cursor: pointer;
+  }
+  .Radio-module__radio--HyX7w[data-full-width] {
+    display: flex;
+  }
+  .Radio-module__radio--HyX7w[data-disabled] {
+    cursor: not-allowed;
+  }
+
+  /* The control is set in the label's type style, so 1lh is the label's
+     first line: the circle is centred on it (16 × 20 · 20 × 24 · 24 × 24),
+     with or without a label (Figma's Label off). */
+  .Radio-module__control--0AWIb {
+    block-size: 1lh;
+  }
+
+  .Radio-module__text--0bCyb {
+    min-inline-size: 0;
+    overflow-wrap: anywhere;
+  }
+}
+
+/**
+ * Do not edit directly, this file was auto-generated
+ * by tokens/build.mjs from tokens/input/components/radio/.
+ *
+ * Imported by the radio component — not part of index.css.
+ */
+
+@layer components {
+[data-radio-color="default"] {
+  --radio-surface: var(--background-neutral-solid);
+  --radio-border: var(--icon-tertiary);
+  --radio-checked: var(--button-brand);
+  --radio-checked-border: var(--border-brand);
+  --radio-disabled: var(--button-neutral-disabled);
+  --radio-focus-ring: var(--icon-tertiary);
+  --radio-invalid: var(--border-danger);
+}
+}
+
+@layer components {
   /* The family's one stylesheet: InputPrimitive (and Input through it),
      Search, Textarea and the private InputAction. Layout and paddings are
      utility classes in the TSX; colours are the generated --input-* roles
