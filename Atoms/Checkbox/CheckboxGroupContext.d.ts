@@ -10,6 +10,8 @@ export interface CheckboxGroupContextValue {
     /** The checked options' values. */
     value: readonly string[];
     toggle: (option: string, checked: boolean) => void;
+    /** The group's helper or error, linked from every row too: not every screen reader reads a fieldset's description. */
+    messageId?: string;
 }
 /** Null outside a group. */
 export declare const CheckboxGroupContext: React.Context<CheckboxGroupContextValue | null>;

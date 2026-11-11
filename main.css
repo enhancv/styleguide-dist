@@ -6639,8 +6639,8 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
      sit in a later layer and win over this file, so nothing here repeats a
      property a class on the same element sets. Colours are the generated
      --checkbox-* roles (src/tokens/components/checkbox.css), plus the Theme
-     roles Figma binds directly: icon/inverse on the check, icon/danger on the
-     error glyph. */
+     role Figma binds directly: icon/inverse on the check. CheckboxGroup's
+     legend and message are Field's (Field.module.css). */
 
   /* ── CheckboxPrimitive: the box ──────────────────────────────────────────
      A native checkbox, invisible, laid over the box it styles: the box's
@@ -6705,9 +6705,7 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
     box-shadow: inset 0 0 0 var(--stroke-default) var(--_stroke), var(--_lift);
     color: var(--icon-inverse);
     font-size: var(--_glyph);
-    transition:
-      background-color var(--_motion),
-      box-shadow var(--_motion);
+    transition: background-color var(--_motion), box-shadow var(--_motion);
   }
   .Checkbox-module__glyph--nyNfL {
     opacity: 0;
@@ -6838,29 +6836,6 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
     min-inline-size: 0;
     overflow-wrap: anywhere;
   }
-
-  /* ── CheckboxGroup: fieldset, legend, rows, message ──────────────────────
-     The rendered <legend> sits outside the fieldset's flex layout, so its
-     spacing/8 to the rows is its own padding (a class in the TSX); the rows
-     and the message are the flex children, spacing/8 apart. */
-  .Checkbox-module__group--WLJFk {
-    min-inline-size: 0;
-    border: 0;
-  }
-
-  /* The error glyph, centred on the message's first line like the box on
-     the label's: the message row is set in the message style, so 1lh is that
-     line (16 × 18 on SM, 16 × 20 on MD and LG). 16px is a raw icon size, like
-     the box. */
-  .Checkbox-module__messageIcon--Hs5Vg {
-    --_icon: 16px;
-
-    flex: none;
-    inline-size: var(--_icon);
-    block-size: 1lh;
-    color: var(--icon-danger);
-    font-size: var(--_icon);
-  }
 }
 
 /**
@@ -6892,6 +6867,10 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
   }
   .Field-module__field--2ZL0G[data-full-width] {
     display: flex;
+  }
+  fieldset.Field-module__field--2ZL0G {
+    min-inline-size: 0;
+    border: 0;
   }
 
   /* The error glyph, centred on the message's first line: the message row is

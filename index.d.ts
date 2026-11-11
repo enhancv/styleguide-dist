@@ -49,7 +49,7 @@ export type { CheckboxGroupProps } from "./Atoms/Checkbox/CheckboxGroup";
 export { CheckboxPrimitive } from "./Atoms/Checkbox/CheckboxPrimitive";
 export type { CheckboxPrimitiveProps, CheckboxSize, } from "./Atoms/Checkbox/CheckboxPrimitive";
 export { Field } from "./Atoms/Field/Field";
-export type { FieldProps, FieldSize, FieldControlProps, } from "./Atoms/Field/Field";
+export type { FieldProps, FieldSize, FieldControlProps, FieldGroupControlProps, } from "./Atoms/Field/Field";
 export { InputPrimitive } from "./Atoms/Input/InputPrimitive";
 export type { InputPrimitiveProps, InputSize, } from "./Atoms/Input/InputPrimitive";
 export { Search } from "./Atoms/Input/Search";

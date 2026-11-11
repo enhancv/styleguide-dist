@@ -28,5 +28,5 @@ export type SwitchPrimitiveProps = SwitchPrimitiveOwnProps & Omit<React.Componen
  * `className` and `style` go to the wrapper, every other prop to the input.
  * Focus is CSS (`:focus-visible`), never a prop.
  */
-export declare const SwitchPrimitive: React.ForwardRefExoticComponent<SwitchPrimitiveOwnProps & Omit<Omit<React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>, "ref">, "children" | "role" | "type" | keyof SwitchPrimitiveOwnProps> & React.RefAttributes<HTMLInputElement>>;
+export declare const SwitchPrimitive: React.ForwardRefExoticComponent<SwitchPrimitiveOwnProps & Omit<Omit<React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>, "ref">, "children" | "type" | "role" | keyof SwitchPrimitiveOwnProps> & React.RefAttributes<HTMLInputElement>>;
 export {};
