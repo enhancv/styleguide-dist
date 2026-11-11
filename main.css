@@ -8120,6 +8120,144 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
 }
 
 @layer components {
+  /* Layout, gaps and paddings are utility classes in the TSX (12px around
+     and between, 4px above and below the text). Colours are the generated
+     --input-* roles (src/tokens/components/input.css) plus the Theme text
+     roles Figma binds directly, the same as Textarea. */
+
+  /* ── The frame ───────────────────────────────────────────────────────────
+     Figma's INSIDE stroke is an inset shadow, never a border. Focus follows
+     the text, not the buttons: a focused submit or Cancel draws its own
+     ring. Order at equal specificity: hover → focus → invalid → disabled. */
+  .PromptBar-module__bar--cBPbK {
+    --_stroke: var(--input-border);
+    --_fill: var(--input-surface);
+    --_ring-gap: 2px;
+    --_ring-width: 2px;
+    /* No motion tokens: Figma's 150 ms ease-out. */
+    --_motion: 150ms ease-out;
+
+    position: relative;
+    box-sizing: border-box;
+    border-radius: var(--radius-8);
+    background-color: var(--_fill);
+    box-shadow: inset 0 0 0 var(--stroke-default) var(--_stroke);
+    cursor: text;
+    transition: box-shadow var(--_motion);
+  }
+  @media (hover: hover) {
+    .PromptBar-module__bar--cBPbK:hover {
+      --_stroke: var(--input-border-hover);
+    }
+  }
+  .PromptBar-module__bar--cBPbK:has(.PromptBar-module__textarea--XSS2L:focus) {
+    --_stroke: var(--input-border-focus);
+    outline: var(--_ring-width) solid var(--input-focus-ring);
+    outline-offset: var(--_ring-gap);
+  }
+  .PromptBar-module__bar--cBPbK[data-invalid] {
+    --_stroke: var(--input-border-invalid);
+  }
+  .PromptBar-module__bar--cBPbK[data-disabled] {
+    --_stroke: var(--input-border);
+    --_fill: var(--input-disabled);
+    cursor: not-allowed;
+  }
+
+  /* ── The text ────────────────────────────────────────────────────────────
+     Body M in a 32px row, the SM submit's height, so one line sits on the
+     submit's centre. The padding is on the wrapper, never the textarea: an
+     app's `* { box-sizing: border-box }` would otherwise change its height.
+     The script sets the height: the placeholder's, then the text's, up to
+     maxRows. */
+  .PromptBar-module__text--tw5FI {
+    flex: 1 1 0;
+    min-inline-size: 0;
+  }
+  .PromptBar-module__textarea--XSS2L {
+    display: block;
+    box-sizing: content-box;
+    inline-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background: none;
+    color: var(--text-primary);
+    font-family: var(--body-m-font);
+    font-size: var(--body-m-size);
+    font-weight: var(--primitives-font-weight-regular);
+    line-height: var(--body-m-line-height);
+    overflow-y: hidden;
+    resize: none;
+    cursor: inherit;
+  }
+  .PromptBar-module__textarea--XSS2L::placeholder {
+    color: var(--text-tertiary);
+    opacity: 1;
+  }
+  .PromptBar-module__bar--cBPbK[data-disabled] .PromptBar-module__textarea--XSS2L,
+  .PromptBar-module__bar--cBPbK[data-disabled] .PromptBar-module__textarea--XSS2L::placeholder {
+    color: var(--text-disabled);
+  }
+
+  /* ── Loading: three dots in the submit ───────────────────────────────────
+     Figma's more-horizontal at the glyph's size, in the button's text
+     colour, pulsing left to right. The 3px dots are raw: no icon-size
+     tokens exist. */
+  .PromptBar-module__dots--EzYtn {
+    --_dot: 3px;
+
+    display: inline-flex;
+    gap: var(--_dot);
+    align-items: center;
+  }
+  .PromptBar-module__dots--EzYtn > span {
+    inline-size: var(--_dot);
+    block-size: var(--_dot);
+    border-radius: var(--radius-full);
+    background-color: currentcolor;
+    animation: PromptBar-module__dot--evo59 1s ease-in-out infinite;
+  }
+  .PromptBar-module__dots--EzYtn > span:nth-child(2) {
+    animation-delay: 160ms;
+  }
+  .PromptBar-module__dots--EzYtn > span:nth-child(3) {
+    animation-delay: 320ms;
+  }
+  @keyframes PromptBar-module__dot--evo59 {
+    0%,
+    80%,
+    100% {
+      opacity: 0.35;
+    }
+    40% {
+      opacity: 1;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .PromptBar-module__bar--cBPbK {
+      --_motion: 0s;
+    }
+    .PromptBar-module__dots--EzYtn > span {
+      animation: none;
+    }
+  }
+
+  /* Windows High Contrast drops box-shadows: draw the stroke as a real
+     border. The frame grows by the border, as on Textarea. */
+  @media (forced-colors: active) {
+    .PromptBar-module__bar--cBPbK {
+      border: var(--stroke-default) solid CanvasText;
+    }
+    .PromptBar-module__bar--cBPbK[data-disabled] {
+      border-color: GrayText;
+    }
+  }
+}
+
+@layer components {
   /* Layout and field chrome only, for both forms. The chips (and the inline
      add chip, ChipAddSlot) style themselves; this file must not read --chip-*
      roles (the module guard only polices Chip.module.css). */
