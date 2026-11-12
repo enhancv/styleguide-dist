@@ -1,3 +1,4 @@
+import React from "react";
 import "../../tokens/components/button.css";
 import type { PolymorphicComponent, PolymorphicProps } from "../../types/polymorphic";
 import type { ButtonColorToken } from "../../tokens/components/button";
@@ -27,6 +28,8 @@ export interface ButtonPrimitiveOwnProps {
      *  the label stays laid out, only invisible, so the button never resizes.
      *  Visual only (plus aria-busy): pair with `disabled` to block clicks. */
     loading?: boolean;
+    /** What `loading` shows instead of the ring: PromptBar's three dots. */
+    loadingIndicator?: React.ReactNode;
 }
 export type ButtonPrimitiveProps<E extends ButtonElement = typeof DEFAULT_ELEMENT> = PolymorphicProps<E, ButtonPrimitiveOwnProps>;
 /**

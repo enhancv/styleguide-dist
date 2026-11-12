@@ -36,10 +36,11 @@ interface CheckboxGroupOwnProps {
 export type CheckboxGroupProps = CheckboxGroupOwnProps & Omit<React.ComponentPropsWithoutRef<"fieldset">, keyof CheckboxGroupOwnProps>;
 /**
  * A labelled set of checkboxes where people pick any number of options:
- * Figma's CheckboxGroup set. A `<fieldset>` with a `<legend>`; the helper or
- * error is linked with `aria-describedby`. Its Checkbox children are the
- * rows: each takes the group's size, error and disabled state, and its
- * checked state from the group's `value`.
+ * Figma's CheckboxGroup set. A Field in fieldset mode: a `<fieldset>` with a
+ * `<legend>`, the helper or error linked with `aria-describedby` from the
+ * fieldset and from every row. Its Checkbox children are the rows: each takes
+ * the group's size, error and disabled state, and its checked state from the
+ * group's `value`.
  */
 export declare const CheckboxGroup: React.ForwardRefExoticComponent<CheckboxGroupOwnProps & Omit<Omit<React.DetailedHTMLProps<React.FieldsetHTMLAttributes<HTMLFieldSetElement>, HTMLFieldSetElement>, "ref">, keyof CheckboxGroupOwnProps> & React.RefAttributes<HTMLFieldSetElement>>;
 export {};

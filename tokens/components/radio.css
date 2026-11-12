@@ -1,0 +1,18 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ * by tokens/build.mjs from tokens/input/components/radio/.
+ *
+ * Imported by the radio component — not part of index.css.
+ */
+
+@layer components {
+[data-radio-color="default"] {
+  --radio-surface: var(--background-neutral-solid);
+  --radio-border: var(--icon-tertiary);
+  --radio-checked: var(--button-brand);
+  --radio-checked-border: var(--border-brand);
+  --radio-disabled: var(--button-neutral-disabled);
+  --radio-focus-ring: var(--icon-tertiary);
+  --radio-invalid: var(--border-danger);
+}
+}

@@ -179,13 +179,11 @@
 }
 
 @layer components{.ryVmOocXOEXbUirshboWVg\=\={padding:0;background-color:rgba(0,0,0,0);border-radius:50%;border:0px;display:flex;justify-content:center;align-items:center;transition:all ease-in-out .3s;cursor:pointer}.ryVmOocXOEXbUirshboWVg\=\=:hover{background-color:var(--background-subtle-subtle)}.ryVmOocXOEXbUirshboWVg\=\=:hover .LMl8MnYwy1R0ePE2gQHrzA\=\= path{fill:var(--icon-primary)}.TfCl5K1OyXcT\+6PPl3sBZQ\=\={width:48px;height:48px;padding:7px}@media(min-width: 769px){.TfCl5K1OyXcT\+6PPl3sBZQ\=\={width:36px;height:36px}}.vG8xF\+qpz\+hoYbAs-YkW0Q\=\={width:22px;height:22px}.LMl8MnYwy1R0ePE2gQHrzA\=\={transform:scale(0.8)}.LMl8MnYwy1R0ePE2gQHrzA\=\= path{transition:.4s;fill:var(--icon-secondary);d:path("M2.29289 2.29289C2.48043 2.10536 2.73478 2 3 2H12C12.2652 2 12.5196 2.10536 12.7071 2.29289C12.8946 2.48043 13 2.73478 13 3V4C13 4.55228 13.4477 5 14 5C14.5523 5 15 4.55228 15 4V3C15 2.20435 14.6839 1.44129 14.1213 0.87868C13.5587 0.31607 12.7956 0 12 0H3C2.20435 0 1.44129 0.31607 0.87868 0.87868C0.31607 1.44129 0 2.20435 0 3V12C0 12.7956 0.31607 13.5587 0.87868 14.1213C1.44129 14.6839 2.20435 15 3 15H4C4.55228 15 5 14.5523 5 14C5 13.4477 4.55228 13 4 13H3C2.73478 13 2.48043 12.8946 2.29289 12.7071C2.10536 12.5196 2 12.2652 2 12V3C2 2.73478 2.10536 2.48043 2.29289 2.29289ZM9 10C9 9.44771 9.44771 9 10 9H19C19.5523 9 20 9.44771 20 10V19C20 19.5523 19.5523 20 19 20H10C9.44771 20 9 19.5523 9 19V10ZM10 7C8.34315 7 7 8.34315 7 10V19C7 20.6569 8.34315 22 10 22H19C20.6569 22 22 20.6569 22 19V10C22 8.34315 20.6569 7 19 7H10Z")}.YWCkj2aWxP6V9Fo89ugf4A\=\={background-color:#cdf0e4}.YWCkj2aWxP6V9Fo89ugf4A\=\=:hover{background-color:#cdf0e4}.YWCkj2aWxP6V9Fo89ugf4A\=\= .LMl8MnYwy1R0ePE2gQHrzA\=\={display:flex;justify-content:center;align-items:center;animation:-pbh2xDBf7Rb3zMhwpyQCw\=\= .6s forwards}.YWCkj2aWxP6V9Fo89ugf4A\=\= .LMl8MnYwy1R0ePE2gQHrzA\=\= path{animation:vQ8ztdEUK1XefAXXyaKzlg\=\= .6s forwards}@keyframes -pbh2xDBf7Rb3zMhwpyQCw\=\={0%{transform:scale(0.8) rotate(0)}80%{transform:scale(0) rotate(100deg)}100%{transform:scale(0.8) rotate(0)}}@keyframes vQ8ztdEUK1XefAXXyaKzlg\=\={80%{fill:var(--icon-brand);d:path("M20.7071 5.29289C21.0976 5.68342 21.0976 6.31658 20.7071 6.70711L9.70711 17.7071C9.31658 18.0976 8.68342 18.0976 8.29289 17.7071L3.29289 12.7071C2.90237 12.3166 2.90237 11.6834 3.29289 11.2929C3.68342 10.9024 4.31658 10.9024 4.70711 11.2929L9 15.5858L19.2929 5.29289C19.6834 4.90237 20.3166 4.90237 20.7071 5.29289Z")}100%{fill:var(--icon-brand);d:path("M20.7071 5.29289C21.0976 5.68342 21.0976 6.31658 20.7071 6.70711L9.70711 17.7071C9.31658 18.0976 8.68342 18.0976 8.29289 17.7071L3.29289 12.7071C2.90237 12.3166 2.90237 11.6834 3.29289 11.2929C3.68342 10.9024 4.31658 10.9024 4.70711 11.2929L9 15.5858L19.2929 5.29289C19.6834 4.90237 20.3166 4.90237 20.7071 5.29289Z")}}}
-@layer components{._6YPUxAdTPMcZhy3hafx3pQ\=\={display:inline-flex;align-items:center;min-width:200px;padding:12px 24px;font-size:14px;color:#384347;background-color:var(--background-neutral-solid);background-image:none;border:1px solid var(--border-strong);border-radius:5px;outline:none;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out}@media(min-width: 769px){._6YPUxAdTPMcZhy3hafx3pQ\=\={padding:14px 8px}}._6YPUxAdTPMcZhy3hafx3pQ\=\=:focus,._6YPUxAdTPMcZhy3hafx3pQ\=\=:focus-within,._6YPUxAdTPMcZhy3hafx3pQ\=\=:active,._6YPUxAdTPMcZhy3hafx3pQ\=\=:hover{border-color:var(--border-brand)}._6YPUxAdTPMcZhy3hafx3pQ\=\=.MaqcAsdR99dJXRSxxpjJ7w\=\={background-color:var(--background-danger-subtle);border-color:var(--border-danger)}._6YPUxAdTPMcZhy3hafx3pQ\=\=.MaqcAsdR99dJXRSxxpjJ7w\=\=:focus,._6YPUxAdTPMcZhy3hafx3pQ\=\=.MaqcAsdR99dJXRSxxpjJ7w\=\=:focus-within,._6YPUxAdTPMcZhy3hafx3pQ\=\=.MaqcAsdR99dJXRSxxpjJ7w\=\=:active,._6YPUxAdTPMcZhy3hafx3pQ\=\=.MaqcAsdR99dJXRSxxpjJ7w\=\=:hover{border-color:var(--border-danger)}._6YPUxAdTPMcZhy3hafx3pQ\=\=.lE8gNZW8iv7DMDEf0\+XrAw\=\={background-color:var(--background-subtle-subtle);color:#afb4b5;border:1px solid var(--border-default)}._6YPUxAdTPMcZhy3hafx3pQ\=\=.lE8gNZW8iv7DMDEf0\+XrAw\=\=:focus,._6YPUxAdTPMcZhy3hafx3pQ\=\=.lE8gNZW8iv7DMDEf0\+XrAw\=\=:focus-within,._6YPUxAdTPMcZhy3hafx3pQ\=\=.lE8gNZW8iv7DMDEf0\+XrAw\=\=:active,._6YPUxAdTPMcZhy3hafx3pQ\=\=.lE8gNZW8iv7DMDEf0\+XrAw\=\=:hover{border-color:var(--border-default)}._6YPUxAdTPMcZhy3hafx3pQ\=\=.lE8gNZW8iv7DMDEf0\+XrAw\=\= input{color:#afb4b5}.\+-3438VeWc6h2Fbe71lLyw\=\= .HjLIlW1CwiWCA08DmCUhyg\=\={margin-left:8px}.\+-3438VeWc6h2Fbe71lLyw\=\=.kh\+r-QzJ\+VBAg\+7hG2ilow\=\= .HjLIlW1CwiWCA08DmCUhyg\=\={margin-left:0;margin-right:8px}.HjLIlW1CwiWCA08DmCUhyg\=\={border:none;background:rgba(0,0,0,0);outline:none;padding:0;width:100%}.HjLIlW1CwiWCA08DmCUhyg\=\=::placeholder{color:#afb4b5;opacity:1}.HjLIlW1CwiWCA08DmCUhyg\=\=:-ms-input-placeholder{color:#afb4b5}.HjLIlW1CwiWCA08DmCUhyg\=\=::-ms-input-placeholder{color:#afb4b5}.VHTlNLZfApuoWeKg-mf\+7g\=\={font-size:16px;line-height:27px;height:50px;padding:12px 16px}.ucM\+HgBL4ne-LtsPVFffzw\=\={font-size:16px;line-height:20px;height:40px;padding:10px 12px}._8XtJ6-xPBx6gXYCzESjfkA\=\={font-size:14px;line-height:22px;height:30px;padding:5px 12px}.Gd7VnNQ9\+KJtoyZ6fxfXow\=\={width:100%}.i02D1e94o10Nj-kN1XfA-w\=\={position:relative}.kgjlisgcYv3nEBlhlkeApA\=\={border-color:var(--border-danger)}._89ffwU9Hx7jF88D4o2yJwQ\=\={transition:all ease-in-out 300ms;font-size:20px}.kh\+r-QzJ\+VBAg\+7hG2ilow\=\={flex-direction:row-reverse}.vFBxaVNob3Yv9fbatzhy\+w\=\={line-height:16px}}
 @layer components{.j1mTLhE-PkJzRpR4sA3oAw\=\={border:1px solid var(--border-strong);cursor:pointer;height:40px;padding:10px 12px;border-radius:4px;background-color:var(--background-neutral-solid);font-size:16px;font-style:normal;font-weight:400;line-height:20px;position:relative}.j1mTLhE-PkJzRpR4sA3oAw\=\= .sAqb25i2wjcLmsjxbPxaHA\=\={font-size:20px;color:#384347;position:absolute;right:20px;top:50%;transform:translate(0, -50%);pointer-events:none}._5lwkirzfIgEHq\+MePIs\+KQ\=\={padding:4px 16px;font-size:16px;font-style:normal;font-weight:400;line-height:28px;cursor:pointer;transition:all ease-in-out 300ms}._5lwkirzfIgEHq\+MePIs\+KQ\=\=:hover{background-color:var(--background-neutral-subtle)}.GG6dE037igJAdkKk\+u3vAA\=\={position:absolute;z-index:1;top:calc(100% + 10px);left:0;width:100%;max-height:0;overflow:hidden;border-radius:5px;background:var(--background-neutral-solid);filter:drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.1))}.GG6dE037igJAdkKk\+u3vAA\=\=::-webkit-scrollbar{display:none}.GG6dE037igJAdkKk\+u3vAA\=\=.jMfwo-U9mMI-OLtpyHbFiw\=\={max-height:270px;overflow:scroll}}
 @layer components{.p3jl2oJCK9WwFs4Us\+vEBQ\=\={width:2px;height:4px;background:var(--background-subtle-inverse);position:absolute;top:0px}.p3jl2oJCK9WwFs4Us\+vEBQ\=\=::after{content:"";height:4px;position:absolute;z-index:1;top:0px;width:20px;left:-8px}}
 @layer components{._5MVsfJvPRjBciOJJbSJIqA\=\={position:absolute;width:24px;height:16px;top:-6px;cursor:pointer;border:3px solid var(--border-inverse);box-shadow:0px 1px 2px var(--background-inverse-alpha-30);border-radius:10px;transform:rotate(90deg);transition:left .15s linear}.KZ66s6ayNAGN19qr7YZL3g\=\={width:1px;height:10px;position:absolute;top:1px;left:9px;transform:rotate(90deg)}.KZ66s6ayNAGN19qr7YZL3g\=\=:last-child{top:-1px}}
 @layer components{.GTq2NJcn3jsWvZEnlxRbEA\=\={position:relative}.EAVtFKbi0StNlyNzAmweiw\=\={border-radius:10px;height:4px;padding:0px 16px;margin:16px 0px;width:100%}.X9JeJEXIGW\+PrSldmy0Sbg\=\={font-size:16px;color:#384347;padding-top:8px;padding-bottom:8px;top:1px;position:relative}@media(max-width: 768px){.X9JeJEXIGW\+PrSldmy0Sbg\=\={top:0px;padding:4px;line-height:24px}}.xw3\+XAm5ZEMtW\+LhOrD8WQ\=\=:hover,.xw3\+XAm5ZEMtW\+LhOrD8WQ\=\=:hover i,.xw3\+XAm5ZEMtW\+LhOrD8WQ\=\=:hover span,.Fy0TCpa0LCHh2CWPENJ-7A\=\=:hover,.Fy0TCpa0LCHh2CWPENJ-7A\=\=:hover i,.Fy0TCpa0LCHh2CWPENJ-7A\=\=:hover span{color:#8c7cdb}@media(max-width: 768px){.Fy0TCpa0LCHh2CWPENJ-7A\=\={padding:12px}.AB9IlhMUrXJMQ6th5-3E0g\=\={line-height:24px}}.gUmyUCTZbrxTHvKgsP\+FbQ\=\={-webkit-appearance:none;width:100%;height:4px;border-radius:10px;background:var(--background-inverse-subtle);outline:none;opacity:1}.gUmyUCTZbrxTHvKgsP\+FbQ\=\=::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:24px;height:16px;border:3px solid var(--border-inverse);box-shadow:0px 1px 2px var(--background-inverse-alpha-30);border-radius:10px;transform:rotate(90deg);transition:left .15s linear;background:var(--background-brand-solid);cursor:pointer}.gUmyUCTZbrxTHvKgsP\+FbQ\=\=::-moz-range-thumb{width:24px;height:16px;border:3px solid var(--border-inverse);box-shadow:0px 1px 2px var(--background-inverse-alpha-30);border-radius:10px;transform:rotate(90deg);transition:left .15s linear;background:var(--background-brand-solid);cursor:pointer}}
 @layer components{@keyframes -OIuVnu\+Kg1TJCTHteo9SA\=\={0%{transform:scale(0.5)}80%{transform:scale(1.2)}100%{transform:scale(1)}}.rnAAlqMCVmbI0V6Z8LNmlQ\=\={display:inline-block;height:18px;width:18px;border:1px solid var(--border-strong);background-color:var(--background-neutral-solid);position:relative;border-radius:50%;cursor:pointer}.rnAAlqMCVmbI0V6Z8LNmlQ\=\=._9laoIt99OuKsxfVC-sJ\+Qg\=\={border:1px solid var(--border-brand)}.rnAAlqMCVmbI0V6Z8LNmlQ\=\=._9laoIt99OuKsxfVC-sJ\+Qg\=\=:after{content:" ";top:2px;left:2px;height:12px;width:12px;background-color:var(--background-brand-solid);position:absolute;border-radius:50%;transform-origin:center center;animation:-OIuVnu\+Kg1TJCTHteo9SA\=\= .3s forwards ease-out !important}}
-@layer components{.Qy4uM3gutU51AOZoMfDXKA\=\={font-family:"Inter","Helvetica","Arial","Sans-Serif";width:100%;overflow-wrap:break-word;white-space:pre-wrap;resize:none;color:#384347;border-radius:5px;outline:none;border-color:var(--border-strong);transition:all ease-in-out .15s}.Qy4uM3gutU51AOZoMfDXKA\=\=:focus,.Qy4uM3gutU51AOZoMfDXKA\=\=:active,.Qy4uM3gutU51AOZoMfDXKA\=\=:hover{border-color:var(--border-brand)}@media(max-width: 768px){.Qy4uM3gutU51AOZoMfDXKA\=\={padding:12px 24px}}.TFaw\+4RuBHxGUEd\+t3\+9bg\=\={resize:vertical}}
 @layer components{.pQIBbkZ552lT\+UftvNa1Cw\=\={text-transform:capitalize;transition:all ease-in-out .6s}.pQIBbkZ552lT\+UftvNa1Cw\=\= a{color:#5f4dc7;text-decoration:none}.pQIBbkZ552lT\+UftvNa1Cw\=\= a:hover{color:#a396e2 !important;text-decoration:underline}.pQIBbkZ552lT\+UftvNa1Cw\=\= a:active{color:#8c7cdb !important}.VEVX6DEGAAShLQpyzEQkRQ\=\={max-width:300px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
 .scrollbar-container{box-sizing:content-box;animation:height ease-in-out 300ms}.scrollbar-container.style-guide-test{width:300px;height:300px}.scrollbar-container .scrollhost{overflow:auto;height:100%;scrollbar-width:none;-ms-overflow-style:none;position:relative}.scrollbar-container .scrollhost::-webkit-scrollbar{display:none}.scrollbar-container .scrollhost-container{position:relative;height:100%;width:100%}.scrollbar-container .scroll-bar{width:10px;height:100%;right:0;top:0px;position:absolute;border-radius:4px;bottom:0px;background-color:var(--background-subtle-alpha-20)}.scrollbar-container .scroll-thumb{width:8px;height:20px;margin-left:1px;position:absolute;border-radius:4px;opacity:1;top:0;background-color:var(--background-subtle-alpha-90)}.scroll-content{display:inline-block;width:100%}
 @layer components{.CqPIXEqm7FUxjgLx3WCnFQ\=\={position:fixed;top:0;left:0;width:100%;height:100%;background-color:var(--background-inverse-alpha-60);overflow-y:auto;padding:16px;z-index:1002}.zTbmvXa-61SWV49ecaZw8g\=\={position:relative;width:100%;background:var(--background-neutral-solid);border-radius:8px;z-index:1003}.GDHtEabq1d\+jx0bbChOKCg\=\={min-width:342px;width:min-content}@media(max-width: 342px){.GDHtEabq1d\+jx0bbChOKCg\=\={max-width:100%;min-width:100%}}.JkuXpREM8Hv\+ogtOXIyEHQ\=\={min-width:420px;width:min-content}@media(max-width: 420px){.JkuXpREM8Hv\+ogtOXIyEHQ\=\={max-width:100%;min-width:100%}}._0pFDt1xOlgm4ExR7SGcpeg\=\={min-width:630px;width:min-content}@media(max-width: 630px){._0pFDt1xOlgm4ExR7SGcpeg\=\={max-width:100%;min-width:100%}}.ZA10FvVy3ETrSxxgg0hO\+A\=\={min-width:820px;width:min-content}@media(max-width: 820px){.ZA10FvVy3ETrSxxgg0hO\+A\=\={max-width:100%;min-width:100%}}.NlN3EuISjr3uh5dAv8YdZw\=\={min-width:940px;width:min-content}@media(max-width: 940px){.NlN3EuISjr3uh5dAv8YdZw\=\={max-width:100%;min-width:100%}}.rZBQszJYyS40gNHPxLqUeg\=\={min-width:100%;width:min-content}}
@@ -5772,7 +5770,9 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
     font-size: var(--_icon-size);
   }
 
-  /* Loading keeps the box: the content stays laid out, only invisible. */
+  /* Loading keeps the box: the content stays laid out, only invisible.
+     Opacity, not visibility, so the label stays in the accessibility tree
+     and the button keeps its name. */
   .Button-module__button--bJF6M[data-loading] {
     position: relative;
   }
@@ -5780,7 +5780,7 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
     display: inline-flex;
     align-items: center;
     gap: inherit;
-    visibility: hidden;
+    opacity: 0;
   }
   .Button-module__loader--aVcZn {
     position: absolute;
@@ -6641,8 +6641,8 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
      sit in a later layer and win over this file, so nothing here repeats a
      property a class on the same element sets. Colours are the generated
      --checkbox-* roles (src/tokens/components/checkbox.css), plus the Theme
-     roles Figma binds directly: icon/inverse on the check, icon/danger on the
-     error glyph. */
+     role Figma binds directly: icon/inverse on the check. CheckboxGroup's
+     legend and message are Field's (Field.module.css). */
 
   /* ── CheckboxPrimitive: the box ──────────────────────────────────────────
      A native checkbox, invisible, laid over the box it styles: the box's
@@ -6707,9 +6707,7 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
     box-shadow: inset 0 0 0 var(--stroke-default) var(--_stroke), var(--_lift);
     color: var(--icon-inverse);
     font-size: var(--_glyph);
-    transition:
-      background-color var(--_motion),
-      box-shadow var(--_motion);
+    transition: background-color var(--_motion), box-shadow var(--_motion);
   }
   .Checkbox-module__glyph--nyNfL {
     opacity: 0;
@@ -6840,29 +6838,6 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
     min-inline-size: 0;
     overflow-wrap: anywhere;
   }
-
-  /* ── CheckboxGroup: fieldset, legend, rows, message ──────────────────────
-     The rendered <legend> sits outside the fieldset's flex layout, so its
-     spacing/8 to the rows is its own padding (a class in the TSX); the rows
-     and the message are the flex children, spacing/8 apart. */
-  .Checkbox-module__group--WLJFk {
-    min-inline-size: 0;
-    border: 0;
-  }
-
-  /* The error glyph, centred on the message's first line like the box on
-     the label's: the message row is set in the message style, so 1lh is that
-     line (16 × 18 on SM, 16 × 20 on MD and LG). 16px is a raw icon size, like
-     the box. */
-  .Checkbox-module__messageIcon--Hs5Vg {
-    --_icon: 16px;
-
-    flex: none;
-    inline-size: var(--_icon);
-    block-size: 1lh;
-    color: var(--icon-danger);
-    font-size: var(--_icon);
-  }
 }
 
 /**
@@ -6881,6 +6856,519 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
   --checkbox-focus-ring: var(--icon-tertiary);
   --checkbox-invalid: var(--border-danger);
   --checkbox-checked-border: var(--border-brand);
+}
+}
+
+@layer components {
+  /* Inline by default, so a Field hugs its control like the legacy Input;
+     fullWidth fills the container. The column layout is utility classes. */
+  .Field-module__field--2ZL0G {
+    display: inline-flex;
+    max-inline-size: 100%;
+    vertical-align: top;
+  }
+  .Field-module__field--2ZL0G[data-full-width] {
+    display: flex;
+  }
+  fieldset.Field-module__field--2ZL0G {
+    min-inline-size: 0;
+    border: 0;
+  }
+
+  /* The error glyph, centred on the message's first line: the message row is
+     set in the message style, so 1lh is that line (16 × 18 on SM, 16 × 20 on
+     MD and LG). 16px is a raw icon size: no icon-size tokens exist. */
+  .Field-module__messageIcon--N1Xp0 {
+    --_icon: 16px;
+
+    flex: none;
+    inline-size: var(--_icon);
+    block-size: 1lh;
+    color: var(--icon-danger);
+    font-size: var(--_icon);
+  }
+}
+
+@layer components {
+  /* What the styleguide classes can't say. Layout, gaps, paddings and margin
+     resets are utility classes in the TSX (flex, gap-*, p-*, m-0); utilities
+     sit in a later layer and win over this file, so nothing here repeats a
+     property a class on the same element sets. Colours are the generated
+     --radio-* roles (src/tokens/components/radio.css), plus the Theme role
+     Figma binds directly: icon/inverse on the dot. RadioGroup's legend and
+     message are Field's (Field.module.css). */
+
+  /* ── RadioPrimitive: the circle ──────────────────────────────────────────
+     A native radio, invisible, laid over the circle it styles: the circle's
+     states come from the input's own :checked / :disabled / :focus-visible,
+     so controlled and uncontrolled use look the same. */
+  .Radio-module__primitive--NObdn {
+    /* No icon-size tokens exist: the raw Figma circle and dot sizes (16 / 20
+       / 24, CheckboxPrimitive's, and 6 / 8 / 10) live here once. */
+    --_circle: 16px;
+    --_dot: 6px;
+    /* WCAG 2.5.8 target size: the input reaches 24 × 24 around a smaller
+       circle without taking layout space. */
+    --_target: 24px;
+    /* Figma's Focus: a 2px gap, then 2px of ring. An outline, not Figma's
+       two shadows, so the gap shows the surface under the circle, as on
+       Checkbox, and forced-colors mode keeps it. */
+    --_ring-gap: 2px;
+    --_ring-width: 2px;
+    /* No motion tokens: Figma's 150 ms ease-out. */
+    --_motion: 150ms ease-out;
+
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+  }
+  .Radio-module__primitive--NObdn[data-size="md"] {
+    --_circle: 20px;
+    --_dot: 8px;
+  }
+  .Radio-module__primitive--NObdn[data-size="lg"] {
+    --_circle: 24px;
+    --_dot: 10px;
+  }
+
+  .Radio-module__input--KTtu5 {
+    position: absolute;
+    z-index: 1;
+    /* Centred on the circle, never smaller than the target. */
+    inset: calc((var(--_circle) - max(var(--_circle), var(--_target))) / 2);
+    opacity: 0;
+    cursor: pointer;
+  }
+  .Radio-module__input--KTtu5:disabled {
+    cursor: not-allowed;
+  }
+
+  /* Figma's INSIDE stroke as an inset shadow, never a border, so the circle
+     stays its literal size. Two layers, so hover adds its lift instead of
+     replacing the outline. A checked circle keeps an outline, a step darker
+     than its fill; only a disabled checked circle drops it. Classes in the
+     TSX centre the dot. */
+  .Radio-module__circle--u-SSV {
+    --_fill: var(--radio-surface);
+    --_stroke: var(--radio-border);
+    --_lift: 0 0 transparent;
+
+    box-sizing: border-box;
+    inline-size: var(--_circle);
+    block-size: var(--_circle);
+    border-radius: var(--radius-full);
+    background-color: var(--_fill);
+    box-shadow: inset 0 0 0 var(--stroke-default) var(--_stroke), var(--_lift);
+    transition: background-color var(--_motion), box-shadow var(--_motion);
+  }
+  .Radio-module__dot--1VMlQ {
+    inline-size: var(--_dot);
+    block-size: var(--_dot);
+    border-radius: var(--radius-full);
+    background-color: var(--icon-inverse);
+    opacity: 0;
+    transition: opacity var(--_motion);
+  }
+
+  /* ── States ───────────────────────────────────────────────────────────────
+     Each rule has an interactive half (the input's pseudo-classes) and a
+     decorative half (data attributes from props, for a circle drawn without
+     an input). Order matters at equal specificity: invalid → checked →
+     disabled, so a selected circle keeps the selected look when its group
+     turns Invalid (Figma's Checked + Invalid variant) and Disabled wins. */
+  .Radio-module__input--KTtu5[aria-invalid="true"] + .Radio-module__circle--u-SSV,
+  .Radio-module__circle--u-SSV[data-invalid] {
+    --_stroke: var(--radio-invalid);
+  }
+
+  .Radio-module__input--KTtu5:checked + .Radio-module__circle--u-SSV,
+  .Radio-module__circle--u-SSV[data-checked] {
+    --_fill: var(--radio-checked);
+    --_stroke: var(--radio-checked-border);
+  }
+  .Radio-module__input--KTtu5:checked + .Radio-module__circle--u-SSV .Radio-module__dot--1VMlQ,
+  .Radio-module__circle--u-SSV[data-checked] .Radio-module__dot--1VMlQ {
+    opacity: 1;
+  }
+
+  /* Hover keeps the colours and lifts the circle, over the circle itself or
+     anywhere on its Radio row (the whole label selects it). Pointer-only:
+     touch browsers keep :hover on the last tapped element. A decorative
+     circle has no input, so the row or Card that owns it owns the hover. */
+  @media (hover: hover) {
+    .Radio-module__primitive--NObdn:hover > .Radio-module__input--KTtu5:enabled + .Radio-module__circle--u-SSV,
+    .Radio-module__radio--HyX7w:hover .Radio-module__input--KTtu5:enabled + .Radio-module__circle--u-SSV {
+      /* Shadow/Hover, Card's clickable lift: no shadow tokens exist yet, so
+         the raw layers (#0A0D12 at 8%, as in Card.module.css) live here once. */
+      --_lift: 0 1px 2px 0 rgb(10 13 18 / 8%), 0 2px 6px -1px rgb(10 13 18 / 8%),
+        0 2px 20px 0 rgb(10 13 18 / 8%);
+    }
+  }
+
+  .Radio-module__input--KTtu5:focus-visible + .Radio-module__circle--u-SSV {
+    outline: var(--_ring-width) solid var(--radio-focus-ring);
+    outline-offset: var(--_ring-gap);
+  }
+
+  /* Inside a clickable label Card the card is the control people see: it
+     draws the focus ring (around its own edge) and the hover lift, so the
+     circle draws neither. The input stays, so keyboard and forms work. */
+  label[data-card-color][data-clickable] .Radio-module__input--KTtu5:focus-visible + .Radio-module__circle--u-SSV {
+    outline: none;
+  }
+  @media (hover: hover) {
+    label[data-card-color][data-clickable]
+      .Radio-module__primitive--NObdn:hover
+      > .Radio-module__input--KTtu5:enabled
+      + .Radio-module__circle--u-SSV,
+    label[data-card-color][data-clickable]:hover .Radio-module__input--KTtu5:enabled + .Radio-module__circle--u-SSV {
+      --_lift: 0 0 transparent;
+    }
+  }
+
+  /* Last, so it wins: the outline (unselected) or the fill (selected) turns
+     radio/disabled. A disabled input never takes focus. */
+  .Radio-module__input--KTtu5:disabled + .Radio-module__circle--u-SSV,
+  .Radio-module__circle--u-SSV[data-disabled] {
+    --_stroke: var(--radio-disabled);
+  }
+  .Radio-module__input--KTtu5:disabled:checked + .Radio-module__circle--u-SSV,
+  .Radio-module__circle--u-SSV[data-disabled][data-checked] {
+    --_fill: var(--radio-disabled);
+    --_stroke: transparent;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .Radio-module__primitive--NObdn {
+      --_motion: 0s;
+    }
+  }
+
+  /* Windows High Contrast drops box-shadows and author colours, which would
+     leave an unselected circle invisible: draw it with system colours
+     instead (a real border, Highlight when selected, GrayText when
+     disabled). The fixed size and border-box keep the layout unchanged. */
+  @media (forced-colors: active) {
+    .Radio-module__circle--u-SSV {
+      forced-color-adjust: none;
+      border: var(--stroke-default) solid CanvasText;
+      background-color: Canvas;
+      box-shadow: none;
+    }
+    .Radio-module__dot--1VMlQ {
+      background-color: HighlightText;
+    }
+    .Radio-module__input--KTtu5:checked + .Radio-module__circle--u-SSV,
+    .Radio-module__circle--u-SSV[data-checked] {
+      border-color: Highlight;
+      background-color: Highlight;
+    }
+    .Radio-module__input--KTtu5:focus-visible + .Radio-module__circle--u-SSV {
+      outline-color: CanvasText;
+    }
+    .Radio-module__input--KTtu5:disabled + .Radio-module__circle--u-SSV,
+    .Radio-module__circle--u-SSV[data-disabled] {
+      border-color: GrayText;
+    }
+    .Radio-module__input--KTtu5:disabled:checked + .Radio-module__circle--u-SSV,
+    .Radio-module__circle--u-SSV[data-disabled][data-checked] {
+      background-color: GrayText;
+    }
+    .Radio-module__input--KTtu5:disabled:checked + .Radio-module__circle--u-SSV .Radio-module__dot--1VMlQ,
+    .Radio-module__circle--u-SSV[data-disabled][data-checked] .Radio-module__dot--1VMlQ {
+      background-color: Canvas;
+    }
+  }
+
+  /* ── Radio: the circle and its label ─────────────────────────────────────
+     A <label> row, so the whole row is the click target. fullWidth=False
+     hugs the label like Button; True fills the container. Both wrap a long
+     label under itself: the circle stays on the first line. */
+  .Radio-module__radio--HyX7w {
+    display: inline-flex;
+    max-inline-size: 100%;
+    vertical-align: top;
+    cursor: pointer;
+  }
+  .Radio-module__radio--HyX7w[data-full-width] {
+    display: flex;
+  }
+  .Radio-module__radio--HyX7w[data-disabled] {
+    cursor: not-allowed;
+  }
+
+  /* The control is set in the label's type style, so 1lh is the label's
+     first line: the circle is centred on it (16 × 20 · 20 × 24 · 24 × 24),
+     with or without a label (Figma's Label off). */
+  .Radio-module__control--0AWIb {
+    block-size: 1lh;
+  }
+
+  .Radio-module__text--0bCyb {
+    min-inline-size: 0;
+    overflow-wrap: anywhere;
+  }
+}
+
+/**
+ * Do not edit directly, this file was auto-generated
+ * by tokens/build.mjs from tokens/input/components/radio/.
+ *
+ * Imported by the radio component — not part of index.css.
+ */
+
+@layer components {
+[data-radio-color="default"] {
+  --radio-surface: var(--background-neutral-solid);
+  --radio-border: var(--icon-tertiary);
+  --radio-checked: var(--button-brand);
+  --radio-checked-border: var(--border-brand);
+  --radio-disabled: var(--button-neutral-disabled);
+  --radio-focus-ring: var(--icon-tertiary);
+  --radio-invalid: var(--border-danger);
+}
+}
+
+@layer components {
+  /* The family's one stylesheet: InputPrimitive (and Input through it),
+     Search, Textarea and the private InputAction. Layout and paddings are
+     utility classes in the TSX; colours are the generated --input-* roles
+     (src/tokens/components/input.css) plus the Theme roles Figma binds
+     directly (text, icon). */
+
+  /* ── The field box: InputPrimitive, Search, Textarea ─────────────────────
+     Figma's INSIDE stroke is an inset shadow, never a border, so the
+     paddings stay the literal spacing tokens. Focus is the stroke plus an
+     outline ring: Figma's 2px gap and 2px ring. */
+  .Input-module__field--EPBkR,
+  .Input-module__textarea--u0juO {
+    --_stroke: var(--input-border);
+    --_fill: var(--input-surface);
+    --_ring-gap: 2px;
+    --_ring-width: 2px;
+    /* No motion tokens: Figma's 150 ms ease-out. */
+    --_motion: 150ms ease-out;
+
+    box-sizing: border-box;
+    border-radius: var(--radius-8);
+    background-color: var(--_fill);
+    box-shadow: inset 0 0 0 var(--stroke-default) var(--_stroke);
+    color: var(--text-primary);
+    transition: box-shadow var(--_motion);
+  }
+
+  /* Order matters at equal specificity: hover → focus → invalid → disabled. */
+  @media (hover: hover) {
+    .Input-module__field--EPBkR:hover,
+    .Input-module__textarea--u0juO:hover {
+      --_stroke: var(--input-border-hover);
+    }
+  }
+  .Input-module__field--EPBkR:focus-within,
+  .Input-module__textarea--u0juO:focus {
+    --_stroke: var(--input-border-focus);
+    outline: var(--_ring-width) solid var(--input-focus-ring);
+    outline-offset: var(--_ring-gap);
+  }
+  /* A focused Clear or password toggle draws its own ring. */
+  .Input-module__field--EPBkR:has(.Input-module__action--x34aw:focus-visible) {
+    --_stroke: var(--input-border);
+    outline: none;
+  }
+  .Input-module__field--EPBkR[data-invalid],
+  .Input-module__textarea--u0juO[data-invalid] {
+    --_stroke: var(--input-border-invalid);
+  }
+  .Input-module__field--EPBkR[data-disabled],
+  .Input-module__textarea--u0juO:disabled {
+    --_stroke: var(--input-border);
+    --_fill: var(--input-disabled);
+    color: var(--text-disabled);
+    cursor: not-allowed;
+  }
+
+  /* ── InputPrimitive and Search ───────────────────────────────────────────
+     SM 14px text and 16px icons; MD and LG 16px text, 20 and 24px icons. No
+     icon-size tokens exist, so the raw Figma sizes live here once. */
+  .Input-module__field--EPBkR {
+    --_icon: 20px;
+
+    display: inline-flex;
+    max-inline-size: 100%;
+    vertical-align: top;
+    font-family: var(--body-m-font);
+    font-size: var(--body-m-size);
+    font-weight: var(--primitives-font-weight-regular);
+    line-height: var(--body-m-line-height);
+    cursor: text;
+  }
+  .Input-module__field--EPBkR[data-size="sm"] {
+    --_icon: 16px;
+
+    font-family: var(--body-s-font);
+    font-size: var(--body-s-size);
+    line-height: var(--body-s-line-height);
+  }
+  .Input-module__field--EPBkR[data-size="lg"] {
+    --_icon: 24px;
+  }
+  .Input-module__field--EPBkR[data-full-width] {
+    display: flex;
+    inline-size: 100%;
+  }
+  .Input-module__field--EPBkR[data-shape="pill"] {
+    border-radius: var(--radius-full);
+  }
+
+  .Input-module__control--wicJ6 {
+    flex: 1 1 0;
+    min-inline-size: 0;
+    block-size: 1lh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background: none;
+    color: inherit;
+    font: inherit;
+    cursor: inherit;
+  }
+  .Input-module__control--wicJ6::placeholder,
+  .Input-module__textarea--u0juO::placeholder {
+    color: var(--text-tertiary);
+    opacity: 1;
+  }
+  .Input-module__field--EPBkR[data-disabled] .Input-module__control--wicJ6::placeholder,
+  .Input-module__textarea--u0juO:disabled::placeholder {
+    color: var(--text-disabled);
+  }
+  /* Search draws its own icon and Clear button. */
+  .Input-module__control--wicJ6::-webkit-search-decoration,
+  .Input-module__control--wicJ6::-webkit-search-cancel-button {
+    appearance: none;
+  }
+
+  .Input-module__affix--FwUEH {
+    flex: none;
+    color: var(--text-tertiary);
+    white-space: nowrap;
+  }
+  .Input-module__field--EPBkR[data-disabled] .Input-module__affix--FwUEH {
+    color: var(--text-disabled);
+  }
+
+  .Input-module__icon--AUVqr {
+    flex: none;
+    inline-size: var(--_icon);
+    block-size: var(--_icon);
+    color: var(--icon-tertiary);
+    font-size: var(--_icon);
+  }
+  .Input-module__field--EPBkR[data-shape="pill"] .Input-module__icon--AUVqr {
+    color: var(--icon-secondary);
+  }
+  .Input-module__field--EPBkR[data-disabled] .Input-module__icon--AUVqr {
+    color: var(--icon-disabled);
+  }
+
+  /* ── InputAction: Clear and the password toggle ──────────────────────────
+     The target is 4px larger than the icon on every side (24 · 28 · 32,
+     WCAG 2.5.8), and a −4px margin gives that back, so in the layout the
+     button is the icon's size and lines up with the field's padding. Sized
+     as border-box: an app's unlayered `* { box-sizing: border-box }` beats
+     anything in this layer, so a content-box size would lose the padding
+     and push the icon 4px down. */
+  .Input-module__action--x34aw {
+    --_reach: 4px;
+
+    flex: none;
+    box-sizing: border-box;
+    inline-size: calc(var(--_icon) + 2 * var(--_reach));
+    block-size: calc(var(--_icon) + 2 * var(--_reach));
+    margin: calc(var(--_reach) * -1);
+    padding: var(--_reach);
+    border: 0;
+    border-radius: var(--radius-4);
+    background: none;
+    color: var(--icon-tertiary);
+    font-size: var(--_icon);
+    cursor: pointer;
+    transition: background-color var(--_motion), color var(--_motion);
+  }
+  .Input-module__field--EPBkR[data-shape="pill"] .Input-module__action--x34aw {
+    border-radius: var(--radius-full);
+  }
+  @media (hover: hover) {
+    .Input-module__action--x34aw:enabled:hover {
+      background-color: var(--background-subtle-subtle);
+      color: var(--icon-secondary);
+    }
+  }
+  .Input-module__action--x34aw:focus-visible {
+    background-color: var(--input-surface);
+    outline: var(--_ring-width) solid var(--input-focus-ring);
+    outline-offset: var(--_ring-gap);
+  }
+  .Input-module__action--x34aw:disabled {
+    color: var(--icon-disabled);
+    cursor: not-allowed;
+  }
+
+  /* ── Textarea ────────────────────────────────────────────────────────────
+     MD's type; the height follows rows. */
+  .Input-module__textarea--u0juO {
+    display: block;
+    inline-size: 100%;
+    min-inline-size: 0;
+    margin: 0;
+    border: 0;
+    font-family: var(--body-m-font);
+    font-size: var(--body-m-size);
+    font-weight: var(--primitives-font-weight-regular);
+    line-height: var(--body-m-line-height);
+    resize: none;
+  }
+  .Input-module__textarea--u0juO[data-resize] {
+    resize: vertical;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .Input-module__field--EPBkR,
+    .Input-module__textarea--u0juO {
+      --_motion: 0s;
+    }
+  }
+
+  /* Windows High Contrast drops box-shadows: draw the stroke as a real
+     border. The box grows by the border, a trade-off for a visible field. */
+  @media (forced-colors: active) {
+    .Input-module__field--EPBkR,
+    .Input-module__textarea--u0juO {
+      border: var(--stroke-default) solid CanvasText;
+    }
+    .Input-module__field--EPBkR[data-disabled],
+    .Input-module__textarea--u0juO:disabled {
+      border-color: GrayText;
+    }
+  }
+}
+
+/**
+ * Do not edit directly, this file was auto-generated
+ * by tokens/build.mjs from tokens/input/components/input/.
+ *
+ * Imported by the input component — not part of index.css.
+ */
+
+@layer components {
+[data-input-color="default"] {
+  --input-surface: var(--background-neutral-solid);
+  --input-border: var(--border-strong);
+  --input-border-hover: var(--icon-tertiary);
+  --input-border-focus: var(--button-brand-hover);
+  --input-border-invalid: var(--border-danger);
+  --input-disabled: var(--background-subtle-subtle);
+  --input-focus-ring: var(--icon-tertiary);
 }
 }
 
@@ -7849,6 +8337,144 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
   .Tooltip-module__bubble--CAs-U[data-placement="right"] .Tooltip-module__arrow--ffONi {
     inset-inline-start: calc(-1 * var(--_arrow-height));
     clip-path: polygon(0 50%, 100% 0, 100% 100%);
+  }
+}
+
+@layer components {
+  /* Layout, gaps and paddings are utility classes in the TSX (12px around
+     and between, 4px above and below the text). Colours are the generated
+     --input-* roles (src/tokens/components/input.css) plus the Theme text
+     roles Figma binds directly, the same as Textarea. */
+
+  /* ── The frame ───────────────────────────────────────────────────────────
+     Figma's INSIDE stroke is an inset shadow, never a border. Focus follows
+     the text, not the buttons: a focused submit or Cancel draws its own
+     ring. Order at equal specificity: hover → focus → invalid → disabled. */
+  .PromptBar-module__bar--cBPbK {
+    --_stroke: var(--input-border);
+    --_fill: var(--input-surface);
+    --_ring-gap: 2px;
+    --_ring-width: 2px;
+    /* No motion tokens: Figma's 150 ms ease-out. */
+    --_motion: 150ms ease-out;
+
+    position: relative;
+    box-sizing: border-box;
+    border-radius: var(--radius-8);
+    background-color: var(--_fill);
+    box-shadow: inset 0 0 0 var(--stroke-default) var(--_stroke);
+    cursor: text;
+    transition: box-shadow var(--_motion);
+  }
+  @media (hover: hover) {
+    .PromptBar-module__bar--cBPbK:hover {
+      --_stroke: var(--input-border-hover);
+    }
+  }
+  .PromptBar-module__bar--cBPbK:has(.PromptBar-module__textarea--XSS2L:focus) {
+    --_stroke: var(--input-border-focus);
+    outline: var(--_ring-width) solid var(--input-focus-ring);
+    outline-offset: var(--_ring-gap);
+  }
+  .PromptBar-module__bar--cBPbK[data-invalid] {
+    --_stroke: var(--input-border-invalid);
+  }
+  .PromptBar-module__bar--cBPbK[data-disabled] {
+    --_stroke: var(--input-border);
+    --_fill: var(--input-disabled);
+    cursor: not-allowed;
+  }
+
+  /* ── The text ────────────────────────────────────────────────────────────
+     Body M in a 32px row, the SM submit's height, so one line sits on the
+     submit's centre. The padding is on the wrapper, never the textarea: an
+     app's `* { box-sizing: border-box }` would otherwise change its height.
+     The script sets the height: the placeholder's, then the text's, up to
+     maxRows. */
+  .PromptBar-module__text--tw5FI {
+    flex: 1 1 0;
+    min-inline-size: 0;
+  }
+  .PromptBar-module__textarea--XSS2L {
+    display: block;
+    box-sizing: content-box;
+    inline-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background: none;
+    color: var(--text-primary);
+    font-family: var(--body-m-font);
+    font-size: var(--body-m-size);
+    font-weight: var(--primitives-font-weight-regular);
+    line-height: var(--body-m-line-height);
+    overflow-y: hidden;
+    resize: none;
+    cursor: inherit;
+  }
+  .PromptBar-module__textarea--XSS2L::placeholder {
+    color: var(--text-tertiary);
+    opacity: 1;
+  }
+  .PromptBar-module__bar--cBPbK[data-disabled] .PromptBar-module__textarea--XSS2L,
+  .PromptBar-module__bar--cBPbK[data-disabled] .PromptBar-module__textarea--XSS2L::placeholder {
+    color: var(--text-disabled);
+  }
+
+  /* ── Loading: three dots in the submit ───────────────────────────────────
+     Figma's more-horizontal at the glyph's size, in the button's text
+     colour, pulsing left to right. The 3px dots are raw: no icon-size
+     tokens exist. */
+  .PromptBar-module__dots--EzYtn {
+    --_dot: 3px;
+
+    display: inline-flex;
+    gap: var(--_dot);
+    align-items: center;
+  }
+  .PromptBar-module__dots--EzYtn > span {
+    inline-size: var(--_dot);
+    block-size: var(--_dot);
+    border-radius: var(--radius-full);
+    background-color: currentcolor;
+    animation: PromptBar-module__dot--evo59 1s ease-in-out infinite;
+  }
+  .PromptBar-module__dots--EzYtn > span:nth-child(2) {
+    animation-delay: 160ms;
+  }
+  .PromptBar-module__dots--EzYtn > span:nth-child(3) {
+    animation-delay: 320ms;
+  }
+  @keyframes PromptBar-module__dot--evo59 {
+    0%,
+    80%,
+    100% {
+      opacity: 0.35;
+    }
+    40% {
+      opacity: 1;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .PromptBar-module__bar--cBPbK {
+      --_motion: 0s;
+    }
+    .PromptBar-module__dots--EzYtn > span {
+      animation: none;
+    }
+  }
+
+  /* Windows High Contrast drops box-shadows: draw the stroke as a real
+     border. The frame grows by the border, as on Textarea. */
+  @media (forced-colors: active) {
+    .PromptBar-module__bar--cBPbK {
+      border: var(--stroke-default) solid CanvasText;
+    }
+    .PromptBar-module__bar--cBPbK[data-disabled] {
+      border-color: GrayText;
+    }
   }
 }
 
