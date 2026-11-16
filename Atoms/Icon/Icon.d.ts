@@ -16,7 +16,7 @@ export declare const Icon: React.ForwardRefExoticComponent<{
     size?: number;
     /** Theme text colour. Inherits the surrounding colour (currentColor) when omitted. */
     color?: TextColorToken;
-} & Omit<React.HTMLAttributes<HTMLElement>, "children" | "color"> & React.RefAttributes<HTMLElement>>;
+} & Omit<React.HTMLAttributes<HTMLElement>, "color" | "children"> & React.RefAttributes<HTMLElement>>;
 /**
  * Icon-font glyph. Sized by `size`/font-size, colored by `color`/currentColor;
  * decorative by default (aria-hidden) — pass aria-hidden={false} plus a label
