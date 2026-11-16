@@ -1,7 +1,10 @@
 import React from "react";
 import "../../tokens/components/input.css";
 import type { FieldProps } from "../../Atoms/Field/Field";
+export type PromptBarSize = "sm" | "md";
 interface PromptBarOwnProps extends Pick<FieldProps, "label" | "description" | "error"> {
+    /** Figma Size. SM follows Input SM: Body S text, 8px above and below, a Body XS helper and error. Default `"md"`. */
+    size?: PromptBarSize;
     /** Enter (not Shift+Enter, not mid-composition) or the submit button, with the current text. */
     onSubmit?: (value: string) => void;
     /** Figma Submit = Text: a word on the button ("Add job") instead of the arrow. */
@@ -26,7 +29,7 @@ interface PromptBarOwnProps extends Pick<FieldProps, "label" | "description" | "
     invalid?: boolean;
     /** The field grows with the text up to this many lines, then scrolls. Default `6`. */
     maxRows?: number;
-    /** Figma Footer: a row under the text, aligned right (Cancel). */
+    /** Figma Footer: buttons before the submit, in the row under the text (Cancel). */
     actions?: React.ReactNode;
     /** Fill the container. Default `true`. */
     fullWidth?: boolean;
@@ -38,8 +41,9 @@ interface PromptBarOwnProps extends Pick<FieldProps, "label" | "description" | "
 export type PromptBarProps = PromptBarOwnProps & Omit<React.ComponentPropsWithoutRef<"textarea">, keyof PromptBarOwnProps | "rows">;
 /**
  * Figma's PromptBar: one field for writing to the AI or pasting a job. It
- * starts at one line, grows with the text up to `maxRows`, then scrolls.
- * Enter submits, Shift+Enter adds a line. Built on Field, so `label`,
+ * starts at one line, grows with the text up to `maxRows`, then scrolls. The
+ * submit sits in the row under the text, after any `actions`. Enter submits,
+ * Shift+Enter adds a line. Built on Field, so `label`,
  * `description` and `error` work as on Input and Textarea; without a label,
  * pass `aria-label`. `className` and `style` go to the outer Field; the ref
  * and every other prop to the `<textarea>`.

@@ -8341,8 +8341,9 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
 }
 
 @layer components {
-  /* Layout, gaps and paddings are utility classes in the TSX (12px around
-     and between, 4px above and below the text). Colours are the generated
+  /* Layout, gaps and paddings are utility classes in the TSX: MD 12px
+     around and 4px above and below the text; SM 8px above and below, 12px
+     at the sides and 6px around the text. Colours are the generated
      --input-* roles (src/tokens/components/input.css) plus the Theme text
      roles Figma binds directly, the same as Textarea. */
 
@@ -8386,13 +8387,12 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
   }
 
   /* ── The text ────────────────────────────────────────────────────────────
-     Body M in a 32px row, the SM submit's height, so one line sits on the
-     submit's centre. The padding is on the wrapper, never the textarea: an
-     app's `* { box-sizing: border-box }` would otherwise change its height.
-     The script sets the height: the placeholder's, then the text's, up to
-     maxRows. */
+     One line is a 32px row, the footer's height: Body M with 4px above and
+     below (MD), Body S with 6px (SM). The padding is on the wrapper, never
+     the textarea: an app's `* { box-sizing: border-box }` would otherwise
+     change its height. The script sets the height: the placeholder's, then
+     the text's, up to maxRows. */
   .PromptBar-module__text--tw5FI {
-    flex: 1 1 0;
     min-inline-size: 0;
   }
   .PromptBar-module__textarea--XSS2L {
@@ -8412,6 +8412,11 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
     overflow-y: hidden;
     resize: none;
     cursor: inherit;
+  }
+  .PromptBar-module__bar--cBPbK[data-size="sm"] .PromptBar-module__textarea--XSS2L {
+    font-family: var(--body-s-font);
+    font-size: var(--body-s-size);
+    line-height: var(--body-s-line-height);
   }
   .PromptBar-module__textarea--XSS2L::placeholder {
     color: var(--text-tertiary);

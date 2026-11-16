@@ -81,7 +81,7 @@ export type { AddChipProps, AddChipInputProps } from "./Atoms/Chip/AddChip";
 export { chipColors } from "./tokens/components/chip";
 export type { ChipColorToken } from "./tokens/components/chip";
 export { PromptBar } from "./Molecules/PromptBar/PromptBar";
-export type { PromptBarProps } from "./Molecules/PromptBar/PromptBar";
+export type { PromptBarProps, PromptBarSize, } from "./Molecules/PromptBar/PromptBar";
 export { InputChipField } from "./Molecules/InputChipField/InputChipField";
 export type { InputChipFieldProps, InputChipFieldAppearance, InputChipFieldChange, InputChipFieldChipProps, InputChipFieldInputProps, InputChipFieldRejection, InputChipFieldRejectReason, } from "./Molecules/InputChipField/InputChipField";
 export { Dropdown } from "./Molecules/Dropdown/Dropdown";
