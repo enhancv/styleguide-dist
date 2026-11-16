@@ -8495,6 +8495,419 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
 }
 
 @layer components {
+  /* The field box is Input's (.field in Input.module.css: outline, fill,
+     sizes and the --input-* states). This adds what a combobox needs. The
+     attribute keeps these above Input's equal-weight .field rules, whatever
+     order the two stylesheets load in. */
+  .Select-module__select--44gZQ[data-input-color] {
+    min-inline-size: 0;
+    cursor: pointer;
+  }
+  .Select-module__select--44gZQ[data-filterable] {
+    cursor: text;
+  }
+  .Select-module__select--44gZQ[data-disabled] {
+    cursor: not-allowed;
+  }
+
+  /* Figma: Focus is keyboard focus; Open (the menu showing) keeps the focus
+     border and drops the ring. A text box is always :focus-visible, so a
+     filterable Select shows the ring while focused and closed, like Input. */
+  .Select-module__select--44gZQ:focus-within:not(:has(:focus-visible)),
+  .Select-module__select--44gZQ[data-open]:focus-within {
+    outline: none;
+  }
+
+  .Select-module__trigger--y\+W-h {
+    text-align: start;
+    cursor: inherit;
+  }
+  .Select-module__value--f8ShV {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .Select-module__value--f8ShV[data-placeholder] {
+    color: var(--text-tertiary);
+  }
+  .Select-module__select--44gZQ[data-disabled] .Select-module__value--f8ShV {
+    color: var(--text-disabled);
+  }
+
+  .Select-module__chevron--Wlffh {
+    transition: rotate var(--_motion);
+  }
+  .Select-module__select--44gZQ[data-open] .Select-module__chevron--Wlffh {
+    rotate: 180deg;
+  }
+}
+
+@layer components {
+  /* What the styleguide classes can't say. Layout and gaps are utility
+     classes in the TSX (flex, gap-8, …); utilities sit in a later layer and
+     win over this file, so nothing here repeats a property a class on the
+     same element sets. Colours, paddings and sizes are the generated
+     --dropdown-* roles (src/tokens/components/dropdown.css and
+     dropdown-density.css: the panel carries data-dropdown-color and
+     data-dropdown-density), plus the Theme roles Figma binds directly: text
+     and icon colours. */
+
+  /* Shared by the two portal siblings — custom properties never cross siblings. */
+  .Dropdown-module__panel--3ouib,
+  .Dropdown-module__backdrop--G8WyI {
+    /* The app's menu layer: above Modal ($zindex-modal-content 1003), below
+       Tooltip (9999). No z-index or motion tokens exist yet. */
+    --_z-index: 1061;
+    --_motion: 160ms ease;
+  }
+
+  /* ── The panel ───────────────────────────────────────────────────────────
+     Figma's Dropdown: dropdown/surface, radius/8, Shadow/Default/LG, no
+     border, content clipped; the list scrolls inside dropdown/max-height (8
+     rows and a separator) or the room on its side, whichever is smaller. */
+  .Dropdown-module__panel--3ouib {
+    /* Shadow/Default/LG: no shadow tokens exist yet. Its first layer, a 1px
+       ring at 20%, is the panel's only edge on its top side: without it a
+       white panel vanishes into a white toolbar or table header. */
+    --_shadow: 0 0 1px rgb(10 13 18 / 20%), 0 2px 2px -1px rgb(10 13 18 / 4%),
+      0 4px 6px -2px rgb(10 13 18 / 3%), 0 12px 16px -4px rgb(10 13 18 / 8%);
+    --_slide: calc(-1 * var(--spacing-4));
+    --_gutter: var(--spacing-16);
+
+    position: fixed;
+    z-index: var(--_z-index);
+    box-sizing: border-box;
+    inline-size: max-content;
+    max-inline-size: calc(100vw - 2 * var(--_gutter));
+    /* The positioning hook sets --_max-block-size to the room on the chosen side. */
+    max-block-size: min(var(--_max-block-size, 70vh), var(--dropdown-max-height));
+    padding-block: var(--dropdown-panel-padding-y);
+    border-radius: var(--radius-8);
+    background: var(--dropdown-surface);
+    box-shadow: var(--_shadow);
+    color: var(--text-primary);
+    font-family: var(--body-s-font);
+    font-size: var(--body-s-size);
+    font-weight: var(--body-s-weight);
+    line-height: var(--body-s-line-height);
+    letter-spacing: var(--body-s-tracking);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    outline: none;
+    animation: Dropdown-module__dropdown-in--blGci var(--_motion) both;
+  }
+  .Dropdown-module__panel--3ouib[data-placement^="top"] {
+    --_slide: var(--spacing-4);
+  }
+  /* width="auto": Figma's dropdown/min-width and dropdown/max-width (longer
+     labels end in an ellipsis). A number or "trigger" sets inline-size
+     exactly, without limits. */
+  .Dropdown-module__panel--3ouib[data-width="auto"] {
+    min-inline-size: var(--dropdown-min-width);
+    max-inline-size: min(var(--dropdown-max-width), calc(100vw - 2 * var(--_gutter)));
+  }
+
+  /* Docs and QA boards draw panels in the flow, many at once. */
+  .Dropdown-module__panel--3ouib[data-inline] {
+    position: relative;
+    z-index: auto;
+    animation: none;
+  }
+
+  @keyframes Dropdown-module__dropdown-in--blGci {
+    from {
+      opacity: 0;
+      translate: 0 var(--_slide);
+    }
+    to {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+
+  /* ── DropdownItem ─────────────────────────────────────────────────────────
+     A full-width row with dropdown/item-margin-x on both sides and spacing/2
+     above and below, holding the rounded Highlight that carries the fill, the
+     content and the focus ring. Neighbouring highlights are 4px apart —
+     exactly the ring's reach — so a hovered row never covers a focused
+     row's ring. */
+  .Dropdown-module__item--mqgEp {
+    /* The library focus ring (Button, Chip, Card): a 2px gap, then 2px. */
+    --_ring-gap: 2px;
+    --_ring-width: 2px;
+
+    box-sizing: border-box;
+    padding: var(--spacing-2) var(--dropdown-item-margin-x);
+    border: none;
+    background: none;
+    color: inherit;
+    font: inherit;
+    letter-spacing: inherit;
+    text-align: start;
+    cursor: pointer;
+    outline: none;
+  }
+  .Dropdown-module__item--mqgEp:disabled {
+    color: var(--text-disabled);
+    cursor: not-allowed;
+  }
+
+  .Dropdown-module__highlight--Ww3EW {
+    min-inline-size: 0;
+    padding: var(--dropdown-item-padding-y) var(--dropdown-item-padding-x);
+    border-radius: var(--radius-4);
+    transition:
+      background-color var(--_motion),
+      box-shadow var(--_motion);
+  }
+  /* Hover is pointer hover: touch browsers keep :hover on the last tap. */
+  @media (hover: hover) {
+    .Dropdown-module__item--mqgEp:hover:enabled .Dropdown-module__highlight--Ww3EW {
+      background-color: var(--dropdown-item-hover);
+    }
+  }
+  /* A Select's highlighted option: focus stays in the field
+     (aria-activedescendant), so the row shows the hover highlight. */
+  .Dropdown-module__item--mqgEp[data-active] .Dropdown-module__highlight--Ww3EW {
+    background-color: var(--dropdown-item-hover);
+  }
+  /* The pointer moves that highlight, so plain hover adds no second one. */
+  @media (hover: hover) {
+    .Dropdown-module__item--mqgEp[role="option"]:hover:enabled:not([data-active]) .Dropdown-module__highlight--Ww3EW {
+      background-color: transparent;
+    }
+  }
+  /* Keyboard focus: the same highlight plus the library ring, a 2px gap in
+     the panel colour and 2px of dropdown/focus-ring. */
+  .Dropdown-module__item--mqgEp:focus-visible .Dropdown-module__highlight--Ww3EW {
+    background-color: var(--dropdown-item-hover);
+    box-shadow:
+      0 0 0 var(--_ring-gap) var(--dropdown-surface),
+      0 0 0 calc(var(--_ring-gap) + var(--_ring-width)) var(--dropdown-focus-ring);
+  }
+
+  .Dropdown-module__label--ivTU1 {
+    min-inline-size: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* A 16px column: an icon, the dot, Inset's empty column, the Radio check.
+     16px is Figma's raw icon size (no icon-size tokens exist). */
+  .Dropdown-module__slot--gRqFb {
+    --_slot: 16px;
+
+    flex: none;
+    inline-size: var(--_slot);
+    block-size: var(--_slot);
+    color: var(--icon-secondary);
+    font-size: var(--_slot);
+  }
+  .Dropdown-module__item--mqgEp:disabled .Dropdown-module__slot--gRqFb {
+    color: var(--icon-disabled);
+  }
+
+  /* A Chip-colour dot: the Badge SM dot's 6px circle in the chip's solid
+     border, the hue one step stronger than its pastel surface, so a 6px dot
+     still reads (no dot-size tokens yet; Badge keeps the raw 6px too). A
+     disabled row greys it like the Badge. */
+  .Dropdown-module__dot--FPTYO {
+    inline-size: 6px;
+    block-size: 6px;
+    background-color: var(--_dot);
+  }
+  .Dropdown-module__item--mqgEp:disabled .Dropdown-module__dot--FPTYO {
+    --_dot: var(--icon-disabled);
+  }
+  .Dropdown-module__dot--FPTYO[data-dot-color="amber"] {
+    --_dot: var(--chip-amber-solid-border);
+  }
+  .Dropdown-module__dot--FPTYO[data-dot-color="blue"] {
+    --_dot: var(--chip-blue-solid-border);
+  }
+  .Dropdown-module__dot--FPTYO[data-dot-color="brand"] {
+    --_dot: var(--chip-brand-solid-border);
+  }
+  .Dropdown-module__dot--FPTYO[data-dot-color="cyan"] {
+    --_dot: var(--chip-cyan-solid-border);
+  }
+  .Dropdown-module__dot--FPTYO[data-dot-color="green"] {
+    --_dot: var(--chip-green-solid-border);
+  }
+  .Dropdown-module__dot--FPTYO[data-dot-color="indigo"] {
+    --_dot: var(--chip-indigo-solid-border);
+  }
+  .Dropdown-module__dot--FPTYO[data-dot-color="lime"] {
+    --_dot: var(--chip-lime-solid-border);
+  }
+  .Dropdown-module__dot--FPTYO[data-dot-color="magenta"] {
+    --_dot: var(--chip-magenta-solid-border);
+  }
+  .Dropdown-module__dot--FPTYO[data-dot-color="pink"] {
+    --_dot: var(--chip-pink-solid-border);
+  }
+  .Dropdown-module__dot--FPTYO[data-dot-color="purple"] {
+    --_dot: var(--chip-purple-solid-border);
+  }
+  .Dropdown-module__dot--FPTYO[data-dot-color="red"] {
+    --_dot: var(--chip-red-solid-border);
+  }
+  .Dropdown-module__dot--FPTYO[data-dot-color="sky"] {
+    --_dot: var(--chip-sky-solid-border);
+  }
+  .Dropdown-module__dot--FPTYO[data-dot-color="yellow"] {
+    --_dot: var(--chip-yellow-solid-border);
+  }
+  /* Radio: the check sits on the trailing edge; its column stays reserved
+     when the row is not selected, so labels never shift. */
+  .Dropdown-module__check--b3EaH {
+    color: var(--dropdown-check);
+    opacity: 0;
+    transition: opacity var(--_motion);
+  }
+  .Dropdown-module__item--mqgEp[aria-checked="true"] .Dropdown-module__check--b3EaH,
+  .Dropdown-module__item--mqgEp[aria-selected="true"] .Dropdown-module__check--b3EaH {
+    opacity: 1;
+  }
+
+  /* ── DropdownLabel, DropdownSeparator, DropdownMessage ─────────────────── */
+  .Dropdown-module__sectionLabel--XXxg\+ {
+    padding-block-start: var(--dropdown-label-padding-top);
+    padding-inline: var(--dropdown-label-padding-x);
+  }
+
+  /* A 1px line, full panel width, spacing/4 above and below. */
+  .Dropdown-module__separator--tpVbn {
+    border-block-start: var(--stroke-default) solid var(--dropdown-separator);
+  }
+
+  /* One row tall in every density, so the panel doesn't jump when the rows
+     arrive. */
+  .Dropdown-module__message--9qHBP {
+    padding-inline: var(--dropdown-label-padding-x);
+  }
+  .Dropdown-module__messageContent--ZYIsI {
+    min-inline-size: 0;
+    padding-block: var(--dropdown-item-padding-y);
+  }
+  .Dropdown-module__messageIcon--1cJsC {
+    color: var(--icon-danger);
+  }
+  /* Figma's Loader draws in button/default (the Brand mode's button/brand):
+     the Theme role it resolves to, since the ring follows currentColor. */
+  .Dropdown-module__messageLoader--aCupG {
+    color: var(--button-brand);
+  }
+
+  /* ── Mobile sheet (≤768px) ────────────────────────────────────────────────
+     Figma's Density = Touch sheet: the screen minus 8px on each side, 8px
+     above the bottom edge, 48px rows; min and max width don't apply; at most
+     dropdown/max-height or 70% of the screen. The scrim is Figma's draft
+     rgba(10 13 18 / 32%) as its nearest Theme role, 30% black (no overlay
+     token exists yet; the Modal's backdrop is darker, 60%). */
+  .Dropdown-module__backdrop--G8WyI {
+    position: fixed;
+    inset: 0;
+    z-index: calc(var(--_z-index) - 1);
+    background: var(--background-inverse-alpha-30);
+    animation: Dropdown-module__backdrop-in--v-tA- var(--_motion) both;
+  }
+  .Dropdown-module__panel--3ouib[data-sheet] {
+    inset: auto max(var(--spacing-8), env(safe-area-inset-right, 0px))
+      max(var(--spacing-8), env(safe-area-inset-bottom, 0px))
+      max(var(--spacing-8), env(safe-area-inset-left, 0px));
+    inline-size: auto;
+    min-inline-size: 0;
+    max-inline-size: none;
+    max-block-size: min(var(--dropdown-max-height), 70vh);
+    animation-name: Dropdown-module__sheet-in--KaTlS;
+  }
+
+  @keyframes Dropdown-module__backdrop-in--v-tA- {
+    from {
+      opacity: 0;
+    }
+  }
+  @keyframes Dropdown-module__sheet-in--KaTlS {
+    from {
+      opacity: 0;
+      translate: 0 var(--spacing-16);
+    }
+    to {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .Dropdown-module__panel--3ouib,
+    .Dropdown-module__backdrop--G8WyI {
+      --_motion: 0s;
+      animation-duration: 0s;
+    }
+  }
+}
+
+/**
+ * Do not edit directly, this file was auto-generated
+ * by tokens/build.mjs from tokens/input/components/dropdown/.
+ *
+ * Imported by the dropdown component — not part of index.css.
+ */
+
+@layer components {
+[data-dropdown-color="default"] {
+  --dropdown-surface: var(--background-neutral-solid);
+  --dropdown-item-hover: var(--background-subtle-subtle);
+  --dropdown-separator: var(--border-default);
+  --dropdown-check: var(--icon-brand);
+  --dropdown-focus-ring: var(--icon-tertiary);
+  --dropdown-min-width: 200px;
+  --dropdown-max-width: 360px;
+}
+}
+
+/**
+ * Do not edit directly, this file was auto-generated
+ * by tokens/build.mjs from tokens/input/components/dropdown-density/.
+ *
+ * Imported by the dropdown component — not part of index.css.
+ */
+
+@layer components {
+[data-dropdown-density="compact"] {
+  --dropdown-item-padding-x: var(--spacing-6);
+  --dropdown-item-padding-y: var(--spacing-4);
+  --dropdown-panel-padding-y: var(--spacing-4);
+  --dropdown-max-height: 273px;
+  --dropdown-item-margin-x: var(--spacing-6);
+  --dropdown-label-padding-x: var(--spacing-12);
+  --dropdown-label-padding-top: var(--spacing-6);
+}
+
+[data-dropdown-density="default"] {
+  --dropdown-item-padding-x: var(--spacing-8);
+  --dropdown-item-padding-y: var(--spacing-6);
+  --dropdown-panel-padding-y: var(--spacing-6);
+  --dropdown-max-height: 309px;
+  --dropdown-item-margin-x: var(--spacing-8);
+  --dropdown-label-padding-x: var(--spacing-16);
+  --dropdown-label-padding-top: var(--spacing-8);
+}
+
+[data-dropdown-density="touch"] {
+  --dropdown-item-padding-x: var(--spacing-8);
+  --dropdown-item-padding-y: var(--spacing-12);
+  --dropdown-panel-padding-y: var(--spacing-6);
+  --dropdown-max-height: 405px;
+  --dropdown-item-margin-x: var(--spacing-8);
+  --dropdown-label-padding-x: var(--spacing-16);
+  --dropdown-label-padding-top: var(--spacing-12);
+}
+}
+
+@layer components {
   /* Layout and field chrome only, for both forms. The chips (and the inline
      add chip, ChipAddSlot) style themselves; this file must not read --chip-*
      roles (the module guard only polices Chip.module.css). */
@@ -8635,357 +9048,5 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
     display: flex;
     max-inline-size: 100%;
   }
-}
-
-@layer components {
-  /* What the styleguide classes can't say. Layout and gaps are utility
-     classes in the TSX (flex, gap-8, …); utilities sit in a later layer and
-     win over this file, so nothing here repeats a property a class on the
-     same element sets. Colours, paddings and sizes are the generated
-     --dropdown-* roles (src/tokens/components/dropdown.css and
-     dropdown-density.css: the panel carries data-dropdown-color and
-     data-dropdown-density), plus the Theme roles Figma binds directly: text
-     and icon colours. */
-
-  /* Shared by the two portal siblings — custom properties never cross siblings. */
-  .Dropdown-module__panel--3ouib,
-  .Dropdown-module__backdrop--G8WyI {
-    /* The app's menu layer: above Modal ($zindex-modal-content 1003), below
-       Tooltip (9999). No z-index or motion tokens exist yet. */
-    --_z-index: 1061;
-    --_motion: 160ms ease;
-  }
-
-  /* ── The panel ───────────────────────────────────────────────────────────
-     Figma's Dropdown: dropdown/surface, radius/8, Shadow/Default/LG, no
-     border, content clipped; the list scrolls inside dropdown/max-height (8
-     rows and a separator) or the room on its side, whichever is smaller. */
-  .Dropdown-module__panel--3ouib {
-    /* Shadow/Default/LG: no shadow tokens exist yet. Its first layer, a 1px
-       ring at 20%, is the panel's only edge on its top side: without it a
-       white panel vanishes into a white toolbar or table header. */
-    --_shadow: 0 0 1px rgb(10 13 18 / 20%), 0 2px 2px -1px rgb(10 13 18 / 4%),
-      0 4px 6px -2px rgb(10 13 18 / 3%), 0 12px 16px -4px rgb(10 13 18 / 8%);
-    --_slide: calc(-1 * var(--spacing-4));
-    --_gutter: var(--spacing-16);
-
-    position: fixed;
-    z-index: var(--_z-index);
-    box-sizing: border-box;
-    inline-size: max-content;
-    max-inline-size: calc(100vw - 2 * var(--_gutter));
-    /* The positioning hook sets --_max-block-size to the room on the chosen side. */
-    max-block-size: min(var(--_max-block-size, 70vh), var(--dropdown-max-height));
-    padding-block: var(--dropdown-panel-padding-y);
-    border-radius: var(--radius-8);
-    background: var(--dropdown-surface);
-    box-shadow: var(--_shadow);
-    color: var(--text-primary);
-    font-family: var(--body-s-font);
-    font-size: var(--body-s-size);
-    font-weight: var(--body-s-weight);
-    line-height: var(--body-s-line-height);
-    letter-spacing: var(--body-s-tracking);
-    overflow-y: auto;
-    overscroll-behavior: contain;
-    outline: none;
-    animation: Dropdown-module__dropdown-in--blGci var(--_motion) both;
-  }
-  .Dropdown-module__panel--3ouib[data-placement^="top"] {
-    --_slide: var(--spacing-4);
-  }
-  /* width="auto": Figma's dropdown/min-width and dropdown/max-width (longer
-     labels end in an ellipsis). A number or "trigger" sets inline-size
-     exactly, without limits. */
-  .Dropdown-module__panel--3ouib[data-width="auto"] {
-    min-inline-size: var(--dropdown-min-width);
-    max-inline-size: min(var(--dropdown-max-width), calc(100vw - 2 * var(--_gutter)));
-  }
-
-  /* Docs and QA boards draw panels in the flow, many at once. */
-  .Dropdown-module__panel--3ouib[data-inline] {
-    position: relative;
-    z-index: auto;
-    animation: none;
-  }
-
-  @keyframes Dropdown-module__dropdown-in--blGci {
-    from {
-      opacity: 0;
-      translate: 0 var(--_slide);
-    }
-    to {
-      opacity: 1;
-      translate: 0 0;
-    }
-  }
-
-  /* ── DropdownItem ─────────────────────────────────────────────────────────
-     A full-width row with dropdown/item-margin-x on both sides and spacing/2
-     above and below, holding the rounded Highlight that carries the fill, the
-     content and the focus ring. Neighbouring highlights are 4px apart —
-     exactly the ring's reach — so a hovered row never covers a focused
-     row's ring. */
-  .Dropdown-module__item--mqgEp {
-    /* The library focus ring (Button, Chip, Card): a 2px gap, then 2px. */
-    --_ring-gap: 2px;
-    --_ring-width: 2px;
-
-    box-sizing: border-box;
-    padding: var(--spacing-2) var(--dropdown-item-margin-x);
-    border: none;
-    background: none;
-    color: inherit;
-    font: inherit;
-    letter-spacing: inherit;
-    text-align: start;
-    cursor: pointer;
-    outline: none;
-  }
-  .Dropdown-module__item--mqgEp:disabled {
-    color: var(--text-disabled);
-    cursor: not-allowed;
-  }
-
-  .Dropdown-module__highlight--Ww3EW {
-    min-inline-size: 0;
-    padding: var(--dropdown-item-padding-y) var(--dropdown-item-padding-x);
-    border-radius: var(--radius-4);
-    transition:
-      background-color var(--_motion),
-      box-shadow var(--_motion);
-  }
-  /* Hover is pointer hover: touch browsers keep :hover on the last tap. */
-  @media (hover: hover) {
-    .Dropdown-module__item--mqgEp:hover:enabled .Dropdown-module__highlight--Ww3EW {
-      background-color: var(--dropdown-item-hover);
-    }
-  }
-  /* Keyboard focus: the same highlight plus the library ring, a 2px gap in
-     the panel colour and 2px of dropdown/focus-ring. */
-  .Dropdown-module__item--mqgEp:focus-visible .Dropdown-module__highlight--Ww3EW {
-    background-color: var(--dropdown-item-hover);
-    box-shadow:
-      0 0 0 var(--_ring-gap) var(--dropdown-surface),
-      0 0 0 calc(var(--_ring-gap) + var(--_ring-width)) var(--dropdown-focus-ring);
-  }
-
-  .Dropdown-module__label--ivTU1 {
-    min-inline-size: 0;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  /* A 16px column: an icon, the dot, Inset's empty column, the Radio check.
-     16px is Figma's raw icon size (no icon-size tokens exist). */
-  .Dropdown-module__slot--gRqFb {
-    --_slot: 16px;
-
-    flex: none;
-    inline-size: var(--_slot);
-    block-size: var(--_slot);
-    color: var(--icon-secondary);
-    font-size: var(--_slot);
-  }
-  .Dropdown-module__item--mqgEp:disabled .Dropdown-module__slot--gRqFb {
-    color: var(--icon-disabled);
-  }
-
-  /* A Chip-colour dot: the Badge SM dot's 6px circle in the chip's solid
-     border, the hue one step stronger than its pastel surface, so a 6px dot
-     still reads (no dot-size tokens yet; Badge keeps the raw 6px too). A
-     disabled row greys it like the Badge. */
-  .Dropdown-module__dot--FPTYO {
-    inline-size: 6px;
-    block-size: 6px;
-    background-color: var(--_dot);
-  }
-  .Dropdown-module__item--mqgEp:disabled .Dropdown-module__dot--FPTYO {
-    --_dot: var(--icon-disabled);
-  }
-  .Dropdown-module__dot--FPTYO[data-dot-color="amber"] {
-    --_dot: var(--chip-amber-solid-border);
-  }
-  .Dropdown-module__dot--FPTYO[data-dot-color="blue"] {
-    --_dot: var(--chip-blue-solid-border);
-  }
-  .Dropdown-module__dot--FPTYO[data-dot-color="brand"] {
-    --_dot: var(--chip-brand-solid-border);
-  }
-  .Dropdown-module__dot--FPTYO[data-dot-color="cyan"] {
-    --_dot: var(--chip-cyan-solid-border);
-  }
-  .Dropdown-module__dot--FPTYO[data-dot-color="green"] {
-    --_dot: var(--chip-green-solid-border);
-  }
-  .Dropdown-module__dot--FPTYO[data-dot-color="indigo"] {
-    --_dot: var(--chip-indigo-solid-border);
-  }
-  .Dropdown-module__dot--FPTYO[data-dot-color="lime"] {
-    --_dot: var(--chip-lime-solid-border);
-  }
-  .Dropdown-module__dot--FPTYO[data-dot-color="magenta"] {
-    --_dot: var(--chip-magenta-solid-border);
-  }
-  .Dropdown-module__dot--FPTYO[data-dot-color="pink"] {
-    --_dot: var(--chip-pink-solid-border);
-  }
-  .Dropdown-module__dot--FPTYO[data-dot-color="purple"] {
-    --_dot: var(--chip-purple-solid-border);
-  }
-  .Dropdown-module__dot--FPTYO[data-dot-color="red"] {
-    --_dot: var(--chip-red-solid-border);
-  }
-  .Dropdown-module__dot--FPTYO[data-dot-color="sky"] {
-    --_dot: var(--chip-sky-solid-border);
-  }
-  .Dropdown-module__dot--FPTYO[data-dot-color="yellow"] {
-    --_dot: var(--chip-yellow-solid-border);
-  }
-  /* Radio: the check sits on the trailing edge; its column stays reserved
-     when the row is not selected, so labels never shift. */
-  .Dropdown-module__check--b3EaH {
-    color: var(--dropdown-check);
-    opacity: 0;
-    transition: opacity var(--_motion);
-  }
-  .Dropdown-module__item--mqgEp[aria-checked="true"] .Dropdown-module__check--b3EaH {
-    opacity: 1;
-  }
-
-  /* ── DropdownLabel, DropdownSeparator, DropdownMessage ─────────────────── */
-  .Dropdown-module__sectionLabel--XXxg\+ {
-    padding-block-start: var(--dropdown-label-padding-top);
-    padding-inline: var(--dropdown-label-padding-x);
-  }
-
-  /* A 1px line, full panel width, spacing/4 above and below. */
-  .Dropdown-module__separator--tpVbn {
-    border-block-start: var(--stroke-default) solid var(--dropdown-separator);
-  }
-
-  /* One row tall in every density, so the panel doesn't jump when the rows
-     arrive. */
-  .Dropdown-module__message--9qHBP {
-    padding-inline: var(--dropdown-label-padding-x);
-  }
-  .Dropdown-module__messageContent--ZYIsI {
-    min-inline-size: 0;
-    padding-block: var(--dropdown-item-padding-y);
-  }
-  .Dropdown-module__messageIcon--1cJsC {
-    color: var(--icon-danger);
-  }
-  /* Figma's Loader draws in button/default (the Brand mode's button/brand):
-     the Theme role it resolves to, since the ring follows currentColor. */
-  .Dropdown-module__messageLoader--aCupG {
-    color: var(--button-brand);
-  }
-
-  /* ── Mobile sheet (≤768px) ────────────────────────────────────────────────
-     Figma's Density = Touch sheet: the screen minus 8px on each side, 8px
-     above the bottom edge, 48px rows; min and max width don't apply; at most
-     dropdown/max-height or 70% of the screen. The scrim is Figma's draft
-     rgba(10 13 18 / 32%) as its nearest Theme role, 30% black (no overlay
-     token exists yet; the Modal's backdrop is darker, 60%). */
-  .Dropdown-module__backdrop--G8WyI {
-    position: fixed;
-    inset: 0;
-    z-index: calc(var(--_z-index) - 1);
-    background: var(--background-inverse-alpha-30);
-    animation: Dropdown-module__backdrop-in--v-tA- var(--_motion) both;
-  }
-  .Dropdown-module__panel--3ouib[data-sheet] {
-    inset: auto max(var(--spacing-8), env(safe-area-inset-right, 0px))
-      max(var(--spacing-8), env(safe-area-inset-bottom, 0px))
-      max(var(--spacing-8), env(safe-area-inset-left, 0px));
-    inline-size: auto;
-    min-inline-size: 0;
-    max-inline-size: none;
-    max-block-size: min(var(--dropdown-max-height), 70vh);
-    animation-name: Dropdown-module__sheet-in--KaTlS;
-  }
-
-  @keyframes Dropdown-module__backdrop-in--v-tA- {
-    from {
-      opacity: 0;
-    }
-  }
-  @keyframes Dropdown-module__sheet-in--KaTlS {
-    from {
-      opacity: 0;
-      translate: 0 var(--spacing-16);
-    }
-    to {
-      opacity: 1;
-      translate: 0 0;
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .Dropdown-module__panel--3ouib,
-    .Dropdown-module__backdrop--G8WyI {
-      --_motion: 0s;
-      animation-duration: 0s;
-    }
-  }
-}
-
-/**
- * Do not edit directly, this file was auto-generated
- * by tokens/build.mjs from tokens/input/components/dropdown/.
- *
- * Imported by the dropdown component — not part of index.css.
- */
-
-@layer components {
-[data-dropdown-color="default"] {
-  --dropdown-surface: var(--background-neutral-solid);
-  --dropdown-item-hover: var(--background-subtle-subtle);
-  --dropdown-separator: var(--border-default);
-  --dropdown-check: var(--icon-brand);
-  --dropdown-focus-ring: var(--icon-tertiary);
-  --dropdown-min-width: 200px;
-  --dropdown-max-width: 360px;
-}
-}
-
-/**
- * Do not edit directly, this file was auto-generated
- * by tokens/build.mjs from tokens/input/components/dropdown-density/.
- *
- * Imported by the dropdown component — not part of index.css.
- */
-
-@layer components {
-[data-dropdown-density="compact"] {
-  --dropdown-item-padding-x: var(--spacing-6);
-  --dropdown-item-padding-y: var(--spacing-4);
-  --dropdown-panel-padding-y: var(--spacing-4);
-  --dropdown-max-height: 273px;
-  --dropdown-item-margin-x: var(--spacing-6);
-  --dropdown-label-padding-x: var(--spacing-12);
-  --dropdown-label-padding-top: var(--spacing-6);
-}
-
-[data-dropdown-density="default"] {
-  --dropdown-item-padding-x: var(--spacing-8);
-  --dropdown-item-padding-y: var(--spacing-6);
-  --dropdown-panel-padding-y: var(--spacing-6);
-  --dropdown-max-height: 309px;
-  --dropdown-item-margin-x: var(--spacing-8);
-  --dropdown-label-padding-x: var(--spacing-16);
-  --dropdown-label-padding-top: var(--spacing-8);
-}
-
-[data-dropdown-density="touch"] {
-  --dropdown-item-padding-x: var(--spacing-8);
-  --dropdown-item-padding-y: var(--spacing-12);
-  --dropdown-panel-padding-y: var(--spacing-6);
-  --dropdown-max-height: 405px;
-  --dropdown-item-margin-x: var(--spacing-8);
-  --dropdown-label-padding-x: var(--spacing-16);
-  --dropdown-label-padding-top: var(--spacing-12);
-}
 }
 
