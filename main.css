@@ -7179,6 +7179,11 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
   .Input-module__textarea--u0juO[data-invalid] {
     --_stroke: var(--input-border-invalid);
   }
+  /* Focused while invalid: Figma's lighter red under the same ring. */
+  .Input-module__field--EPBkR[data-invalid]:focus-within:not(:has(.Input-module__action--x34aw:focus-visible)),
+  .Input-module__textarea--u0juO[data-invalid]:focus {
+    --_stroke: var(--input-border-invalid-focus);
+  }
   .Input-module__field--EPBkR[data-disabled],
   .Input-module__textarea--u0juO:disabled {
     --_stroke: var(--input-border);
@@ -7300,12 +7305,13 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
   }
   @media (hover: hover) {
     .Input-module__action--x34aw:enabled:hover {
-      background-color: var(--background-subtle-subtle);
+      background-color: var(--input-action-hover);
       color: var(--icon-secondary);
     }
   }
   .Input-module__action--x34aw:focus-visible {
-    background-color: var(--input-surface);
+    background-color: var(--input-action-hover);
+    color: var(--icon-secondary);
     outline: var(--_ring-width) solid var(--input-focus-ring);
     outline-offset: var(--_ring-gap);
   }
@@ -7363,12 +7369,14 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
 @layer components {
 [data-input-color="default"] {
   --input-surface: var(--background-neutral-solid);
-  --input-border: var(--border-strong);
-  --input-border-hover: var(--icon-tertiary);
-  --input-border-focus: var(--button-brand-hover);
+  --input-border: var(--border-default);
+  --input-border-hover: var(--border-strong);
+  --input-border-focus: var(--border-strong);
   --input-border-invalid: var(--border-danger);
   --input-disabled: var(--background-subtle-subtle);
-  --input-focus-ring: var(--icon-tertiary);
+  --input-focus-ring: var(--button-brand-hover);
+  --input-border-invalid-focus: var(--border-danger-subtle);
+  --input-action-hover: var(--background-subtle-subtle);
 }
 }
 
@@ -8379,6 +8387,9 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
   }
   .PromptBar-module__bar--cBPbK[data-invalid] {
     --_stroke: var(--input-border-invalid);
+  }
+  .PromptBar-module__bar--cBPbK[data-invalid]:has(.PromptBar-module__textarea--XSS2L:focus) {
+    --_stroke: var(--input-border-invalid-focus);
   }
   .PromptBar-module__bar--cBPbK[data-disabled] {
     --_stroke: var(--input-border);

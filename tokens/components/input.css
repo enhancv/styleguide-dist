@@ -8,11 +8,13 @@
 @layer components {
 [data-input-color="default"] {
   --input-surface: var(--background-neutral-solid);
-  --input-border: var(--border-strong);
-  --input-border-hover: var(--icon-tertiary);
-  --input-border-focus: var(--button-brand-hover);
+  --input-border: var(--border-default);
+  --input-border-hover: var(--border-strong);
+  --input-border-focus: var(--border-strong);
   --input-border-invalid: var(--border-danger);
   --input-disabled: var(--background-subtle-subtle);
-  --input-focus-ring: var(--icon-tertiary);
+  --input-focus-ring: var(--button-brand-hover);
+  --input-border-invalid-focus: var(--border-danger-subtle);
+  --input-action-hover: var(--background-subtle-subtle);
 }
 }
