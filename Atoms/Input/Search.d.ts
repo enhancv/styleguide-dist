@@ -13,5 +13,5 @@ export type SearchProps = SearchOwnProps & Omit<InputPrimitiveProps, keyof Searc
  * (firing `onChange`), keep focus in it, then call `onClear`. No label,
  * Invalid or Disabled state.
  */
-export declare const Search: React.ForwardRefExoticComponent<SearchOwnProps & Omit<InputPrimitiveProps, "prefix" | "type" | "invalid" | "iconStart" | "iconEnd" | "suffix" | "clearable" | "showPasswordLabel" | keyof SearchOwnProps> & React.RefAttributes<HTMLInputElement>>;
+export declare const Search: React.ForwardRefExoticComponent<SearchOwnProps & Omit<InputPrimitiveProps, "type" | "prefix" | "invalid" | "iconStart" | "iconEnd" | "suffix" | "clearable" | "showPasswordLabel" | keyof SearchOwnProps> & React.RefAttributes<HTMLInputElement>>;
 export {};

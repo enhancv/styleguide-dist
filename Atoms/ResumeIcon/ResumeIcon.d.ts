@@ -30,5 +30,5 @@ export declare const ResumeIcon: React.ForwardRefExoticComponent<{
     set?: ResumeIconSet;
     /** Glyph size in px (sets font-size). Inherits the surrounding font-size when omitted. */
     size?: number;
-} & Omit<React.SVGAttributes<SVGSVGElement>, "children" | "name" | "viewBox"> & React.RefAttributes<SVGSVGElement>>;
+} & Omit<React.SVGAttributes<SVGSVGElement>, "name" | "children" | "viewBox"> & React.RefAttributes<SVGSVGElement>>;
 export {};

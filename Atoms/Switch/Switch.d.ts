@@ -31,5 +31,5 @@ export type SwitchProps = SwitchOwnProps & Omit<React.ComponentPropsWithoutRef<"
  * The ref is the input; `className` and `style` go to the label, every other
  * prop to the input. Focus is CSS, never a prop.
  */
-export declare const Switch: React.ForwardRefExoticComponent<SwitchOwnProps & Omit<Omit<React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>, "ref">, "children" | "role" | "type" | keyof SwitchOwnProps> & React.RefAttributes<HTMLInputElement>>;
+export declare const Switch: React.ForwardRefExoticComponent<SwitchOwnProps & Omit<Omit<React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>, "ref">, "children" | "type" | "role" | keyof SwitchOwnProps> & React.RefAttributes<HTMLInputElement>>;
 export {};

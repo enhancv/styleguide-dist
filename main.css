@@ -6864,6 +6864,9 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
      fullWidth fills the container. The column layout is utility classes. */
   .Field-module__field--2ZL0G {
     display: inline-flex;
+    /* As a flex or grid item it shrinks with its column, control included,
+       instead of stopping at the control's own width. */
+    min-inline-size: 0;
     max-inline-size: 100%;
     vertical-align: top;
   }
@@ -6871,7 +6874,6 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
     display: flex;
   }
   fieldset.Field-module__field--2ZL0G {
-    min-inline-size: 0;
     border: 0;
   }
 
@@ -7199,6 +7201,9 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
     --_icon: 20px;
 
     display: inline-flex;
+    /* As a flex or grid item it shrinks with its column instead of stopping
+       at the native input's width (size=20). */
+    min-inline-size: 0;
     max-inline-size: 100%;
     vertical-align: top;
     font-family: var(--body-m-font);
