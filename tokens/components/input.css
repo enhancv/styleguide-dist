@@ -10,7 +10,7 @@
   --input-surface: var(--background-neutral-solid);
   --input-border: var(--border-default);
   --input-border-hover: var(--border-strong);
-  --input-border-focus: var(--border-strong);
+  --input-border-focus: var(--icon-quaternary);
   --input-border-invalid: var(--border-danger);
   --input-disabled: var(--background-subtle-subtle);
   --input-focus-ring: var(--button-brand-hover);

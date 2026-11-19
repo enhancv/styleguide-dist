@@ -7140,8 +7140,8 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
 
   /* ── The field box: InputPrimitive, Search, Textarea ─────────────────────
      Figma's INSIDE stroke is an inset shadow, never a border, so the
-     paddings stay the literal spacing tokens. Focus is the stroke plus an
-     outline ring: Figma's 2px gap and 2px ring. */
+     paddings stay the literal spacing tokens. Focus is the stroke alone;
+     the ring variables are the Clear and password buttons'. */
   .Input-module__field--EPBkR,
   .Input-module__textarea--u0juO {
     --_stroke: var(--input-border);
@@ -7166,10 +7166,12 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
       --_stroke: var(--input-border-hover);
     }
   }
+  /* The outline is transparent: forced-colors mode paints it, so focus
+     stays visible there without the stroke. */
   .Input-module__field--EPBkR:focus-within,
   .Input-module__textarea--u0juO:focus {
     --_stroke: var(--input-border-focus);
-    outline: var(--_ring-width) solid var(--input-focus-ring);
+    outline: var(--_ring-width) solid transparent;
     outline-offset: var(--_ring-gap);
   }
   /* A focused Clear or password toggle draws its own ring. */
@@ -7181,7 +7183,7 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
   .Input-module__textarea--u0juO[data-invalid] {
     --_stroke: var(--input-border-invalid);
   }
-  /* Focused while invalid: Figma's lighter red under the same ring. */
+  /* Focused while invalid: Figma's lighter red. */
   .Input-module__field--EPBkR[data-invalid]:focus-within:not(:has(.Input-module__action--x34aw:focus-visible)),
   .Input-module__textarea--u0juO[data-invalid]:focus {
     --_stroke: var(--input-border-invalid-focus);
@@ -7376,7 +7378,7 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
   --input-surface: var(--background-neutral-solid);
   --input-border: var(--border-default);
   --input-border-hover: var(--border-strong);
-  --input-border-focus: var(--border-strong);
+  --input-border-focus: var(--icon-quaternary);
   --input-border-invalid: var(--border-danger);
   --input-disabled: var(--background-subtle-subtle);
   --input-focus-ring: var(--button-brand-hover);
@@ -8361,9 +8363,11 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
      roles Figma binds directly, the same as Textarea. */
 
   /* ── The frame ───────────────────────────────────────────────────────────
-     Figma's INSIDE stroke is an inset shadow, never a border. Focus follows
-     the text, not the buttons: a focused submit or Cancel draws its own
-     ring. Order at equal specificity: hover → focus → invalid → disabled. */
+     Figma's INSIDE stroke is an inset shadow, never a border. Focus is the
+     stroke alone and follows the text, not the buttons: a focused submit or
+     Cancel draws its own ring. The focus outline is transparent, painted
+     only in forced-colors mode. Order at equal specificity: hover → focus →
+     invalid → disabled. */
   .PromptBar-module__bar--cBPbK {
     --_stroke: var(--input-border);
     --_fill: var(--input-surface);
@@ -8387,7 +8391,7 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
   }
   .PromptBar-module__bar--cBPbK:has(.PromptBar-module__textarea--XSS2L:focus) {
     --_stroke: var(--input-border-focus);
-    outline: var(--_ring-width) solid var(--input-focus-ring);
+    outline: var(--_ring-width) solid transparent;
     outline-offset: var(--_ring-gap);
   }
   .PromptBar-module__bar--cBPbK[data-invalid] {
@@ -8516,8 +8520,10 @@ i[class^="icon-ui-"]:before, i[class*=" icon-ui-"]:before {
   }
 
   /* Figma: Focus is keyboard focus; Open (the menu showing) keeps the focus
-     border and drops the ring. A text box is always :focus-visible, so a
-     filterable Select shows the ring while focused and closed, like Input. */
+     border. Neither draws a ring, but Input's transparent focus outline
+     shows in forced-colors mode, so drop it for pointer focus and while open.
+     A text box is always :focus-visible, so a filterable Select keeps it
+     while focused and closed, like Input. */
   .Select-module__select--44gZQ:focus-within:not(:has(:focus-visible)),
   .Select-module__select--44gZQ[data-open]:focus-within {
     outline: none;
